@@ -1,0 +1,75 @@
+@import '/fonts.css';
+
+.Project{
+    max-width: 2500px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 7px; /* Прикрепить шапку к верху экрана */
+    z-index: 1000; /* Определите z-индекс, если необходимо */
+    /* Дополнительные стили для вашей шапки */
+    background-color: #242424;
+    font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+}
+
+.Project_title{
+    margin-top: 235px;
+    margin-left: 600px;
+}
+
+.Project_title:after{
+    content: ""; /* Добавляем пустое содержимое для псевдоэлемента */
+    margin-left: -219px; /* Располагаем линию слева от текста */
+    margin-top: 90px;
+    width: 1200px; /* Устанавливаем длину линии */
+    height: 1px; /* Толщина линии */
+    background-color: white; /* Цвет линии */
+    position: absolute;
+}
+
+.Project_object{
+    position: absolute;
+}
+
+.Project_img1{
+    width: 1250px;
+    height: 500px;
+    margin-top: 450px;
+}
+.Project_text1{
+    margin-left: 1400px;
+    margin-top: -300px;
+    font-size: 36px;
+    width: 400px;
+}
+
+.project_span{
+   opacity: 0;
+}
+
+.Project_img2{
+    width: 1250px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 1240px;
+}
+
+.Project_text2{
+    margin-left: 600px;
+    margin-top: -300px;
+    font-size: 36px;
+    width: 400px;
+}
+
+.Project_img3{
+    width: 1250px;
+    height: 500px;
+    margin-top: 150px;
+}
+
+.Project_text3{
+    margin-left: 1400px;
+    margin-top: -300px;
+    font-size: 36px;
+    width: 400px;
+}

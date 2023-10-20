@@ -1,0 +1,388 @@
+@import '/fonts.css';
+
+@media (max-width: 390px) {
+
+.Contacts {
+        max-width: 390px;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 7px; /* Прикрепить шапку к верху экрана */
+        z-index: 1000; /* Определите z-индекс, если необходимо */
+        /* Дополнительные стили для вашей шапки */
+        background-color: #242424;
+        font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+
+     .Contacts_title{
+        margin-top: 60px;
+        margin-left: 150px;
+        font-weight: bold;
+         font-size: 22px;
+    }
+
+
+    .logo-supply {
+        position: fixed;
+        max-width: 24px; /* Установите желаемую ширину для логотипа */
+        max-height: 18px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    .Contacts_title:after {
+        content: "";
+        width: 280px;
+        height: 1px;
+        background-color: #FFF; /* Цвет линии */
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 27px;
+    }
+       .menu_supply{
+    position: fixed;
+    max-width: 20px; /* Установите желаемую ширину для логотипа */
+    max-height: 15px;
+    margin-left: 330px;
+    margin-top: 15px;
+    z-index: 2000;
+}
+
+
+    .Contacts_info_glav{
+        margin-top: 150px;
+        position: absolute;
+        margin-left: 52px;
+        width: 300px;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .Contacts_info{
+        margin-top: 10px;
+    }
+
+    .Contacts_info_callback{
+        display: none;
+    }
+
+    .Contacts_card{
+        width: 390px;
+        height: 200px;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: 60px;
+        border: 3px solid white;
+    }
+    .menu_supply_activate {
+  background-color: #232325; /* Чуть прозрачный фон для эффекта размытия */
+  position: fixed;
+  top: 0;
+  left: -1px;
+  width: 390px;
+  height: 1000px;
+  z-index: 999; /* Убедитесь, что z-index больше, чем у других элементов */
+  display: flex;
+  opacity: 1;
+  pointer-events: auto; /* Включаем события мыши и сенсорных устройств */
+  animation: slideRight 1s ease forwards;
+
+.menu_supply_activate_city{
+    margin-top: 650px;
+    margin-left: -140px;
+    font-size: 20px;
+}
+
+.menu_supply_activate_number{
+    margin-top: 710px;
+    margin-left: -155px;
+    font-size: 20px;
+    width: 300px;
+}
+
+
+
+}
+
+
+.menu_supply_activate_close{
+    border: 1px solid #FFF ;/* Add your desired border color and width */
+    padding: 5px 10px;
+    border-radius: 45px;
+    height: 30px;
+    position: absolute;
+    font-size: 18px;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+
+.menu_supply_activate_LI{
+    margin-top: 200px;
+    margin-left: 90px;
+    font-size: 24px;
+    text-decoration: none;
+    width: 190px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu_supply_activate_li{
+    margin-top: 15px;
+  text-decoration: none;
+    color: white;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    margin-left: 40px;
+}
+
+.menu_supply_activate_li a {
+    color: white;
+}
+
+.menu_supply_activate_li_callback {
+    width: 230px;
+    margin-top: 180px;
+    text-decoration: none;
+    position: relative; /* Добавим позиционирование для создания линии под текстом */
+    color: white;
+    margin-left: 1px;
+    opacity: 0;
+}
+
+a::after {
+    display: block;
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0; /*задаём начальную ширину элемента (линии)*/
+    background-color: #FFF; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out;
+}
+
+
+
+/* Добавляем анимацию при наведении на элемент li */
+.menu_supply_activate_li a:hover:after,
+.menu_supply_activate_li_callback a:hover:after,
+.menu_supply_activate_li_callback a:focus:after,
+.menu_supply_activate_li a:focus:after {
+    width: 100%;
+}
+
+.menu_supply_activate_li a:hover{
+color: white;
+}
+
+.menu_supply_activate_li_callback a:hover{
+color: white;
+}
+
+.menu_supply_activate_li_callback a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menu_opacity_bgc{
+    opacity: 90%;
+    position: absolute;
+    background-color: #232325;
+    width: 390px;
+    height: 1350px;
+    animation: slideLEft 1.5s ease forwards;
+}
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1080px) and (max-width: 1920px) {
+
+    .Contacts {
+        max-width: 1920px;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 7px; /* Прикрепить шапку к верху экрана */
+        z-index: 1000; /* Определите z-индекс, если необходимо */
+        /* Дополнительные стили для вашей шапки */
+        background-color: #242424;
+        font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+
+     .Contacts_title{
+        margin-top: 211px;
+        margin-left: 460px;
+        font-weight: bold;
+    }
+
+    .Contacts_title:after {
+        content: "";
+        width: 768px;
+        height: 1px;
+        background-color: #FFF; /* Цвет линии */
+        position: absolute;
+        margin-left: -225px;
+        margin-top: 57px;
+    }
+       .menu_supply{
+    position: fixed;
+    max-width: 45px; /* Установите желаемую ширину для логотипа */
+    max-height: 45px;
+    margin-left: 1780px;
+    margin-top: 25px;
+    z-index: 500;
+}
+
+
+    .Contacts_info_glav{
+        margin-top: 364px;
+        position: absolute;
+        margin-left: 460px;
+        width: 300px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    .Contacts_info{
+        margin-top: 10px;
+    }
+
+    .Contacts_info_callback{
+        margin-top: 96px;
+         border: 1px solid #FFF ;/* Add your desired border color and width */
+        padding: 7px 25px;
+        border-radius: 34px;
+        text-align: center;
+    }
+
+    .Contacts_card{
+        width: 921px;
+        height: 422px;
+        position: absolute;
+        margin-left: 477px;
+        margin-top: -440px;
+        border: 3px solid white;
+    }
+
+
+
+
+    }
+}
+
+.Contacts{
+    max-width: 2500px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 7px; /* Прикрепить шапку к верху экрана */
+    z-index: 1000; /* Определите z-индекс, если необходимо */
+    /* Дополнительные стили для вашей шапки */
+    background-color: #242424;
+    font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+}
+
+.Contacts_title{
+    margin-top: 275px;
+    margin-left: 600px;
+    font-weight: bold;
+}
+
+.Contacts_title:after {
+    content: "";
+    width: 1000px;
+    height: 1px;
+    background-color: #FFF; /* Цвет линии */
+    position: absolute;
+    margin-left: -222px;
+    margin-top: 75px;
+}
+
+.Contacts_info_glav{
+    margin-top: 475px;
+    position: absolute;
+    margin-left: 600px;
+    width: 300px;
+    font-size: 21px;
+    color: #FFFFFF;
+}
+
+.Contacts_info{
+    margin-top: 10px;
+}
+
+.Contacts_info_callback{
+    margin-top: 125px;
+     border: 1px solid #FFF ;/* Add your desired border color and width */
+    padding: 10px 50px;
+    border-radius: 45px;
+}
+
+.Contacts_card{
+    width: 1200px;
+    height: 550px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -545px;
+    border: 3px solid white;
+}

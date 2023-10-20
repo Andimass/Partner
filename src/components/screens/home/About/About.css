@@ -1,0 +1,1967 @@
+@import '/fonts.css';
+
+@media (max-width: 390px) {
+
+    .About {
+        max-width: 390px;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 7px; /* Прикрепить шапку к верху экрана */
+        z-index: 1000; /* Определите z-индекс, если необходимо */
+        /* Дополнительные стили для вашей шапки */
+        background-color: #242424;
+        font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+
+    .menu_supply{
+            position: fixed;
+            max-width: 24px; /* Установите желаемую ширину для логотипа */
+            height: 10px;
+            margin-left: 360px;
+            margin-top: 5px;
+            z-index: 999;
+        }
+        .about_image{
+            width: 210px;
+            height: 188px;
+            margin-top: 74px;
+            margin-left: 85px;
+        }
+
+        .logo-supply {
+            position: fixed;
+            max-width: 24px; /* Установите желаемую ширину для логотипа */
+            max-height: 18px;
+            margin-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .about_bgc_bgc{
+            display: none;
+        }
+        
+        .about_title{
+            font-size: 22px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-top: 149px;
+            margin-left: 124px;
+            position: absolute;
+        }
+
+        .about_text_1{
+            width: 340px;
+            font-size: 10px;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 292px;
+            text-align: center;
+        }
+
+        .about_text_2{
+            width: 340px;
+            font-size: 10px;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 338px;
+            text-align: center;
+        }
+
+        .about_text_3{
+            width: 340px;
+            font-size: 10px;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 378px;
+            text-align: center;
+        }
+
+        .about_etap_glav_title{
+            position: absolute;
+            margin-top: 490px;
+            font-size: 22px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-left: 70px;
+        }
+
+        .about_etap_img_1{
+            width: 60px;
+            height: 50px;
+            margin-top: 550px;
+            margin-left: 54px;
+            position: absolute;
+        }
+
+
+        .about_etap_img_2{
+            width: 60px;
+            height: 50px;
+            margin-top: 550px;
+            position: absolute;
+            margin-left: 220px;
+        }
+
+        .about_etap_img_3{
+            width: 60px;
+            height: 50px;
+            margin-top: 715px;
+            position: absolute;
+            margin-left: 54px;
+        }
+
+        .about_etap_img_4{
+            width: 60px;
+            position: absolute;
+            height: 50px;
+            margin-top: 715px;
+            margin-left: 220px;
+        }
+
+        .about_etap_title_1{
+            position: absolute;
+            margin-top: 605px;
+            margin-left: 54px;
+            width: 230px;
+            font-size: 10px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+        }
+
+        .about_etap_title_1:after {
+            content: "";
+            width: 83px;
+            height: 1px;
+            background-color: #fafafa; /* Цвет линии */
+            position: absolute;
+            margin-left: -22px;
+            margin-top: -33px;
+        }
+
+        .about_etap_title_2{
+            margin-top: 605px;
+            position: absolute;
+            margin-left: 220px;
+            font-size: 10px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+        }
+
+        .about_etap_title_2:after {
+            display: none;
+        }
+
+        .about_etap_title_3{
+            margin-top: 770px;
+            position: absolute;
+            margin-left: 54px;
+            font-size: 10px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+        }
+
+        .about_etap_title_3:after {
+            content: "";
+            width: 83px;
+            height: 1px;
+            background-color: #fafafa; /* Цвет линии */
+            position: absolute;
+            margin-left: -39px;
+            margin-top: -26px;
+        }
+
+        .about_etap_title_4{
+            margin-top: 770px;
+            margin-left: 220px;
+            position: absolute;
+            font-size: 10px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+        }
+
+        .aout_etap_text_1{
+            position: absolute;
+            margin-top: 620px;
+            margin-left: 54px;
+            width: 142px;
+            font-size: 10px;
+
+        }
+
+        .aout_etap_text_2{
+            margin-top: 620px;
+            position: absolute;
+            margin-left: 220px;
+            width: 142px;
+            font-size: 10px;
+
+        }
+
+        .aout_etap_text_3{
+            margin-top: 790px;
+            position: absolute;
+            margin-left: 54px;
+            width: 132px;
+            font-size: 10px;
+
+        }
+
+        .aout_etap_text_4{
+            margin-top: 790px;
+            margin-left: 220px;
+            position: absolute;
+            width: 124px;
+            font-size: 10px;
+
+        }
+
+        .about_why{
+            font-size: 22px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-left: 70px;
+            position: absolute;
+            margin-top: 958px;
+        }
+
+        .about_why_text{
+            font-size: 10px;
+            position: absolute;
+            margin-left: 109px;
+            margin-top: 1015px;
+            width: 254px;
+        }
+
+        .about_why_text p{
+            margin-top: 18px;
+        }
+
+        .about_why_text p::after {
+            top: 9px;
+            display: block;
+            content: ""; /* Контента в данном блоке не будет, поэтому в кавычках ничего не ставим */
+            height: 0.1px; /* Задаём высоту линии */
+            width: 250px; /* Задаём начальную ширину элемента (линии) */
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.53); /* Белый цвет текста при наведении */
+        }
+
+        .about_prem{
+        font-size: 22px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+        margin-left: 30px;
+        position: absolute;
+        margin-top: 1290px;
+        width: 340px;
+            text-align: center;
+}
+
+    .about_top {
+        font-size: 10px;
+        position: absolute;
+        margin-left: 18px;
+        margin-top: 1690px;
+
+
+    .about_top_1 {
+        margin-top: -260px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+    }
+
+    .about_top_1:before {
+        content: "1";
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -3px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_2 {
+        margin-top: -200px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+    }
+
+    .about_top_2:before {
+        content: "2";
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -10px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_3 {
+        margin-top: -154px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+    }
+
+    .about_top_3:before {
+        content: "3";
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -10px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_4 {
+        margin-top: -108px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 0.1px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+    }
+
+    .about_top_4:before {
+        content: "4";
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -10px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_5 {
+        margin-top: -62px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 7px 39px;
+    }
+
+    .about_top_5:before {
+        content: "5";
+        position: absolute;
+        margin-left: -26px;
+        margin-top: -3px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_6 {
+        margin-top: -4px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+    }
+
+    .about_top_6:before {
+        content: "6";
+        position: absolute;
+        margin-left: -26px;
+        margin-top: -3px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_7 {
+        margin-top: 46px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+
+    }
+
+    .about_top_7:before {
+        content: "7";
+        position: absolute;
+        margin-left: -24px;
+        margin-top: -12px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_8 {
+        margin-top: 92px;
+        position: absolute;
+        margin-left: -10px;
+        width: 326px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 12px 8px 10px 39px;
+        line-height: 1.2;
+    }
+
+    .about_top_8:before {
+        content: "8";
+        position: absolute;
+        margin-left: -26px;
+        margin-top: -4px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }}
+
+
+    .about_its_title{
+        position: absolute;
+        margin-top: 1880px;
+        font-size: 22px;
+        font-family: a_FuturaOrtoBold, sans-serif;
+        margin-left: 120px;
+        width: 183px;
+    }
+
+    .about_its_title_1{
+        position: absolute;
+        margin-top: 1930px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoBold, sans-serif;
+        margin-left: 30px;
+
+    }
+
+    .about_its_title_2{
+        position: absolute;
+        margin-top: 2080px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoBold, sans-serif;
+        margin-left: 30px;
+
+    }
+
+    .about_its_title_3{
+        position: absolute;
+        margin-top: 1930px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoBold, sans-serif;
+        margin-left: 220px;
+
+    }
+
+    .about_its_title_4{
+            position: absolute;
+        margin-top: 2080px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoBold, sans-serif;
+        margin-left: 220px;
+
+    }
+
+    .about_its_text_1 {
+        position: absolute;
+        margin-top: 1950px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoLt, sans-serif;
+        margin-left: 30px;
+        width: 136px;
+
+    }
+    .about_its_text_2{
+            position: absolute;
+        margin-top: 2100px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoLt, sans-serif;
+        margin-left: 30px;
+        width: 150px;
+    }
+
+    .about_its_text_3{
+            position: absolute;
+        margin-top: 1950px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoLt, sans-serif;
+        margin-left: 220px;
+        width: 169px;
+
+    }
+
+    .about_its_text_4{
+        position: absolute;
+        margin-top: 2100px;
+        font-size: 10px;
+        font-family: a_FuturaOrtoLt, sans-serif;
+        margin-left: 220px;
+        width: 169px;
+    }
+
+
+    .about_its_circle_1{
+        position: absolute;
+        margin-top: 2030px;
+        margin-left: 160px;
+        width: 55px;
+        animation: arotate 13s linear infinite;
+    }
+
+    .about_its_circle_2{
+         position: absolute;
+         margin-top: 2045px;
+        margin-left: 175px;
+        width: 25px;
+        animation: asrotate 18s linear infinite;
+    }
+
+    .menu_supply_activate {
+    background-color: #232325; /* Чуть прозрачный фон для эффекта размытия */
+    top: 0;
+    left: -1px;
+    position: fixed;
+    width: 390px;
+    height: 1000px;
+    z-index: 1001; /* Убедитесь, что z-index больше, чем у других элементов */
+    display: flex;
+    opacity: 1;
+    pointer-events: auto; /* Включаем события мыши и сенсорных устройств */
+    animation: slideRight 1s ease forwards;
+
+.menu_supply_activate_city {
+    margin-top: 650px;
+    margin-left: -140px;
+    font-size: 20px;
+}
+
+.menu_supply_activate_number {
+    margin-top: 710px;
+    margin-left: -195px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.menu_supply_activate_close {
+    border: 1px solid #FFF; /* Add your desired border color and width */
+    padding: 5px 10px;
+    border-radius: 45px;
+    height: 30px;
+    position: absolute;
+    font-size: 18px;
+    margin-left: 280px;
+    margin-top: 20px;
+
+}
+
+.menu_supply_activate_LI {
+    margin-top: 200px;
+    margin-left: 90px;
+    font-size: 24px;
+    text-decoration: none;
+    width: 190px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu_supply_activate_li {
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    margin-left: 40px;
+}
+
+.menu_supply_activate_li a {
+    color: white;
+}
+
+.menu_supply_activate_li_callback {
+    width: 230px;
+    margin-top: 180px;
+    text-decoration: none;
+    position: relative; /* Добавим позиционирование для создания линии под текстом */
+    color: white;
+    margin-left: 1px;
+    display: none;
+}
+
+a::after {
+    display: block;
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0; /*задаём начальную ширину элемента (линии)*/
+    background-color: #FFF; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out;
+}
+
+
+/* Добавляем анимацию при наведении на элемент li */
+.menu_supply_activate_li a:hover:after,
+.menu_supply_activate_li_callback a:hover:after,
+.menu_supply_activate_li_callback a:focus:after,
+.menu_supply_activate_li a:focus:after {
+    width: 100%;
+}
+
+.menu_supply_activate_li a:hover {
+    color: white;
+}
+
+.menu_supply_activate_li_callback a:hover {
+    color: white;
+}
+
+.menu_supply_activate_li_callback a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu_opacity_bgc {
+    opacity: 90%;
+    position: absolute;
+    background-color: #232325;
+    width: 390px;
+    height: 1350px;
+    animation: slideLEft 1.5s ease forwards;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1080px) and (max-width: 1920px) {
+
+    .About {
+        max-width: 1920px;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 7px; /* Прикрепить шапку к верху экрана */
+        z-index: 1000; /* Определите z-индекс, если необходимо */
+        /* Дополнительные стили для вашей шапки */
+        background-color: #242424;
+        font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+
+        .menu_supply{
+            position: fixed;
+            max-width: 45px; /* Установите желаемую ширину для логотипа */
+            max-height: 45px;
+            margin-left: 1780px;
+            margin-top: 25px;
+            z-index: 500;
+        }
+        .about_image{
+            width: 670px;
+            height: 589px;
+            margin-top: 151px;
+            margin-left: 190px;
+        }
+
+        .about_title{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-top: 423px;
+            margin-left: 383px;
+            position: absolute;
+        }
+
+        .about_text_1{
+            width: 574px;
+            font-size: 18px;
+            position: absolute;
+            margin-left: 962px;
+            margin-top: 292px;
+        }
+
+        .about_text_2{
+            width: 574px;
+            font-size: 18px;
+            position: absolute;
+            margin-left: 962px;
+            margin-top: 378px;
+        }
+
+        .about_text_3{
+            width: 574px;
+            font-size: 18px;
+            position: absolute;
+            margin-left: 962px;
+            margin-top: 478px;
+        }
+
+        .about_why{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-left: 383px;
+            position: absolute;
+            margin-top: 958px;
+        }
+
+        .about_why_text{
+            font-size: 20px;
+            position: absolute;
+            margin-left: 748px;
+            margin-top: 1035px;
+        }
+
+        .about_why_text p{
+            margin-top: 37px;
+        }
+
+        .about_why_text p::after {
+            top: 19px;
+            display: block;
+            content: ""; /* Контента в данном блоке не будет, поэтому в кавычках ничего не ставим */
+            height: 0.1px; /* Задаём высоту линии */
+            width: 740px; /* Задаём начальную ширину элемента (линии) */
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.53); /* Белый цвет текста при наведении */
+        }
+
+        .about_prem{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'a_FuturaOrtoBold', serif;
+            margin-left: 383px;
+            position: absolute;
+            margin-top: 2300px;
+            width: 1000px;
+        }
+
+        .about_top{
+            font-size: 18px;
+            position: absolute;
+            margin-left: 810px;
+            margin-top: 1750px;
+        }
+
+        .about_top li{
+            margin-top: 35px;
+            list-style-type: circle;
+        }
+
+        .about_footer{
+            background-color: #ffffff;
+            position: relative;
+            bottom:0;
+            width: 1920px;
+            height: 100px;   /* Высота блока "footer" */
+            margin-top: 3600px;
+            margin-left: -2250px;
+        }
+
+        .about_footer_logo{
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            margin-left: 330px;
+            margin-top: 35px;
+        }
+
+        .about_footer_logo2{
+            position: absolute;
+            margin-left: 375px;
+            width: 184px;
+            margin-top: 40px;
+        }
+
+        .about_footer_s{
+            margin-top: 25px;
+            color: black;
+            display: flex;
+            flex: 0.2;
+            justify-content: space-between;
+            margin-left: 650px;
+            position: absolute;
+                text-decoration: none;
+            list-style-type: none;
+        }
+
+        .about_footer_source{
+            margin-left: 50px;
+            max-width: 1000px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .about_footer_source a{
+            color: black;
+        }
+
+        .about_footer_callback{
+            margin-top: 1px;
+            margin-left: 100px;
+            font-size: 20px;
+            border: 1px solid #000000;/* Add your desired border color and width */
+            padding: 10px 60px;
+            border-radius: 45px;
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+        }
+
+
+
+.about_etap_glav_title{
+    position: absolute;
+    margin-top: 1600px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-left: 600px;
+}
+
+.about_etap_img_1{
+    width: 100px;
+    height: 77px;
+    margin-top: 1728px;
+    margin-left: 384px;
+    position: absolute;
+}
+
+
+.about_etap_img_2{
+    width: 100px;
+    height: 77px;
+    margin-top: 1728px;
+    position: absolute;
+    margin-left: 706px;
+}
+
+.about_etap_img_3{
+    width: 100px;
+    height: 77px;
+    margin-top: 1728px;
+    position: absolute;
+    margin-left: 1036px;
+}
+
+.about_etap_img_4{
+    width: 100px;
+    position: absolute;
+    height: 77px;
+    margin-top: 1728px;
+    margin-left: 1382px;
+}
+
+.about_etap_title_1{
+    position: absolute;
+        margin-top: 1810px;
+    margin-left: 384px;
+    width: 230px;
+    font-size: 20px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_1:after {
+        content: "";
+        width: 153px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -46px;
+}
+
+.about_etap_title_2{
+    margin-top: 1810px;
+    position: absolute;
+    margin-left: 706px;
+        font-size: 20px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_2:after {
+        content: "";
+        width: 153px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -110px;
+        margin-top: -46px;
+}
+
+.about_etap_title_3{
+    margin-top: 1810px;
+    position: absolute;
+    margin-left: 1036px;
+        font-size: 20px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_3:after {
+        content: "";
+        width: 153px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -65px;
+        margin-top: -46px;
+}
+
+.about_etap_title_4{
+    margin-top: 1810px;
+    margin-left: 1382px;
+    position: absolute;
+        font-size: 20px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.aout_etap_text_1{
+    position: absolute;
+    margin-top: 1850px;
+    margin-left: 384px;
+    width: 215px;
+    font-size: 15px;
+
+}
+
+.aout_etap_text_2{
+    margin-top: 1850px;
+    position: absolute;
+    margin-left: 706px;
+        width: 215px;
+    font-size: 15px;
+
+}
+
+.aout_etap_text_3{
+    margin-top: 1850px;
+    position: absolute;
+    margin-left: 1036px;
+    width: 215px;
+    font-size: 15px;
+
+}
+
+.aout_etap_text_4{
+    margin-top: 1850px;
+    margin-left: 1382px;
+    position: absolute;
+    width: 215px;
+    font-size: 15px;
+
+}
+
+.about_prem{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-left: 268px;
+    position: absolute;
+    margin-top: 2100px;
+    width: 2000px;
+}
+
+.about_top {
+    font-size: 17px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 2300px;
+
+
+    .about_top_1 {
+        margin-top: -38px;
+        position: absolute;
+        margin-left: -614px;
+        width: 407px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 7px 30px 7px 69px;
+    }
+
+    .about_top_1:before {
+        content: "1";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: 3px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_2 {
+        margin-top: 49px;
+        position: absolute;
+        margin-left: -614px;
+        width: 407px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 7px 30px 7px 69px;
+    }
+
+    .about_top_2:before {
+        content: "2";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: -1px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_3 {
+        margin-top: 138px;
+        position: absolute;
+        margin-left: -614px;
+        width: 407px;
+        border: 1px rgba(255, 255, 255, 0.53) solid;
+        padding: 7px 30px 7px 69px;
+    }
+
+    .about_top_3:before {
+        content: "3";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: -1px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_4 {
+        margin-top: 230px;
+        position: absolute;
+        margin-left: -614px;
+        width: 407px;
+        border: 0.1px rgba(255, 255, 255, 0.53) solid;
+        padding: 21px 30px 21px 69px;
+    }
+
+    .about_top_4:before {
+        content: "4";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: -13px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_5 {
+        margin-top: -38px;
+        position: absolute;
+        margin-left: -77px;
+        width: 407px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 7px 30px 7px 69px;
+    }
+
+    .about_top_5:before {
+        content: "5";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: 3px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_6 {
+        margin-top: 49px;
+        position: absolute;
+        margin-left: -77px;
+        width: 407px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 7px 30px 7px 69px;
+        line-height: 1;
+    }
+
+    .about_top_6:before {
+        content: "6";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: 9px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_7 {
+        margin-top: 138px;
+        position: absolute;
+        margin-left: -77px;
+        width: 407px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 21px 30px 21px 69px;
+
+    }
+
+    .about_top_7:before {
+        content: "7";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: -14px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }
+
+    .about_top_8 {
+        margin-top: 230px;
+        position: absolute;
+        margin-left: -77px;
+        width: 407px;
+        border: 0.5px rgba(255, 255, 255, 0.53) solid;
+        padding: 14px 30px 14px 69px;
+        line-height: 1.2;
+    }
+
+    .about_top_8:before {
+        content: "8";
+        position: absolute;
+        margin-left: -46px;
+        margin-top: 1px;
+        font-size: 38px;
+        font-weight: 900;
+        font-family: 'a_FuturaOrtoBold', serif;
+    }}
+
+        .about_top li{
+    list-style-type: none;
+    }
+
+    .about_its_title{
+        position: absolute;
+    margin-top: 2750px;
+    font-size: 50px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 715px;
+    width: 600px;
+}
+
+.about_its_title_1{
+        position: absolute;
+    margin-top: 2900px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 400px;
+
+}
+
+.about_its_title_2{
+        position: absolute;
+    margin-top: 3100px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 400px;
+
+}
+
+.about_its_title_3{
+        position: absolute;
+    margin-top: 2900px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1150px;
+
+}
+
+.about_its_title_4{
+        position: absolute;
+    margin-top: 3100px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1150px;
+
+}
+
+.about_its_text_1 {
+        position: absolute;
+    margin-top: 2950px;
+    font-size: 15px;
+    font-family: a_FuturaOrtoLt, sans-serif;
+    margin-left: 400px;
+    width: 334px;
+
+}
+.about_its_text_2{
+        position: absolute;
+    margin-top: 3150px;
+    font-size: 15px;
+    font-family: a_FuturaOrtoLt, sans-serif;
+    margin-left: 400px;
+    width: 360px;
+}
+
+.about_its_text_3{
+        position: absolute;
+    margin-top: 2950px;
+    font-size: 15px;
+    font-family: a_FuturaOrtoLt, sans-serif;
+    margin-left: 1150px;
+    width: 334px;
+
+}
+
+.about_its_text_4{
+    position: absolute;
+    margin-top: 3150px;
+    font-size: 15px;
+    font-family: a_FuturaOrtoLt, sans-serif;
+    margin-left: 1150px;
+    width: 360px;
+}
+
+
+.about_its_circle_1{
+    position: absolute;
+    margin-top: 2980px;
+    margin-left: 830px;
+    width: 192px;
+    animation: arotate 13s linear infinite;
+}
+
+.about_its_circle_2{
+     position: absolute;
+     margin-top: 3030px;
+    margin-left: 880px;
+    width: 92px;
+    animation: asrotate 18s linear infinite;
+}
+
+.about_bgc{
+  width: 1190px;
+    height: 1382px;
+    margin-left: -1250px;
+    margin-top: 1800px;
+    opacity: 0.4;
+}
+
+.about_bgc_2{
+  width: 800px;
+    height: 900px;
+    margin-left: 1050px;
+    margin-top: 2700px;
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.About{
+    max-width: 2500px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 7px; /* Прикрепить шапку к верху экрана */
+    z-index: 1000; /* Определите z-индекс, если необходимо */
+    /* Дополнительные стили для вашей шапки */
+    background-color: #242424;
+    font-family: 'a_FuturaOrtoLt', Arial, sans-serif;
+}
+
+.about_image{
+    width: 800px;
+    height: 705px;
+    margin-top: 200px;
+    margin-left: 314px;
+    z-index: 999;
+}
+
+.about_bgc_bgc{
+    width: 100%;
+    height: 1050px;
+    margin-left: -1070px;
+    opacity: 0.5;
+}
+
+.about_title{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-top: 517px;
+    margin-left: 510px;
+    position: absolute;
+    z-index: 999;
+}
+
+.about_text_1{
+    width: 882px;
+    font-size: 23px;
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: 370px;
+}
+
+.about_text_2{
+    width: 882px;
+    font-size: 23px;
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: 470px;
+}
+
+.about_text_3{
+    width: 882px;
+    font-size: 23px;
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: 570px;
+}
+
+.about_etap{
+    position: absolute;
+}
+
+.about_bgc{
+  width: 1555px;
+    height: 1800px;
+    margin-left: -2540px;
+    margin-top: 1500px;
+    opacity: 0.5;
+}
+
+.about_etap_glav_title{
+    position: absolute;
+    margin-top: 1100px;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-left: 800px;
+}
+
+.about_etap_img_1{
+    width: 132px;
+    height: 100px;
+    margin-top: 1300px;
+    margin-left: 500px;
+    position: absolute;
+}
+
+
+.about_etap_img_2{
+    width: 132px;
+    height: 100px;
+    margin-top: 1300px;
+    position: absolute;
+    margin-left: 920px;
+}
+
+.about_etap_img_3{
+    width: 132px;
+    height: 100px;
+    margin-top: 1300px;
+    position: absolute;
+    margin-left: 1350px;
+}
+
+.about_etap_img_4{
+    width: 132px;
+    position: absolute;
+    height: 100px;
+    margin-top: 1300px;
+    margin-left: 1800px;
+}
+
+.about_etap_title_1{
+    position: absolute;
+        margin-top: 1410px;
+    margin-left: 500px;
+    width: 300px;
+    font-size: 23px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_1:after {
+        content: "";
+        width: 200px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -35px;
+        margin-top: -60px;
+}
+
+.about_etap_title_2{
+    margin-top: 1410px;
+    position: absolute;
+    margin-left: 920px;
+        font-size: 23px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_2:after {
+        content: "";
+        width: 200px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -95px;
+        margin-top: -60px;
+}
+
+.about_etap_title_3{
+    margin-top: 1410px;
+    position: absolute;
+    margin-left: 1350px;
+        font-size: 23px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_etap_title_3:after {
+        content: "";
+        width: 200px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -75px;
+        margin-top: -60px;
+}
+
+.about_etap_title_4{
+    margin-top: 1410px;
+    margin-left: 1800px;
+    position: absolute;
+        font-size: 23px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.aout_etap_text_1{
+    position: absolute;
+    margin-top: 1450px;
+    margin-left: 500px;
+    width: 280px;
+    font-size: 20px;
+
+}
+
+.aout_etap_text_2{
+    margin-top: 1450px;
+    position: absolute;
+    margin-left: 920px;
+        width: 280px;
+    font-size: 20px;
+
+}
+
+.aout_etap_text_3{
+    margin-top: 1450px;
+    position: absolute;
+    margin-left: 1350px;
+    width: 280px;
+    font-size: 20px;
+
+}
+
+.aout_etap_text_4{
+    margin-top: 1450px;
+    margin-left: 1800px;
+    position: absolute;
+    width: 280px;
+    font-size: 20px;
+
+}
+
+.about_why{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about_why{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-left: 510px;
+    position: absolute;
+    margin-top: 1850px;
+}
+
+.about_why_text{
+    font-size: 23px;
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: 1950px;
+}
+
+.about_why_text p{
+    margin-top: 56px;
+}
+
+.about_why_text p::after {
+    top: 28px;
+    display: block;
+    content: ""; /* Контента в данном блоке не будет, поэтому в кавычках ничего не ставим */
+    height: 1px; /* Задаём высоту линии */
+    width: 1000px; /* Задаём начальную ширину элемента (линии) */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.53); /* Белый цвет текста при наведении */
+}
+
+.about_why_text p:last-child::after {
+    display: none;
+}
+
+.about_prem{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+    margin-left: 350px;
+    position: absolute;
+    margin-top: 2740px;
+    width: 2000px;
+}
+
+.about_top{
+    font-size: 23px;
+    position: absolute;
+    margin-left: 1370px;
+    margin-top: 3000px;
+}
+
+.about_top li{
+    list-style-type: none;
+}
+
+.about_top_1{
+    margin-top: -50px;
+    position: absolute;
+    margin-left: -800px;
+    width: 530px;
+    border: 1px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+}
+
+.about_top_1:before {
+        content: "1";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 5px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_2{
+    margin-top: 65px;
+    position: absolute;
+    margin-left: -800px;
+    width: 530px;
+    border: 1px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+}
+.about_top_2:before {
+        content: "2";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -1px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_3{
+    margin-top: 180px;
+    position: absolute;
+    margin-left: -800px;
+    width: 530px;
+    border: 1px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+}
+
+.about_top_3:before {
+        content: "3";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -1px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_4{
+    margin-top: 300px;
+    position: absolute;
+    margin-left: -800px;
+    width: 530px;
+    border: 0.1px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+}
+
+.about_top_4:before {
+        content: "4";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -1px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_5{
+    margin-top: -50px;
+    position: absolute;
+    margin-left: -100px;
+    width: 530px;
+    border: 0.5px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+}
+
+.about_top_5:before {
+        content: "5";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 5px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_6{
+    margin-top: 65px;
+    position: absolute;
+    margin-left: -100px;
+    width: 530px;
+    border: 0.5px rgba(255, 255, 255, 0.53) solid;
+    padding: 10px 40px 10px 90px;
+    line-height: 1;
+}
+
+.about_top_6:before {
+        content: "6";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 12px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_7{
+    margin-top: 180px;
+    position: absolute;
+    margin-left: -100px;
+    width: 530px;
+    border: 0.5px rgba(255, 255, 255, 0.53) solid;
+    padding: 30px 40px 25px 90px;
+}
+
+.about_top_7:before {
+        content: "7";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -18px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+.about_top_8{
+    margin-top: 300px;
+    position: absolute;
+    margin-left: -100px;
+    width: 530px;
+    border: 0.5px rgba(255, 255, 255, 0.53) solid;
+    padding: 15px 40px 18px 90px;
+        line-height: 1.2;
+}
+
+.about_top_8:before {
+        content: "8";
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 1px;
+        font-size: 50px;
+        font-weight: 900;
+    font-family: 'a_FuturaOrtoBold', serif;
+}
+
+
+
+.about_its{
+    position: absolute;
+}
+
+.about_its_title{
+        position: absolute;
+    margin-top: 3525px;
+    font-size: 70px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1000px;
+    width: 600px;
+}
+
+.about_its_title_1{
+        position: absolute;
+    margin-top: 3750px;
+    font-size: 23px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 600px;
+
+}
+
+.about_its_title_2{
+        position: absolute;
+    margin-top: 4050px;
+    font-size: 23px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 600px;
+
+}
+
+.about_its_title_3{
+        position: absolute;
+    margin-top: 4050px;
+    font-size: 23px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1550px;
+
+}
+
+.about_its_title_4{
+        position: absolute;
+    margin-top: 3750px;
+    font-size: 23px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1550px;
+
+}
+
+.about_its_text_1 {
+        position: absolute;
+    margin-top: 3800px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 600px;
+    width: 435px;
+
+}
+.about_its_text_2{
+        position: absolute;
+    margin-top: 3800px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1550px;
+    width: 490px;
+}
+
+.about_its_text_3{
+        position: absolute;
+    margin-top: 4100px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 600px;
+    width: 490px;
+
+}
+
+.about_its_text_4{
+    position: absolute;
+    margin-top: 4100px;
+    font-size: 20px;
+    font-family: a_FuturaOrtoBold, sans-serif;
+    margin-left: 1550px;
+    width: 490px;
+}
+
+
+.about_its_circle_1{
+    position: absolute;
+    margin-top: 3850px;
+    margin-left: 1150px;
+    width: 250px;
+    animation: arotate 13s linear infinite;
+}
+
+.about_its_circle_2{
+     position: absolute;
+     margin-top: 3915px;
+    margin-left: 1215px;
+    width: 120px;
+    animation: asrotate 18s linear infinite;
+}
+
+
+@keyframes arotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes asrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.about_bgc_2{
+    width: 1200px;
+    height: 850px;
+    position: absolute;
+    margin-left: 1280px;
+    margin-top: 4050px;
+    opacity: 0.65;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about_footer{
+    background-color: white;
+    position: relative;
+    bottom:0;
+    width: 2495px;
+    height:130px;   /* Высота блока "footer" */
+    margin-top: 4900px;
+    margin-left: -1550px;
+}
+
+.about_footer_logo{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-left: 430px;
+    margin-top: 45px;
+}
+
+.about_footer_logo2{
+    position: absolute;
+    margin-left: 500px;
+    width: 240px;
+    margin-top: 55px;
+}
+
+.about_footer_s{
+    margin-top: 40px;
+    color: black;
+    display: flex;
+    flex: 0.2;
+    justify-content: space-between;
+    margin-left: 930px;
+    position: absolute;
+        text-decoration: none;
+    list-style-type: none;
+}
+
+.about_footer_source{
+    margin-left: 50px;
+    max-width: 1000px;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.about_footer_source a{
+    color: black;
+}
+
+.about_footer_callback{
+    margin-top: 1px;
+    margin-left: 100px;
+    font-size: 23px;
+    border: 1px solid #000000;/* Add your desired border color and width */
+    padding: 10px 60px;
+    border-radius: 45px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.about_footer_callback a{
+    color: black;
+}
+
+
+
+

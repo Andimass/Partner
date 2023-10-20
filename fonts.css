@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'a_FuturaOrtoLt';
+  src: url('/src/assets/fonts/a_FuturaOrtoLt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Подключение шрифта Bold */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('/src/assets/fonts/BebasNeue.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'a_FuturaOrtoBold';
+  src: url('/src/assets/fonts/afuturaortoltbold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'afuturaortoltbolditalic.ttf';
+  src: url('/src/assets/fonts/afuturaortoltbolditalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'afuturaortoltlight.ttf';
+  src: url('/src/assets/fonts/afuturaortoltlight.ttf') format('truetype');
+  font-weight: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'afuturaortoltlightitalic.ttf';
+  src: url('/src/assets/fonts/afuturaortoltlightitalic.ttf') format('truetype');
+  font-weight: auto;
+  font-style: normal;
+}
