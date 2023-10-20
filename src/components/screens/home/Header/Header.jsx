@@ -165,7 +165,7 @@ const Header = () => {
             setIsHovered(false);
         };
     };
-    
+
         return (
             <div className='Header_glav'>
                 <span className="circle"></span>
