@@ -1011,6 +1011,286 @@ display: none;
     animation: pulsate 2s infinite; /* Применяем анимацию pulsate при наведении */
 }
 
+.uslugi-description1 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: 0;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+    width: 450px;
+    height: 555px;
+    border-radius: 10%;
+}
+
+.uslugi-description1_1{
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 9px;
+}
+
+.uslugi-description1_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -260px;
+        margin-top: 45px;
+}
+
+.uslugi-description1_2{
+    margin-left: 20px;
+}
+
+.uslugi-description1_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+.uslugi-description2 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: -105px;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+    width: 450px;
+    height: 555px;
+        border-radius: 10%;
+}
+
+.uslugi-description2_1{
+    font-size: 22px;
+    margin-top: 12px;
+    margin-left: 11px;
+}
+
+.uslugi-description2_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -330px;
+        margin-top: 45px;
+}
+
+.uslugi-description2_2{
+    margin-left: 20px;
+}
+
+.uslugi-description2_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+
+.uslugi-description3 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: -210px;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 450px;
+  height: 555px;
+  border-radius: 10%;
+}
+
+.uslugi-description3_1{
+    font-size: 22px;
+    margin-top: 12px;
+    margin-left: 11px;
+}
+
+.uslugi-description3_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -140px;
+        margin-top: 45px;
+}
+
+.uslugi-description3_2{
+    margin-left: 20px;
+}
+
+.uslugi-description3_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+.uslugi-description4 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: -315px;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+    width: 450px;
+    height: 555px;
+    border-radius: 10%;
+}
+
+.uslugi-description4_1{
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+.uslugi-description4_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -423px;
+        margin-top: 45px;
+}
+
+.uslugi-description4_2{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.uslugi-description4_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+.uslugi-description5 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: -420px;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 450px;
+  height: 555px;
+  border-radius: 10%;
+}
+
+.uslugi-description5_1{
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+.uslugi-description5_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -94px;
+        margin-top: 45px;
+}
+
+.uslugi-description5_2{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.uslugi-description5_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+.uslugi-description6 {
+  display: none;
+  position: absolute;
+  right: -575px;
+  top: -525px;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 450px;
+  height: 555px;
+  border-radius: 10%;
+}
+
+.uslugi-description6_1{
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+.uslugi-description6_1:after{
+        content: "";
+        width: 470px;
+        height: 1px;
+        background-color: #fafafa; /* Цвет линии */
+        position: absolute;
+        margin-left: -294px;
+        margin-top: 45px;
+}
+
+.uslugi-description6_2{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.uslugi-description6_3{
+    margin-top: -65px;
+    font-size: 20px;
+    width: 330px;
+    margin-left: 12px;
+    list-style-type: square;
+    padding: 33px;
+}
+
+.p-uslugi:hover .uslugi-description1 {
+  display: block;
+}
+
+.p-uslugi:hover .uslugi-description2 {
+  display: block;
+}
+
+.p-uslugi:hover .uslugi-description3 {
+  display: block;
+}
+
+.p-uslugi:hover .uslugi-description4 {
+  display: block;
+}
+
+.p-uslugi:hover .uslugi-description5 {
+  display: block;
+}
+
+.p-uslugi:hover .uslugi-description6 {
+  display: block;
+}
+
 
 }
 
