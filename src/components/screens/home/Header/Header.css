@@ -8,6 +8,7 @@
         position: absolute; /* Сбросим абсолютное позиционирование */
         top: auto; /* Сбросим верхнее положение */
         background-color: #242424;
+        overflow: hidden;
 
     /* Цвет фона */
     .logo-image {
