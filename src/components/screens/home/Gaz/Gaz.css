@@ -1,6 +1,6 @@
 @import '/fonts.css';
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
     .Gaz {
         max-width: 380px;
         height: auto;
