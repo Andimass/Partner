@@ -1,10 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
 export default {
   server: {
-    host: '89.108.77.107', // Или IP-адрес 89.108.77.107
-    port: 80, // Порт, который вы хотите использовать
+    host: '0.0.0.0', // Проксируйте весь трафик на этом хосте
+    port: 5173, // Используйте порт, который вам подходит
   },
 };

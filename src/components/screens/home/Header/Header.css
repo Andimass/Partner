@@ -7,8 +7,9 @@
         width: 380px; /* Максимальная ширина равна ширине экрана */
         position: absolute; /* Сбросим абсолютное позиционирование */
         top: auto; /* Сбросим верхнее положение */
+        background-size: cover;
         background-color: #242424;
-        overflow: hidden;
+
 
     /* Цвет фона */
     .logo-image {
