@@ -59,12 +59,15 @@ const Complex_Project = () =>  {
 
 
   return (
+      <html>
       <head>
          <title>Комплексное проектирование</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
+      </head>
+      <body>
     <div className={'Complex_Project'}>
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <img className='complex_project_bgc' src='/public/2977907.jpg'/>
@@ -269,7 +272,8 @@ const Complex_Project = () =>  {
           </div>
        </div>
     </div>
-      </head>
+      </body>
+      </html>
   );
 }
 

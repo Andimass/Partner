@@ -57,12 +57,15 @@ const Project = () =>  {
 }
 
     return(
+        <html>
         <head>
          <title>Проекты</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
+        </head>
+        <body>
         <div className='Project'>
         <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
         <a href="/">
@@ -96,7 +99,8 @@ const Project = () =>  {
       </div>
 
         </div>
-        </head>
+        </body>
+        </html>
     );
 }
 
