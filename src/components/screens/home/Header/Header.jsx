@@ -3,6 +3,7 @@ import './Header.css'
 import React, {useEffect, useState} from "react";
 import $ from "jquery"; // Импортируем jQuery
 const Header = () => {
+
     const [activeHandler, setActiveHandler] = useState(null);
 
     const handleClick = (handlerId) => {
@@ -141,31 +142,6 @@ const Header = () => {
         element.style.animation = null;
     }
 
-    useEffect(() => {
-        const partnerImages = document.querySelectorAll('.partner img');
-
-        partnerImages.forEach((img) => {
-            img.addEventListener('animationiteration', () => {
-                restartAnimation(img);
-            });
-        });
-    }, []);
-
-    const UslugiBlock = () => {
-        const [isHovered, setIsHovered] = useState(false);
-        const [description, setDescription] = useState('');
-
-        const handleMouseEnter = (desc) => {
-            setDescription(desc);
-            setIsHovered(true);
-        };
-
-        const handleMouseLeave = () => {
-            setDescription('');
-            setIsHovered(false);
-        };
-    };
-
         return (
         <html>
         <head>
@@ -174,6 +150,7 @@ const Header = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
+            <meta name="yandex-verification" content="ee98594a3963c95e" />
             </head>
             <body>
             <div className='Header_glav'>
