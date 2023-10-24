@@ -57,6 +57,12 @@ const About = () =>  {
 }
 
     return(
+        <head>
+         <title>О компании</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <div className='About'>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
@@ -71,7 +77,7 @@ const About = () =>  {
                 <div className='menu_supply_activate_LI'>
                     <li className='menu_supply_activate_li'><a href="/">Главная</a></li>
                     <li className='menu_supply_activate_li'><a href="/project">Проекты</a></li>
-                    <li className='menu_supply_activate_li'><a href="/about">О кампании</a></li>
+                    <li className='menu_supply_activate_li'><a href="/about">О компании</a></li>
                     <li className='menu_supply_activate_li'><a href="/contacts">Контакты</a></li>
                     <li className='menu_supply_activate_li_callback'><a href='/callback'>Связаться с нами</a></li>
                 </div>
@@ -81,7 +87,7 @@ const About = () =>  {
         )}
             <img className='about_image' src='/public/About.png'/>
             <img className='about_bgc_bgc' src='/public/About_bgc_bgc.png'/>
-            <h1 className='about_title'>О кампании</h1>
+            <h1 className='about_title'>О компании</h1>
             <p className='about_text_1'>Свою деятельность наша компания «Партнер» ведет 8 лет на земельном рынке Краснодара и Краснодарского края.</p>
             <p className='about_text_2'>ООО «Партнер» состоит в Ассоциации СРО «Центризыскания», что позволяет вести деятельность на территории Российской Федерации.</p>
             <p className='about_text_3'>Мы предлагаем своим клиентам выполнение полного перечня кадастровых и инженерно-геодезических работ. Компания «Партнер» также выполняет инженерно-геологические и инженерно-эскологические изыскания, которые обеспечивают комплексное изучение инженерно-геологических условий района для проектируемого строительства.</p>
@@ -152,6 +158,7 @@ const About = () =>  {
         </div>
 
     </div>
+        </head>
     );
 }
 

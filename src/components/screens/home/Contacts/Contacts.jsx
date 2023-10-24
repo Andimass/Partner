@@ -57,6 +57,12 @@ const Contacts = () =>  {
 }
 
     return(
+        <head>
+         <title>Контакты</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <div className='Contacts'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
@@ -91,9 +97,8 @@ const Contacts = () =>  {
           <iframe className='Contacts_card' src="https://yandex.ru/map-widget/v1/?um=constructor%3A34e162cd08a82e01ff38ac0c14372b9b29534f0b7c5a30aaa1defb6b19007a34&amp;source=constructor" frameBorder="0"></iframe>
           </div>
       </div>
-
-
     </div>
+        </head>
     );
 }
 
