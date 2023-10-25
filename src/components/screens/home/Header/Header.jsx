@@ -390,8 +390,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div
-                    className={`header_footer ${activeHandler === 1 ? 'footer-shot_1' : '' || activeHandler === 2 ? 'footer-shot_2' : '' || activeHandler === 3 ? 'footer-shot_3' : ''}`}>
+                <div className={`header_footer ${activeHandler === 1 ? 'footer-shot_1' : '' || activeHandler === 2 ? 'footer-shot_2' : '' || activeHandler === 3 ? 'footer-shot_3' : ''}`}>
                     <img className='header_footer_logo' src='/public/logo2.png' alt=''/>
                     <img className='header_footer_logo2' src='/public/Group 4.png' alt=''/>
                     <div className='header_footer_s'>

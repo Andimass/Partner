@@ -765,6 +765,10 @@ display: none;
 display: none;
 }
 
+.header_footer_callback a{
+    color: black;
+}
+
 .header_black_line {
     background-color: black;
     width: 390px;
@@ -801,7 +805,7 @@ display: none;
     body{
     overflow-x:hidden;
 }
-    .Header {
+    .Header{
         max-width: 1920px;
         height: auto;
         display: flex;
@@ -1552,7 +1556,7 @@ display: none;
 .our_project {
     width: 1920px;
     position: absolute;
-    height: 2304px;
+    height: 2104px;
     top: 151px;
     display: flex;
 
@@ -1816,6 +1820,81 @@ display: none;
 .pont_sro_img_5 {
     width: 251px;
     height: 353px;
+}
+
+}
+
+.header_footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    height: 80px; /* Высота блока "footer" */
+    margin-top: -1250px;
+    margin-left: 1px;
+
+
+.header_footer_logo {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    margin-left: 130px;
+    margin-top: 45px;
+}
+
+.header_footer_logo2 {
+    position: absolute;
+    margin-left: 175px;
+    width: 200px;
+    margin-top: 49px;
+}
+
+.header_footer_s {
+    margin-top: 28px;
+    color: black;
+    display: flex;
+    flex: 0.2;
+    justify-content: space-between;
+    margin-left: 580px;
+    position: absolute;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header_footer_source {
+    margin-left: 50px;
+    max-width: 1000px;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.header_footer_source a {
+    color: black;
+}
+
+.header_footer_callback {
+    margin-top: 5px;
+    margin-left: 100px;
+    font-size: 21px;
+    border: 1px solid #000000; /* Add your desired border color and width */
+    padding: 10px 60px;
+    border-radius: 45px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.header_footer_callback a {
+    color: black;
+}
+
+.header_black_line {
+    background-color: black;
+    width: 2500px;
+    height: 10px;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: -930px;
 }
 
 }
@@ -2804,19 +2883,19 @@ display: none;
 
 @keyframes fall {
     0% {
-        transform: translateY(-100px); /* Начальная позиция над экраном */
+        transform: translateY(-200px); /* Начальная позиция над экраном */
     }
     25% {
-        transform: translateY(0); /* Падение */
+        transform: translateY(-100px); /* Падение */
     }
     50% {
-        transform: translateY(150px); /* Отскок вниз */
+        transform: translateY(50px); /* Отскок вниз */
     }
     75% {
-        transform: translateY(75px); /* Отскок вверх */
+        transform: translateY(-25px); /* Отскок вверх */
     }
     100% {
-        transform: translateY(100px); /* Завершение анимации */
+        transform: translateY(0px); /* Завершение анимации */
     }
 }
 
@@ -3467,6 +3546,10 @@ display: none;
     border-radius: 45px;
             text-decoration: none;
     list-style-type: none;
+    color: black;
+}
+
+.header_footer_callback a{
     color: black;
 }
 
