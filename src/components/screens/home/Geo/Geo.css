@@ -1140,8 +1140,8 @@ a::after {
     letter-spacing: 2.35px;
     position: absolute;
     z-index: 499;
-    margin-top: 35px;
-    color: #FFFFFF;
+    margin-top: -25px;
+    color: #000000;
     justify-content: center;
     align-items: center;
      overflow: hidden; /* Ограничиваем видимую область контейнера */
@@ -1157,8 +1157,7 @@ a::after {
 .geo_bgc{
     width: 2500px;
     height: 1800px;
-    opacity: 0.5;
-    -webkit-filter: brightness(15%);
+    background-color: rgba(255, 255, 255, 0.89);
 }
 
 
@@ -1166,7 +1165,7 @@ a::after {
     width: 2500px;
     height: auto;
     position: absolute;
-    margin-top: 850px;
+    margin-top: 600px;
     display: flex;
     margin-left: 200px;
 }
@@ -1179,43 +1178,47 @@ a::after {
 
 
 .geo_body_uslugi_box1{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   margin-top: -500px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 250px;
-   border-radius: 20px 20px 20px 20px;
-    -webkit-filter: brightness(100%);
+    margin-top: -300px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
 
 .geo_body_box1_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -168px;
     position: absolute;
+    z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title{
-    margin-top: 200px;
+.geo_body_uslugi_box_title_1{
+    margin-top: 20px;
     width: 330px;
     margin-left: 15px;
     font-size: 24px;
     font-weight: 700;
-    font-family: a_FuturaOrtoBold, serif;
+    font-family: "Cera Pro Bold", serif;
     position: absolute;
-        color: #ffffff;
+        color: #000000;
         line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
 .geo_body_text{
     font-size: 16px;
-    color: white;
+    color: #000000;
         font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    margin-top: 90px;
     margin-left: 15px;
     width: 320px;
 
@@ -1223,43 +1226,58 @@ a::after {
 
 .geo_body_price{
     position: absolute;
-    margin-top: 380px;
+    margin-top: 200px;
     margin-left: 20px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: a_FuturaOrtoLt, serif;
+    color: #0003ff;
 }
+
 
 .geo_body_uslugi_box2{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
-   margin-top: -500px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 650px;
-
+    margin-top: -300px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box2_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_2{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
 .geo_body_text2{
     font-size: 16px;
-    color: white;
+    color: #000000;
         font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    margin-top: 90px;
     margin-left: 15px;
     width: 320px;
 
@@ -1267,46 +1285,62 @@ a::after {
 
 .geo_body_price2{
     position: absolute;
-    margin-top: 380px;
+    margin-top: 200px;
     margin-left: 20px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: a_FuturaOrtoLt, serif;
+    color: #0003ff;
 }
+
 
 .ambilight {
     filter: url(#ambilight);
 }
 
 .geo_body_uslugi_box3{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
-   margin-top: -500px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 1050px;
+    margin-top: -300px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box3_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_3{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
 .geo_body_text3{
     font-size: 16px;
-    color: white;
+    color: #000000;
         font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    margin-top: 90px;
     margin-left: 15px;
     width: 320px;
 
@@ -1314,13 +1348,13 @@ a::after {
 
 .geo_body_price3{
     position: absolute;
-    margin-top: 380px;
+    margin-top: 200px;
     margin-left: 20px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: a_FuturaOrtoLt, serif;
+    color: #0003ff;
 }
 
 .blue-background {
@@ -1328,33 +1362,47 @@ a::after {
 }
 
 .geo_body_uslugi_box4{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
-   margin-top: -500px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 1450px;
+    margin-top: -300px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box4_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_4{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
 
 .geo_body_text4{
     font-size: 16px;
-    color: white;
-        font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 105px;
     margin-left: 15px;
     width: 320px;
 
@@ -1362,43 +1410,59 @@ a::after {
 
 .geo_body_price4{
     position: absolute;
-    margin-top: 380px;
-    margin-left: 20px;
+    margin-top: 60px;
+    margin-left: 15px;
     letter-spacing: 0.5px;
     font-size: 20px;
-    font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-weight: normal;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
 }
+
 
 
 .geo_body_uslugi_box5{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 250px;
+    margin-top: 170px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box5_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_5{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
 
 .geo_body_text5{
     font-size: 16px;
-    color: white;
-        font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 110px;
     margin-left: 15px;
     width: 320px;
 
@@ -1406,43 +1470,59 @@ a::after {
 
 .geo_body_price5{
     position: absolute;
-    margin-top: 380px;
-    margin-left: 20px;
+    margin-top: 75px;
+    margin-left: 15px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
 }
+
 
 
 .geo_body_uslugi_box6{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 650px;
+    margin-top: 170px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box6_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_6{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
 
 .geo_body_text6{
     font-size: 16px;
-    color: white;
-        font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 110px;
     margin-left: 15px;
     width: 320px;
 
@@ -1450,42 +1530,58 @@ a::after {
 
 .geo_body_price6{
     position: absolute;
-    margin-top: 380px;
-    margin-left: 20px;
+    margin-top: 75px;
+    margin-left: 15px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
 }
 
 
 .geo_body_uslugi_box7{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 1050px;
-   border-radius: 20px 20px 20px 20px;
+    margin-top: 170px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box7_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
-    overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_7{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
 .geo_body_text7{
     font-size: 16px;
-    color: white;
+    color: #000000;
         font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
+    margin-top: 110px;
     margin-left: 15px;
     width: 320px;
 
@@ -1493,59 +1589,105 @@ a::after {
 
 .geo_body_price7{
     position: absolute;
-    margin-top: 380px;
-    margin-left: 20px;
+    margin-top: 75px;
+    margin-left: 15px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
 }
 
 
 .geo_body_uslugi_box8{
-   width: 350px;
-   height: 420px;
-   background-color: #343437;
+   width: 355px;
+   height: 250px;
+   background-color: white;
    position: absolute;
-   border-radius: 20px 20px 20px 20px;
+   border-radius: 0px 0px 8px 8px;
    margin-left: 1450px;
+    margin-top: 170px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
+
 .geo_body_box8_image{
-    width: 348px;
-    height: 175px;
+    width: 355px;
+    height: 170px;
     align-items: center;
-    border-radius: 20px 20px 0 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -170px;
     position: absolute;
     z-index: 1;
     /*animation: unrotate 20s linear infinite;*/
 }
 
+.geo_body_uslugi_box_title_8{
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: a_FuturaOrtoBold, serif;
+    position: absolute;
+        color: #000000;
+        line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
 .geo_body_text8{
     font-size: 16px;
-    color: white;
-        font-family: a_FuturaOrtoLt, serif;
-    margin-top: 270px;
-    margin-left: 15px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 110px;
+    margin-left: 20px;
     width: 320px;
 
 }
 
 .geo_body_price8{
     position: absolute;
-    margin-top: 380px;
+    margin-top: 60px;
     margin-left: 20px;
     letter-spacing: 0.5px;
     font-size: 20px;
     font-weight: 900;
-    font-family: a_FuturaOrtoBold, serif;
-    color: white;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
 }
 
+.geo_body_uslugi_box1:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
 
+.geo_body_uslugi_box2:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box3:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box4:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box5:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box6:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box7:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
+
+.geo_body_uslugi_box8:hover {
+    transform: scale(1.01); /* При наведении карточка немного увеличивается */
+}
 
 
         /*   BOX ANIMATION      */

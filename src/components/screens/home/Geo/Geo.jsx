@@ -70,7 +70,7 @@ const Geo = () =>  {
       <body>
     <div className={'Power_Supply'}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <img className='geo_bgc' src='/public/geo_bgc.jpg'/>
+        <a className='geo_bgc'/>
       <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
         <a href="/">
             <img className='logo-supply' src="/public/logo.png" alt='' />
@@ -145,7 +145,7 @@ const Geo = () =>  {
            
            <div className='geo_uslugi'>
                 <div className={`geo_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
-                    <h2 className='geo_body_uslugi_box_title'>Ситуационный план</h2>
+                    <h2 className='geo_body_uslugi_box_title_1'>Ситуационный план</h2>
                     <img className='geo_body_box1_image' src='/public/box1.jpg'/>
                     <p className='geo_body_price'>от 10.000 руб.</p>
                     <p className='geo_body_text'>Разработка ситуационного плана для подачи заявок на газификацию и энергоснабжение</p>
@@ -160,7 +160,7 @@ const Geo = () =>  {
 
 
                <div className={`geo_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
-                    <h2 className='geo_body_uslugi_box_title'>Вынос границ земельного участка в натуру</h2>
+                    <h2 className='geo_body_uslugi_box_title_2'>Вынос границ земельного участка в натуру</h2>
                     <img className='geo_body_box2_image' src='/public/box2.jpg'/>
                     <p className='geo_body_price2'>от 10.000 руб.</p>
                     <p className='geo_body_text2'>Маркировка и определение физических границ участка на местности для его использования и оформления собственности</p>
@@ -175,7 +175,7 @@ const Geo = () =>  {
 
 
                <div className={`geo_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Топографическая съемка и топоплан</h2>
+                   <h2 className='geo_body_uslugi_box_title_3'>Топографическая съемка и топоплан</h2>
                    <img className='geo_body_box3_image' src='/public/box3.png'/>
                    <p className='geo_body_price3'>от 10.000 руб.</p>
                     <p className='geo_body_text3'>Создание подробной картографической информации о местности для инженерных и строительных проектов</p>
@@ -189,7 +189,7 @@ const Geo = () =>  {
                 </div>
 
                <div className={`geo_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Геодезические изыскания</h2>
+                   <h2 className='geo_body_uslugi_box_title_4'>Геодезические изыскания</h2>
                    <img className='geo_body_box4_image' src='/public/box4.jpg'/>
                    <p className='geo_body_price4'>от 10.000 руб.</p>
                     <p className='geo_body_text4'>Сбор точных геодезических данных и измерений для подготовки к инженерным и строительным проектам</p>
@@ -203,7 +203,7 @@ const Geo = () =>  {
                 </div>
 
                <div className={`geo_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Камерально геодезические работы</h2>
+                   <h2 className='geo_body_uslugi_box_title_5'>Камерально геодезические работы</h2>
                    <img className='geo_body_box5_image' src='/public/geo_camer.jpg'/>
                    <p className='geo_body_price5'>от 10.000 руб.</p>
                     <p className='geo_body_text5'>Анализ и обработка данных с целью создания точных карт и планов для строительства и проектирования.</p>
@@ -217,7 +217,7 @@ const Geo = () =>  {
                 </div>
 
                <div className={`geo_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Координирование реперов</h2>
+                   <h2 className='geo_body_uslugi_box_title_6'>Координирование реперов</h2>
                    <img className='geo_body_box6_image' src='/public/geo_rap.jpg'/>
                    <p className='geo_body_price6'>от 10.000 руб.</p>
                     <p className='geo_body_text6'>Определение точных географических координат и высотных отметок опорных точек, необходимых для геодезических и строительных работ</p>
@@ -231,7 +231,7 @@ const Geo = () =>  {
                 </div>
 
                               <div className={`geo_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Сопровождение линейных объектов</h2>
+                   <h2 className='geo_body_uslugi_box_title_7'>Сопровождение линейных объектов</h2>
                    <img className='geo_body_box7_image' src='/public/geo_sopr.jpg'/>
                    <p className='geo_body_price7'>от 10.000 руб.</p>
                     <p className='geo_body_text7'>Измерение и контрольные работы для обеспечения точности и надежности линейных инженерных систем и коммуникаций</p>
@@ -245,7 +245,7 @@ const Geo = () =>  {
                 </div>
 
                               <div className={`geo_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title'>Расчет объема грунта</h2>
+                   <h2 className='geo_body_uslugi_box_title_8'>Расчет объема грунта</h2>
                    <img className='geo_body_box8_image' src='/public/v_grunt.jpg'/>
                    <p className='geo_body_price8'>от 10.000 руб.</p>
                     <p className='geo_body_text8'>Определение объема земельных масс при проведении строительных и инженерных работ</p>

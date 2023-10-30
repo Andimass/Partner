@@ -40,3 +40,33 @@
   font-weight: auto;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'Cera Pro Light';
+  src: url('/src/assets/fonts/CeraPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Подключение шрифта Bold */
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url('/src/assets/fonts/CeraPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro Medium';
+  src: url('/src/assets/fonts/CeraPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro Bold';
+  src: url('/src/assets/fonts/CeraPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
