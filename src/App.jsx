@@ -11,6 +11,7 @@ import Cadastr from "./components/screens/home/Cadastr/Cadastr.jsx";
 import Communication_System from "./components/screens/home/Communication_System/Communication_System.jsx";
 import Complex_Project from "./components/screens/home/Complex_Project/Complex_Project.jsx";
 import About from "./components/screens/home/About/About.jsx";
+import Gazification from "./components/screens/home/Gazification/Gazification.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/project' element={<Project/>}/>
         <Route path='/gaz' element={<Gaz/>}/>
+        <Route path='/gazification' element={<Gazification />}/>
         <Route path='/communication_system' element={<Communication_System/>}/>
         <Route path='/cadastral_works' element={<Cadastr/>}/>
         <Route path='/project_supply' element={<Project_Supply/>}/>

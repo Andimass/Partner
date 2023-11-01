@@ -33,6 +33,9 @@ const Header = () => {
                     case 6:
                         setIsShown_6(false);
                         break;
+                    case 11:
+                        setIsShown_11(false);
+                        break;
                     default:
                         break;
                 }
@@ -63,6 +66,7 @@ const Header = () => {
     const [isShown_4, setIsShown_4] = useState(false);
     const [isShown_5, setIsShown_5] = useState(false);
     const [isShown_6, setIsShown_6] = useState(false);
+    const [isShown_11, setIsShown_11] = useState(false);
 
     const handleCloseClick = () => {
         setActiveHandler(null); // Закрыть блок
@@ -162,10 +166,10 @@ const Header = () => {
       let imageSizes = [
           {width: 198, height: 45},
           {width: 164, height: 138},
-          {width: 65, height: 65},
+          {width: 105, height: 85},
           {width: 181, height: 84},
-          {width: 181, height: 84},
-          {width: 30, height: 14},
+          {width: 181, height: 100},
+          {width: 70, height: 25},
           {width: 206, height: 72},
           {width: 117, height: 82},
           {width: 132, height: 92},
@@ -181,7 +185,7 @@ const Header = () => {
       };
 
       p.setup = () => {
-      p.createCanvas(2500, 800);
+      p.createCanvas(2480, 500);
       for (let i = 0; i < 11; i++) {
         balls.push(new Ball(p.random(p.width), p.random(p.height), p.random(125, 320), p, i));  // Передаем индекс вместо самого изображения
       }
@@ -201,17 +205,22 @@ const Header = () => {
 
       class Ball {
           constructor(x, y, diameter, p, imgIndex) {  // imgIndex - индекс изображения
-            this.x = x;
-            this.y = y;
-            this.diameter = diameter;
-            this.img = img[imgIndex];
-            this.imgWidth = imageSizes[imgIndex].width;
-            this.imgHeight = imageSizes[imgIndex].height;
-            this.speedX = p.random(-2, 2);
-            this.speedY = p.random(-2, 2);
-            this.p = p;
-            this.initialSpeedX = this.speedX;
-            this.initialSpeedY = this.speedY;
+              this.x = x;
+              this.y = y;
+              this.diameter = diameter;
+              this.img = img[imgIndex];
+              this.imgWidth = imageSizes[imgIndex].width;
+              this.imgHeight = imageSizes[imgIndex].height;
+              this.speedX = p.random(-2, 2);
+              this.speedY = p.random(-2, 2);
+              this.p = p;
+              this.initialSpeedX = this.speedX;
+              this.initialSpeedY = this.speedY;
+          }
+
+          getBorderRadius() {
+              let offset = 16;
+              return Math.max(this.imgWidth, this.imgHeight) / 2 + offset;
           }
 
           update() {
@@ -220,56 +229,64 @@ const Header = () => {
           }
 
           display() {
-              this.p.image(this.img, this.x, this.y);
               this.p.imageMode(this.p.CENTER);
+              this.p.image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
+
+              // Обводка
+              let offset = 30;
+              let maxDimension = Math.max(this.imgWidth, this.imgHeight) + offset;
+              this.p.stroke(0); // Цвет обводки (в этом случае черный)
+              this.p.strokeWeight(1); // Толщина обводки
+              this.p.noFill(); // Убедитесь, что круг пустой внутри
+              this.p.ellipse(this.x, this.y, maxDimension);
           }
 
           checkEdges() {
-            let radius = this.diameter / 2;
+              let radius = this.getBorderRadius();
 
-                if (this.x > this.p.width - radius) {
-                    this.x = this.p.width - radius;
-                    this.speedX *= -1;
-                } else if (this.x < radius) {
-                    this.x = radius;
-                    this.speedX *= -1;
-                }
+              if (this.x > this.p.width - radius) {
+                  this.x = this.p.width - radius;
+                  this.speedX *= -1;
+              } else if (this.x < radius) {
+                  this.x = radius;
+                  this.speedX *= -1;
+              }
 
-                if (this.y > this.p.height - radius) {
-                    this.y = this.p.height - radius;
-                    this.speedY *= -1;
-                } else if (this.y < radius) {
-                    this.y = radius;
-                    this.speedY *= -1;
-                }
+              if (this.y > this.p.height - radius) {
+                  this.y = this.p.height - radius;
+                  this.speedY *= -1;
+              } else if (this.y < radius) {
+                  this.y = radius;
+                  this.speedY *= -1;
+              }
           }
 
-            handleMouseInteraction() {
-                let d = this.p.dist(this.x, this.y, this.p.mouseX, this.p.mouseY);
-                let minDist = this.diameter / 2 + 50;  // 50 - это радиус "отталкивания" от курсора
-                if (d < minDist) {
-                    let angle = this.p.atan2(this.y - this.p.mouseY, this.x - this.p.mouseX);
-                    let overlap = minDist - d;
-                    let ax = this.p.cos(angle) * overlap;
-                    let ay = this.p.sin(angle) * overlap;
-                    this.x += ax;
-                    this.y += ay;
-                    this.speedX = this.p.cos(angle) * this.p.mag(this.speedX, this.speedY) * 1.01;
-                    this.speedY = this.p.sin(angle) * this.p.mag(this.speedX, this.speedY) * 1.01;
+          handleMouseInteraction() {
+              let d = this.p.dist(this.x, this.y, this.p.mouseX, this.p.mouseY);
+              let minDist = this.diameter / 2 + 50;  // 50 - это радиус "отталкивания" от курсора
+              if (d < minDist) {
+                  let angle = this.p.atan2(this.y - this.p.mouseY, this.x - this.p.mouseX);
+                  let overlap = minDist - d;
+                  let ax = this.p.cos(angle) * overlap;
+                  let ay = this.p.sin(angle) * overlap;
+                  this.x += ax;
+                  this.y += ay;
+                  this.speedX = this.p.cos(angle) * this.p.mag(this.speedX, this.speedY) * 1.01;
+                  this.speedY = this.p.sin(angle) * this.p.mag(this.speedX, this.speedY) * 1.01;
 
-                    setTimeout(() => {
-                    this.speedX = this.initialSpeedX;
-                    this.speedY = this.initialSpeedY;
-                }, 3000)
-                }
-            }
+                  setTimeout(() => {
+                      this.speedX = this.initialSpeedX;
+                      this.speedY = this.initialSpeedY;
+                  }, 3000)
+              }
+          }
 
           checkCollision(balls) {
               for (let i = 0; i < balls.length; i++) {
                   let other = balls[i];
                   if (this !== other) {
                       let d = this.p.dist(this.x, this.y, other.x, other.y);
-                      let minDist = (this.diameter + other.diameter) / 2;
+                      let minDist = this.getBorderRadius() + other.getBorderRadius(); // учитываем обводку
 
                       if (d < minDist) {
                           let angle = Math.atan2(other.y - this.y, other.x - this.x);
@@ -314,6 +331,125 @@ const Header = () => {
         document.querySelector('.header_black_square2').style.backgroundColor = 'rgba(255, 255, 255)'; // Оригинальный цвет для header_black_square2
     }
 });
+
+  window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 500) {
+        document.querySelector('.header_container_1_man_1').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 600) {
+        document.querySelector('.header_container_1_man_2').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 700) {
+        document.querySelector('.header_container_1_man_3').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 800) {
+        document.querySelector('.header_container_1_man_4').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 900) {
+        document.querySelector('.header_container_1_man_5').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 1000) {
+        document.querySelector('.header_container_1_man_6').style.opacity = "1";
+    }
+});
+
+
+
+    window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 500) {
+        document.querySelector('.header_container_1_list_1').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 550) {
+        document.querySelector('.header_container_1_list_2').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 600) {
+        document.querySelector('.header_container_1_list_3').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 650) {
+        document.querySelector('.header_container_1_list_4').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 700) {
+        document.querySelector('.header_container_1_list_5').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 750) {
+        document.querySelector('.header_container_1_list_6').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 800) {
+        document.querySelector('.header_container_1_list_7').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 850) {
+        document.querySelector('.header_container_1_list_8').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 1000) {
+        document.querySelector('.header_container_1_list_9').style.opacity = "1";
+    }
+});
+
+
+
+      window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 500) {
+        document.querySelector('.header_container_1_comp_1').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 575) {
+        document.querySelector('.header_container_1_comp_2').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 650) {
+        document.querySelector('.header_container_1_comp_3').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 725) {
+        document.querySelector('.header_container_1_comp_4').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 800) {
+        document.querySelector('.header_container_1_comp_5').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 875) {
+        document.querySelector('.header_container_1_comp_6').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 950) {
+        document.querySelector('.header_container_1_comp_7').style.opacity = "1";
+    }
+
+    if (scrollPosition >= 1000) {
+        document.querySelector('.header_container_1_comp_8').style.opacity = "1";
+    }
+
+    // if (scrollPosition >= 2000) {
+    //     document.querySelector('.header_container_5').style.position = "fixed";
+    // }
+    //
+    // if (scrollPosition >= 2600) {
+    //     document.querySelector('.header_container_5').style.position = "absolute", style.marginTop;
+    // }
+});
+
+
+
 
 
         return (
@@ -372,8 +508,7 @@ const Header = () => {
             <div className='header_header'>
                 <img className='header_logo' src='/public/logo2.png'/>
                 <img className='header_logo_2' src='/public/Group 4.png'/>
-
-                <div className='header_animation_square ' >
+                <div className='header_animation_square '>
                     <div className='header_black_square'></div>
                     <div className='header_black_square2'></div>
                         <input className={`header_menu_supply ${activeHandler === 11 ? 'menu_opacity' : ''}`} type="image" src='/public/Menu-img1.png' onClick={() => handleClick(11)} alt=''/>
@@ -391,28 +526,59 @@ const Header = () => {
                             <div className="scaled-iframe-container">
                                 <iframe src="http://localhost" frameBorder="0"></iframe>
                             </div>
+                            <div className='header_menu_menu'>
+                                <a className='header_menu_menu_1' href='/'>Главная</a>
+                                <a className='header_menu_menu_2' href='/'>Цены</a>
+                                <a className='header_menu_menu_3' href='/'>Услуги</a>
+                                <a className='header_menu_menu_4' href='/about'>О нас</a>
+                                <a className='header_menu_menu_4' href='/'>Контакты</a>
+                                <a className='header_menu_menu_5' href='/'>+ 7 (918) 331-25-57</a>
+                                <a className='header_menu_menu_6' href='/'>info@partner-tech.ru</a>
+                            </div>
                         </div>
                     )}
                     <div className='header_menu'>
-                        {/*<img className='header_bgc' src='/public/point_fon.png'></img>*/}
-                        <p>Цены</p>
-                        <p>Услуги</p>
-                        <p>О нас</p>
+                        <a href='/price'><p>Цены</p></a>
+                        <a href='/uslugi'><p>Услуги</p></a>
+                       <a href='/about'><p>О нас</p></a>
                         <p>info@partner-tech.ru</p>
                         <p>+ 7 (918) 331-25-57</p>
                         <div className='header_top'>
+                            <img className='header_phone' src='/public/fone_1.png'/>
                             <div className='header_top_circle'>
-                                <img className='header_top_circle_1' src='/public/vec1.png'/>
-                                <img className='header_top_circle_2' src='/public/vec2.png'/>
-                                <img className='header_top_circle_3' src='/public/vec3.png'/>
-                                <img className='header_top_circle_4' src='/public/vec4.png'/>
-                                <img className='header_top_circle_5' src='/public/vec5.png'/>
-                                <img className='header_top_circle_6' src='/public/vec6.png'/>
-                                <img className='header_top_circle_7' src='/public/vec7.png'/>
-                                <img className='header_top_circle_8' src='/public/vec8.png'/>
-                                <img className='header_top_circle_9' src='/public/vec9.png'/>
-                                <img className='header_top_circle_10' src='/public/vec10.png'/>
-                                <img className='header_top_circle_11' src='/public/vec11.png'/>
+                                <div className='wrapper_div_1'>
+                                    <img className='header_top_circle_1' src='/public/vec1.png'/>
+                                </div>
+                                <div className='wrapper_div_2'>
+                                    <img className='header_top_circle_2' src='/public/vec2.png'/>
+                                </div>
+                                <div className='wrapper_div_3'>
+                                    <img className='header_top_circle_3' src='/public/vec3.png'/>
+                                </div>
+                                <div className='wrapper_div_4'>
+                                    <img className='header_top_circle_4' src='/public/vec4.png'/>
+                                </div>
+                                <div className='wrapper_div_5'>
+                                    <img className='header_top_circle_5' src='/public/vec5.png'/>
+                                </div>
+                                <div className='wrapper_div_6'>
+                                    <img className='header_top_circle_6' src='/public/vec6.png'/>
+                                </div>
+                                <div className='wrapper_div_7'>
+                                    <img className='header_top_circle_7' src='/public/vec7.png'/>
+                                </div>
+                                <div className='wrapper_div_8'>
+                                    <img className='header_top_circle_8' src='/public/vec8.png'/>
+                                </div>
+                                <div className='wrapper_div_9'>
+                                    <img className='header_top_circle_9' src='/public/vec9.png'/>
+                                </div>
+                                <div className='wrapper_div_10'>
+                                    <img className='header_top_circle_10' src='/public/vec10.png'/>
+                                </div>
+                                <div className='wrapper_div_11'>
+                                    <img className='header_top_circle_11' src='/public/vec11.png'/>
+                                </div>
                             </div>
                         </div>
 
@@ -420,34 +586,40 @@ const Header = () => {
                     </div>
                        <div className='header_top_2'>
                            <img className='logo_circle' src='/public/logo2.png'/>
-                                <p className='header_top_2_title'>Scale at speed with a complete end-to-end solution</p>
+                                <p className='header_top_2_title'>Предоставляем юридическим лицам и гражданам широкий спектр услуг</p>
                                 <p className='header_top_comp_2_title_1'>Инженерные изыскания</p>
+                                <img className='header_top_comp_2_title_1_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_111'>
                                     <p className='header_top_comp_2_title_11'>Геодезические, геологические и экологические изыскания для выполнения работ по подготовке проектной документации, строительству и реконструкции объектов капитального строительства  </p>
                                 </div>
                                 <p className='header_top_comp_2_title_2'>Проектирование энергообъектов электроэнергетики</p>
+                                <img className='header_top_comp_2_title_2_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_211'>
                                     <p className='header_top_comp_2_title_21'>Разработка проектных решений по кабельным и воздушным линиям электропередачи, трансформаторным подстанциям, генераторам и иным видам оборудования классом напряжения 0,4-35 кВ</p>
                                 </div>
-                                <p className='header_top_comp_2_title_3'>Проектирование газораспределения и газопотребления</p>
+                                <a className='header_top_comp_2_title_3' href='/gazification'>Проектирование газораспределения и газопотребления</a>
+                                <img className='header_top_comp_2_title_3_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_311'>
                                     <p className='header_top_comp_2_title_31'>Оказываем услуги по расчету потребления газа, разработке проектной и рабочей документации: котельных, пунктов редуцирования газа, сетей газопотребления и газораспределения</p>
                                 </div>
                                 <p className='header_top_comp_2_title_4'>Проектирование сетей абоненстского доступа</p>
+                           <img className='header_top_comp_2_title_4_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_411'>
                                     <p className='header_top_comp_2_title_41'>Проектирование современных систем связи с использованием оптического волокна. Расчет тяжений несущих конструкций, в том числе опор воздушных линий электропередачи</p>
                                 </div>
                                 <p className='header_top_comp_2_title_5'>Проектирование водопровода и канализации</p>
+                           <img className='header_top_comp_2_title_5_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_511'>
                                     <p className='header_top_comp_2_title_51'>Комплексное проектирование и расчет наружних инженерных канализационных и водопроводных систем любой сложности. Центральное и индивидуальное водоснабжение и водоотведение.</p>
                                 </div>
                                 <p className='header_top_comp_2_title_6'>Кадастровые работы</p>
+                           <img className='header_top_comp_2_title_6_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_611'>
                                     <p className='header_top_comp_2_title_61'>Подготовка документов содержаших полный перечень сведений, используемых для оформления на кадастровый учет недвижимости в специальных государственных органах</p>
                                 </div>
                         </div>
                     <div className='header_container_1'>
-                        <p className='header_container_1_title'>Мы — проектная организация полного цикла. Наши услуги включают геодезические работы, кадастровые услуги, проектирование и реализацию систем газификации и электрификации.<br/><br/> Мы предлагаем комплексное решение задач от начальных замеров и разработки проектной документации до поддержки на всех этапах реализации проекта и последующей эксплуатации объектов.</p>
+                        <p className='header_container_1_title'>Мы предлагаем комплексное решение задач от начальных замеров и разработки проектной документации до поддержки на всех этапах реализации проекта и последующей эксплуатации объектов.</p>
                         <p className='header_container_1_year'>8 лет</p>
                         <p className='header_container_1_prod'>Продуктивной работы</p>
                         <p className='header_container_1_num'>12683</p>
@@ -456,6 +628,29 @@ const Header = () => {
                         <p className='header_container_1_spec'>Cпециалистов</p>
                         <p className='header_container_1_sobs'>Собственные</p>
                         <p className='header_container_1_it'>IT разработки</p>
+                        <img className='header_container_1_man_1' src='/public/man_108188.png'/>
+                        <img className='header_container_1_man_2' src='/public/man_108188.png'/>
+                        <img className='header_container_1_man_3' src='/public/man_108188.png'/>
+                        <img className='header_container_1_man_4' src='/public/man_108188.png'/>
+                        <img className='header_container_1_man_5' src='/public/man_108188.png'/>
+                        <img className='header_container_1_man_6' src='/public/man_108188.png'/>
+                        <img className='header_container_1_list_1' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_2' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_3' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_4' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_5' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_6' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_7' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_8' src='/public/project_list.png'/>
+                        <img className='header_container_1_list_9' src='/public/project_list.png'/>
+                        <img className='header_container_1_comp_1' src='/public/computer_2004580.png'/>
+                        <img className='header_container_1_comp_2' src='/public/binary_1822943.png'/>
+                        <img className='header_container_1_comp_3' src='/public/computer_2004580.png'/>
+                        <img className='header_container_1_comp_4' src='/public/binary_1822943.png'/>
+                        <img className='header_container_1_comp_5' src='/public/computer_2004580.png'/>
+                        <img className='header_container_1_comp_6' src='/public/binary_1822943.png'/>
+                        <img className='header_container_1_comp_7' src='/public/computer_2004580.png'/>
+                        <img className='header_container_1_comp_8' src='/public/binary_1822943.png'/>
                     </div>
 
                     <div className='header_container_2'>
@@ -489,59 +684,67 @@ const Header = () => {
                         <p className='header_our_prem'>Наши преимущества</p>
                        <div className='header_our_uslugi_obol' >
                         <div className={`header_our_uslugi_1 ${activeHandler === 1 ? 'black-grey_1' : ''} ${activeHandler >= 2 && activeHandler <= 6 ? 'dop_black-grey' : ''}`} onClick={() => handleClick(1)}>
-                                <p className='header_our_uslugi_geo'>Цифровые навыки</p>
-                        {activeHandler === 1 && (
+                            <p className='header_our_uslugi_geo_3'>Цифровые навыки</p>
+                            {activeHandler === 1 && (
                         <div className='dop_1'>
                             <p className='header_our_uslugi_geo_2'>Цифровые навыки</p>
-                            <p className='dop_1_title'>Геодезические услуги-это</p>
+                            <p className='header_our_uslugi_geo'>Цифровые навыки</p>
                             <p className='dop_1_geo_1'>Наша компания уделяет особое внимание рабочему месту сотрудника. Непосредственно, как скальпель для хирурга и кисть для художника, сотрудники выполняют проектную работу на современном цифровом рабочем месте. <br/> Мощные компьютеры и 4K мониторы позволяют видеть более объемным проект и снизить утомляемость персонала. Применение собственных разработок в части программного обеспечения для расчетов, построения трасс и профилей положительно сказываются на качестве проектной документации.<br/> Цифровая система критериев на базе искусственного интеллекта координирует распределение объектов между персоналом и сигнализирует об отклонениях в сроках реализации. В совокупности данные мероприятия позволяют значительно сэкономить время производства без потери качества.</p>
                             {/*<a className='dop_1_href' href='/geo'>Больше услуг</a>*/}
+                            <a className='dop_1_button' href='/about'>Подробнее</a>
                             </div>
                           )}
                         </div>
-                        <div className={`header_our_uslugi_2 ${activeHandler === 2 ? 'black-grey_2' : ''} ${activeHandler === 1 ? 'dop_blue-white' : ''}`} onClick={() => handleClick(2)} >
+                        <div className={`header_our_uslugi_2 ${activeHandler === 2 ? 'black-grey_2' : ''} ${activeHandler === 1 ? 'dop_blue-white' : ''} ${ activeHandler === 3 || activeHandler === 4 || activeHandler === 5 || activeHandler === 6 ? 'dop_blue-white_1_1' : ''}`} onClick={() => handleClick(2)} >
                                 <p className='header_our_uslugi_cadastr'>Материальное обеспечение</p>
                         {activeHandler === 2 && (
                         <div className='dop_2'>
                             <p className='header_our_uslugi_cadastr_2'>Материальное обеспечение</p>
+                            <p className='header_our_uslugi_cadastr_3'>Материальное обеспечение</p>
+                            <img className='header_our_uslugi_cadastr_img' src='/public/car_1.png'/>
                             <p className='dop_2_1'>Для успешной и качественной реализации проектов ООО "Партнер" использует современное материально-техническое обеспечение, что позволяет держать высокую планку качества в сфере инженерных изысканий. Тахеометр, нивелир, GPS оборудование позволяет выполнить работу с минимальной погрешностью в любых ландшафтных условиях. Наше компания располагает собственным укомплектованным парком автотранспорта разной проходимости. В том числе имеется резерв на случаи технологической поломки или неисправности.</p>
-                            </div>
+                            <a className='dop_2_button' href='/about'>Подробнее</a>
+                        </div>
                           )}
                         </div>
-                         <div className={`header_our_uslugi_3 ${activeHandler === 3 ? 'black-grey_3' : '' } ${activeHandler === 1  || activeHandler === 2  ? 'dop_blue-white_2' : ''}`} onClick={() => handleClick(3)}>
+                         <div className={`header_our_uslugi_3 ${activeHandler === 3 ? 'black-grey_3' : '' } ${activeHandler === 1  || activeHandler === 2  ? 'dop_blue-white_2' : ''} ${ activeHandler === 4 || activeHandler === 5 || activeHandler === 6 ? 'dop_blue-white_1_2' : ''}`} onClick={() => handleClick(3)}>
                                 <p className='header_our_uslugi_proekt'>Работа с персоналом</p>
                         {activeHandler === 3 && (
                         <div className='dop_3'>
                             <p className='header_our_uslugi_proekt_2'>Работа с персоналом</p>
+                            <p className='header_our_uslugi_proekt_3'>Работа с персоналом</p>
                             <p className='dop_3_1'>В современном мире профессиональные навыки, полученные в процессе получения образования, быстро устаревают, поэтому обучение и повышение квалификации становятся важнейшими элементами профессионального роста. В ООО «Партнер» помимо классических инструктажей и самоподготовки с персоналом проводятся семинары, на которых опытные наставники детально разбирают актуальные редакции нормативно технических документов и индивидуальные замечания сотрудников, допущенных вследствие дополнительных персональных требований Заказчика</p>
 
                             </div>
                           )}
                         </div>
-                        <div className={`header_our_uslugi_4 ${activeHandler === 4 ? 'black-grey_4' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 ? 'dop_blue-white_3' : ''}`} onClick={() => handleClick(4)}>
+                        <div className={`header_our_uslugi_4 ${activeHandler === 4 ? 'black-grey_4' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 ? 'dop_blue-white_3' : ''} ${activeHandler === 5 || activeHandler === 6 ? 'dop_blue-white_1_3' : ''}`} onClick={() => handleClick(4)}>
                                 <p className='header_our_uslugi_proekt_gaz'>Ответственность</p>
                         {activeHandler === 4 && (
                         <div className='dop_4'>
                             <p className='header_our_uslugi_proekt_gaz_2'>Ответственность</p>
+                            <p className='header_our_uslugi_proekt_gaz_3'>Ответственность</p>
                             <p className='dop_4_1'>Структура компании и четкий последовательный алгоритм производственных процессов не является только частью успеха ООО «Партнер». Коллективная и личная ответственность каждого позволяют достичь истинного баланса. Учитывая линейность процесса разработки проектной документации любой из сотрудников, понимает, что непосредственно от него зависит итоговый результат и репутация компании. Ответственное исполнение каждого этапа: получение исходных данных, сверка в натуре, инженерные изыскания, разработка проектной и рабочей документации, согласование и закрытие позволяют достичь максимальной эффективности.</p>
                             </div>
                           )}
                         </div>
-                        <div className={`header_our_uslugi_5 ${activeHandler === 5 ? 'black-grey_5' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 || activeHandler === 4 ? 'dop_blue-white_4' : ''}`} onClick={() => handleClick(5)}>
+                        <div className={`header_our_uslugi_5 ${activeHandler === 5 ? 'black-grey_5' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 || activeHandler === 4 ? 'dop_blue-white_4' : ''} ${activeHandler === 6 ? 'dop_blue-white_1_4' : ''}`} onClick={() => handleClick(5)}>
                                 <p className='header_our_uslugi_proekt_set'>Логистика</p>
                         {activeHandler === 5 && (
                         <div className='dop_5'>
                             <p className='header_our_uslugi_proekt_set_2'>Логистика</p>
+                            <p className='header_our_uslugi_proekt_set_3'>Логистика</p>
                             <p className='dop_5_1'>Работа в условиях пандемии COVID-19 наглядно показала положительные и негативные стороны удаленной работы. ООО «Партнер» постарался найти компромисс и использовать лучшее. Тема Краснодарских пробок - одна из самых популярных для обсуждения. Открытие небольших офисов в разных частях города позволило уменьшить время персонала, бесцельно расходуемого на дорогу до работы. А подбор специалистов отрасли инженерных изысканий с разных районов Краснодарского края и Республики Адыгея сократить время на производство. Многие сотрудники так и работают удаленно, ведь главное качественный результат.</p>
                             </div>
                           )}
                         </div>
                         <div className={`header_our_uslugi_6 ${activeHandler === 6 ? 'black-grey_6' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 || activeHandler === 4 || activeHandler === 5 ? 'dop_blue-white_5' : ''}`} onClick={() => handleClick(6)}>
-                                <p className='header_our_uslugi_proekt_wat'>Проектирование водопровода и канализации</p>
+                                <p className='header_our_uslugi_proekt_wat'>Проектирование</p>
                         {activeHandler === 6 && (
                         <div className='dop_6'>
-                            <p className='header_our_uslugi_proekt_wat_2'>Проектирование водопровода и канализации</p>
-                            <p className='dop_1_gaz_title'>Газификация-это</p>
+                            <p className='header_our_uslugi_proekt_wat_2'>Проектирование</p>
+                            <p className='header_our_uslugi_proekt_wat_3'>Проектирование</p>
+                            <p className='dop_6_1'>Работа в условиях пандемии COVID-19 наглядно показала положительные и негативные стороны удаленной работы. ООО «Партнер» постарался найти компромисс и использовать лучшее. Тема Краснодарских пробок - одна из самых популярных для обсуждения. Открытие небольших офисов в разных частях города позволило уменьшить время персонала, бесцельно расходуемого на дорогу до работы. А подбор специалистов отрасли инженерных изысканий с разных районов Краснодарского края и Республики Адыгея сократить время на производство. Многие сотрудники так и работают удаленно, ведь главное качественный результат.о</p>
                             </div>
                           )}
                         </div>
@@ -551,6 +754,100 @@ const Header = () => {
 
 
                     </div>
+
+                <div className='header_container_5'>
+                    <div className='header_circle_three_color'>
+                        <div className="circle-container">
+                            <div className="circle-outer"></div>
+                            <div className="circle-inner"></div>
+                        </div>
+                        <div className="circle-container_2">
+                            <div className="circle-outer_2"></div>
+                            <div className="circle-inner_2"></div>
+                        </div>
+                        <div className="circle-container_3">
+                            <div className="circle-outer_3"></div>
+                            <div className="circle-inner_3"></div>
+                        </div>
+                        <div className="circle-container_4">
+                            <div className="circle-outer_4"></div>
+                            <div className="circle-inner_4"></div>
+                        </div>
+                        <div className="circle-container_5">
+                            <div className="circle-outer_5"></div>
+                            <div className="circle-inner_5"></div>
+                        </div>
+                        <div className="circle-container_6">
+                            <div className="circle-outer_6"></div>
+                            <div className="circle-inner_6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='header_container_6'>
+                    <p className='header_container_6_title'>Наши проекты</p>
+
+                    <div className='header_container_6_block'>
+                        <div className='header_container_6_block_1'>
+                              <div className='header_container_6_block_1_fon'>
+                                <img className='header_container_6_block_1_img_1' src='/public/Group 109.png'/></div>
+                              <p className='header_container_6_block_1_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_1_text_2'>Август 2023 </p>
+                        </div>
+
+                        <div className='header_container_6_block_2'>
+                              <div className='header_container_6_block_2_fon'></div>
+                            <img className='header_container_6_block_2_img_1' src='/public/our_project1.png'/>
+                              <img className='header_container_6_block_2_img_2' src='/public/cabel.png'/>
+                              <p className='header_container_6_block_2_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_2_text_2'>Август 2023 </p>
+                        </div>
+
+                        <div className='header_container_6_block_3'>
+                              <div className='header_container_6_block_3_fon'></div>
+                            <img className='header_container_6_block_3_img_1' src='/public/our_project1.png'/>
+                              <img className='header_container_6_block_3_img_2' src='/public/cabel.png'/>
+                              <p className='header_container_6_block_3_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_3_text_2'>Август 2023 </p>
+                        </div>
+
+                        <div className='header_container_6_block_4'>
+                              <div className='header_container_6_block_4_fon'></div>
+                            <img className='header_container_6_block_4_img_1' src='/public/our_project1.png'/>
+                              <img className='header_container_6_block_4_img_2' src='/public/cabel.png'/>
+                              <p className='header_container_6_block_4_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_4_text_2'>Август 2023 </p>
+                        </div>
+
+                        <div className='header_container_6_block_5'>
+                              <div className='header_container_6_block_5_fon'></div>
+                            <img className='header_container_6_block_5_img_1' src='/public/our_project1.png'/>
+                              <img className='header_container_6_block_5_img_2' src='/public/cabel.png'/>
+                              <p className='header_container_6_block_5_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_5_text_2'>Август 2023 </p>
+                        </div>
+
+                        <div className='header_container_6_block_6'>
+                              <div className='header_container_6_block_6_fon'></div>
+                            <img className='header_container_6_block_6_img_1' src='/public/our_project1.png'/>
+                              <img className='header_container_6_block_6_img_2' src='/public/cabel.png'/>
+                              <p className='header_container_6_block_6_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
+                            <p className='header_container_6_block_6_text_2'>Август 2023 </p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
 
             </div>
 
