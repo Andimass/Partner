@@ -339,23 +339,23 @@ const Header = () => {
         document.querySelector('.header_container_1_man_1').style.opacity = "1";
     }
 
-    if (scrollPosition >= 600) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_2').style.opacity = "1";
     }
 
-    if (scrollPosition >= 700) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_3').style.opacity = "1";
     }
 
-    if (scrollPosition >= 800) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_4').style.opacity = "1";
     }
 
-    if (scrollPosition >= 900) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_5').style.opacity = "1";
     }
 
-    if (scrollPosition >= 1000) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_6').style.opacity = "1";
     }
 });
@@ -369,35 +369,35 @@ const Header = () => {
         document.querySelector('.header_container_1_list_1').style.opacity = "1";
     }
 
-    if (scrollPosition >= 550) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_2').style.opacity = "1";
     }
 
-    if (scrollPosition >= 600) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_3').style.opacity = "1";
     }
 
-    if (scrollPosition >= 650) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_4').style.opacity = "1";
     }
 
-    if (scrollPosition >= 700) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_5').style.opacity = "1";
     }
 
-    if (scrollPosition >= 750) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_6').style.opacity = "1";
     }
 
-    if (scrollPosition >= 800) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_7').style.opacity = "1";
     }
 
-    if (scrollPosition >= 850) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_8').style.opacity = "1";
     }
 
-    if (scrollPosition >= 1000) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_list_9').style.opacity = "1";
     }
 });
@@ -411,31 +411,31 @@ const Header = () => {
         document.querySelector('.header_container_1_comp_1').style.opacity = "1";
     }
 
-    if (scrollPosition >= 575) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_2').style.opacity = "1";
     }
 
-    if (scrollPosition >= 650) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_3').style.opacity = "1";
     }
 
-    if (scrollPosition >= 725) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_4').style.opacity = "1";
     }
 
-    if (scrollPosition >= 800) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_5').style.opacity = "1";
     }
 
-    if (scrollPosition >= 875) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_6').style.opacity = "1";
     }
 
-    if (scrollPosition >= 950) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_7').style.opacity = "1";
     }
 
-    if (scrollPosition >= 1000) {
+    if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_comp_8').style.opacity = "1";
     }
 
@@ -532,7 +532,7 @@ const Header = () => {
                                 <a className='header_menu_menu_3' href='/'>Услуги</a>
                                 <a className='header_menu_menu_4' href='/about'>О нас</a>
                                 <a className='header_menu_menu_4' href='/'>Контакты</a>
-                                <a className='header_menu_menu_5' href='/'>+ 7 (918) 331-25-57</a>
+                                <a className='header_menu_menu_5' href='/'>+7 (918) 331-25-57</a>
                                 <a className='header_menu_menu_6' href='/'>info@partner-tech.ru</a>
                             </div>
                         </div>
@@ -796,25 +796,22 @@ const Header = () => {
                         </div>
 
                         <div className='header_container_6_block_2'>
-                              <div className='header_container_6_block_2_fon'></div>
-                            <img className='header_container_6_block_2_img_1' src='/public/our_project1.png'/>
-                              <img className='header_container_6_block_2_img_2' src='/public/cabel.png'/>
+                              <div className='header_container_6_block_2_fon'>
+                            <img className='header_container_6_block_2_img_1' src='/public/Group 110.png'/></div>
                               <p className='header_container_6_block_2_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_2_text_2'>Август 2023 </p>
                         </div>
 
                         <div className='header_container_6_block_3'>
-                              <div className='header_container_6_block_3_fon'></div>
-                            <img className='header_container_6_block_3_img_1' src='/public/our_project1.png'/>
-                              <img className='header_container_6_block_3_img_2' src='/public/cabel.png'/>
+                              <div className='header_container_6_block_3_fon'>
+                            <img className='header_container_6_block_3_img_1' src='/public/Group 111.png'/></div>
                               <p className='header_container_6_block_3_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_3_text_2'>Август 2023 </p>
                         </div>
 
                         <div className='header_container_6_block_4'>
-                              <div className='header_container_6_block_4_fon'></div>
-                            <img className='header_container_6_block_4_img_1' src='/public/our_project1.png'/>
-                              <img className='header_container_6_block_4_img_2' src='/public/cabel.png'/>
+                              <div className='header_container_6_block_4_fon'>
+                            <img className='header_container_6_block_4_img_1' src='/public/Group 112.png'/></div>
                               <p className='header_container_6_block_4_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_4_text_2'>Август 2023 </p>
                         </div>
@@ -834,10 +831,7 @@ const Header = () => {
                               <p className='header_container_6_block_6_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_6_text_2'>Август 2023 </p>
                         </div>
-
-
                     </div>
-
 
 
 

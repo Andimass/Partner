@@ -9,7 +9,7 @@ body{
     height: auto;
     display: flex;
     position: absolute;
-    top: 7px; /* Прикрепить шапку к верху экрана */
+    top: 1px; /* Прикрепить шапку к верху экрана */
     z-index: 1000; /* Определите z-индекс, если необходимо */
     /* Дополнительные стили для вашей шапки */
     background-color: #242424;
@@ -37,7 +37,7 @@ body{
     margin-left: 55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
     margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
     z-index: 1000; /* Больше, чем у .menu_supply */
-    background-color: rgb(0, 0, 0); /* Черный цвет фона */
+    background-color: rgb(255, 255, 255); /* Черный цвет фона */
     overflow-x: hidden;
 }
 
@@ -48,7 +48,7 @@ body{
     margin-left: -55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
     margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
     z-index: 1000; /* Больше, чем у .menu_supply */
-    background-color: rgb(0, 0, 0); /* Черный цвет фона */
+    background-color: rgb(255, 255, 255); /* Черный цвет фона */
     overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ body{
     margin-left: 2380px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
     margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
     display: block; /* Больше, чем у .menu_supply */
-    background-color: rgb(0, 0, 0); /* Черный цвет фона */
+    background-color: rgb(255, 255, 255); /* Черный цвет фона */
     }
 
 
@@ -237,157 +237,859 @@ body{
     position: absolute;
 }
 
-.About_fon{
+.about_fon{
     width: 2500px;
     height: 800px;
-    margin-top: -7px;
-        z-index: 1;
+    margin-top: 57px;
+    position: absolute;
 }
 
+
+
 .about_title{
-    color: #ffffff;
-    font-size: 64px;
+    color: black;
+    font-size: 250px;
     font-weight: 700;
     font-family: a_FuturaOrtoBold, sans-serif;
-    margin-top: -550px;
-    margin-left: 700px;
-    z-index: 999;
+    margin-top: 266px;
+    margin-left: 190px;
+    z-index: 1;
     position: absolute;
+    opacity: 0.1;
+}
+
+.about_title_2{
+        color: black;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: "Cera Pro bold", sans-serif;
+    margin-top: 360px;
+    margin-left: 650px;
+    z-index: 1;
+    position: absolute;
+    white-space: nowrap;
 }
 
 .about_title_text{
-     margin-left: 710px;
-    width: 500px;
-    margin-top: -440px;
-    font-size: 24px;
+     margin-left: 650px;
+    width: 700px;
+    margin-top: 490px;
+    font-size: 35px;
         font-weight: 700;
-    font-family: a_FuturaOrtoLt, sans-serif;
+    font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
     position: absolute;
+    color: black;
 }
 
 .collage{
     position: absolute;
-    margin-top: 300px;
-}
-.collage img{
-    position: absolute;
-    border-radius: 10px;
+    margin-top: 260px;
+    margin-left: 10px;
 }
 
 
 .about_title_img_1{
     width: 900px;
     height: 800px;
-    margin-left: 1100px;
-    margin-top: -1100px;
+    margin-left: 1350px;
+    margin-top: -200px;
     position: absolute;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about_footer{
-    background-color: white;
-    position: relative;
-    bottom:0;
-    width: 2495px;
-    height:130px;   /* Высота блока "footer" */
-    margin-top: 4900px;
-    margin-left: -1550px;
-}
-
-.about_footer_logo{
+.about_for{
+        width: 2500px;
     position: absolute;
-    width: 48px;
-    height: 48px;
-    margin-left: 430px;
-    margin-top: 45px;
+    background: linear-gradient(to right, #6383F9, #8DB2FB 15%);
+    height: 360px;
+    margin-top: 870px;
+    z-index: 1;
 }
 
-.about_footer_logo2{
+.about_for_block{
+    position: absolute;
+    width: 2000px;
+    margin-top: 20px;
+    margin-left: 245px;
+    height: 280px;
+}
+
+.about_for_img1{
+    position: absolute;
+    width: 2071px;
+    margin-left: -20px;
+    margin-top: 60px;
+    z-index: 4;
+    content: '';
+    border: 0.1px white solid;
+    opacity: 0.6;
+}
+
+.about_for_img2{
+    position: absolute;
+    height: 300px;
+    margin-left: 980px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.about_for_img3{
+    position: absolute;
+    height: 330px;
+    margin-left: 180px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.about_for_img4{
+    position: absolute;
+    height: 330px;
+    margin-left: 140px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.about_for_img5{
+    position: absolute;
+    height: 330px;
+    margin-left: 1800px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.about_for_img6{
+    position: absolute;
+    height: 330px;
+    margin-left: 1840px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.about_for_block_org{
+    position: absolute;
+
+}
+
+.about_for_block_org_title{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 250px;
+    width: 450px;
+    margin-top: 5px;
+
+}
+
+.about_for_block_org_block{
+    position: absolute;
+    margin-top: 120px;
+    /*margin-left: 920px;*/
+}
+
+
+.about_for_block_org_block p {
+    color: white;
+}
+
+/* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
+.about_for_block_org_block p:last-child {
+  margin-bottom: 0;
+}
+
+.about_for_block_org_text_1{
+    position: absolute;
+    margin-top: -28px;
+    width: 700px;
+    margin-left: 250px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+    line-height: 28px;
+}
+
+.about_for_block_org_text_11{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -37px;
+        font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_org_text_2{
+    width: 700px;
+    margin-left: 250px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+        line-height: 28px;
+    margin-top: 30px;
+}
+
+.about_for_block_org_text_21{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -82px;
+        font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_org_text_3{
+    width: 700px;
+    margin-left: 250px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+        line-height: 28px;
+    margin-top: -1px;
+
+}
+
+.about_for_block_org_text_31{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -82px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_org_text_4{
+    position: absolute;
+    margin-top: -210px;
+    width: 700px;
+    margin-left: 1050px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+    line-height: 28px;
+}
+
+.about_for_block_org_text_41{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 1000px;
+    margin-top: -218px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_org_text_5{
+    position: absolute;
+    margin-top: -150px;
+    width: 700px;
+    margin-left: 1050px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+    line-height: 28px;
+}
+
+.about_for_block_org_text_51{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 1000px;
+    margin-top: -158px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_org_text_6{
+        position: absolute;
+    margin-top: -85px;
+    width: 700px;
+    margin-left: 1050px;
+    font-size: 21px;
+        font-family: "Cera Pro Regular", sans-serif;
+    line-height: 28px;
+}
+
+.about_for_block_org_text_61{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-left: 1000px;
+    margin-top: -95px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.about_for_block_ur{
+        width: 1240px;
+    height: 340px;
+    margin-left: 1010px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+
+.about_for_block_ur_title{
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: 50px;
+    width: 350px;
+    margin-top: 25px;
+
+}
+
+.about_for_block_ur_block{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 50px;
+    width: 1240px;
+    height: 500px;
+}
+
+
+.about_for_block_ur_block p {
+        display: flex;
+    color: white;
+    width: 532px;
+  margin-bottom: -15px; /* Расстояние между параграфами */
+    font-size: 18px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+/* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
+.about_for_block_ur_block p:last-child {
+  margin-bottom: 0;
+}
+
+.about_for_block_ur_text_1{
+    position: absolute;
+    margin-top: -30px;
+}
+
+.about_for_block_ur_text_2{
+    position: absolute;
+    margin-top: 0px;
+}
+
+.about_for_block_ur_text_3{
+    position: absolute;
+    margin-top: 31px;
+}
+
+.about_for_block_ur_text_4{
+    position: absolute;
+    margin-top: 61px;
+}
+
+
+
+
+
+.about_2{
+    position: absolute;
+    width: 2500px;
+    height: 675px;
+    background-color: rgba(246, 245, 245, 0.97);
+    margin-top: 1230px;
+    z-index: 1;
+}
+
+.about_2_title_1{
+    color: black;
     position: absolute;
     margin-left: 500px;
-    width: 240px;
-    margin-top: 55px;
+    font-size: 28px;
+    font-family: "Cera Pro Medium", sans-serif;
+    width: 500px;
+    margin-top: 230px;
+    z-index: 5;
+    line-height: 28px;
 }
 
-.about_footer_s{
-    margin-top: 40px;
+.about_2_title_text{
     color: black;
-    display: flex;
-    flex: 0.2;
-    justify-content: space-between;
-    margin-left: 930px;
+    width: 350px;
     position: absolute;
-        text-decoration: none;
-    list-style-type: none;
+    font-size: 16px;
+    margin-left: 500px;
+    margin-top: 330px;
+    z-index: 5;
+    font-family: "Cera Pro Light", sans-serif;
 }
 
-.about_footer_source{
-    margin-left: 50px;
-    max-width: 1000px;
-    font-size: 23px;
-    margin-top: 15px;
+.about_2_block{
+    position: absolute;
+    margin-top: -270px;
+    z-index: 5;
 }
 
-.about_footer_source a{
+.about_2_block_img_1{
+    position: absolute;
+    margin-left: 385px;
+    height: 690px;
+    width: 0px;
+    margin-top: 270px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_2{
+    position: absolute;
+    margin-left: 425px;
+    height: 647px;
+    width: 0px;
+    margin-top: 270px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_3{
+    position: absolute;
+    margin-left: 2045px;
+    height: 697px;
+    width: 0px;
+    margin-top: 270px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_4{
+    position: absolute;
+    margin-left: 2085px;
+    height: 667px;
+    width: 0px;
+    margin-top: 270px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_5{
+    position: absolute;
+    width: 2071px;
+    margin-left: 225px;
+    margin-top: 361px;
+    z-index: 4;
+    content: '';
+    border: 0.1px grey solid;
+    opacity: 0.6;
+}
+
+.about_2_block_img_6{
+    position: absolute;
+    width: 2071px;
+    margin-left: 225px;
+    margin-top: 862px;
+    z-index: 4;
+    content: '';
+    border: 0.1px grey solid;
+    opacity: 0.6;
+}
+
+.about_2_block_img_7{
+    position: absolute;
+    margin-left: 1095px;
+    height: 665px;
+    width: 0px;
+    margin-top: 250px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_8{
+    position: absolute;
+    margin-left: 1990px;
+    height: 690px;
+    width: 0px;
+    margin-top: 250px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_9{
+    position: absolute;
+    margin-left: 1390px;
+    height: 635px;
+    width: 0px;
+    margin-top: 260px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_10{
+    position: absolute;
+    margin-left: 1689px;
+    height: 635px;
+    width: 0px;
+    margin-top: 280px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_11{
+    position: absolute;
+    margin-left: 1079px;
+    width: 920px;
+    margin-top: 607px;
+    border: 1px grey solid;
+        opacity: 0.6;
+}
+
+.about_2_block_img_12{
+    position: absolute;
+    margin-left: 1085px;
+    width: 20px;
+    margin-top: 361px;
+    border: 1px grey solid;
+        opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.about_2_block_img_13{
+    position: absolute;
+    margin-left: 1085px;
+    width: 20px;
+    margin-top: 862px;
+    border: 1px grey solid;
+        opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.about_2_block_img_14{
+    position: absolute;
+    margin-left: 1980px;
+    width: 20px;
+    margin-top: 862px;
+    border: 1px grey solid;
+        opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.about_2_block_img_15{
+    position: absolute;
+    margin-left: 1980px;
+    width: 20px;
+    margin-top: 361px;
+    border: 1px grey solid;
+        opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.about_2_block_1{
+    position: absolute;
+    width: 295px;
+    height: 245px;
+    margin-left: 1096px;
+    margin-top: 362px;
+    z-index: 5;
+          background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
+  -webkit-mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.about_2_block_1:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+@keyframes ani {
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
+  }
+}
+
+@keyframes ani2 {
+  100% {
+    -webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+  }
+}
+
+.about_transportir_1{
+    position: absolute;
+    margin-left: -600px;
+    margin-top: -110px;
+    width: 1200px ;
+        transform-origin: center center;
+    transition: transform 3s;
+}
+
+.about_transportir_2{
+    position: absolute;
+    margin-left: -600px;
+    margin-top: -110px;
+    width: 1200px ;
+        transform-origin: center center;
+    transition: transform 3s;
+}
+
+
+
+/*.about_2_block_1:hover,*/
+/*.about_2_block_2:hover,*/
+/*.about_2_block_3:hover,*/
+/*.about_2_block_4:hover,*/
+/*.about_2_block_5:hover,*/
+/*.about_2_block_6:hover{*/
+/*    background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));*/
+/*    transition: transform 1s;*/
+/*}*/
+
+
+.about_2_block_1:hover .about_2_block_1_text_1,
+.about_2_block_1:hover .about_2_block_1_text_3 ,
+.about_2_block_2:hover .about_2_block_1_text_1,
+.about_2_block_2:hover .about_2_block_2_text_3,
+.about_2_block_3:hover .about_2_block_1_text_1,
+.about_2_block_3:hover .about_2_block_3_text_3,
+.about_2_block_4:hover .about_2_block_1_text_1,
+.about_2_block_4:hover .about_2_block_4_text_3,
+.about_2_block_5:hover .about_2_block_1_text_1,
+.about_2_block_5:hover .about_2_block_5_text_3,
+.about_2_block_6:hover .about_2_block_1_text_1,
+.about_2_block_6:hover .about_2_block_6_text_3{
+    color: white;
+}
+
+.about_2_block_1:hover .about_2_block_1_text_2,
+.about_2_block_2:hover .about_2_block_1_text_2,
+.about_2_block_3:hover .about_2_block_1_text_2,
+.about_2_block_4:hover .about_2_block_1_text_2,
+.about_2_block_5:hover .about_2_block_1_text_2,
+.about_2_block_6:hover .about_2_block_1_text_2    {
+    color: white;
+}
+
+.about_2_block_1:hover .about_2_block_1_number,
+.about_2_block_2:hover .about_2_block_1_number,
+.about_2_block_3:hover .about_2_block_1_number,
+.about_2_block_4:hover .about_2_block_1_number,
+.about_2_block_5:hover .about_2_block_1_number,
+.about_2_block_6:hover .about_2_block_1_number    {
+    color: white;
+}
+
+
+/*.about_2_block_6:hover .about_2_block_1_text_1{*/
+/*    color: white;*/
+/*}*/
+
+.about_2_block_1_text_1{
     color: black;
+    margin-top: 60px;
+    margin-left: 19px;
+    font-size: 18px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
 }
 
-.about_footer_callback{
-    margin-top: 1px;
-    margin-left: 100px;
-    font-size: 23px;
-    border: 1px solid #000000;/* Add your desired border color and width */
-    padding: 10px 60px;
-    border-radius: 45px;
-    text-decoration: none;
-    list-style-type: none;
+.about_2_block_1_text_1 span{
     color: black;
+    margin-left: -14px;
+    margin-top: 6px;
+    font-size: 15px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    position: absolute;
 }
 
-.about_footer_callback a{
+.about_2_block_1_text_2{
     color: black;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: "Cera Pro Light", sans-serif;
 }
 
 
+.about_2_block_1_number{
+    width: 50px;
+    height: 50px;
+    font-family: "Cera Pro Regular",sans-serif;
+    font-size: 40px;
+    color: black;
+    margin-left: 230px;
+    margin-top: -30px;
+    overflow: hidden;
+}
+
+.about_2_block_1_text_3{
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+.about_2_block_2_text_3{
+    color: black;
+    position: absolute;
+        font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 250px;
+    margin-top: -20px;
+}
+
+.about_2_block_3_text_3{
+    color: black;
+    position: absolute;
+        font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+            margin-left: 250px;
+    margin-top: -20px;
+}
+
+.about_2_block_4_text_3{
+    color: black;
+    position: absolute;
+        font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 250px;
+    margin-top: -10px;
+}
+
+.about_2_block_5_text_3{
+    color: black;
+    position: absolute;
+        font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 250px;
+    margin-top: -10px;
+}
+
+.about_2_block_6_text_3{
+    color: black;
+    position: absolute;
+        font-size: 20px;
+    font-family: "Cera Pro Medium", sans-serif;
+            margin-left: 250px;
+    margin-top: -10px;
+}
+
+.about_2_block_2{
+    position: absolute;
+    width: 298px;
+    height: 245px;
+    margin-left: 1392px;
+    margin-top: 362px;
+}
+
+.about_2_block_3{
+    position: absolute;
+    width: 300px;
+    height: 245px;
+    margin-left: 1690px;
+    margin-top: 362px;
+}
+
+.about_2_block_4{
+    position: absolute;
+    width: 295px;
+    height: 255px;
+    margin-left: 1096px;
+    margin-top: 607px;
+
+}
+
+.about_2_block_5{
+    position: absolute;
+    width: 298px;
+    height: 255px;
+    margin-left: 1392px;
+    margin-top: 607px;
+}
+
+.about_2_block_6{
+    position: absolute;
+    width: 300px;
+    height: 254px;
+    margin-left: 1691px;
+    margin-top: 607px;
+}
+
+
+.about_container_3{
+    width: 2500px;
+    height: 1300px;
+    position: absolute;
+    background-color: white;
+    margin-top: 2100px;
+}
+
+.about_container_3_shema{
+    width: 1200px;
+    position: absolute;
+    margin-left: 620px;
+    margin-top: -130px;
+}
+
+.about_container_4{
+    position: absolute;
+    width: 2500px;
+    height: 2100px;
+    background-color: rgba(246, 245, 245, 0.97);
+    margin-top: 3200px;
+}
+
+.about_container_4_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 300px;
+}
+
+.about_container_4_text_2{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 300px;
+    margin-top: 350px;
+}
+
+.about_container_4_text_3{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 300px;
+    margin-top: 350px;;
+}
+
+.about_container_4_text_4{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 300px;
+        margin-top: 350px;
+}
+
+.about_container_4_text_5{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 300px;
+        margin-top: 350px;
+}
+
+.about_container_4_text_6{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+        margin-left: 300px;
+        margin-top: 350px;
+}
 
 
