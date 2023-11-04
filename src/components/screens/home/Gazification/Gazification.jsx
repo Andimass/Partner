@@ -502,6 +502,7 @@ return (
             <div className='gazification_footer'>
                 <div className='gazification_footer_1'>
                     <img className='gazification_footer_1_img' src='/public/logo_new.png'/>
+                    <img className='gazification_footer_2_img' src='/public/tochki.png'/>
                 </div>
                 <div className='gazification_footer_2'>
                     <p className='gazification_footer_2_text_1'>АДРЕС ОФИСА</p>

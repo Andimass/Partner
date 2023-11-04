@@ -429,77 +429,134 @@
 
 }
 
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes unrotateCircle {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 
 .header_top_circle {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    margin-top: 175px;
-    margin-left: -1900px;
-
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  animation: rotateCircle 60s infinite linear;
+  margin-left: -1750px; /* Adjusted for the specific needs of your layout */
+  margin-top: 200px; /* Adjusted for the specific needs of your layout */
+  transform-origin: 250px 250px; /* Center of the circle */
 }
+
+.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform-origin: 250px 250px;
+  /* Your transform will be inline-styled in React */
+}
+
+.header_top_circle_1, .header_top_circle_2, .header_top_circle_3, .header_top_circle_4, .header_top_circle_5, .header_top_circle_6, .header_top_circle_7, .header_top_circle_8, .header_top_circle_9, .header_top_circle_10, .header_top_circle_11 {
+  width: 25%;
+  transform: translate(-50%, -50%) rotate(var(--rotate)); /* Correct syntax */
+  animation: unrotateCircle 60s infinite linear;
+  transform-origin: center center;
+  filter: grayscale(100%);
+}
+
+/*.header_top_circle {*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    position: absolute;*/
+/*    margin-top: 475px;*/
+/*    margin-left: -1700px;*/
+
+/*}*/
 
 .logo_circle{
-    position: absolute;
-    margin-left: 490px;
-    margin-top: 620px;
-    width: 150px;
-    height: 140px;
+  margin-top: 650px;
+  position: absolute;
+  margin-left: 650px;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+/*@keyframes spin {*/
+/*    0% {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
 
-@keyframes spin1 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
-}
+/*@keyframes spin1 {*/
+/*    0% {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(-360deg);*/
+/*    }*/
+/*}*/
 
-.header_top_circle img {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-   transform-origin: 150px 150px; /* Указываем центр вращения, который находится в центре круга */
-      filter: grayscale(100%);
-  transition: filter 0.3s ease; /* плавный переход при наведении */
-}
+/*.header_top_circle img {*/
+/*    position: absolute;*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*   transform-origin: 150px 150px; !* Указываем центр вращения, который находится в центре круга *!*/
+/*      filter: grayscale(100%);*/
+/*  transition: filter 0.3s ease; !* плавный переход при наведении *!*/
+/*}*/
 
 
-/* При наведении убрать черно-белый фильтр */
+/*.wrapper_div_1 { transform: rotate(0deg) translate(250px) rotate(0deg); }*/
+/*  .wrapper_div_2 { transform: rotate(32.73deg) translate(250px) rotate(-32.73deg); }*/
+/*  .wrapper_div_3 { transform: rotate(65.46deg) translate(250px) rotate(-65.46deg); }*/
+/*  .wrapper_div_4 { transform: rotate(98.19deg) translate(250px) rotate(-98.19deg); }*/
+/*  .wrapper_div_5 { transform: rotate(130.92deg) translate(250px) rotate(-130.92deg); }*/
+/*  .wrapper_div_6 { transform: rotate(163.65deg) translate(250px) rotate(-163.65deg); }*/
+/*  .wrapper_div_7 { transform: rotate(196.38deg) translate(250px) rotate(-196.38deg); }*/
+/*  .wrapper_div_8 { transform: rotate(229.11deg) translate(250px) rotate(-229.11deg); }*/
+/*  .wrapper_div_9 { transform: rotate(261.84deg) translate(250px) rotate(-261.84deg); }*/
+/*  .wrapper_div_10 { transform: rotate(294.57deg) translate(250px) rotate(-294.57deg); }*/
+/*  .wrapper_div_11 { transform: rotate(327.3deg) translate(250px) rotate(-327.3deg); }*/
 
 .header_top_circle img:hover {
-    filter: url(#ambilight) grayscale(0%);
+  filter: url(#ambilight) grayscale(0%);
 }
 
-.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5,
-.wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10,
-.wrapper_div_11 {
-       animation: spin 30s linear infinite;
-       transform-origin: 150px 150px; /* Указываем центр вращения, который находится в центре круга */
-}
+/*!* При наведении убрать черно-белый фильтр *!*/
+
+/*.header_top_circle img:hover {*/
+/*    filter: url(#ambilight) grayscale(0%);*/
+/*}*/
+
+/*.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5,*/
+/*.wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10,*/
+/*.wrapper_div_11 {*/
+/*       animation: spin 30s linear infinite;*/
+/*       transform-origin: 150px 150px; !* Указываем центр вращения, который находится в центре круга *!*/
+/*}*/
 
 
-    .header_top_circle_1 { transform: rotate(0deg) translate(420px) rotate(0deg); }
-    .header_top_circle_2 { transform: rotate(32deg) translate(420px) rotate(0deg); }
-    .header_top_circle_3 { transform: rotate(65deg) translate(420px) rotate(0deg); }
-    .header_top_circle_4 { transform: rotate(97deg) translate(420px) rotate(0deg); }
-    .header_top_circle_5 { transform: rotate(130deg) translate(420px) rotate(0deg); }
-    .header_top_circle_6 { transform: rotate(162deg) translate(420px) rotate(0deg); }
-    .header_top_circle_7 { transform: rotate(195deg) translate(420px) rotate(0deg); }
-    .header_top_circle_8 { transform: rotate(227deg) translate(420px) rotate(0deg); }
-    .header_top_circle_9 { transform: rotate(260deg) translate(420px) rotate(0deg); }
-    .header_top_circle_10 { transform: rotate(292deg) translate(420px) rotate(0deg); }
-    .header_top_circle_11 { transform: rotate(325deg) translate(420px) rotate(0deg); }
+    /*.header_top_circle_1 { transform: rotate(0deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_2 { transform: rotate(32deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_3 { transform: rotate(65deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_4 { transform: rotate(97deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_5 { transform: rotate(130deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_6 { transform: rotate(162deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_7 { transform: rotate(195deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_8 { transform: rotate(227deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_9 { transform: rotate(260deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_10 { transform: rotate(292deg) translate(420px) rotate(0deg); }*/
+    /*.header_top_circle_11 { transform: rotate(325deg) translate(420px) rotate(0deg); }*/
 
 
 
@@ -508,16 +565,18 @@
     position: absolute;
     color: black;
     margin-left: -35px;
+  margin-top: -10px;
 }
 
 .header_top_2_title{
     position: absolute;
     margin-left: 770px;
-    margin-top: 130px;
+    margin-top:   140px;
     font-family: "Cera Pro bold", sans-serif;
     width: 1100px;
     font-size: 48px;
     text-align: center;
+  z-index: 999;
 }
 
 .header_top_comp_2_title_1 {
@@ -527,6 +586,8 @@
     width: 200px;
     font-size: 28px;
     font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999 ;
+  color: black;
 }
 
 .header_top_comp_2_title_1_img {
@@ -537,11 +598,15 @@
     margin-top: 330px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+  z-index: 50 ;
 }
 
-.header_top_comp_2_title_1:hover .header_top_comp_2_title_1_img,
-.header_top_comp_2_title_1_img:hover {
+.header_top_comp_2_title_1:hover + .header_top_comp_2_title_1_img{
     opacity: 1;
+}
+
+.header_top_comp_2_title_1:hover{
+  color: black;
 }
 
 .header_top_comp_2_title_2_img {

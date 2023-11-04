@@ -1,7 +1,7 @@
 @import '/fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
-.Gazification{
+.geodezic{
     max-width: 2500px;
     height: auto;
     display: flex;
@@ -14,7 +14,7 @@
 
 
 
-.gazification_for{
+.geodezic_for{
         width: 2500px;
     position: absolute;
     background: linear-gradient(to right, #6383F9, #8DB2FB 15%);
@@ -23,7 +23,7 @@
     z-index: 1;
 }
 
-.gazification_for_block{
+.geodezic_for_block{
     position: absolute;
     width: 2000px;
     margin-top: 20px;
@@ -31,21 +31,21 @@
     height: 280px;
 }
 
-.gazification_for_img1{
+.geodezic_for_img1{
     position: absolute;
     width: 2071px;
     margin-left: -20px;
-    margin-top: 60px;
+    margin-top: 90px;
     z-index: 4;
     content: '';
     border: 0.1px white solid;
     opacity: 0.6;
 }
 
-.gazification_for_img2{
+.geodezic_for_img2{
     position: absolute;
     height: 283px;
-    margin-left: 980px;
+    margin-left: 690px;
     margin-top: 10px;
     z-index: 4;
     content: '';
@@ -53,7 +53,18 @@
         opacity: 0.6;
 }
 
-.gazification_for_img3{
+.geodezic_for_img22{
+    position: absolute;
+    height: 283px;
+    margin-left: 1270px;
+    margin-top: 10px;
+    z-index: 4;
+    content: '';
+    border: 1px white solid;
+        opacity: 0.6;
+}
+
+.geodezic_for_img3{
     position: absolute;
     height: 330px;
     margin-left: 180px;
@@ -64,7 +75,7 @@
         opacity: 0.6;
 }
 
-.gazification_for_img4{
+.geodezic_for_img4{
     position: absolute;
     height: 330px;
     margin-left: 140px;
@@ -75,7 +86,7 @@
         opacity: 0.6;
 }
 
-.gazification_for_img5{
+.geodezic_for_img5{
     position: absolute;
     height: 330px;
     margin-left: 1800px;
@@ -86,7 +97,7 @@
         opacity: 0.6;
 }
 
-.gazification_for_img6{
+.geodezic_for_img6{
     position: absolute;
     height: 330px;
     margin-left: 1840px;
@@ -97,30 +108,30 @@
         opacity: 0.6;
 }
 
-.gazification_for_block_org{
+.geodezic_for_block_org{
     position: absolute;
 
 }
 
-.gazification_for_block_org_title{
+.geodezic_for_block_org_title{
     position: absolute;
     color: white;
     font-size: 28px;
     font-family: "Cera Pro Regular", sans-serif;
-    margin-left: 260px;
-    width: 350px;
+    margin-left: 220px;
+    width: 500px;
     margin-top: 5px;
 
 }
 
-.gazification_for_block_org_block{
+.geodezic_for_block_org_block{
     position: absolute;
     margin-top: 100px;
-    margin-left: 260px;
+    margin-left: 220px;
 }
 
 
-.gazification_for_block_org_block p {
+.geodezic_for_block_org_block p {
         display: flex;
     color: white;
     width: 532px;
@@ -130,72 +141,73 @@
 }
 
 /* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
-.gazification_for_block_org_block p:last-child {
+.geodezic_for_block_org_block p:last-child {
   margin-bottom: 0;
 }
 
-.gazification_for_block_org_text_1{
+.geodezic_for_block_org_text_1{
     position: absolute;
-    margin-top: -30px;
+    margin-top: 0px;
+    max-width: 440px;
 }
 
-.gazification_for_block_org_text_2{
+.geodezic_for_block_org_text_2{
     margin-top: 1px;
 }
 
-/*.gazification_for_block_org_text_3{*/
+/*.geodezic_for_block_org_text_3{*/
 
 /*}*/
 
-/*.gazification_for_block_org_text_4{*/
+/*.geodezic_for_block_org_text_4{*/
 
 /*}*/
 
-/*.gazification_for_block_org_text_5{*/
+/*.geodezic_for_block_org_text_5{*/
 
 /*}*/
 
-/*.gazification_for_block_org_text_6{*/
+/*.geodezic_for_block_org_text_6{*/
 
 /*}*/
 
-/*.gazification_for_block_org_text_7{*/
+/*.geodezic_for_block_org_text_7{*/
 
 /*}*/
 
-/*.gazification_for_block_org_text_8{*/
+/*.geodezic_for_block_org_text_8{*/
 
 /*}*/
-.gazification_for_block_ur{
-        width: 1240px;
+.geodezic_for_block_ur{
+        width: 640px;
     height: 340px;
-    margin-left: 1010px;
+    margin-left: 680px;
     position: absolute;
     margin-top: -20px;
 }
 
 
-.gazification_for_block_ur_title{
+.geodezic_for_block_ur_title{
     position: absolute;
     color: white;
     font-size: 28px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: 50px;
-    width: 350px;
+    width: 500px;
     margin-top: 25px;
 
 }
 
-.gazification_for_block_ur_block{
+.geodezic_for_block_ur_block{
     position: absolute;
     margin-top: 120px;
     margin-left: 50px;
-    width: 1240px;
+    width: 540px;
     height: 500px;
 }
 
 
-.gazification_for_block_ur_block p {
+.geodezic_for_block_ur_block p {
         display: flex;
     color: white;
     width: 532px;
@@ -205,26 +217,91 @@
 }
 
 /* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
-.gazification_for_block_ur_block p:last-child {
+.geodezic_for_block_ur_block p:last-child {
   margin-bottom: 0;
 }
 
-.gazification_for_block_ur_text_1{
-    position: absolute;
-    margin-top: -30px;
-}
-
-.gazification_for_block_ur_text_2{
+.geodezic_for_block_ur_text_1{
     position: absolute;
     margin-top: 0px;
 }
 
-.gazification_for_block_ur_text_3{
+.geodezic_for_block_ur_text_2{
+    position: absolute;
+    margin-top: 0px;
+}
+
+.geodezic_for_block_ur_text_3{
     position: absolute;
     margin-top: 31px;
 }
 
-.gazification_for_block_ur_text_4{
+.geodezic_for_block_ur_text_4{
+    position: absolute;
+    margin-top: 61px;
+}
+
+
+.geodezic_for_block_ur_2{
+        width: 540px;
+    height: 340px;
+    margin-left: 1260px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+
+.geodezic_for_block_ur_title_2{
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: 50px;
+    width: 500px;
+    margin-top: 25px;
+
+}
+
+.geodezic_for_block_ur_block_2{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 50px;
+    width: 440px;
+    height: 500px;
+}
+
+
+.geodezic_for_block_ur_block_2 p {
+        display: flex;
+    color: white;
+    width: 532px;
+  margin-bottom: -15px; /* Расстояние между параграфами */
+    font-size: 18px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+/* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
+.geodezic_for_block_ur_block_2 p:last-child {
+  margin-bottom: 0;
+}
+
+.geodezic_for_block_ur_text_1_2{
+    position: absolute;
+    margin-top: 0px;
+    max-width: 470px;
+}
+
+.geodezic_for_block_ur_text_2_2{
+    position: absolute;
+    margin-top: 0px;
+}
+
+.geodezic_for_block_ur_text_3_2{
+    position: absolute;
+    margin-top: 31px;
+}
+
+.geodezic_for_block_ur_text_4_2{
     position: absolute;
     margin-top: 61px;
 }
@@ -247,8 +324,7 @@
 
 
 
-
-.gazification_1{
+.geodezic_1{
     width: 2500px;
     position: absolute;
     background-color: #ffffff;
@@ -257,7 +333,7 @@
     z-index: 1;
 }
 
-.gazification_1_title{
+.geodezic_1_title{
     position: absolute;
     margin-left: 530px;
     margin-top: 230px;
@@ -267,7 +343,7 @@
     z-index: 1;
 }
 
-.gazification_1_text{
+.geodezic_1_text{
     position: absolute;
     margin-left: 530px;
     margin-top: 350px;
@@ -278,7 +354,7 @@
     z-index: 1;
 }
 
-.gazification_1_img{
+.geodezic_1_img{
     width: 700px;
     margin-left: 1400px;
     margin-top: 130px;
@@ -286,7 +362,7 @@
     z-index: 0;
 }
 
-.gazification_fon_img{
+.geodezic_fon_img{
     width: 2465px;
     height: 630px;
     z-index: -1;
@@ -294,7 +370,7 @@
 }
 
 
-.gazification_2{
+.geodezic_2{
     position: absolute;
     width: 2500px;
     height: 705px;
@@ -303,49 +379,49 @@
     z-index: 1;
 }
 
-.gazification_2_block_1_img_1{
+.geodezic_2_block_1_img_1{
     position: absolute;
     width: 35px;
     margin-left: 20px;
     margin-top: 19px;
 }
 
-.gazification_2_block_1_img_2{
+.geodezic_2_block_1_img_2{
     position: absolute;
     margin-left: 20px;
     margin-top: 22px;
     width: 80px;
 }
 
-.gazification_2_block_1_img_3{
+.geodezic_2_block_1_img_3{
     position: absolute;
     width: 50px;
     margin-left: 20px;
     margin-top: 18px;
 }
 
-.gazification_2_block_1_img_4{
+.geodezic_2_block_1_img_4{
     position: absolute;
     width: 45px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.gazification_2_block_1_img_5{
+.geodezic_2_block_1_img_5{
     position: absolute;
     width: 35px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.gazification_2_block_1_img_6{
+.geodezic_2_block_1_img_6{
     position: absolute;
     width: 45px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.gazification_2_title_1{
+.geodezic_2_title_1{
     color: black;
     position: absolute;
     margin-left: 500px;
@@ -357,7 +433,7 @@
     line-height: 28px;
 }
 
-.gazification_2_title_text{
+.geodezic_2_title_text{
     color: black;
     width: 350px;
     position: absolute;
@@ -367,12 +443,12 @@
     z-index: 5;
 }
 
-.gazification_2_block{
+.geodezic_2_block{
     position: absolute;
     margin-top: -220px;
 }
 
-.gazification_2_block_img_1{
+.geodezic_2_block_img_1{
     position: absolute;
     margin-left: 385px;
     height: 740px;
@@ -382,7 +458,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_2{
+.geodezic_2_block_img_2{
     position: absolute;
     margin-left: 425px;
     height: 697px;
@@ -392,7 +468,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_3{
+.geodezic_2_block_img_3{
     position: absolute;
     margin-left: 2045px;
     height: 697px;
@@ -402,7 +478,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_4{
+.geodezic_2_block_img_4{
     position: absolute;
     margin-left: 2085px;
     height: 677px;
@@ -412,7 +488,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_5{
+.geodezic_2_block_img_5{
     position: absolute;
     width: 2071px;
     margin-left: 225px;
@@ -423,7 +499,7 @@
     opacity: 0.6;
 }
 
-.gazification_2_block_img_6{
+.geodezic_2_block_img_6{
     position: absolute;
     width: 2071px;
     margin-left: 225px;
@@ -434,7 +510,7 @@
     opacity: 0.6;
 }
 
-.gazification_2_block_img_7{
+.geodezic_2_block_img_7{
     position: absolute;
     margin-left: 1095px;
     height: 635px;
@@ -444,7 +520,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_8{
+.geodezic_2_block_img_8{
     position: absolute;
     margin-left: 1990px;
     height: 615px;
@@ -454,7 +530,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_9{
+.geodezic_2_block_img_9{
     position: absolute;
     margin-left: 1390px;
     height: 615px;
@@ -464,7 +540,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_10{
+.geodezic_2_block_img_10{
     position: absolute;
     margin-left: 1689px;
     height: 635px;
@@ -474,7 +550,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_11{
+.geodezic_2_block_img_11{
     position: absolute;
     margin-left: 1079px;
     width: 920px;
@@ -483,7 +559,7 @@
         opacity: 0.6;
 }
 
-.gazification_2_block_img_12{
+.geodezic_2_block_img_12{
     position: absolute;
     margin-left: 1085px;
     width: 20px;
@@ -493,7 +569,7 @@
     transform: rotate(135deg);
 }
 
-.gazification_2_block_img_13{
+.geodezic_2_block_img_13{
     position: absolute;
     margin-left: 1085px;
     width: 20px;
@@ -503,7 +579,7 @@
     transform: rotate(135deg);
 }
 
-.gazification_2_block_img_14{
+.geodezic_2_block_img_14{
     position: absolute;
     margin-left: 1980px;
     width: 20px;
@@ -513,7 +589,7 @@
     transform: rotate(135deg);
 }
 
-.gazification_2_block_img_15{
+.geodezic_2_block_img_15{
     position: absolute;
     margin-left: 1980px;
     width: 20px;
@@ -523,7 +599,7 @@
     transform: rotate(135deg);
 }
 
-.gazification_2_block_1{
+.geodezic_2_block_1{
     position: absolute;
     width: 295px;
     height: 245px;
@@ -539,7 +615,7 @@
   /*animation: ani2 0.7s steps(29) forwards;*/
 }
 
-/*.gazification_2_block_1:hover {*/
+/*.geodezic_2_block_1:hover {*/
 /*  -webkit-animation: ani 0.7s steps(29) forwards;*/
 /*  animation: ani 0.7s steps(29) forwards;*/
 /*}*/
@@ -578,66 +654,66 @@
 
 
 
-.gazification_2_block_1:hover,
-.gazification_2_block_2:hover,
-.gazification_2_block_3:hover,
-.gazification_2_block_4:hover,
-.gazification_2_block_5:hover,
-.gazification_2_block_6:hover{
+.geodezic_2_block_1:hover,
+.geodezic_2_block_2:hover,
+.geodezic_2_block_3:hover,
+.geodezic_2_block_4:hover,
+.geodezic_2_block_5:hover,
+.geodezic_2_block_6:hover{
     background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
     transition: transform 1s;
 }
 
 
-.gazification_2_block_1:hover .gazification_2_block_1_text_1,
-.gazification_2_block_1:hover .gazification_2_block_1_text_3 ,
-.gazification_2_block_2:hover .gazification_2_block_1_text_1,
-.gazification_2_block_2:hover .gazification_2_block_2_text_3,
-.gazification_2_block_3:hover .gazification_2_block_1_text_1,
-.gazification_2_block_3:hover .gazification_2_block_3_text_3,
-.gazification_2_block_4:hover .gazification_2_block_1_text_1,
-.gazification_2_block_4:hover .gazification_2_block_4_text_3,
-.gazification_2_block_5:hover .gazification_2_block_1_text_1,
-.gazification_2_block_5:hover .gazification_2_block_5_text_3,
-.gazification_2_block_6:hover .gazification_2_block_1_text_1,
-.gazification_2_block_6:hover .gazification_2_block_6_text_3{
+.geodezic_2_block_1:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_1:hover .geodezic_2_block_1_text_3 ,
+.geodezic_2_block_2:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_2:hover .geodezic_2_block_2_text_3,
+.geodezic_2_block_3:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_3:hover .geodezic_2_block_3_text_3,
+.geodezic_2_block_4:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_4:hover .geodezic_2_block_4_text_3,
+.geodezic_2_block_5:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_5:hover .geodezic_2_block_5_text_3,
+.geodezic_2_block_6:hover .geodezic_2_block_1_text_1,
+.geodezic_2_block_6:hover .geodezic_2_block_6_text_3{
     color: white;
 }
 
-.gazification_2_block_1:hover .gazification_2_block_1_text_2,
-.gazification_2_block_2:hover .gazification_2_block_1_text_2,
-.gazification_2_block_3:hover .gazification_2_block_1_text_2,
-.gazification_2_block_4:hover .gazification_2_block_1_text_2,
-.gazification_2_block_5:hover .gazification_2_block_1_text_2,
-.gazification_2_block_6:hover .gazification_2_block_1_text_2    {
+.geodezic_2_block_1:hover .geodezic_2_block_1_text_2,
+.geodezic_2_block_2:hover .geodezic_2_block_1_text_2,
+.geodezic_2_block_3:hover .geodezic_2_block_1_text_2,
+.geodezic_2_block_4:hover .geodezic_2_block_1_text_2,
+.geodezic_2_block_5:hover .geodezic_2_block_1_text_2,
+.geodezic_2_block_6:hover .geodezic_2_block_1_text_2    {
     color: white;
 }
 
-.gazification_2_block_1:hover .gazification_2_block_1_number,
-.gazification_2_block_2:hover .gazification_2_block_1_number,
-.gazification_2_block_3:hover .gazification_2_block_1_number,
-.gazification_2_block_4:hover .gazification_2_block_1_number,
-.gazification_2_block_5:hover .gazification_2_block_1_number,
-.gazification_2_block_6:hover .gazification_2_block_1_number    {
+.geodezic_2_block_1:hover .geodezic_2_block_1_number,
+.geodezic_2_block_2:hover .geodezic_2_block_1_number,
+.geodezic_2_block_3:hover .geodezic_2_block_1_number,
+.geodezic_2_block_4:hover .geodezic_2_block_1_number,
+.geodezic_2_block_5:hover .geodezic_2_block_1_number,
+.geodezic_2_block_6:hover .geodezic_2_block_1_number    {
     color: white;
 }
 
 
-.gazification_2_block_1:hover .gazification_2_block_1_img_1,
-.gazification_2_block_2:hover .gazification_2_block_1_img_2,
-.gazification_2_block_2:hover .gazification_2_block_1_img_3,
-.gazification_2_block_2:hover .gazification_2_block_1_img_4,
-.gazification_2_block_2:hover .gazification_2_block_1_img_5,
-.gazification_2_block_2:hover .gazification_2_block_1_img_6{
+.geodezic_2_block_1:hover .geodezic_2_block_1_img_1,
+.geodezic_2_block_2:hover .geodezic_2_block_1_img_2,
+.geodezic_2_block_2:hover .geodezic_2_block_1_img_3,
+.geodezic_2_block_2:hover .geodezic_2_block_1_img_4,
+.geodezic_2_block_2:hover .geodezic_2_block_1_img_5,
+.geodezic_2_block_2:hover .geodezic_2_block_1_img_6{
     filter: grayscale(1) brightness(1000%);
 }
 
 
-/*.gazification_2_block_6:hover .gazification_2_block_1_text_1{*/
+/*.geodezic_2_block_6:hover .geodezic_2_block_1_text_1{*/
 /*    color: white;*/
 /*}*/
 
-.gazification_2_block_1_text_1{
+.geodezic_2_block_1_text_1{
     color: black;
     margin-top: 85px;
     margin-left: 15px;
@@ -647,7 +723,7 @@
     letter-spacing: 0.6px;
 }
 
-.gazification_2_block_1_text_1 span{
+.geodezic_2_block_1_text_1 span{
     color: black;
     margin-left: -14px;
     margin-top: 6px;
@@ -658,7 +734,7 @@
     position: absolute;
 }
 
-.gazification_2_block_1_text_2{
+.geodezic_2_block_1_text_2{
     color: black;
     margin-left: 13px;
     font-size: 16px;
@@ -667,7 +743,7 @@
 }
 
 
-.gazification_2_block_1_number{
+.geodezic_2_block_1_number{
     width: 50px;
     height: 50px;
     font-family: "Cera Pro Regular",sans-serif;
@@ -678,7 +754,7 @@
     overflow: hidden;
 }
 
-.gazification_2_block_1_text_3{
+.geodezic_2_block_1_text_3{
     color: black;
     position: absolute;
     font-size: 20px;
@@ -687,16 +763,16 @@
     margin-top: -10px;
 }
 
-.gazification_2_block_2_text_3{
+.geodezic_2_block_2_text_3{
     color: black;
     position: absolute;
         font-size: 20px;
     font-family: "Cera Pro Medium", sans-serif;
         margin-left: 250px;
-    margin-top: -10px;
+    margin-top: -35px;
 }
 
-.gazification_2_block_3_text_3{
+.geodezic_2_block_3_text_3{
     color: black;
     position: absolute;
         font-size: 20px;
@@ -705,7 +781,7 @@
     margin-top: -10px;
 }
 
-.gazification_2_block_4_text_3{
+.geodezic_2_block_4_text_3{
     color: black;
     position: absolute;
         font-size: 20px;
@@ -714,16 +790,16 @@
     margin-top: -1px;
 }
 
-.gazification_2_block_5_text_3{
+.geodezic_2_block_5_text_3{
     color: black;
     position: absolute;
         font-size: 20px;
     font-family: "Cera Pro Medium", sans-serif;
         margin-left: 250px;
-    margin-top: -1px;
+    margin-top: -25px;
 }
 
-.gazification_2_block_6_text_3{
+.geodezic_2_block_6_text_3{
     color: black;
     position: absolute;
         font-size: 20px;
@@ -732,7 +808,7 @@
     margin-top: -1px;
 }
 
-.gazification_2_block_2{
+.geodezic_2_block_2{
     position: absolute;
     width: 298px;
     height: 245px;
@@ -740,7 +816,7 @@
     margin-top: 362px;
 }
 
-.gazification_2_block_3{
+.geodezic_2_block_3{
     position: absolute;
     width: 300px;
     height: 245px;
@@ -748,7 +824,7 @@
     margin-top: 362px;
 }
 
-.gazification_2_block_4{
+.geodezic_2_block_4{
     position: absolute;
     width: 295px;
     height: 255px;
@@ -757,7 +833,7 @@
 
 }
 
-.gazification_2_block_5{
+.geodezic_2_block_5{
     position: absolute;
     width: 298px;
     height: 255px;
@@ -765,7 +841,7 @@
     margin-top: 607px;
 }
 
-.gazification_2_block_6{
+.geodezic_2_block_6{
     position: absolute;
     width: 300px;
     height: 254px;
@@ -1440,7 +1516,7 @@
 
 
 
-.gazification_pdf{
+.geodezic_pdf{
     width: 2500px;
     position: absolute;
     height: 440px;
@@ -1449,7 +1525,7 @@
     margin-top: 520px;
 }
 
-.gazification_pdf_title{
+.geodezic_pdf_title{
     color: black;
     position: absolute;
     font-family: "Cera Pro bold", sans-serif;
@@ -1457,57 +1533,57 @@
     margin-left: 1070px;
 }
 
-.gazification_pdf_box{
+.geodezic_pdf_box{
 
 }
 
-.gazification_pdf_box_1{
+.geodezic_pdf_box_1{
     margin-left: 440px;
 }
 
-.gazification_pdf_box_img{
+.geodezic_pdf_box_img{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: -10px;
 }
 
-.gazification_pdf_box_img2{
+.geodezic_pdf_box_img2{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: 300px;
 }
 
-.gazification_pdf_box_img3{
+.geodezic_pdf_box_img3{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: 610px;
 }
 
-.gazification_pdf_box_img4{
+.geodezic_pdf_box_img4{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: 920px;
 }
 
-.gazification_pdf_box_img5{
+.geodezic_pdf_box_img5{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: 1230px;
 }
 
-.gazification_pdf_box_img6{
+.geodezic_pdf_box_img6{
     position: absolute;
     width: 80px;
     margin-top: 130px;
     margin-left: 1540px;
 }
 
-.gazification_pdf_box_title_1{
+.geodezic_pdf_box_title_1{
     color: black;
     position: absolute;
     margin-top: 225px;
@@ -1518,7 +1594,7 @@
     text-align: center;
 }
 
-.gazification_pdf_box_title_2{
+.geodezic_pdf_box_title_2{
     color: black;
         position: absolute;
         margin-top: 225px;
@@ -1530,7 +1606,7 @@
 }
 
 
-.gazification_pdf_box_title_3{
+.geodezic_pdf_box_title_3{
     color: black;
         position: absolute;
         margin-top: 225px;
@@ -1542,7 +1618,7 @@
 }
 
 
-.gazification_pdf_box_title_4{
+.geodezic_pdf_box_title_4{
     color: black;
         position: absolute;
         margin-top: 225px;
@@ -1554,7 +1630,7 @@
 }
 
 
-.gazification_pdf_box_title_5{
+.geodezic_pdf_box_title_5{
     color: black;
         position: absolute;
         margin-top: 225px;
@@ -1566,7 +1642,7 @@
 }
 
 
-.gazification_pdf_box_title_6{
+.geodezic_pdf_box_title_6{
     color: black;
         position: absolute;
         margin-top: 225px;
@@ -1578,17 +1654,17 @@
 }
 
 
-.gazification_pdf_box_text_1{
+.geodezic_pdf_box_text_1{
 
 }
 
-.gazification_pdf_box_upload{
+.geodezic_pdf_box_upload{
 
 }
 
 
 
-.gazification_faq{
+.geodezic_faq{
     width: 2500px;
     height: 900px;
     position: absolute;
@@ -1596,7 +1672,7 @@
     background-color: #ffffff;
 }
 
-.gazification_faq_title{
+.geodezic_faq_title{
     color: black;
     position: absolute;
     font-size: 48px;
@@ -1605,12 +1681,12 @@
     margin-top: 50px;
 }
 
-.gazification_faq_block{
+.geodezic_faq_block{
     position: absolute;
     margin-top: -25px;
 }
 
-.gazification_faq_block_1{
+.geodezic_faq_block_1{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1619,7 +1695,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_1:after{
+.geodezic_faq_block_1:after{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1627,7 +1703,7 @@
     margin-top: -80px;
 }
 
-.gazification_faq_block_1:before{
+.geodezic_faq_block_1:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1640,21 +1716,21 @@
 }
 
 .faq_1:after{
-    margin-top: -188px;
+    margin-top: -315px;
 }
 
 .faq_1:before{
-    margin-top: 170px;
+    margin-top: 290px;
             transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_1_title{
+.geodezic_faq_block_1_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_1_title_strela1{
+.geodezic_faq_block_1_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1669,11 +1745,11 @@
 }
 
 
-.gazification_faq_block_1_text{
+.geodezic_faq_block_1_text{
     animation: plav 1.3s ease;
 }
 
-.gazification_faq_block_2{
+.geodezic_faq_block_2{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1682,7 +1758,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_2:before{
+.geodezic_faq_block_2:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1695,17 +1771,17 @@
 }
 
 .faq_2:before{
-    margin-top: 240px;
+    margin-top: 180px;
             transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_2_title{
+.geodezic_faq_block_2_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_2_title_strela1{
+.geodezic_faq_block_2_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1720,14 +1796,14 @@
 }
 
 .faq_2_2{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
-.gazification_faq_block_2_text{
+.geodezic_faq_block_2_text{
     animation: plav 1.3s ease;
 }
 
-.gazification_faq_block_3{
+.geodezic_faq_block_3{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1736,7 +1812,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_3:before{
+.geodezic_faq_block_3:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1754,13 +1830,13 @@
             transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_3_title{
+.geodezic_faq_block_3_title{
     font-size: 28px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_3_title_strela1{
+.geodezic_faq_block_3_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1775,14 +1851,14 @@
 }
 
 .faq_3_3{
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
-.gazification_faq_block_3_text{
+.geodezic_faq_block_3_text{
     animation: plav 1.3s ease;
 }
 
-.gazification_faq_block_4{
+.geodezic_faq_block_4{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1791,7 +1867,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_4:before{
+.geodezic_faq_block_4:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1805,17 +1881,17 @@
 }
 
 .faq_4:before{
-    margin-top: 150px;
+    margin-top: 250px;
             transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_4_title{
+.geodezic_faq_block_4_title{
     font-size: 28px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_4_title_strela1{
+.geodezic_faq_block_4_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1830,16 +1906,16 @@
 }
 
 .faq_4_4{
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
-.gazification_faq_block_4_text{
+.geodezic_faq_block_4_text{
     animation: plav 1.3s ease;
 }
 
 
 
-.gazification_faq_block_5{
+.geodezic_faq_block_5{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1848,7 +1924,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_5:before{
+.geodezic_faq_block_5:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1861,17 +1937,17 @@
 }
 
 .faq_5:before{
-    margin-top: 170px;
+    margin-top: 200px;
         transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_5_title{
+.geodezic_faq_block_5_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_5_title_strela1{
+.geodezic_faq_block_5_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1886,10 +1962,10 @@
 }
 
 .faq_5_5{
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
-.gazification_faq_block_5_text{
+.geodezic_faq_block_5_text{
     animation: plav 1.3s ease;
 }
 
@@ -1903,7 +1979,7 @@
     }
 }
 
-.gazification_faq_block_6{
+.geodezic_faq_block_6{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1912,7 +1988,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_6:before{
+.geodezic_faq_block_6:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -1925,17 +2001,17 @@
 }
 
 .faq_6:before{
-    margin-top: 150px;
+    margin-top: 270px;
         transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_6_title{
+.geodezic_faq_block_6_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_6_title_strela1{
+.geodezic_faq_block_6_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -1950,10 +2026,10 @@
 }
 
 .faq_6_6{
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
-.gazification_faq_block_6_text{
+.geodezic_faq_block_6_text{
     animation: plav 1.3s ease;
 }
 
@@ -1967,7 +2043,7 @@
     }
 }
 
-.gazification_faq_block_7{
+.geodezic_faq_block_7{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -1976,12 +2052,12 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_7:before{
+.geodezic_faq_block_7:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
     position: absolute;
-    margin-top: 52px;
+    margin-top: 90px;
 }
 
 
@@ -1989,19 +2065,19 @@
 }
 
 .faq_7:before{
-    margin-top: 170px;
+    margin-top: 180px;
         transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_7_title{
+.geodezic_faq_block_7_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_7_title_strela1{
+.geodezic_faq_block_7_title_strela1{
     position: absolute;
-    margin-top: -52px;
+    margin-top: -72px;
     margin-left: 910px;
     width: 15px;
     height: 15px;
@@ -2014,10 +2090,10 @@
 }
 
 .faq_7_7{
-    margin-top: 80px;
+    margin-top: 180px;
 }
 
-.gazification_faq_block_7_text{
+.geodezic_faq_block_7_text{
     animation: plav 1.3s ease;
 }
 
@@ -2031,16 +2107,16 @@
     }
 }
 
-.gazification_faq_block_8{
+.geodezic_faq_block_8{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
-    margin-top: -50px;
+    margin-top: -20px;
     color: black;
     border-radius: 20px;
 }
 
-.gazification_faq_block_8:before{
+.geodezic_faq_block_8:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -2053,17 +2129,17 @@
 }
 
 .faq_8:before{
-    margin-top: 170px;
+    margin-top: 200px;
         transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_8_title{
+.geodezic_faq_block_8_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_8_title_strela1{
+.geodezic_faq_block_8_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -2078,10 +2154,10 @@
 }
 
 .faq_8_8{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
-.gazification_faq_block_8_text{
+.geodezic_faq_block_8_text{
     animation: plav 1.3s ease;
 }
 
@@ -2096,7 +2172,7 @@
 }
 
 
-.gazification_faq_block_9{
+.geodezic_faq_block_9{
     width: 860px;
     height: 100px;
     margin-left: 1000px;
@@ -2105,7 +2181,7 @@
     border-radius: 20px;
 }
 
-.gazification_faq_block_9:before{
+.geodezic_faq_block_9:before{
     content: "";
     border: 1px #cecccc solid;
     width: 975px;
@@ -2118,17 +2194,17 @@
 }
 
 .faq_9:before{
-    margin-top: 120px;
+    margin-top: 150px;
         transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
-.gazification_faq_block_9_title{
+.geodezic_faq_block_9_title{
     font-size: 24px;
     font-family: "Cera Pro Medium", sans-serif;
 
 }
 
-.gazification_faq_block_9_title_strela1{
+.geodezic_faq_block_9_title_strela1{
     position: absolute;
     margin-top: -52px;
     margin-left: 910px;
@@ -2143,10 +2219,10 @@
 }
 
 .faq_9_9{
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
-.gazification_faq_block_9_text{
+.geodezic_faq_block_9_text{
     animation: plav 1.3s ease;
 }
 
@@ -2166,19 +2242,19 @@
 
 
 
-.gazification_footer{
+.geodezic_footer{
     position: absolute;
     width: 2500px;
     height: 300px;
     background-color: #2c2b2b;
-    margin-top: 4180px;
+    margin-top: 4300px;
 }
 
-.gazification_footer_1{
+.geodezic_footer_1{
 
 }
 
-.gazification_footer_1_img{
+.geodezic_footer_1_img{
         width: 240px;
     height: 49px;
     margin-left: 1095px;
@@ -2186,13 +2262,13 @@
     position: absolute;
 }
 
-.gazification_footer_2_img{
+.geodezic_footer_2_img{
     margin-left: 495px;
     margin-top: 70px;
     position: absolute;
 }
 
-.gazification_footer_1_text{
+.geodezic_footer_1_text{
     width: 310px;
     margin-left: 500px;
     margin-top: 40px;
@@ -2202,7 +2278,7 @@
     position: absolute;
 }
 
-.gazification_footer_1_text:after{
+.geodezic_footer_1_text:after{
     position: absolute;
     border: 1px grey solid;
     width: 1350px;
@@ -2213,20 +2289,20 @@
 
 
 
-.gazification_footer_2{
+.geodezic_footer_2{
     position: absolute;
     margin-left: 560px;
     margin-top: 130px;
 }
 
-.gazification_footer_2_text_1{
+.geodezic_footer_2_text_1{
     font-size: 21px;
     color: white;
 
 }
 
 
-/*.gazification_footer_2_text_1:after{*/
+/*.geodezic_footer_2_text_1:after{*/
 /*	border-bottom: dotted 5px white;*/
 /*    width: 1000px;*/
 /*    position: absolute;*/
@@ -2237,14 +2313,14 @@
 /*}*/
 
 
-.gazification_footer_2_text_2{
+.geodezic_footer_2_text_2{
     font-size: 18px;
     font-family: "Cera Pro Regular",sans-serif;
     color: white;
         opacity: 0.5;
 }
 
-.gazification_footer_2_text_3{
+.geodezic_footer_2_text_3{
     font-size: 18px;
         font-family: "Cera Pro Regular",sans-serif;
     margin-top: -10px;
@@ -2252,21 +2328,21 @@
 }
 
 
-.gazification_footer_4{
+.geodezic_footer_4{
     width: 300px;
     position: absolute;
     margin-left: 980px;
     margin-top: 130px;
 }
 
-.gazification_footer_5{
+.geodezic_footer_5{
     width: 300px;
     position: absolute;
     margin-left: 1280px;
     margin-top: 130px;
 }
 
-.gazification_footer_5:before{
+.geodezic_footer_5:before{
     position: absolute;
     border: 1px grey solid;
     width: 1375px;
@@ -2275,28 +2351,28 @@
     margin-left: -715px;
 }
 
-.gazification_footer_6{
+.geodezic_footer_6{
         width: 300px;
     position: absolute;
     margin-left: 1760px;
     margin-top: 130px;
 }
 
-.gazification_footer_7{
+.geodezic_footer_7{
             width: 300px;
     position: absolute;
     margin-left: 700px;
     margin-top: -75px;
 }
 
-.gazification_footer_2_text_5{
+.geodezic_footer_2_text_5{
     font-size: 18px;
         font-family: "Cera Pro Regular",sans-serif;
     color: white;
     margin-left: 2px;
 }
 
-.gazification_footer_2_text_4{
+.geodezic_footer_2_text_4{
     font-size: 18px;
         font-family: "Cera Pro Regular",sans-serif;
     margin-top: 40px;
@@ -2306,20 +2382,20 @@
     opacity: 0.5;
 }
 
-.gazification_footer_7{
+.geodezic_footer_7{
             width: 300px;
     position: absolute;
     margin-left: 1510px;
     margin-top: 130px;
 }
 
-.gazification_footer_2_text_11{
+.geodezic_footer_2_text_11{
         opacity: 0.5;
     font-size: 18px;
     font-family: "Cera Pro Regular",sans-serif;
 }
 
-.gazification_footer_2_text_21{
+.geodezic_footer_2_text_21{
         opacity: 0.5;
         font-size: 18px;
     margin-top: -10px;

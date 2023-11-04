@@ -1,5 +1,5 @@
 
-import './Header.css'
+import './Header.scss'
 import React, {useEffect, useState, useRef} from "react";
 import $ from "jquery";
 import p5 from "p5";
@@ -448,7 +448,24 @@ const Header = () => {
     // }
 });
 
+          const numberOfImages = 11;
+             const radius = 360; // radius of the circle in pixels
+          const images = ['/public/vec1.png', '/public/vec2.png', '/public/vec3.png', '/public/vec4.png', '/public/vec5.png', '/public/vec6.png', '/public/vec7.png', '/public/vec8.png', '/public/vec9.png', '/public/vec10.png', '/public/vec11.png'];
 
+        const calculatePositionAndRotation = (index) => {
+            const angle = (360 / numberOfImages) * index - 90;
+            const angleInRadians = angle * (Math.PI / 180);
+            const x = Math.cos(angleInRadians) * radius;
+            const y = Math.sin(angleInRadians) * radius;
+            return {
+                positionStyle: {
+                    transform: `translate(${x}px, ${y}px)`
+                },
+                imageStyle: {
+                    transform: `rotate(${-angle - 30}deg)`
+                }
+            };
+        }
 
 
 
@@ -545,50 +562,25 @@ const Header = () => {
                         <p>+ 7 (918) 331-25-57</p>
                         <div className='header_top'>
                             <img className='header_phone' src='/public/fone_1.png'/>
-                            <div className='header_top_circle'>
-                                <div className='wrapper_div_1'>
-                                    <img className='header_top_circle_1' src='/public/vec1.png'/>
-                                </div>
-                                <div className='wrapper_div_2'>
-                                    <img className='header_top_circle_2' src='/public/vec2.png'/>
-                                </div>
-                                <div className='wrapper_div_3'>
-                                    <img className='header_top_circle_3' src='/public/vec3.png'/>
-                                </div>
-                                <div className='wrapper_div_4'>
-                                    <img className='header_top_circle_4' src='/public/vec4.png'/>
-                                </div>
-                                <div className='wrapper_div_5'>
-                                    <img className='header_top_circle_5' src='/public/vec5.png'/>
-                                </div>
-                                <div className='wrapper_div_6'>
-                                    <img className='header_top_circle_6' src='/public/vec6.png'/>
-                                </div>
-                                <div className='wrapper_div_7'>
-                                    <img className='header_top_circle_7' src='/public/vec7.png'/>
-                                </div>
-                                <div className='wrapper_div_8'>
-                                    <img className='header_top_circle_8' src='/public/vec8.png'/>
-                                </div>
-                                <div className='wrapper_div_9'>
-                                    <img className='header_top_circle_9' src='/public/vec9.png'/>
-                                </div>
-                                <div className='wrapper_div_10'>
-                                    <img className='header_top_circle_10' src='/public/vec10.png'/>
-                                </div>
-                                <div className='wrapper_div_11'>
-                                    <img className='header_top_circle_11' src='/public/vec11.png'/>
-                                </div>
+                             <div className='header_top_circle'>
+                              {images.map((src, index) => {
+                                const { positionStyle, imageStyle } = calculatePositionAndRotation(index);
+                                return (
+                                  <div key={index} className={`wrapper_div_${index + 1}`} style={positionStyle}>
+                                    <img className={`header_top_circle_${index + 1}`} src={src} alt={`Image ${index + 1}`} style={imageStyle} />
+                                  </div>
+                                );
+                              })}
                             </div>
                         </div>
 
                         <div className='black_line'></div>
                     </div>
                        <div className='header_top_2'>
-                           <img className='logo_circle' src='/public/logo2.png'/>
+                           {/*<img className='logo_circle' src='/public/logo2.png'/>*/}
                                 <p className='header_top_2_title'>Предоставляем юридическим лицам и гражданам широкий спектр услуг</p>
-                                <p className='header_top_comp_2_title_1'>Инженерные изыскания</p>
-                                <img className='header_top_comp_2_title_1_img' src='/public/обводка анимация.gif'/>
+                               <div><a href='/geodezic' className='header_top_comp_2_title_1'>Инженерные изыскания</a>
+                                <img className='header_top_comp_2_title_1_img' href='/geodezic' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_111'>
                                     <p className='header_top_comp_2_title_11'>Геодезические, геологические и экологические изыскания для выполнения работ по подготовке проектной документации, строительству и реконструкции объектов капитального строительства  </p>
                                 </div>
