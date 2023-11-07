@@ -168,8 +168,8 @@ const Header = () => {
           {width: 164, height: 138},
           {width: 105, height: 85},
           {width: 181, height: 84},
-          {width: 181, height: 100},
-          {width: 70, height: 25},
+          {width: 141, height: 100},
+          {width: 85, height: 20},
           {width: 206, height: 72},
           {width: 117, height: 82},
           {width: 132, height: 92},
@@ -219,7 +219,7 @@ const Header = () => {
           }
 
           getBorderRadius() {
-              let offset = 16;
+              let offset = 25;
               return Math.max(this.imgWidth, this.imgHeight) / 2 + offset;
           }
 
@@ -233,7 +233,7 @@ const Header = () => {
               this.p.image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
 
               // Обводка
-              let offset = 30;
+              let offset = 45;
               let maxDimension = Math.max(this.imgWidth, this.imgHeight) + offset;
               this.p.stroke(0); // Цвет обводки (в этом случае черный)
               this.p.strokeWeight(1); // Толщина обводки
@@ -322,7 +322,7 @@ const Header = () => {
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
     // Определите уровень прокрутки, на котором вы хотите изменить цвет. Например, 300px.
-    if (scrollPosition > 1200 && scrollPosition < 1950) {
+    if (scrollPosition > 1100 && scrollPosition < 1730) {
         document.querySelector('.header_black_square').style.backgroundColor = 'rgb(246,245,245)';  // Новый цвет для header_black_square
         document.querySelector('.header_black_square2').style.backgroundColor = 'rgb(246,245,245)'; // Новый цвет для header_black_square2
     }
@@ -332,8 +332,14 @@ const Header = () => {
     }
 });
 
+
   window.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 500) {
+        document.querySelector('.visibl').style.animation = 'vis 3s ease forwards';
+        document.querySelector('.visibl').style.animationDelay = '1s';
+    }
 
     if (scrollPosition >= 500) {
         document.querySelector('.header_container_1_man_1').style.opacity = "1";
@@ -523,8 +529,8 @@ const Header = () => {
     </filter>
 </svg>
             <div className='header_header'>
-                <img className='header_logo' src='/public/logo2.png'/>
-                <img className='header_logo_2' src='/public/Group 4.png'/>
+                <img className='header_logo' src='/public/logo_new.png'/>
+
                 <div className='header_animation_square '>
                     <div className='header_black_square'></div>
                     <div className='header_black_square2'></div>
@@ -573,8 +579,6 @@ const Header = () => {
                               })}
                             </div>
                         </div>
-
-                        <div className='black_line'></div>
                     </div>
                        <div className='header_top_2'>
                            {/*<img className='logo_circle' src='/public/logo2.png'/>*/}
@@ -589,8 +593,8 @@ const Header = () => {
                                 <div className='header_top_comp_2_title_211'>
                                     <p className='header_top_comp_2_title_21'>Разработка проектных решений по кабельным и воздушным линиям электропередачи, трансформаторным подстанциям, генераторам и иным видам оборудования классом напряжения 0,4-35 кВ</p>
                                 </div>
-                                <a className='header_top_comp_2_title_3' href='/gazification'>Проектирование газораспределения и газопотребления</a>
-                                <img className='header_top_comp_2_title_3_img' src='/public/обводка анимация.gif'/>
+                                <div><a className='header_top_comp_2_title_3' href='/gazification'>Проектирование газораспределения и газопотребления</a>
+                                <img className='header_top_comp_2_title_3_img' href='/gazification' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_311'>
                                     <p className='header_top_comp_2_title_31'>Оказываем услуги по расчету потребления газа, разработке проектной и рабочей документации: котельных, пунктов редуцирования газа, сетей газопотребления и газораспределения</p>
                                 </div>
@@ -620,6 +624,8 @@ const Header = () => {
                         <p className='header_container_1_spec'>Cпециалистов</p>
                         <p className='header_container_1_sobs'>Собственные</p>
                         <p className='header_container_1_it'>IT разработки</p>
+                        <div className='visibl'></div>
+                        <img className='header_container_1_strela_1' src='/public/zigzag-arrow_6635735.png'/>
                         <img className='header_container_1_man_1' src='/public/man_108188.png'/>
                         <img className='header_container_1_man_2' src='/public/man_108188.png'/>
                         <img className='header_container_1_man_3' src='/public/man_108188.png'/>
@@ -809,17 +815,15 @@ const Header = () => {
                         </div>
 
                         <div className='header_container_6_block_5'>
-                              <div className='header_container_6_block_5_fon'></div>
-                            <img className='header_container_6_block_5_img_1' src='/public/our_project1.png'/>
-                              <img className='header_container_6_block_5_img_2' src='/public/cabel.png'/>
+                              <div className='header_container_6_block_5_fon'>
+                            <img className='header_container_6_block_5_img_1' src='/public/Group 125.png'/></div>
                               <p className='header_container_6_block_5_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_5_text_2'>Август 2023 </p>
                         </div>
 
                         <div className='header_container_6_block_6'>
-                              <div className='header_container_6_block_6_fon'></div>
-                            <img className='header_container_6_block_6_img_1' src='/public/our_project1.png'/>
-                              <img className='header_container_6_block_6_img_2' src='/public/cabel.png'/>
+                              <div className='header_container_6_block_6_fon'>
+                            <img className='header_container_6_block_6_img_1' src='/public/Group 126.png'/></div>
                               <p className='header_container_6_block_6_text_1'>Распределительные сети 10кв от центра питания пс 110 икеа </p>
                             <p className='header_container_6_block_6_text_2'>Август 2023 </p>
                         </div>

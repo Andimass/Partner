@@ -788,19 +788,20 @@ body{
     height: 245px;
     margin-left: 1096px;
     margin-top: 362px;
-    z-index: 5;
-          background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
+    z-index: 1;
   -webkit-mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
   mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  -webkit-mask-size: 3000% 100%;
-  mask-size: 3000% 100%;
-  -webkit-animation: ani2 0.7s steps(29) forwards;
+      -webkit-animation: ani2 0.7s steps(29) forwards;
   animation: ani2 0.7s steps(29) forwards;
+    -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
 }
 
 .about_2_block_1:hover {
-  -webkit-animation: ani 0.7s steps(29) forwards;
-  animation: ani 0.7s steps(29) forwards;
+      background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
+   -webkit-animation: ani 0.7s steps(29) forwards;
+   animation: ani 0.4s steps(29) forwards;
+    z-index: 1;
 }
 
 @keyframes ani {
@@ -860,7 +861,8 @@ body{
 .about_2_block_5:hover .about_2_block_5_text_3,
 .about_2_block_6:hover .about_2_block_1_text_1,
 .about_2_block_6:hover .about_2_block_6_text_3{
-    color: white;
+    color: black;
+    z-index: 999;
 }
 
 .about_2_block_1:hover .about_2_block_1_text_2,
@@ -869,7 +871,8 @@ body{
 .about_2_block_4:hover .about_2_block_1_text_2,
 .about_2_block_5:hover .about_2_block_1_text_2,
 .about_2_block_6:hover .about_2_block_1_text_2    {
-    color: white;
+    color: black;
+    z-index: 999;
 }
 
 .about_2_block_1:hover .about_2_block_1_number,
@@ -878,7 +881,8 @@ body{
 .about_2_block_4:hover .about_2_block_1_number,
 .about_2_block_5:hover .about_2_block_1_number,
 .about_2_block_6:hover .about_2_block_1_number    {
-    color: white;
+    color: black;
+    z-index: 999;
 }
 
 
@@ -894,6 +898,7 @@ body{
     font-family: "Cera Pro Regular", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+        z-index: 999;
 }
 
 .about_2_block_1_text_1 span{
@@ -912,6 +917,7 @@ body{
     margin-left: 15px;
     font-size: 16px;
     font-family: "Cera Pro Light", sans-serif;
+        z-index: 999;
 }
 
 
@@ -933,6 +939,7 @@ body{
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 250px;
     margin-top: -20px;
+        z-index: 999;
 }
 
 .about_2_block_2_text_3{
@@ -942,6 +949,7 @@ body{
     font-family: "Cera Pro Medium", sans-serif;
         margin-left: 250px;
     margin-top: -20px;
+        z-index: 999;
 }
 
 .about_2_block_3_text_3{

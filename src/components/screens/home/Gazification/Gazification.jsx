@@ -111,6 +111,42 @@ window.addEventListener('scroll', function() {
     // }, 150);
 });
 
+         window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 0) {
+              document.querySelector('.header_black_square').style.backgroundColor = "white";
+             document.querySelector('.header_black_square2').style.backgroundColor = "white";
+    }
+
+    if (scrollPosition >= 600) {
+              document.querySelector('.header_black_square').style.backgroundColor = "#8DB2FB";
+             document.querySelector('.header_black_square2').style.backgroundColor = "#8DB2FB";
+    }
+
+    if (scrollPosition >= 950) {
+              document.querySelector('.header_black_square').style.backgroundColor = "rgba(246, 245, 245, 0.97)";
+             document.querySelector('.header_black_square2').style.backgroundColor = "rgba(246, 245, 245, 0.97)";
+    }
+
+        if (scrollPosition >= 1650) {
+              document.querySelector('.header_black_square').style.backgroundColor = "white";
+             document.querySelector('.header_black_square2').style.backgroundColor = "white";
+    }
+
+            if (scrollPosition >= 2750) {
+              document.querySelector('.header_black_square').style.backgroundColor = "rgba(246, 245, 245, 0.97)";
+             document.querySelector('.header_black_square2').style.backgroundColor = "rgba(246, 245, 245, 0.97)";
+    }
+
+                    if (scrollPosition >= 3150) {
+              document.querySelector('.header_black_square').style.backgroundColor = "white";
+             document.querySelector('.header_black_square2').style.backgroundColor = "white";
+    }
+
+
+             });
+
 
 
 return (
@@ -123,10 +159,12 @@ return (
         <link rel="manifest" href="/site.webmanifest"/>
     </head>
         <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className='Gazification'>
             <div className='header_header'>
-                <img className='header_logo' src='/public/logo2.png'/>
-                <img className='header_logo_2' src='/public/Group 4.png'/>
+                <a href="/">
+                <img className='header_logo' src='/public/logo_new.png'/>
+                </a>
                 <div className='header_animation_square '>
                     <div className='header_black_square'></div>
                     <div className='header_black_square2'></div>
@@ -194,7 +232,7 @@ return (
                     <h2 className='gazification_1_title'>Газораспределения и газопотребления</h2>
                     <p className='gazification_1_text'>Благодаря многолетнему опыту в области газификации объектов самого различного назначения, наша компания успешно справляется с заказами повышенного уровня сложности</p>
                     <img className='gazification_1_img' src='/public/Group 113.png'/>
-                    <img className='gazification_fon_img' src='/public/gaz_fon.png' />
+                    <img className='gazification_fon_img' src='/public/fon_tochki.png' />
                 </div>
 
             <div className='gazification_2'>
@@ -273,10 +311,10 @@ return (
             <div className='geo_uslugi'>
                 <p className='geo_uslugi_title'>Наши услуги</p>
                 <div className={`geo_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
-                    <h2 className='geo_body_uslugi_box_title_1'>Ситуационный план</h2>
-                    <img className='geo_body_box1_image' src='/public/box1.jpg'/>
-                    <p className='geo_body_price'>от 10.000 руб.</p>
-                    <p className='geo_body_text'>Разработка ситуационного плана для подачи заявок на газификацию и энергоснабжение</p>
+                    <h2 className='geo_body_uslugi_box_title_1'>Проектирование газопроводов низкого давления</h2>
+                    <img className='geo_body_box1_image' src='/public/energy-supply-system%20(2).jpg'/>
+                    <p className='geo_body_price'>от 25.000 руб.</p>
+                    <p className='geo_body_text'>Проектирование газопроводов низкого давления для частных и промышленных зданий.</p>
                     <input className={`geo_body_uslugi_box_strela1 ${activeHandler === 1 ? 'strela-digris': ''}`} type="image" onClick={() => handleClick(1)} alt=''/>
                     {activeHandler === 1 && (
                     <div className='dop_1'>
@@ -288,10 +326,10 @@ return (
 
 
                <div className={`geo_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
-                    <h2 className='geo_body_uslugi_box_title_2'>Вынос границ земельного участка в натуру</h2>
-                    <img className='geo_body_box2_image' src='/public/box2.jpg'/>
-                    <p className='geo_body_price2'>от 10.000 руб.</p>
-                    <p className='geo_body_text2'>Маркировка и определение физических границ участка на местности для его использования и оформления собственности</p>
+                    <h2 className='geo_body_uslugi_box_title_2'>Проектирование газопроводов среднего давления</h2>
+                    <img className='geo_body_box2_image' src='/public/down-up-view-modern-operational-plant-with-grey-pipes-ladders-heavy-industry-machinery-metalworking-workshop-concept%20(2)%20(1).jpg'/>
+                    <p className='geo_body_price2'>от 50.000 руб.</p>
+                    <p className='geo_body_text2'>Проектирование газопроводов среднего давления для частных и промышленных зданий.</p>
                     <input className={`geo_body_uslugi_box_strela2 ${activeHandler === 2 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(2)} alt=''/>
                     {activeHandler === 2 && (
                     <div className='dop_2'>
@@ -303,10 +341,10 @@ return (
 
 
                <div className={`geo_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_3'>Топографическая съемка и топоплан</h2>
-                   <img className='geo_body_box3_image' src='/public/box3.png'/>
-                   <p className='geo_body_price3'>от 10.000 руб.</p>
-                    <p className='geo_body_text3'>Создание подробной картографической информации о местности для инженерных и строительных проектов</p>
+                   <h2 className='geo_body_uslugi_box_title_3'>Проектирование газопроводов высокого давления</h2>
+                   <img className='geo_body_box3_image' src='/public/3dae0a228aa643696f43f2d1be81ebb1.jpg'/>
+                   <p className='geo_body_price3'>от 75.000 руб.</p>
+                    <p className='geo_body_text3'>Проектирование газопроводов высокого давления для частных и промышленных зданий.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 3 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(3)} alt=''/>
                     {activeHandler === 3 && (
                     <div className='dop_3'>
@@ -317,10 +355,10 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_4'>Геодезические изыскания</h2>
-                   <img className='geo_body_box4_image' src='/public/box4.jpg'/>
-                   <p className='geo_body_price4'>от 10.000 руб.</p>
-                    <p className='geo_body_text4'>Сбор точных геодезических данных и измерений для подготовки к инженерным и строительным проектам</p>
+                   <h2 className='geo_body_uslugi_box_title_4'>Переустройство газопроводов из под пятна строительства</h2>
+                   <img className='geo_body_box4_image' src='/public/20140829_144406.jpg'/>
+                   <p className='geo_body_price4'>от 70.000 руб.</p>
+                    <p className='geo_body_text4'>Перенос газопроводов для освобождения территории под новое строительство, с соблюдением техники безопасности.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 5 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(5)} alt=''/>
                     {activeHandler === 5 && (
                     <div className='dop_4'>
@@ -331,10 +369,10 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_5'>Камерально геодезические работы</h2>
-                   <img className='geo_body_box5_image' src='/public/geo_camer.jpg'/>
-                   <p className='geo_body_price5'>от 10.000 руб.</p>
-                    <p className='geo_body_text5'>Анализ и обработка данных с целью создания точных карт и планов для строительства и проектирования.</p>
+                   <h2 className='geo_body_uslugi_box_title_5'>Проектирование газоснабжения котельной</h2>
+                   <img className='geo_body_box5_image' src='/public/{C6C52C8E-5710-EB44-B63B-93749CFF545C}.jpg'/>
+                   <p className='geo_body_price5'>от 150.000 руб.</p>
+                    <p className='geo_body_text5'>Разработка проекта системы газоснабжения для котельных с учетом требований эффективности и безопасности эксплуатации.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 6 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(6)} alt=''/>
                     {activeHandler === 6 && (
                     <div className='dop_5'>
@@ -345,10 +383,10 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_6'>Координирование реперов</h2>
-                   <img className='geo_body_box6_image' src='/public/geo_rap.jpg'/>
-                   <p className='geo_body_price6'>от 10.000 руб.</p>
-                    <p className='geo_body_text6'>Определение точных географических координат и высотных отметок опорных точек, необходимых для геодезических и строительных работ</p>
+                   <h2 className='geo_body_uslugi_box_title_6'>Разработка схемы газоснабжения объекта</h2>
+                   <img className='geo_body_box6_image' src='/public/abb934acbabd3e1bf6813ad3c28fbef0.jpeg'/>
+                   <p className='geo_body_price6'>от 100.000 руб.</p>
+                    <p className='geo_body_text6'>Инженерное проектирование схемы газоснабжения для объектов с обеспечением надежности и соответствия стандартам безопасности.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -359,10 +397,10 @@ return (
                 </div>
 
                               <div className={`geo_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_7'>Сопровождение линейных объектов</h2>
-                   <img className='geo_body_box7_image' src='/public/geo_sopr.jpg'/>
-                   <p className='geo_body_price7'>от 10.000 руб.</p>
-                    <p className='geo_body_text7'>Измерение и контрольные работы для обеспечения точности и надежности линейных инженерных систем и коммуникаций</p>
+                   <h2 className='geo_body_uslugi_box_title_7'>Газификация частного дома</h2>
+                   <img className='geo_body_box7_image' src='/public/1633742605_40-pro-da.jpg'/>
+                   <p className='geo_body_price7'>от 12.000 руб.</p>
+                    <p className='geo_body_text7'>Комплексное проектирование систем газификации для частного дома, включая подбор оборудования и разработку технической документации.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -373,10 +411,10 @@ return (
                 </div>
 
                               <div className={`geo_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_8'>Расчет объема грунта</h2>
-                   <img className='geo_body_box8_image' src='/public/v_grunt.jpg'/>
-                   <p className='geo_body_price8'>от 10.000 руб.</p>
-                    <p className='geo_body_text8'>Определение объема земельных масс при проведении строительных и инженерных работ</p>
+                   <h2 className='geo_body_uslugi_box_title_8'>Проектирование ГРШП, ГРС, ШРП </h2>
+                   <img className='geo_body_box8_image' src='/public/20190910_120240.jpg'/>
+                   <p className='geo_body_price8'>от 100.000 руб.</p>
+                    <p className='geo_body_text8'>Профессиональное проектирование газорегуляторных шкафов, пунктов и станций для обеспечения надежной работы газовых систем.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -499,7 +537,7 @@ return (
 
 
             </div>
-            <div className='gazification_footer'>
+            <div className={`gazification_footer ${activeHandler === 1 ? 'footer-shot_1_1' : '' || activeHandler === 2 ? 'footer-shot_2_1' : '' || activeHandler === 3 ? 'footer-shot_3_1' : '' || activeHandler === 4 ? 'footer-shot_4_1' : '' || activeHandler === 5 ? 'footer-shot_5_1' : '' || activeHandler === 6 ? 'footer-shot_6_1' : '' || activeHandler === 7 ? 'footer-shot_7_1' : '' || activeHandler === 8 ? 'footer-shot_8_1' : '' || activeHandler === 9 ? 'footer-shot_9_1' : ''  }`}>
                 <div className='gazification_footer_1'>
                     <img className='gazification_footer_1_img' src='/public/logo_new.png'/>
                     <img className='gazification_footer_2_img' src='/public/tochki.png'/>
