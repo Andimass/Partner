@@ -2,7 +2,7 @@ import './Gazification.css'
 import React, {useEffect, useState, useRef} from "react";
 
 const Gazification = () =>  {
-    const [activeHandler, setActiveHandler] = useState(1);
+    const [activeHandler, setActiveHandler] = useState(0);
 
     const handleClick = (handlerId) => {
         if (activeHandler === handlerId) {
@@ -233,6 +233,7 @@ return (
                     <p className='gazification_1_text'>Благодаря многолетнему опыту в области газификации объектов самого различного назначения, наша компания успешно справляется с заказами повышенного уровня сложности</p>
                     <img className='gazification_1_img' src='/public/Group 113.png'/>
                     <img className='gazification_fon_img' src='/public/fon_tochki.png' />
+                    <img className='mini_fon' src='/public/mini_fon.png'/>
                 </div>
 
             <div className='gazification_2'>
@@ -537,7 +538,8 @@ return (
 
 
             </div>
-            <div className={`gazification_footer ${activeHandler === 1 ? 'footer-shot_1_1' : '' || activeHandler === 2 ? 'footer-shot_2_1' : '' || activeHandler === 3 ? 'footer-shot_3_1' : '' || activeHandler === 4 ? 'footer-shot_4_1' : '' || activeHandler === 5 ? 'footer-shot_5_1' : '' || activeHandler === 6 ? 'footer-shot_6_1' : '' || activeHandler === 7 ? 'footer-shot_7_1' : '' || activeHandler === 8 ? 'footer-shot_8_1' : '' || activeHandler === 9 ? 'footer-shot_9_1' : ''  }`}>
+            <div className={`gazification_footer ${activeHandler === 0 ? 'gazification_footer' : '' || activeHandler === 1 ? 'footer-shot_1_1' : '' || activeHandler === 2 ? 'footer-shot_2_1' : '' || activeHandler === 3 ? 'footer-shot_3_1' : '' || activeHandler === 4 ? 'footer-shot_4_1' : '' || activeHandler === 5 ? 'footer-shot_5_1' : '' || activeHandler === 6 ? 'footer-shot_6_1' : '' || activeHandler === 7 ? 'footer-shot_7_1' : '' || activeHandler === 8 ? 'footer-shot_8_1' : '' || activeHandler === 9 ? 'footer-shot_9_1' : ''  }`}>
+               <div className='gaz_fot'>
                 <div className='gazification_footer_1'>
                     <img className='gazification_footer_1_img' src='/public/logo_new.png'/>
                     <img className='gazification_footer_2_img' src='/public/tochki.png'/>
@@ -567,7 +569,7 @@ return (
                     <p className='gazification_footer_2_text_11'>Контакты</p>
                     <p className='gazification_footer_2_text_21'>О компании</p>
                 </div>
-
+               </div>
                 </div>
 
 

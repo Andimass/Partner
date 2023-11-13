@@ -1447,6 +1447,14 @@
   }
 }
 
+.circle_img{
+  position: absolute;
+  z-index: 99;
+  margin-top: 250px;
+  margin-left: -1775px;
+  width: 218px;
+}
+
 .header_top_circle {
   position: absolute;
   width: 500px;
@@ -1477,11 +1485,7 @@
   width: 15%;
 }
 
-.header_top_circle_3{
-  width: 15%;
-}
-
-.header_top_circle_7 {
+.header_top_circle_7{
   width: 18%;
 }
 .header_top_circle_10 {

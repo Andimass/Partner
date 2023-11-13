@@ -569,6 +569,7 @@ const Header = () => {
                         <p>+ 7 (918) 331-25-57</p>
                         <div className='header_top'>
                             <img className='header_phone' src='/public/fone_1.png'/>
+                            <img className='circle_img' src='/public/logo_big.png'/>
                              <div className='header_top_circle'>
                               {images.map((src, index) => {
                                 const { positionStyle, imageStyle } = calculatePositionAndRotation(index);
