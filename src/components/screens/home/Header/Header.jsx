@@ -475,6 +475,7 @@ const Header = () => {
 
 
 
+
         return (
         <html>
         <head>
@@ -588,8 +589,8 @@ const Header = () => {
                                 <div className='header_top_comp_2_title_111'>
                                     <p className='header_top_comp_2_title_11'>Геодезические, геологические и экологические изыскания для выполнения работ по подготовке проектной документации, строительству и реконструкции объектов капитального строительства  </p>
                                 </div>
-                                <p className='header_top_comp_2_title_2'>Проектирование энергообъектов электроэнергетики</p>
-                                <img className='header_top_comp_2_title_2_img' src='/public/обводка анимация.gif'/>
+                                <div><a className='header_top_comp_2_title_2' href='/communication_system'>Проектирование энергообъектов электроэнергетики</a>
+                                    <img className='header_top_comp_2_title_2_img' href='/geodezic' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_211'>
                                     <p className='header_top_comp_2_title_21'>Разработка проектных решений по кабельным и воздушным линиям электропередачи, трансформаторным подстанциям, генераторам и иным видам оборудования классом напряжения 0,4-35 кВ</p>
                                 </div>
@@ -598,18 +599,18 @@ const Header = () => {
                                 <div className='header_top_comp_2_title_311'>
                                     <p className='header_top_comp_2_title_31'>Оказываем услуги по расчету потребления газа, разработке проектной и рабочей документации: котельных, пунктов редуцирования газа, сетей газопотребления и газораспределения</p>
                                 </div>
-                                <p className='header_top_comp_2_title_4'>Проектирование сетей абоненстского доступа</p>
+                                <a className='header_top_comp_2_title_4' href='/project_supply'>Проектирование сетей абоненстского доступа</a>
                            <img className='header_top_comp_2_title_4_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_411'>
                                     <p className='header_top_comp_2_title_41'>Проектирование современных систем связи с использованием оптического волокна. Расчет тяжений несущих конструкций, в том числе опор воздушных линий электропередачи</p>
                                 </div>
-                                <p className='header_top_comp_2_title_5'>Проектирование водопровода и канализации</p>
-                           <img className='header_top_comp_2_title_5_img' src='/public/обводка анимация.gif'/>
+                                <div><a className='header_top_comp_2_title_5' href='/gaz'>Проектирование водопровода и канализации</a>
+                                    <img className='header_top_comp_2_title_5_img' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_511'>
                                     <p className='header_top_comp_2_title_51'>Комплексное проектирование и расчет наружних инженерных канализационных и водопроводных систем любой сложности. Центральное и индивидуальное водоснабжение и водоотведение.</p>
                                 </div>
-                                <p className='header_top_comp_2_title_6'>Кадастровые работы</p>
-                           <img className='header_top_comp_2_title_6_img' src='/public/обводка анимация.gif'/>
+                                <div><a className='header_top_comp_2_title_6' href='/cadastral_works'>Кадастровые работы</a>
+                           <img className='header_top_comp_2_title_6_img' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_611'>
                                     <p className='header_top_comp_2_title_61'>Подготовка документов содержаших полный перечень сведений, используемых для оформления на кадастровый учет недвижимости в специальных государственных органах</p>
                                 </div>
@@ -689,7 +690,7 @@ const Header = () => {
                             <p className='header_our_uslugi_geo'>Цифровые навыки</p>
                             <p className='dop_1_geo_1'>Наша компания уделяет особое внимание рабочему месту сотрудника. Непосредственно, как скальпель для хирурга и кисть для художника, сотрудники выполняют проектную работу на современном цифровом рабочем месте. <br/> Мощные компьютеры и 4K мониторы позволяют видеть более объемным проект и снизить утомляемость персонала. Применение собственных разработок в части программного обеспечения для расчетов, построения трасс и профилей положительно сказываются на качестве проектной документации.<br/> Цифровая система критериев на базе искусственного интеллекта координирует распределение объектов между персоналом и сигнализирует об отклонениях в сроках реализации. В совокупности данные мероприятия позволяют значительно сэкономить время производства без потери качества.</p>
                             {/*<a className='dop_1_href' href='/geo'>Больше услуг</a>*/}
-                            <a className='dop_1_button' href='/about'>Подробнее</a>
+                            <a className='dop_1_button' href='/about#about_1'>Подробнее</a>
                             </div>
                           )}
                         </div>
@@ -701,7 +702,7 @@ const Header = () => {
                             <p className='header_our_uslugi_cadastr_3'>Материальное обеспечение</p>
                             <img className='header_our_uslugi_cadastr_img' src='/public/car_1.png'/>
                             <p className='dop_2_1'>Для успешной и качественной реализации проектов ООО "Партнер" использует современное материально-техническое обеспечение, что позволяет держать высокую планку качества в сфере инженерных изысканий. Тахеометр, нивелир, GPS оборудование позволяет выполнить работу с минимальной погрешностью в любых ландшафтных условиях. Наше компания располагает собственным укомплектованным парком автотранспорта разной проходимости. В том числе имеется резерв на случаи технологической поломки или неисправности.</p>
-                            <a className='dop_2_button' href='/about'>Подробнее</a>
+                            <a className='dop_2_button' href='/about#about_2'>Подробнее</a>
                         </div>
                           )}
                         </div>
@@ -712,7 +713,7 @@ const Header = () => {
                             <p className='header_our_uslugi_proekt_2'>Работа с персоналом</p>
                             <p className='header_our_uslugi_proekt_3'>Работа с персоналом</p>
                             <p className='dop_3_1'>В современном мире профессиональные навыки, полученные в процессе получения образования, быстро устаревают, поэтому обучение и повышение квалификации становятся важнейшими элементами профессионального роста. В ООО «Партнер» помимо классических инструктажей и самоподготовки с персоналом проводятся семинары, на которых опытные наставники детально разбирают актуальные редакции нормативно технических документов и индивидуальные замечания сотрудников, допущенных вследствие дополнительных персональных требований Заказчика</p>
-
+                            <a className='dop_3_button' href='/about#about_3'>Подробнее</a>
                             </div>
                           )}
                         </div>
@@ -723,6 +724,7 @@ const Header = () => {
                             <p className='header_our_uslugi_proekt_gaz_2'>Ответственность</p>
                             <p className='header_our_uslugi_proekt_gaz_3'>Ответственность</p>
                             <p className='dop_4_1'>Структура компании и четкий последовательный алгоритм производственных процессов не является только частью успеха ООО «Партнер». Коллективная и личная ответственность каждого позволяют достичь истинного баланса. Учитывая линейность процесса разработки проектной документации любой из сотрудников, понимает, что непосредственно от него зависит итоговый результат и репутация компании. Ответственное исполнение каждого этапа: получение исходных данных, сверка в натуре, инженерные изыскания, разработка проектной и рабочей документации, согласование и закрытие позволяют достичь максимальной эффективности.</p>
+                            <a className='dop_4_button' href='/about#about_4'>Подробнее</a>
                             </div>
                           )}
                         </div>
@@ -733,7 +735,8 @@ const Header = () => {
                             <p className='header_our_uslugi_proekt_set_2'>Логистика</p>
                             <p className='header_our_uslugi_proekt_set_3'>Логистика</p>
                             <p className='dop_5_1'>Работа в условиях пандемии COVID-19 наглядно показала положительные и негативные стороны удаленной работы. ООО «Партнер» постарался найти компромисс и использовать лучшее. Тема Краснодарских пробок - одна из самых популярных для обсуждения. Открытие небольших офисов в разных частях города позволило уменьшить время персонала, бесцельно расходуемого на дорогу до работы. А подбор специалистов отрасли инженерных изысканий с разных районов Краснодарского края и Республики Адыгея сократить время на производство. Многие сотрудники так и работают удаленно, ведь главное качественный результат.</p>
-                            </div>
+                            <a className='dop_5_button' href='/about#about_5'>Подробнее</a>
+                        </div>
                           )}
                         </div>
                         <div className={`header_our_uslugi_6 ${activeHandler === 6 ? 'black-grey_6' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 || activeHandler === 4 || activeHandler === 5 ? 'dop_blue-white_5' : ''}`} onClick={() => handleClick(6)}>
@@ -833,6 +836,38 @@ const Header = () => {
 
 
 
+
+                </div>
+                <div className={`header_footer ${activeHandler === 1 ? 'footer-shot_1' : '' || activeHandler === 2 ? 'footer-shot_2' : '' || activeHandler === 3 ? 'footer-shot_3' : '' || activeHandler === 4 ? 'footer-shot_4' : '' || activeHandler === 5 ? 'footer-shot_5' : '' || activeHandler === 6 ? 'footer-shot_6' : '' || activeHandler === 7 ? 'footer-shot_7' : '' || activeHandler === 8 ? 'footer-shot_8' : '' || activeHandler === 9 ? 'footer-shot_9' : ''  }`}>
+                <div className='communication_footer_1'>
+                    <img className='communication_footer_1_img' src='/public/logo_new.png'/>
+                    <img className='communication_footer_2_img' src='/public/tochki.png'/>
+                </div>
+                <div className='communication_footer_2'>
+                    <p className='communication_footer_2_text_1'>АДРЕС ОФИСА</p>
+                    <p className='communication_footer_2_text_2'>г.Крснодар ул.Заполярная 37 к4</p>
+                    <p className='communication_footer_2_text_3'>г.Крснодар ул.Красных Партизан 1/4 к9</p>
+                </div>
+                <div className='communication_footer_4'>
+                    <p className='communication_footer_2_text_1'>ГРАФИК РАБОТЫ</p>
+                    <p className='communication_footer_2_text_2'>пн-пт с 9:00 до 18:00,</p>
+                    <p className='communication_footer_2_text_3'>сб-вс - выходной</p>
+                </div>
+                <div className='communication_footer_5'>
+                    <p className='communication_footer_2_text_1'>ТЕЛЕФОН</p>
+                    <p className='communication_footer_2_text_2'>+7 (918) 331-25-57</p>
+                    <p className='communication_footer_2_text_3'>+7 (993) 310-00-01</p>
+                </div>
+                <div className='communication_footer_6'>
+                    <p className='communication_footer_2_text_1'>E-MAIL</p>
+                    <p className='communication_footer_2_text_2'>info@partner-tech.ru</p>
+                    <p className='communication_footer_2_text_3'>mail@partner-krd.ru</p>
+                </div>
+                <div className='communication_footer_7'>
+                    <p className='communication_footer_2_text_1'>ИФОРМАЦИЯ</p>
+                    <p className='communication_footer_2_text_11'>Контакты</p>
+                    <p className='communication_footer_2_text_21'>О компании</p>
+                </div>
 
                 </div>
 

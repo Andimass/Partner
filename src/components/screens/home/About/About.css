@@ -17,7 +17,12 @@ body{
 }
 
 .logo-supply{
+    width: 170px;
+    margin-left: 40px;
     margin-top: 20px;
+    position: fixed;
+    z-index: 1999;
+      filter: brightness(0%);
 }
 
     .menu_supply {
@@ -798,7 +803,7 @@ body{
 }
 
 .about_2_block_1:hover {
-      background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
+          background: linear-gradient( 135deg, rgba(79, 243, 6, 0.4), rgba(61, 164, 49, 0.6), rgba(45, 140, 117, 0.6), rgb(12, 106, 227, 0.6), rgba(0,55,251, 0.6));
    -webkit-animation: ani 0.7s steps(29) forwards;
    animation: ani 0.4s steps(29) forwards;
     z-index: 1;
@@ -1059,6 +1064,40 @@ body{
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 300px;
 }
+
+.about_container_4_text_2_img_1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 300px;
+}
+
+.about_container_4_text_2_img_2{
+    position: absolute;
+        width: 300px;
+        height: 300px;
+    margin-left: 700px;
+}
+
+.about_container_4_text_2_img_3{
+    position: absolute;
+        width: 300px;
+        height: 300px;
+    margin-left: 1100px;
+}
+
+.about_container_4_text_2_img_4{
+    position: absolute;
+        width: 300px;
+        height: 300px;
+    margin-left: 1500px;
+}
+
+
+
+
+
+
 
 .about_container_4_text_2{
     color: black;

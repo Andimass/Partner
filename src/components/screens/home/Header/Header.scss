@@ -1473,6 +1473,34 @@
   filter: grayscale(100%);
 }
 
+.header_top_circle_3{
+  width: 15%;
+}
+
+.header_top_circle_3{
+  width: 15%;
+}
+
+.header_top_circle_7 {
+  width: 18%;
+}
+.header_top_circle_10 {
+  width: 18%;
+}
+
+.header_top_circle_11 {
+  width: 18%;
+}
+
+.header_top_circle_8 {
+  width: 18%;
+}
+
+.header_top_circle_8 {
+  width: 18%;
+}
+
+
 .logo_circle{
   margin-top: 650px;
   position: absolute;
@@ -1535,6 +1563,34 @@
   color: black;
 }
 
+.header_top_comp_2_title_6:hover + .header_top_comp_2_title_6_img{
+    opacity: 1;
+}
+
+.header_top_comp_2_title_5:hover + .header_top_comp_2_title_5_img{
+    opacity: 1;
+}
+
+.header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
+    opacity: 1;
+}
+
+.header_top_comp_2_title_3:hover + .header_top_comp_2_title_3_img{
+    opacity: 1;
+}
+
+.header_top_comp_2_title_2:hover + .header_top_comp_2_title_2_img{
+    opacity: 1;
+}
+
+.header_top_comp_2_title_6:hover{
+  color: black;
+}
+
+.header_top_comp_2_title_2:hover{
+  color: black;
+}
+
 .header_top_comp_2_title_2_img {
     position: absolute;
     width: 380px;
@@ -1543,6 +1599,7 @@
     margin-top: 500px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+    z-index: 50 ;
 }
 
 .header_top_comp_2_title_2:hover .header_top_comp_2_title_2_img,
@@ -1561,6 +1618,7 @@
     margin-top: 700px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+    z-index: 50 ;
 }
 
 .header_top_comp_2_title_3:hover .header_top_comp_2_title_3_img,
@@ -1568,7 +1626,25 @@
     opacity: 1;
 }
 
+.header_top_comp_2_title_4:hover .header_top_comp_2_title_4_img,
+.header_top_comp_2_title_4_img:hover {
+    opacity: 1;
+}
+
+.header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
+.header_top_comp_2_title_5_img:hover {
+    opacity: 1;
+}
+
 .header_top_comp_2_title_3:hover{
+  color: black;
+}
+
+.header_top_comp_2_title_4:hover{
+  color: black;
+}
+
+.header_top_comp_2_title_5:hover{
   color: black;
 }
 
@@ -1581,9 +1657,10 @@
     margin-top: 40px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+    z-index: 10 ;
 }
 
-.header_top_comp_2_title_3:hover + .header_top_comp_2_title_3_img{
+.header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
     opacity: 1;
 }
 
@@ -1595,6 +1672,7 @@
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+    z-index: 50 ;
 }
 
 .header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
@@ -1610,6 +1688,7 @@
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
     opacity: 0;
+    z-index: 50 ;
 }
 
 .header_top_comp_2_title_6:hover .header_top_comp_2_title_6_img,
@@ -1656,6 +1735,8 @@
     width: 200px;
     font-size: 26px;
     font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999 ;
+  color: black;
 }
 
 .header_top_comp_2_title_2:after{
@@ -1715,6 +1796,8 @@
     width: 260px;
     font-size: 25px;
     font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999 ;
+    color: black;
 }
 
 .header_top_comp_2_title_4:after{
@@ -1748,6 +1831,8 @@
     width: 200px;
     font-size: 26px;
     font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999 ;
+    color: black;
 }
 
 .header_top_comp_2_title_5:after{
@@ -1781,6 +1866,8 @@
     width: 200px;
     font-size: 28px;
     font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999 ;
+  color: black  ;
 }
 
 .header_top_comp_2_title_611 {
@@ -2788,7 +2875,23 @@ background-color: rgba(246, 245, 245);
     text-align: justify;
 }
 
+.dop_3_button{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 500px;
+}
 
+.dop_4_button{
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 475px;
+}
+
+.dop_5_button{
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 475px;
+}
 
 
 
@@ -3631,7 +3734,165 @@ background-color: rgba(246, 245, 245);
 
 
 
+.header_footer{
+    position: absolute;
+    width: 2500px;
+    height: 300px;
+    background-color: #2c2b2b;
+    top: 2300px;
+}
 
+.communication_footer_1{
+
+}
+
+.communication_footer_1_img{
+        width: 240px;
+    height: 49px;
+    margin-left: 1135px;
+    margin-top: 45px;
+    position: absolute;
+}
+
+.communication_footer_2_img{
+    margin-left: 531px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.communication_footer_1_text{
+    width: 310px;
+    margin-left: 500px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+}
+
+.communication_footer_1_text:after{
+    position: absolute;
+    border: 1px grey solid;
+    width: 1350px;
+    content: '';
+    margin-top: 90px;
+    margin-left: -270px;
+}
+
+
+
+.communication_footer_2{
+    position: absolute;
+    margin-left: 560px;
+    margin-top: 130px;
+}
+
+.communication_footer_2_text_1{
+    font-size: 21px;
+    color: white;
+
+}
+
+
+/*.communication_footer_2_text_1:after{*/
+/*	border-bottom: dotted 5px white;*/
+/*    width: 1000px;*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    !*height: 1px;*!*/
+/*    margin-top: -80px;*/
+/*    margin-left: -500px;*/
+/*}*/
+
+
+.communication_footer_2_text_2{
+    font-size: 18px;
+    font-family: "Cera Pro Regular",sans-serif;
+    color: white;
+        opacity: 0.5;
+}
+
+.communication_footer_2_text_3{
+    font-size: 18px;
+        font-family: "Cera Pro Regular",sans-serif;
+    margin-top: -10px;
+        opacity: 0.5;
+}
+
+
+.communication_footer_4{
+    width: 300px;
+    position: absolute;
+    margin-left: 980px;
+    margin-top: 130px;
+}
+
+.communication_footer_5{
+    width: 300px;
+    position: absolute;
+    margin-left: 1280px;
+    margin-top: 130px;
+}
+
+.communication_footer_5:before{
+    position: absolute;
+    border: 1px grey solid;
+    width: 1375px;
+    content: '';
+    margin-top: -10px;
+    margin-left: -715px;
+}
+
+.communication_footer_6{
+        width: 300px;
+    position: absolute;
+    margin-left: 1760px;
+    margin-top: 130px;
+}
+
+.communication_footer_7{
+            width: 300px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -75px;
+}
+
+.communication_footer_2_text_5{
+    font-size: 18px;
+        font-family: "Cera Pro Regular",sans-serif;
+    color: white;
+    margin-left: 2px;
+}
+
+.communication_footer_2_text_4{
+    font-size: 18px;
+        font-family: "Cera Pro Regular",sans-serif;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: -119px;
+    color: white;
+    opacity: 0.5;
+}
+
+.communication_footer_7{
+            width: 300px;
+    position: absolute;
+    margin-left: 1510px;
+    margin-top: 130px;
+}
+
+.communication_footer_2_text_11{
+        opacity: 0.5;
+    font-size: 18px;
+    font-family: "Cera Pro Regular",sans-serif;
+}
+
+.communication_footer_2_text_21{
+        opacity: 0.5;
+        font-size: 18px;
+    margin-top: -10px;
+    font-family: "Cera Pro Regular",sans-serif;
+}
 
 
 

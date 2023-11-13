@@ -72,6 +72,18 @@ window.addEventListener('scroll', function() {
     // }, 150);
 });
 
+
+          window.onload = function() {
+    const hash = window.location.hash;
+    if (hash) {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+            targetElement.scrollIntoView();
+        }
+    }
+};
+
+
     return(
         <html>
         <head>
@@ -86,7 +98,7 @@ window.addEventListener('scroll', function() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
         <a href="/">
-            <img className='logo-supply' src="/public/logo2.png" alt='' />
+            <img className='logo-supply' src="/public/logo_new.png" alt='' />
         </a>
             <a className='about_bgc_bgc'/>
             <div className='About_ous'>
@@ -224,13 +236,17 @@ window.addEventListener('scroll', function() {
             <div className='about_container_3'>
             <img className='about_container_3_shema' src='/public/СХЕМА НА САЙТ.png'/>
             </div>
-            <div className='about_container_4'>
-                <p className='about_container_4_text_1'>Цифровые навыки</p>
-                <p className='about_container_4_text_2'>Материальное обеспечение</p>
-                <p className='about_container_4_text_3'>Работа с персоналом</p>
-                <p className='about_container_4_text_4'>Ответственность</p>
-                <p className='about_container_4_text_5'>Логистика</p>
-                <p className='about_container_4_text_6'>Проектирование</p>
+            <div className='about_container_4' id="target-section">
+                <p className='about_container_4_text_1' id='about_1'>Цифровые навыки</p>
+                <p className='about_container_4_text_2' id='about_2'>Материальное обеспечение</p>
+                <img className='about_container_4_text_2_img_1' src='/public/IMG_4063-2_1_11zon (1).jpg'/>
+                <img className='about_container_4_text_2_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
+                <img className='about_container_4_text_2_img_3' src='/public/IMG_4253_12_11zon (1).jpg'/>
+                <img className='about_container_4_text_2_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                <p className='about_container_4_text_3' id='about_3'>Работа с персоналом</p>
+                <p className='about_container_4_text_4' id='about_4'>Ответственность</p>
+                <p className='about_container_4_text_5' id='about_5'>Логистика</p>
+                <p className='about_container_4_text_6' id='about_6'>Проектирование</p>
             </div>
 
 

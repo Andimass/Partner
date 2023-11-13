@@ -469,12 +469,12 @@ return (
                             <img className='geodezic_pdf_box_img4' src='/public/pdf4.png'/>
                             <img className='geodezic_pdf_box_img5' src='/public/pdf5.png'/>
                             <img className='geodezic_pdf_box_img6' src='/public/pdf6.png'/>
-                            <a className='geodezic_pdf_box_title_1' href="public/geokniga_bozhok_ap_drich_ki_evtifeev_sa_topografiya_s_osnovami_geodezii.pdf" download="geokniga_bozhok_ap_drich_ki_evtifeev_sa_topografiya_s_osnovami_geodezii.pdf">Топография с основами геодезии Харченко А.С, Божок А.П</a>
-                            <a className='geodezic_pdf_box_title_2' href="public/geokniga_kuroshev_gd_smirnov_le_osnovy_geodezii_i_topografii_1994.pdf" download="geokniga_kuroshev_gd_smirnov_le_osnovy_geodezii_i_topografii_1994.pdf">Основы геодезии и топографии Курошев Г.Д, Смирнов Л.Е</a>
-                            <a className='geodezic_pdf_box_title_3' href="public/geokniga_laykin_vi_uporov_ga_geoinformatika_komsomolsk_na_amure.pdf" download="geokniga_laykin_vi_uporov_ga_geoinformatika_komsomolsk_na_amure.pdf">Геоинформатика Лайкин В.И, Упоров Г.А. Учебное пособие</a>
-                            <a className='geodezic_pdf_box_title_4' href="public/Paromov_Kartografia_s_osnovami_topografii.pdf" download="Paromov_Kartografia_s_osnovami_topografii.pdf">Картография с основами топографии часть 2. картография учебно-методическое пособие</a>
-                            <a className='geodezic_pdf_box_title_5' href="public/uslovnye-znaki-dlya-topograficheskih-planov.pdf" download="uslovnye-znaki-dlya-topograficheskih-planov.pdf">Роскартография условные знаки топографических планов</a>
-                            <a className='geodezic_pdf_box_title_6' href="public/Sokolova.Osnoi.iziskanii.pdf" download="Sokolova.Osnoi.iziskanii.pdf">Основные инженерно-геодезические изыскания при строительстве сооружений. Учебное пособие</a>
+                            <a className='geodezic_pdf_box_title_1' href="public/geokniga_bozhok_ap_drich_ki_evtifeev_sa_topografiya_s_osnovami_geodezii.pdf" target="_blank">Топография с основами геодезии Харченко А.С, Божок А.П</a>
+                            <a className='geodezic_pdf_box_title_2' href="public/geokniga_kuroshev_gd_smirnov_le_osnovy_geodezii_i_topografii_1994.pdf" target="_blank">Основы геодезии и топографии Курошев Г.Д, Смирнов Л.Е</a>
+                            <a className='geodezic_pdf_box_title_3' href="public/geokniga_laykin_vi_uporov_ga_geoinformatika_komsomolsk_na_amure.pdf" target="_blank">Геоинформатика Лайкин В.И, Упоров Г.А. Учебное пособие</a>
+                            <a className='geodezic_pdf_box_title_4' href="public/Paromov_Kartografia_s_osnovami_topografii.pdf" target="_blank">Картография с основами топографии часть 2. картография учебно-методическое пособие</a>
+                            <a className='geodezic_pdf_box_title_5' href="public/uslovnye-znaki-dlya-topograficheskih-planov.pdf" target="_blank">Роскартография условные знаки топографических планов</a>
+                            <a className='geodezic_pdf_box_title_6' href="public/Sokolova.Osnoi.iziskanii.pdf" target="_blank">Основные инженерно-геодезические изыскания при строительстве сооружений. Учебное пособие</a>
                         </div>
 
                     </div>
