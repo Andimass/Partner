@@ -272,7 +272,7 @@ return (
                   <div className='gazification_2_block_3'>
                     <img className='gazification_2_block_1_img_3' src='/public/proekt.png'/>
                       <p className='gazification_2_block_1_text_1'>Разработка проекта</p>
-                      <p className='gazification_2_block_1_text_2'>с техническими решениями обеспечивающими безопасную для жизни и здоровья среду</p>
+                      <p className='gazification_2_block_1_text_2'>с техническими решениями обеспечивающими безопасную<span>для жизни и здоровья </span> среду</p>
                       <p className='gazification_2_block_3_text_3'>03</p>
                   </div>
                   <div className='gazification_2_block_4'>
