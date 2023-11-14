@@ -1,6 +1,2417 @@
 @import '/fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
+@media (min-width: 350px) and (max-width: 410px) {
+
+    .cadastr {
+        max-width: 390px;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 4px; /* Прикрепить шапку к верху экрана */
+        /* Дополнительные стили для вашей шапки */
+        font-family: "Cera Pro Light", sans-serif;
+
+    .header_logo {
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 7px;
+        position: fixed;
+        z-index: 1999;
+    }
+
+    .header_animation_square {
+        position: fixed;
+        width: 10px; /* Та же ширина, что и у .menu_supply */
+        height: 10px; /* Та же высота, что и у .menu_supply */
+        margin-left: 310px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */ /* Тот же отступ сверху, что и у .menu_supply */
+        display: block; /* Больше, чем у .menu_supply */
+        z-index: 1999;
+    }
+
+    .header_black_square {
+        position: fixed;
+        width: 10px; /* Та же ширина, что и у .menu_supply */
+        height: 10px; /* Та же высота, что и у .menu_supply */
+        margin-left: 55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
+        margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
+        z-index: 2000; /* Больше, чем у .menu_supply */
+        background-color: rgba(255, 255, 255); /* Черный цвет фона */
+        overflow-x: hidden;
+        visibility: hidden;
+    }
+
+    .header_black_square2 {
+        position: fixed;
+        width: 10px; /* Та же ширина, что и у .menu_supply */
+        height: 10px; /* Та же высота, что и у .menu_supply */
+        margin-left: -55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
+        margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
+        z-index: 2000; /* Больше, чем у .menu_supply */
+        background-color: rgba(255, 255, 255); /* Черный цвет фона */
+        visibility: hidden;
+
+    }
+
+    .header_menu_supply {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: 35px;
+        margin-top: 10px;
+        z-index: 1999;
+    }
+
+    .header_menu_supply2 {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: 35px;
+        margin-top: 12px;
+        z-index: 1999;
+    }
+
+    .header_menu_supply3 {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: 35px;
+        margin-top: 15px;
+        z-index: 1999;
+    }
+
+    .header_menu_supply4 {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: -55px;
+        margin-top: 15px;
+        z-index: 1999;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header_menu_supply5 {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: -55px;
+        margin-top: 10px;
+        z-index: 1999;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header_menu_supply6 {
+        position: fixed;
+        max-width: 20px; /* Установите желаемую ширину для логотипа */
+        max-height: 20px;
+        margin-left: -55px;
+        margin-top: 15px;
+        z-index: 1999;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @keyframes menu1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes menu2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes menu2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .header_animation_square:hover .header_menu_supply {
+
+    }
+
+    .header_animation_square:hover .header_menu_supply2 {
+
+    }
+
+    .header_animation_square:hover .header_menu_supply3 {
+
+    }
+
+    .header_animation_square:hover .header_menu_supply4 {
+
+    }
+
+    .header_animation_square:hover .header_menu_supply5 {
+
+    }
+
+    .header_animation_square:hover .header_menu_supply6 {
+
+    }
+
+
+    @keyframes menu3 {
+        0% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes menu4 {
+        0% {
+            opacity: 0;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+
+    .header_animation_square:not(:hover) .header_menu_supply,
+    .header_animation_square:not(:hover) .header_menu_supply2,
+    .header_animation_square:not(:hover) .header_menu_supply3 {
+    }
+
+    .header_animation_square:not(:hover) .header_menu_supply2 {
+
+    }
+
+    .header_animation_square:not(:hover) .header_menu_supply3 {
+
+    }
+
+    .header_animation_square:not(:hover) .header_menu_supply4,
+    .header_animation_square:not(:hover) .header_menu_supply5,
+    .header_animation_square:not(:hover) .header_menu_supply6 {
+
+    }
+
+    .header_animation_square:not(:hover) .header_menu_supply5 {
+
+    }
+
+    .header_animation_square:not(:hover) .header_menu_supply6 {
+
+    }
+
+    .cadastr_1 {
+        width: 390px;
+        position: absolute;
+        background-color: #ffffff;
+        height: 160px;
+        margin-top: -5px;
+        z-index: 1;
+    }
+
+    .cadastr_1_title {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 65px;
+        color: black;
+        font-size: 20px;
+        font-family: "Cera Pro Bold", sans-serif;
+        z-index: 1;
+    }
+
+    .cadastr_1_text {
+        position: absolute;
+        margin-left: 11px;
+        margin-top: 150px;
+        color: black;
+        width: 370px;
+        font-size: 10px;
+        font-family: "Cera Pro Medium", sans-serif;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .cadastr_1_img {
+        width: 130px;
+        margin-left: 240px;
+        margin-top: 60px;
+        position: absolute;
+        z-index: 11;
+    }
+
+    .cadastr_fon_img {
+        width: 390px;
+        height: 241px;
+        z-index: -1;
+        visibility: hidden;
+
+    }
+    
+    .mini_fon{
+    width: 390px;
+    height: 241px;
+    position: absolute;
+        margin-left: -390px;
+    }
+
+    .header_header{
+    width: 100px;
+    position: absolute;
+    background-color: white;
+    height: auto;
+}
+
+
+    .cadastr_for {
+        width: 390px;
+        position: absolute;
+        background: linear-gradient(to right, #6383F9, #8DB2FB 15%);
+        height: 390px;
+        margin-top: 230px;
+        z-index: 1;
+
+    .cadastr_for_block {
+        position: absolute;
+        width: 220px;
+        margin-top: 11px;
+        margin-left: 134px;
+        height: 153px;
+    }
+
+    .cadastr_for_img1 {
+        position: absolute;
+        width: 380px;
+        margin-left: -130px;
+        margin-top: 32px;
+        z-index: 4;
+        content: '';
+        border: 0.1px white solid;
+        opacity: 0.6;
+    }
+
+    .cadastr_for_img2 {
+        position: absolute;
+        height: 220px;
+        margin-left: -108px;
+        margin-top: 5px;
+        z-index: 4;
+        content: '';
+        border: 1px white solid;
+        opacity: 0.6;
+    }
+
+    .cadastr_for_img3 {
+        position: absolute;
+        height: 130px;
+        margin-left: -108px;
+        margin-top: 250px;
+        z-index: 4;
+        content: '';
+        border: 1px white solid;
+        opacity: 0.6;
+    }
+
+    .cadastr_for_img4 {
+        position: absolute;
+        width: 380px;
+        height: 0px;
+        margin-left: -130px;
+        margin-top: 275px;
+        z-index: 4;
+        content: '';
+        border: 1px white solid;
+        opacity: 0.6;
+    }
+
+    .cadastr_for_img5 {
+        position: absolute;
+        height: 181px;
+        margin-left: 9px;
+        margin-top: 5px;
+        z-index: 4;
+        content: '';
+        border: 1px white solid;
+        opacity: 0.6;
+        visibility: hidden;
+    }
+
+    .cadastr_for_img6 {
+        position: absolute;
+        height: 181px;
+        margin-left: 1px;
+        margin-top: 25px;
+        z-index: 4;
+        content: '';
+        border: 1px white solid;
+        opacity: 0.6;
+        visibility: hidden;
+    }
+
+    .cadastr_for_block_org {
+        position: absolute;
+
+    }
+
+    .cadastr_for_block_org_title {
+        position: absolute;
+        color: white;
+        font-size: 16px;
+        font-family: "Cera Pro Regular", sans-serif;
+        margin-left: -95px;
+        width: 232px;
+        margin-top: 9px;
+
+    }
+
+    .cadastr_for_block_org_block {
+        position: absolute;
+        margin-top: 58px;
+        margin-left: -90px;
+    }
+
+
+    .cadastr_for_block_org_block p {
+        display: flex;
+        color: white;
+        width: 291px;
+        margin-bottom: -8px; /* Расстояние между параграфами */
+        font-size: 12px;
+        font-family: "Cera Pro Regular", sans-serif;
+    }
+
+    /* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
+    .cadastr_for_block_org_block p:last-child {
+        margin-bottom: 0;
+    }
+
+    .cadastr_for_block_org_text_1 {
+        position: absolute;
+        margin-top: -18px;
+    }
+
+    .cadastr_for_block_org_text_2 {
+        margin-top: 1px;
+    }
+
+    /*.cadastr_for_block_org_text_3{*/
+    /*}*/
+    /*.cadastr_for_block_org_text_4{*/
+    /*}*/
+    /*.cadastr_for_block_org_text_5{*/
+    /*}*/
+    /*.cadastr_for_block_org_text_6{*/
+    /*}*/
+    /*.cadastr_for_block_org_text_7{*/
+    /*}*/
+    /*.cadastr_for_block_org_text_8{*/
+    /*}*/
+    .cadastr_for_block_ur {
+        width: 150px;
+        height: 186px;
+        margin-left: -110px;
+        position: absolute;
+        margin-top: 1px;
+    }
+
+
+    .cadastr_for_block_ur_title {
+        position: absolute;
+        color: white;
+        font-size: 16px;
+        font-family: "Cera Pro Regular", sans-serif;
+        margin-left: 15px;
+        width: 220px;
+        margin-top: 250px;
+
+    }
+
+    .cadastr_for_block_ur_block {
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 20px;
+        width: 300px;
+        height: 274px;
+    }
+
+
+    .cadastr_for_block_ur_block p {
+        display: flex;
+        color: white;
+        width: 300px;
+        margin-bottom: -10px; /* Расстояние между параграфами */
+        font-size: 12px;
+        font-family: "Cera Pro Regular", sans-serif;
+    }
+
+    /* Убрать margin у последнего параграфа, чтобы не было дополнительного пространства после него */
+    .cadastr_for_block_ur_block p:last-child {
+        margin-bottom: 0;
+    }
+
+    .cadastr_for_block_ur_text_1 {
+        position: absolute;
+        margin-top: -22px;
+    }
+
+    .cadastr_for_block_ur_text_2 {
+        position: absolute;
+        margin-top: -4px;
+    }
+
+    .cadastr_for_block_ur_text_3 {
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .cadastr_for_block_ur_text_4 {
+        position: absolute;
+        margin-top: 47px;
+    }
+
+}
+
+.cadastr_2 {
+    position: absolute;
+    width: 390px;
+    height: 480px;
+    background-color: rgba(246, 245, 245, 0.97);
+    margin-top: 620px;
+    z-index: 1;
+
+
+.cadastr_2_block_1_img_1 {
+    position: absolute;
+    width: 19px;
+    margin-left: 11px;
+    margin-top: 12px;
+}
+
+.cadastr_2_block_1_img_2 {
+    position: absolute;
+    margin-left: 11px;
+    margin-top: 11px;
+    width: 44px;
+}
+
+.cadastr_2_block_1_img_3 {
+    position: absolute;
+    width: 27px;
+    margin-left: 11px;
+    margin-top: 9px;
+}
+
+.cadastr_2_block_1_img_4 {
+    position: absolute;
+    width: 24px;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.cadastr_2_block_1_img_5 {
+    position: absolute;
+    width: 19px;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.cadastr_2_block_1_img_6 {
+    position: absolute;
+    width: 24px;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.cadastr_2_title_1 {
+    color: black;
+    position: absolute;
+    margin-left: 40px;
+    font-size: 18px;
+    font-family: "Cera Pro Medium", sans-serif;
+    width: 320px;
+    margin-top: 20px;
+    z-index: 5;
+    line-height: 20px;
+    text-align: center;
+}
+
+.cadastr_2_title_text {
+    color: black;
+    width: 200px;
+    position: absolute;
+    font-size: 11px;
+    margin-left: 75px;
+    margin-top: 215px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.cadastr_2_block {
+    position: absolute;
+    margin-top: -120px;
+}
+
+.cadastr_2_block_img_1 {
+    position: absolute;
+    margin-left: 25px;
+    height: 471px;
+    width: 0px;
+    margin-top: 120px;
+    border: 1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_2 {
+    position: absolute;
+    margin-left: 40px;
+    height: 471px;
+    width: 0px;
+    margin-top: 120px;
+    border: 1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_3 {
+    position: absolute;
+    margin-left: 365px;
+    height: 471px;
+    width: 0px;
+    margin-top: 120px;
+    border: 1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_4 {
+    position: absolute;
+    margin-left: 200px;
+    height: 400px;
+    width: 0px;
+    margin-top: 190px;
+    border: 1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_5 {
+    position: absolute;
+    width: 380px;
+    margin-left: 5px;
+    margin-top: 190px;
+    z-index: 4;
+    content: '';
+    border: 0.1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_6 {
+    position: absolute;
+    width: 325px;
+    margin-left: 40px;
+    margin-top: 325px;
+    z-index: 4;
+    content: '';
+    border: 0.1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_7 {
+    position: absolute;
+    margin-left: 5px;
+    width: 380px;
+    height: 0px;
+    margin-top: 465px;
+    border: 1px grey solid;
+    opacity: 0.6;
+}
+
+.cadastr_2_block_img_8 {
+    position: absolute;
+    margin-left: 35px;
+    width: 330px;
+    height: 0px;
+    margin-top: 592px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+.cadastr_2_block_img_9 {
+    position: absolute;
+    margin-left: 1px;
+    height: 339px;
+    width: 0px;
+    margin-top: 154px;
+    border: 0.5px grey solid;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+.cadastr_2_block_img_10 {
+    position: absolute;
+    margin-left: 1px;
+    height: 339px;
+    width: 0px;
+    margin-top: 154px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+.cadastr_2_block_img_11 {
+    position: absolute;
+    margin-left: 1px;
+    width: 25px;
+    margin-top: 333px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+.cadastr_2_block_img_12 {
+    position: absolute;
+    margin-left: 35px;
+    width: 11px;
+    margin-top: 190px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.cadastr_2_block_img_13 {
+    position: absolute;
+    margin-left: 35px;
+    width: 11px;
+    margin-top: 458px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.cadastr_2_block_img_14 {
+    position: absolute;
+    margin-left: 360px;
+    width: 11px;
+    margin-top: 190px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.cadastr_2_block_img_15 {
+    position: absolute;
+    margin-left: 359px;
+    width: 11px;
+    margin-top: 458px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    transform: rotate(135deg);
+}
+
+.cadastr_2_block_1 {
+    position: absolute;
+    width: 160px;
+    height: 134px;
+    margin-left: 41px;
+    margin-top: 191px;
+    z-index: 5;
+}
+
+.transportir_1 {
+    position: absolute;
+    margin-left: -160px;
+    margin-top: 80px;
+    width: 300px;
+    transform-origin: center center;
+    transition: transform 3s;
+    visibility: hidden;
+}
+
+.transportir_2 {
+    position: absolute;
+    margin-left: -160px;
+    margin-top: 80px;
+    width: 300px;
+    transform-origin: center center;
+    transition: transform 3s;
+    visibility: hidden;
+}
+
+.cadastr_2_block_1_text_1 {
+    color: black;
+    margin-top: 56px;
+    margin-left: 8px;
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_1 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 45px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_1:hover .cadastr_2_block_1_text_1 {
+    color: white;
+}
+
+.cadastr_2_block_2:hover .cadastr_2_block_1_text_1 {
+    color: white;
+}
+
+.cadastr_2_block_3:hover .cadastr_2_block_1_text_1 {
+    color: white;
+}
+
+.cadastr_2_block_4:hover .cadastr_2_block_1_text_1 {
+    color: white;
+}
+
+.cadastr_2_block_5:hover .cadastr_2_block_1_text_1 {
+    color: white;
+
+}
+
+.cadastr_2_block_5 .cadastr_2_block_1_text_1 {
+    color: white;
+    font-size: 12px;
+}
+
+
+.cadastr_2_block_6:hover .cadastr_2_block_1_text_1 {
+    color: white;
+}
+
+.cadastr_2_block_2 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 45px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_3 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 40px;
+    margin-left: 8px;
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_4 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 40px;
+    margin-left: 8px;
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_3 .cadastr_2_block_1_text_2 span {
+    display: none;
+}
+
+.cadastr_2_block_5 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 40px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_6 .cadastr_2_block_1_text_1 {
+        color: black;
+    margin-top: 40px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.cadastr_2_block_1_text_1 span {
+    color: black;
+    margin-left: -8px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-family: "Cera Pro Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    position: absolute;
+}
+
+.cadastr_2_block_1_text_2 {
+    color: black;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-top: -15px;
+}
+
+.cadastr_2_block_1_number {
+    width: 27px;
+    height: 27px;
+    font-family: "Cera Pro Regular", sans-serif;
+    font-size: 22px;
+    color: black;
+    margin-left: 126px;
+    margin-top: -16px;
+    overflow: hidden;
+}
+
+.cadastr_2_block_1_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -30px;
+}
+
+.cadastr_2_block_2_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -30px;
+}
+
+.cadastr_2_block_3_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -15px;
+}
+
+.cadastr_2_block_4_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -25px;
+}
+
+.cadastr_2_block_5_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -25px;
+}
+
+.cadastr_2_block_6_text_3 {
+    color: black;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-left: 137px;
+    margin-top: -25px;
+}
+
+.cadastr_2_block_2 {
+    position: absolute;
+    width: 165px;
+    height: 134px;
+    margin-left: 201px;
+    margin-top: 191px;
+}
+
+.cadastr_2_block_3 {
+    position: absolute;
+    width: 159px;
+    height: 140px;
+    margin-left: 41px;
+    margin-top: 325px;
+}
+
+.cadastr_2_block_3 .cadastr_2_block_1_text_1{
+    font-size: 11px;
+}
+
+.cadastr_2_block_4 .cadastr_2_block_1_text_1{
+    font-size: 12px;
+}
+
+.cadastr_2_block_4 .cadastr_2_block_1_text_2{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.cadastr_2_block_4 {
+    position: absolute;
+    width: 165px;
+    height: 140px;
+    margin-left: 201px;
+    margin-top: 325px;
+}
+
+.cadastr_2_block_5 {
+    position: absolute;
+    width: 159px;
+    height: 133px;
+    margin-left: 41px;
+    margin-top: 466px;
+}
+
+.cadastr_2_block_6 {
+    position: absolute;
+    width: 164px;
+    height: 133px;
+    margin-left: 201px;
+    margin-top: 466px;
+}
+
+}
+
+.geo_uslugi {
+    width: 390px;
+    height: auto;
+    position: absolute;
+    margin-top: 1400px;
+    display: flex;
+    margin-left: -130px;
+
+
+.geo_uslugi_title {
+    color: black;
+    font-size: 18px;
+    font-family: "Cera Pro bold", sans-serif;
+    position: absolute;
+    margin-top: -302px;
+    margin-left: 275px;
+    width: 200px;
+}
+
+.geo_body_uslugi {
+    position: absolute;
+    font-size: 32px;
+    margin-left: 409px;
+}
+
+
+.geo_body_uslugi_box1 {
+    width: 170px;
+    height: 115px;
+    background-color: white;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: -150px;
+   border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box1_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+        box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.15);
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_1 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text {
+    font-size: 10px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 58px;
+    margin-left: 8px;
+    width: 175px;
+
+}
+
+.geo_body_price {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box2 {
+    width: 170px;
+    height: 115px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 335px;
+    margin-top: -150px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box2_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+        box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.geo_body_uslugi_box_title_2 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text2 {
+    font-size: 10px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 57px;
+    margin-left: 8px;
+    width: 175px;
+
+}
+
+.geo_body_price2 {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.ambilight {
+    filter: url(#ambilight);
+}
+
+.geo_body_uslugi_box3 {
+    width: 170px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 145px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box3_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_3 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text3 {
+    font-size: 10px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 57px;
+    margin-left: 8px;
+    width: 160px;
+
+}
+
+.geo_body_price3 {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box4 {
+    width: 170px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 335px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box4_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_4 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text4 {
+    font-size: 9px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 57px;
+    margin-left: 8px;
+    width: 162px;
+
+}
+
+.geo_body_price4 {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box5 {
+    width: 170px;
+    height: 115px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 145px;
+    margin-top: 310px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box5_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_5 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text5 {
+    font-size: 9px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 50px;
+    margin-left: 8px;
+    width: 155px;
+
+}
+
+.geo_body_price5 {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box6 {
+    width: 170px;
+    height: 115px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 335px;
+    margin-top: 310px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box6_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_6 {
+    margin-top: 7px;
+    width: 181px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text6 {
+    font-size: 9px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 46px;
+    margin-left: 8px;
+    width: 165px;
+
+}
+
+.geo_body_price6 {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box7 {
+    width: 170px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 145px;
+    margin-top: 540px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box7_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_7 {
+    margin-top: 7px;
+    width: 151px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text7 {
+    font-size: 9px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 45px;
+    margin-left: 8px;
+    width: 160px;
+
+}
+
+.geo_body_price7 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.geo_body_uslugi_box8 {
+    width: 170px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 335px;
+    margin-top: 540px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.geo_body_box8_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.geo_body_uslugi_box_title_8 {
+    margin-top: 7px;
+    width: 141px;
+    margin-left: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.geo_body_text8 {
+    font-size: 9px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 45px;
+    margin-left: 8px;
+    width: 155px;
+
+}
+
+.geo_body_price8 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+}
+
+.cadastr_pdf {
+    width: 390px;
+    position: absolute;
+    height: 410px;
+    background-color: rgba(246, 245, 245, 0.97);
+    margin-left: 130px;
+    margin-top: 720px;
+
+
+.cadastr_pdf_title {
+    color: black;
+    position: absolute;
+    font-family: "Cera Pro bold", sans-serif;
+    font-size: 18px;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.cadastr_pdf_box {
+
+}
+
+.cadastr_pdf_box_1 {
+    margin-left: 41px;
+}
+
+.cadastr_pdf_box_img {
+    position: absolute;
+    width: 25px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+.cadastr_pdf_box_img2 {
+    position: absolute;
+    width: 25px;
+    margin-top: 50px;
+    margin-left: 235px;
+}
+
+.cadastr_pdf_box_img3 {
+    position: absolute;
+    width: 25px;
+    margin-top: 170px;
+    margin-left: 45px;
+}
+
+.cadastr_pdf_box_img4 {
+    position: absolute;
+    width: 25px;
+    margin-top: 170px;
+    margin-left: 235px;
+}
+
+.cadastr_pdf_box_img5 {
+    position: absolute;
+    width: 25px;
+    margin-top: 290px;
+    margin-left: 45px;
+}
+
+.cadastr_pdf_box_img6 {
+    position: absolute;
+    width: 25px;
+    margin-top: 290px;
+    margin-left: 235px;
+}
+
+.cadastr_pdf_box_title_1 {
+    color: black;
+    position: absolute;
+    margin-top: 83px;
+    margin-left: -35px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+}
+
+.cadastr_pdf_box_title_2 {
+    color: black;
+    position: absolute;
+    margin-top: 83px;
+    margin-left: 155px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+}
+
+
+.cadastr_pdf_box_title_3 {
+    color: black;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -35px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+    text-align: center;
+}
+
+
+.cadastr_pdf_box_title_4 {
+    color: black;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 155px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+    text-align: center;
+}
+
+
+.cadastr_pdf_box_title_5 {
+    color: black;
+    position: absolute;
+    margin-top: 323px;
+    margin-left: -35px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+    text-align: center;
+}
+
+
+.cadastr_pdf_box_title_6 {
+    color: black;
+    position: absolute;
+    margin-top: 323px;
+    margin-left: 155px;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 180px;
+    text-align: center;
+}
+
+}
+
+.cadastr_faq {
+    width: 390px;
+    height: 466px;
+    position: absolute;
+    margin-top: 2520px;
+    background-color: #ffffff;
+
+
+.cadastr_faq_title {
+    color: black;
+    position: absolute;
+    font-size: 18px;
+    font-family: "Cera Pro bold", sans-serif;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.cadastr_faq_block {
+    position: absolute;
+    margin-top: 1px;
+    width: 390px;
+}
+
+.cadastr_faq_block_1 {
+    width: 375px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: 60px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_1:after {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -5px;
+}
+
+.cadastr_faq_block_1:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_1 {
+
+}
+
+.faq_1:after {
+    margin-top: -105px;
+}
+
+.faq_1:before {
+    margin-top: 95px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_1_title {
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_1_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+
+.cadastr_faq_block_1_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+    width: 370px;
+}
+
+.cadastr_faq_block_2 {
+    width: 375px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -37px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_2:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_2 {
+
+}
+
+.faq_2:before {
+    margin-top: 140px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_2_title {
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    margin-top: -20px;
+}
+
+.cadastr_faq_block_2_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_2 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_2_2 {
+    margin-top: 50px;
+}
+
+.cadastr_faq_block_2_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+    width: 370px;
+}
+
+.cadastr_faq_block_3 {
+    width: 375px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -40px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_3:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_3:before {
+    margin-top: 80px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_3_title {
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.cadastr_faq_block_3_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_3 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_3_3 {
+    margin-top: 90px;
+}
+
+.cadastr_faq_block_3_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+.cadastr_faq_block_4 {
+    width: 370px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -40px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_4:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -5px;
+}
+
+.faq_4:before {
+    margin-top: 100px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_4 .cadastr_faq_block_2_title {
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+    width: 340px;
+}
+
+.cadastr_faq_block_4_title_strela1 {
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_4 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_4_4 {
+    margin-top: 30px;
+}
+
+.cadastr_faq_block_4_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+
+.cadastr_faq_block_5 {
+    width: 370px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -25px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_5:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -5px;
+}
+
+
+.faq_5:before {
+    margin-top: 100px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_5_title {
+    font-size: 17px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_5_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_5 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_5_5 {
+    margin-top: 50px;
+}
+
+.cadastr_faq_block_5_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+@keyframes plav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cadastr_faq_block_6 {
+    width: 370px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -37px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_6:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+
+.faq_6:before {
+    margin-top: 85px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_6_title {
+    font-size: 17px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_6_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_6 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_6_6 {
+    margin-top: 50px;
+}
+
+.cadastr_faq_block_6_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+@keyframes plav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cadastr_faq_block_7 {
+    width: 370px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -40px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_7:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_7:before {
+    margin-top: 100px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_7_title {
+    font-size: 17px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_7_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_7 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_7_7 {
+    margin-top: 40px;
+}
+
+.cadastr_faq_block_7_text {
+    animation: plav 1.3s ease;
+}
+
+@keyframes plav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cadastr_faq_block_8 {
+    width: 370px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -40px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_8:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_8:before {
+    margin-top: 100px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_8_title {
+    font-size: 17px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_8_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_8 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_8_8 {
+    margin-top: 55px;
+}
+
+.cadastr_faq_block_8_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+@keyframes plav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.cadastr_faq_block_9 {
+    width: 375px;
+    height: 74px;
+    margin-left: 10px;
+    margin-top: -50px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cadastr_faq_block_9:before {
+    content: "";
+    border: 1px #cecccc solid;
+    width: 380px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+.faq_9:before {
+    margin-top: 70px;
+    transition: opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.cadastr_faq_block_9_title {
+    font-size: 12px;
+    font-family: "Cera Pro Medium", sans-serif;
+
+}
+
+.cadastr_faq_block_9_title_strela1 {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 360px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+}
+
+.strela-digris_9 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.faq_9_9 {
+    margin-top: 35px;
+}
+
+.cadastr_faq_block_9_text {
+    animation: plav 1.3s ease;
+    font-size: 10px;
+}
+
+@keyframes plav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+}
+
+.cadastr_footer {
+    position: absolute;
+    width: 390px;
+    height: 164px;
+    background-color: #2c2b2b;
+    margin-top: 3015px;
+
+
+.cadastr_footer_1 {
+    width: 10px;
+}
+
+.cadastr_footer_1_img {
+    width: 80px;
+    height: 15px;
+    margin-left: 160px;
+    margin-top: 14px;
+    position: absolute;
+}
+
+.cadastr_footer_2_img {
+    margin-left: 5px;
+    margin-top: 22px;
+    position: absolute;
+    width: 385px;
+}
+
+.cadastr_footer_1_text {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 23px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+}
+
+.cadastr_footer_1_text:after {
+    position: absolute;
+    border: 1px grey solid;
+    width: 1px;
+    content: '';
+    margin-top: 49px;
+    margin-left: -348px;
+}
+
+
+.cadastr_footer_2 {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 71px;
+    width: 170px;
+}
+
+.cadastr_footer_2_text_1 {
+    font-size: 8px;
+    color: white;
+
+}
+
+
+/*.cadastr_footer_2_text_1:after{*/
+/*	border-bottom: dotted 5px white;*/
+/*    width: 1000px;*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    !*height: 1px;*!*/
+/*    margin-top: -80px;*/
+/*    margin-left: -500px;*/
+/*}*/
+
+
+.cadastr_footer_2_text_2 {
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    color: white;
+    opacity: 0.5;
+    width: 80px;
+}
+
+.cadastr_footer_2_text_3 {
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-top: -7px;
+    opacity: 0.5;
+    width: 100px;
+}
+
+
+.cadastr_footer_4 {
+    width: 200px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 71px;
+    visibility: hidden;
+}
+
+.cadastr_footer_5 {
+    width: 100px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 71px;
+}
+
+.cadastr_footer_5:before {
+    position: absolute;
+    border: 1px grey solid;
+    width: 380px;
+    content: '';
+    margin-top: -7px;
+    margin-left: -125px;
+}
+
+.cadastr_footer_6 {
+    width: 120px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 71px;
+}
+
+
+.cadastr_footer_2_text_5 {
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    color: white;
+    margin-left: 2px;
+}
+
+.cadastr_footer_2_text_4 {
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-top: 21px;
+    position: absolute;
+    margin-left: -65px;
+    color: white;
+    opacity: 0.5;
+}
+
+.cadastr_footer_7 {
+    width: 70px;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 71px;
+}
+
+.cadastr_footer_2_text_11 {
+    opacity: 0.5;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.cadastr_footer_2_text_21 {
+    opacity: 0.5;
+    font-size: 8px;
+    margin-top: -7px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+    .footer-shot_1_1{
+    margin-top: 3120px;
+}
+
+.footer-shot_2_1{
+    margin-top: 4200px;
+}
+
+.footer-shot_3_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_4_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_5_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_6_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_7_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_8_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_9_1{
+    margin-top: 4150px;
+}
+
+}
+
+
+
+
+
+
+
+}
+}
+
 @media (min-width: 1100px) and (max-width: 1440px) {
 
     .cadastr {

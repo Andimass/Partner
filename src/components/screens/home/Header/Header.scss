@@ -1467,8 +1467,8 @@
 
 .wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 250px;
+  left: 250px;
    transform-origin: 250px 250px;
   /* Your transform will be inline-styled in React */
 }

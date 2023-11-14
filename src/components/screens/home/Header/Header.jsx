@@ -468,7 +468,7 @@ const Header = () => {
                     transform: `translate(${x}px, ${y}px)`
                 },
                 imageStyle: {
-                    transform: `rotate(${-angle - 30}deg)`
+                    transform: `rotate(${-angle-30}deg)`
                 }
             };
         }
