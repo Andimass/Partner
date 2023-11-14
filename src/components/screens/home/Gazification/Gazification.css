@@ -1001,7 +1001,7 @@
 
 }
 
-.geo_uslugi {
+.gazification_uslugi {
     width: 390px;
     height: auto;
     position: absolute;
@@ -1010,26 +1010,26 @@
     margin-left: -130px;
 
 
-.geo_uslugi_title {
+.gazification_uslugi_title {
     color: black;
     font-size: 18px;
     font-family: "Cera Pro bold", sans-serif;
     position: absolute;
-    margin-top: -302px;
+    margin-top: -285px;
     margin-left: 275px;
     width: 200px;
 }
 
-.geo_body_uslugi {
+.gazification_body_uslugi {
     position: absolute;
     font-size: 32px;
     margin-left: 409px;
 }
 
 
-.geo_body_uslugi_box1 {
+.gazification_body_uslugi_box1 {
     width: 170px;
-    height: 115px;
+    height: 130px;
     background-color: white;
     position: absolute;
     margin-left: 145px;
@@ -1040,7 +1040,7 @@
 }
 
 
-.geo_body_box1_image {
+.gazification_body_box1_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1053,11 +1053,11 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_1 {
-    margin-top: 7px;
+.gazification_body_uslugi_box_title_1 {
+    margin-top: 5px;
     width: 181px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1065,31 +1065,31 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text {
-    font-size: 10px;
+.gazification_body_text {
+    font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
     margin-top: 58px;
     margin-left: 8px;
-    width: 175px;
+    width: 160px;
 
 }
 
-.geo_body_price {
+.gazification_body_price {
     position: absolute;
     margin-top: 43px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
 }
 
 
-.geo_body_uslugi_box2 {
+.gazification_body_uslugi_box2 {
     width: 170px;
-    height: 115px;
+    height: 130px;
     background-color: white;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
@@ -1100,7 +1100,7 @@
 }
 
 
-.geo_body_box2_image {
+.gazification_body_box2_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1112,11 +1112,11 @@
         box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
-.geo_body_uslugi_box_title_2 {
-    margin-top: 7px;
+.gazification_body_uslugi_box_title_2 {
+    margin-top: 5px;
     width: 181px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1124,22 +1124,22 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text2 {
-    font-size: 10px;
+.gazification_body_text2 {
+    font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
     margin-top: 57px;
     margin-left: 8px;
-    width: 175px;
+    width: 165px;
 
 }
 
-.geo_body_price2 {
+.gazification_body_price2 {
     position: absolute;
     margin-top: 43px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
@@ -1150,20 +1150,20 @@
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box3 {
+.gazification_body_uslugi_box3 {
     width: 170px;
-    height: 120px;
+    height: 131px;
     background-color: white;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
     margin-left: 145px;
-    margin-top: 80px;
+    margin-top: 90px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
 
-.geo_body_box3_image {
+.gazification_body_box3_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1175,11 +1175,11 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_3 {
-    margin-top: 7px;
-    width: 181px;
+.gazification_body_uslugi_box_title_3 {
+    margin-top: 5px;
+    width: 171px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1187,42 +1187,42 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text3 {
-    font-size: 10px;
+.gazification_body_text3 {
+    font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 57px;
+    margin-top: 60px;
     margin-left: 8px;
     width: 160px;
 
 }
 
-.geo_body_price3 {
+.gazification_body_price3 {
     position: absolute;
-    margin-top: 43px;
+    margin-top: 45px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
 }
 
 
-.geo_body_uslugi_box4 {
+.gazification_body_uslugi_box4 {
     width: 170px;
-    height: 120px;
+    height: 131px;
     background-color: white;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
     margin-left: 335px;
-    margin-top: 80px;
+    margin-top: 90px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
 
-.geo_body_box4_image {
+.gazification_body_box4_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1234,11 +1234,11 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_4 {
-    margin-top: 7px;
-    width: 181px;
+.gazification_body_uslugi_box_title_4 {
+    margin-top: 5px;
+    width: 171px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1246,42 +1246,46 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text4 {
-    font-size: 9px;
+.gazification_body_text4 {
+    font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 57px;
+    margin-top: 60px;
     margin-left: 8px;
     width: 162px;
 
 }
 
-.geo_body_price4 {
+.gazification_body_text4 span{
+    display: none;
+}
+
+.gazification_body_price4 {
     position: absolute;
     margin-top: 45px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
 }
 
 
-.geo_body_uslugi_box5 {
+.gazification_body_uslugi_box5 {
     width: 170px;
-    height: 115px;
+    height: 130px;
     background-color: white;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
     margin-left: 145px;
-    margin-top: 310px;
+    margin-top: 330px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
 
-.geo_body_box5_image {
+.gazification_body_box5_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1293,11 +1297,11 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_5 {
-    margin-top: 7px;
+.gazification_body_uslugi_box_title_5 {
+    margin-top: 5px;
     width: 181px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1305,160 +1309,46 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text5 {
-    font-size: 9px;
-    color: #000000;
-    font-family: "Cera Pro Regular", serif;
-    margin-top: 50px;
-    margin-left: 8px;
-    width: 155px;
-
-}
-
-.geo_body_price5 {
-    position: absolute;
-    margin-top: 35px;
-    margin-left: 8px;
-    letter-spacing: 0.5px;
-    font-size: 10px;
-    font-weight: 900;
-    font-family: "Cera Pro Bold", serif;
-    color: #0003ff;
-}
-
-
-.geo_body_uslugi_box6 {
-    width: 170px;
-    height: 115px;
-    background-color: white;
-    position: absolute;
-    border-radius: 0px 0px 4px 4px;
-    margin-left: 335px;
-    margin-top: 310px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-    transition: transform 0.1s ease; /* Добавил анимацию */
-}
-
-
-.geo_body_box6_image {
-    width: 170px;
-    height: 92px;
-    align-items: center;
-    border-radius: 8px 8px 0 0;
-    margin-left: 0px;
-    margin-top: -92px;
-    position: absolute;
-    z-index: 1;
-    /*animation: unrotate 20s linear infinite;*/
-}
-
-.geo_body_uslugi_box_title_6 {
-    margin-top: 7px;
-    width: 181px;
-    margin-left: 8px;
+.gazification_body_text5 {
     font-size: 12px;
-    font-weight: 700;
-    font-family: "Cera Pro Bold", serif;
-    position: absolute;
-    color: #000000;
-    line-height: 1; /* Уменьшаем расстояние между строками */
-}
-
-.geo_body_text6 {
-    font-size: 9px;
-    color: #000000;
-    font-family: "Cera Pro Regular", serif;
-    margin-top: 46px;
-    margin-left: 8px;
-    width: 165px;
-
-}
-
-.geo_body_price6 {
-    position: absolute;
-    margin-top: 32px;
-    margin-left: 8px;
-    letter-spacing: 0.5px;
-    font-size: 10px;
-    font-weight: 900;
-    font-family: "Cera Pro Bold", serif;
-    color: #0003ff;
-}
-
-
-.geo_body_uslugi_box7 {
-    width: 170px;
-    height: 120px;
-    background-color: white;
-    position: absolute;
-    border-radius: 0px 0px 4px 4px;
-    margin-left: 145px;
-    margin-top: 540px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-    transition: transform 0.1s ease; /* Добавил анимацию */
-}
-
-
-.geo_body_box7_image {
-    width: 170px;
-    height: 92px;
-    align-items: center;
-    border-radius: 8px 8px 0 0;
-    margin-left: 0px;
-    margin-top: -92px;
-    position: absolute;
-    z-index: 1;
-    /*animation: unrotate 20s linear infinite;*/
-}
-
-.geo_body_uslugi_box_title_7 {
-    margin-top: 7px;
-    width: 151px;
-    margin-left: 8px;
-    font-size: 12px;
-    font-weight: 700;
-    font-family: "Cera Pro Bold", serif;
-    position: absolute;
-    color: #000000;
-    line-height: 1; /* Уменьшаем расстояние между строками */
-}
-
-.geo_body_text7 {
-    font-size: 9px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
     margin-top: 45px;
     margin-left: 8px;
     width: 160px;
-
+    line-height: 17px;
 }
 
-.geo_body_price7 {
+.gazification_body_text5 span{
+    display: none;
+}
+
+.gazification_body_price5 {
     position: absolute;
     margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
 }
 
 
-.geo_body_uslugi_box8 {
+.gazification_body_uslugi_box6 {
     width: 170px;
-    height: 120px;
+    height: 130px;
     background-color: white;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
     margin-left: 335px;
-    margin-top: 540px;
+    margin-top: 330px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease; /* Добавил анимацию */
 }
 
 
-.geo_body_box8_image {
+.gazification_body_box6_image {
     width: 170px;
     height: 92px;
     align-items: center;
@@ -1470,11 +1360,11 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_8 {
-    margin-top: 7px;
-    width: 141px;
+.gazification_body_uslugi_box_title_6 {
+    margin-top: 5px;
+    width: 181px;
     margin-left: 8px;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1482,22 +1372,140 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text8 {
-    font-size: 9px;
+.gazification_body_text6 {
+    font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
     margin-top: 45px;
     margin-left: 8px;
-    width: 155px;
-
+    width: 165px;
+    line-height: 14px;
 }
 
-.geo_body_price8 {
+.gazification_body_price6 {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.gazification_body_uslugi_box7 {
+    width: 170px;
+    height: 130px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 145px;
+    margin-top: 570px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.gazification_body_box7_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.gazification_body_uslugi_box_title_7 {
+    margin-top: 5px;
+    width: 151px;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.gazification_body_text7 {
+    font-size: 12px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 45px;
+    margin-left: 6px;
+    width: 165px;
+    line-height: 14px;
+}
+
+.gazification_body_price7 {
     position: absolute;
     margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: "Cera Pro Bold", serif;
+    color: #0003ff;
+}
+
+
+.gazification_body_uslugi_box8 {
+    width: 170px;
+    height: 130px;
+    background-color: white;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 335px;
+    margin-top: 570px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Добавил анимацию */
+}
+
+
+.gazification_body_box8_image {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    margin-left: 0px;
+    margin-top: -92px;
+    position: absolute;
+    z-index: 1;
+    /*animation: unrotate 20s linear infinite;*/
+}
+
+.gazification_body_uslugi_box_title_8 {
+    margin-top: 5px;
+    width: 141px;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", serif;
+    position: absolute;
+    color: #000000;
+    line-height: 1; /* Уменьшаем расстояние между строками */
+}
+
+.gazification_body_text8 {
+    font-size: 12px;
+    color: #000000;
+    font-family: "Cera Pro Regular", serif;
+    margin-top: 45px;
+    margin-left: 8px;
+    width: 160px;
+    line-height: 14px;
+}
+
+.gazification_body_price8 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
     font-weight: 900;
     font-family: "Cera Pro Bold", serif;
     color: #0003ff;
@@ -2413,21 +2421,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1100px) and (max-width: 1440px) {
+@media (min-width: 1100px) and (max-width: 1460px) {
 
     .Gazification {
         max-width: 1375px;
@@ -3151,7 +3145,7 @@
 
 }
 
-.geo_uslugi {
+.gazification_uslugi {
     width: 934px;
     height: auto;
     position: absolute;
@@ -3160,7 +3154,7 @@
     margin-left: 109px;
 
 
-.geo_uslugi_title {
+.gazification_uslugi_title {
     color: black;
     font-size: 35px;
     font-family: "Cera Pro bold", sans-serif;
@@ -3169,14 +3163,14 @@
     margin-left: 494px;
 }
 
-.geo_body_uslugi {
+.gazification_body_uslugi {
     position: absolute;
     font-size: 32px;
     margin-left: 409px;
 }
 
 
-.geo_body_uslugi_box1 {
+.gazification_body_uslugi_box1 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3189,7 +3183,7 @@
 }
 
 
-.geo_body_box1_image {
+.gazification_body_box1_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3201,7 +3195,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_1 {
+.gazification_body_uslugi_box_title_1 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3213,7 +3207,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text {
+.gazification_body_text {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3223,7 +3217,7 @@
 
 }
 
-.geo_body_price {
+.gazification_body_price {
     position: absolute;
     margin-top: 40px;
     margin-left: 11px;
@@ -3235,7 +3229,7 @@
 }
 
 
-.geo_body_uslugi_box2 {
+.gazification_body_uslugi_box2 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3248,7 +3242,7 @@
 }
 
 
-.geo_body_box2_image {
+.gazification_body_box2_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3260,7 +3254,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_2 {
+.gazification_body_uslugi_box_title_2 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3272,7 +3266,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text2 {
+.gazification_body_text2 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3282,7 +3276,7 @@
 
 }
 
-.geo_body_price2 {
+.gazification_body_price2 {
     position: absolute;
     margin-top: 40px;
     margin-left: 11px;
@@ -3298,7 +3292,7 @@
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box3 {
+.gazification_body_uslugi_box3 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3311,7 +3305,7 @@
 }
 
 
-.geo_body_box3_image {
+.gazification_body_box3_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3323,7 +3317,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_3 {
+.gazification_body_uslugi_box_title_3 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3335,7 +3329,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text3 {
+.gazification_body_text3 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3345,7 +3339,7 @@
 
 }
 
-.geo_body_price3 {
+.gazification_body_price3 {
     position: absolute;
     margin-top: 40px;
     margin-left: 11px;
@@ -3357,7 +3351,7 @@
 }
 
 
-.geo_body_uslugi_box4 {
+.gazification_body_uslugi_box4 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3370,7 +3364,7 @@
 }
 
 
-.geo_body_box4_image {
+.gazification_body_box4_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3382,7 +3376,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_4 {
+.gazification_body_uslugi_box_title_4 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3394,7 +3388,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text4 {
+.gazification_body_text4 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3404,7 +3398,7 @@
 
 }
 
-.geo_body_price4 {
+.gazification_body_price4 {
     position: absolute;
     margin-top: 40px;
     margin-left: 8px;
@@ -3416,7 +3410,7 @@
 }
 
 
-.geo_body_uslugi_box5 {
+.gazification_body_uslugi_box5 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3429,7 +3423,7 @@
 }
 
 
-.geo_body_box5_image {
+.gazification_body_box5_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3441,7 +3435,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_5 {
+.gazification_body_uslugi_box_title_5 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3453,7 +3447,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text5 {
+.gazification_body_text5 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3463,7 +3457,7 @@
 
 }
 
-.geo_body_price5 {
+.gazification_body_price5 {
     position: absolute;
     margin-top: 40px;
     margin-left: 8px;
@@ -3475,7 +3469,7 @@
 }
 
 
-.geo_body_uslugi_box6 {
+.gazification_body_uslugi_box6 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3488,7 +3482,7 @@
 }
 
 
-.geo_body_box6_image {
+.gazification_body_box6_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3500,7 +3494,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_6 {
+.gazification_body_uslugi_box_title_6 {
     margin-top: 11px;
     width: 182px;
     margin-left: 8px;
@@ -3512,7 +3506,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text6 {
+.gazification_body_text6 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3522,7 +3516,7 @@
 
 }
 
-.geo_body_price6 {
+.gazification_body_price6 {
     position: absolute;
     margin-top: 40px;
     margin-left: 8px;
@@ -3534,7 +3528,7 @@
 }
 
 
-.geo_body_uslugi_box7 {
+.gazification_body_uslugi_box7 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3547,7 +3541,7 @@
 }
 
 
-.geo_body_box7_image {
+.gazification_body_box7_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3559,7 +3553,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_7 {
+.gazification_body_uslugi_box_title_7 {
     margin-top: 11px;
     width: 181px;
     margin-left: 8px;
@@ -3571,7 +3565,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text7 {
+.gazification_body_text7 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3581,7 +3575,7 @@
 
 }
 
-.geo_body_price7 {
+.gazification_body_price7 {
     position: absolute;
     margin-top: 40px;
     margin-left: 8px;
@@ -3593,7 +3587,7 @@
 }
 
 
-.geo_body_uslugi_box8 {
+.gazification_body_uslugi_box8 {
     width: 194px;
     height: 137px;
     background-color: white;
@@ -3606,7 +3600,7 @@
 }
 
 
-.geo_body_box8_image {
+.gazification_body_box8_image {
     width: 194px;
     height: 92px;
     align-items: center;
@@ -3618,7 +3612,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_8 {
+.gazification_body_uslugi_box_title_8 {
     margin-top: 11px;
     width: 181px;
     margin-left: 11px;
@@ -3630,7 +3624,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text8 {
+.gazification_body_text8 {
     font-size: 10px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -3640,7 +3634,7 @@
 
 }
 
-.geo_body_price8 {
+.gazification_body_price8 {
     position: absolute;
     margin-top: 40px;
     margin-left: 11px;
@@ -5289,7 +5283,7 @@
 }
 
 
-.geo_uslugi {
+.gazification_uslugi {
     width: 1258px;
     height: auto;
     position: absolute;
@@ -5298,7 +5292,7 @@
     margin-left: 148px;
 
 
-.geo_uslugi_title {
+.gazification_uslugi_title {
     color: black;
     font-size: 48px;
     font-family: "Cera Pro bold", sans-serif;
@@ -5307,14 +5301,14 @@
     margin-left: 666px;
 }
 
-.geo_body_uslugi {
+.gazification_body_uslugi {
     position: absolute;
     font-size: 44px;
     margin-left: 551px;
 }
 
 
-.geo_body_uslugi_box1 {
+.gazification_body_uslugi_box1 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5327,7 +5321,7 @@
 }
 
 
-.geo_body_box1_image {
+.gazification_body_box1_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5339,7 +5333,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_1 {
+.gazification_body_uslugi_box_title_1 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5351,7 +5345,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text {
+.gazification_body_text {
     font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5361,7 +5355,7 @@
 
 }
 
-.geo_body_price {
+.gazification_body_price {
     position: absolute;
     margin-top: 55px;
     margin-left: 15px;
@@ -5373,7 +5367,7 @@
 }
 
 
-.geo_body_uslugi_box2 {
+.gazification_body_uslugi_box2 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5386,7 +5380,7 @@
 }
 
 
-.geo_body_box2_image {
+.gazification_body_box2_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5398,7 +5392,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_2 {
+.gazification_body_uslugi_box_title_2 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5410,7 +5404,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text2 {
+.gazification_body_text2 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5420,7 +5414,7 @@
 
 }
 
-.geo_body_price2 {
+.gazification_body_price2 {
     position: absolute;
     margin-top: 55px;
     margin-left: 15px;
@@ -5436,7 +5430,7 @@
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box3 {
+.gazification_body_uslugi_box3 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5449,7 +5443,7 @@
 }
 
 
-.geo_body_box3_image {
+.gazification_body_box3_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5461,7 +5455,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_3 {
+.gazification_body_uslugi_box_title_3 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5473,7 +5467,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text3 {
+.gazification_body_text3 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5483,7 +5477,7 @@
 
 }
 
-.geo_body_price3 {
+.gazification_body_price3 {
     position: absolute;
     margin-top: 55px;
     margin-left: 15px;
@@ -5495,7 +5489,7 @@
 }
 
 
-.geo_body_uslugi_box4 {
+.gazification_body_uslugi_box4 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5508,7 +5502,7 @@
 }
 
 
-.geo_body_box4_image {
+.gazification_body_box4_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5520,7 +5514,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_4 {
+.gazification_body_uslugi_box_title_4 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5532,7 +5526,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text4 {
+.gazification_body_text4 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5542,7 +5536,7 @@
 
 }
 
-.geo_body_price4 {
+.gazification_body_price4 {
     position: absolute;
     margin-top: 55px;
     margin-left: 22px;
@@ -5554,7 +5548,7 @@
 }
 
 
-.geo_body_uslugi_box5 {
+.gazification_body_uslugi_box5 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5567,7 +5561,7 @@
 }
 
 
-.geo_body_box5_image {
+.gazification_body_box5_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5579,7 +5573,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_5 {
+.gazification_body_uslugi_box_title_5 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5591,7 +5585,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text5 {
+.gazification_body_text5 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5601,7 +5595,7 @@
 
 }
 
-.geo_body_price5 {
+.gazification_body_price5 {
     position: absolute;
     margin-top: 33px;
     margin-left: 11px;
@@ -5613,7 +5607,7 @@
 }
 
 
-.geo_body_uslugi_box6 {
+.gazification_body_uslugi_box6 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5626,7 +5620,7 @@
 }
 
 
-.geo_body_box6_image {
+.gazification_body_box6_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5638,7 +5632,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_6 {
+.gazification_body_uslugi_box_title_6 {
     margin-top: 15px;
     width: 245px;
     margin-left: 11px;
@@ -5650,7 +5644,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text6 {
+.gazification_body_text6 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5660,7 +5654,7 @@
 
 }
 
-.geo_body_price6 {
+.gazification_body_price6 {
     position: absolute;
     margin-top: 55px;
     margin-left: 11px;
@@ -5672,7 +5666,7 @@
 }
 
 
-.geo_body_uslugi_box7 {
+.gazification_body_uslugi_box7 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5685,7 +5679,7 @@
 }
 
 
-.geo_body_box7_image {
+.gazification_body_box7_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5697,7 +5691,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_7 {
+.gazification_body_uslugi_box_title_7 {
     margin-top: 15px;
     width: 244px;
     margin-left: 11px;
@@ -5709,7 +5703,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text7 {
+.gazification_body_text7 {
     font-size: 11px;
     color: #000000;
     font-family: a_FuturaOrtoLt, serif;
@@ -5719,7 +5713,7 @@
 
 }
 
-.geo_body_price7 {
+.gazification_body_price7 {
     position: absolute;
     margin-top: 55px;
     margin-left: 11px;
@@ -5731,7 +5725,7 @@
 }
 
 
-.geo_body_uslugi_box8 {
+.gazification_body_uslugi_box8 {
     width: 262px;
     height: 185px;
     background-color: white;
@@ -5744,7 +5738,7 @@
 }
 
 
-.geo_body_box8_image {
+.gazification_body_box8_image {
     width: 262px;
     height: 125px;
     align-items: center;
@@ -5756,7 +5750,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_8 {
+.gazification_body_uslugi_box_title_8 {
     margin-top: 15px;
     width: 244px;
     margin-left: 15px;
@@ -5768,7 +5762,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text8 {
+.gazification_body_text8 {
     font-size: 11px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -5778,7 +5772,7 @@
 
 }
 
-.geo_body_price8 {
+.gazification_body_price8 {
     position: absolute;
     margin-top: 55px;
     margin-left: 15px;
@@ -5789,35 +5783,35 @@
     color: #0003ff;
 }
 
-.geo_body_uslugi_box1:hover {
+.gazification_body_uslugi_box1:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box2:hover {
+.gazification_body_uslugi_box2:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box3:hover {
+.gazification_body_uslugi_box3:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box4:hover {
+.gazification_body_uslugi_box4:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box5:hover {
+.gazification_body_uslugi_box5:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box6:hover {
+.gazification_body_uslugi_box6:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box7:hover {
+.gazification_body_uslugi_box7:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
-.geo_body_uslugi_box8:hover {
+.gazification_body_uslugi_box8:hover {
     transform: scale(1.01); /* При наведении карточка немного увеличивается */
 }
 
@@ -5825,7 +5819,7 @@
 /*   BOX ANIMATION      */
 
 
-.geo_body_uslugi_box1:hover {
+.gazification_body_uslugi_box1:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5834,7 +5828,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box2:hover {
+.gazification_body_uslugi_box2:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5843,7 +5837,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box3:hover {
+.gazification_body_uslugi_box3:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5852,7 +5846,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box4:hover {
+.gazification_body_uslugi_box4:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5861,7 +5855,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box5:hover {
+.gazification_body_uslugi_box5:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5870,7 +5864,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box6:hover {
+.gazification_body_uslugi_box6:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5879,7 +5873,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box7:hover {
+.gazification_body_uslugi_box7:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5888,7 +5882,7 @@
     transition: all 1s ease;
 }
 
-.geo_body_uslugi_box8:hover {
+.gazification_body_uslugi_box8:hover {
     -webkit-filter: brightness(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -5898,36 +5892,36 @@
 }
 
 
-.geo_body_uslugi_box1:hover {
+.gazification_body_uslugi_box1:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box2:hover {
+.gazification_body_uslugi_box2:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box3:hover {
+.gazification_body_uslugi_box3:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box4:hover {
+.gazification_body_uslugi_box4:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box5:hover {
+.gazification_body_uslugi_box5:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box6:hover {
+.gazification_body_uslugi_box6:hover {
     filter: url(#ambilight);
 }
 
-.geo_body_uslugi_box7:hover {
+.gazification_body_uslugi_box7:hover {
     filter: url(#ambilight);
 }
 
 
-.geo_body_uslugi_box8:hover {
+.gazification_body_uslugi_box8:hover {
     filter: url(#ambilight);
 }
 
@@ -7522,7 +7516,7 @@
     }
 
 
-    .geo_uslugi {
+    .gazification_uslugi {
         width: 1700px;
         height: auto;
         position: absolute;
@@ -7531,7 +7525,7 @@
         margin-left: 200px;
     }
 
-    .geo_uslugi_title {
+    .gazification_uslugi_title {
         color: black;
         font-size: 48px;
         font-family: "Cera Pro bold", sans-serif;
@@ -7540,14 +7534,14 @@
         margin-left: 900px;
     }
 
-    .geo_body_uslugi {
+    .gazification_body_uslugi {
         position: absolute;
         font-size: 60px;
         margin-left: 745px;
     }
 
 
-    .geo_body_uslugi_box1 {
+    .gazification_body_uslugi_box1 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7561,7 +7555,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box1_image {
+.gazification_body_box1_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7575,7 +7569,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_1 {
+.gazification_body_uslugi_box_title_1 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7587,7 +7581,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text {
+.gazification_body_text {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7597,7 +7591,7 @@
 
 }
 
-.geo_body_price {
+.gazification_body_price {
     position: absolute;
     margin-top: 95px;
     margin-left: 15px;
@@ -7610,7 +7604,7 @@
 
 }
 
-    .geo_body_uslugi_box2 {
+    .gazification_body_uslugi_box2 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7624,7 +7618,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box2_image {
+.gazification_body_box2_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7637,7 +7631,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_2 {
+.gazification_body_uslugi_box_title_2 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7649,7 +7643,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text2 {
+.gazification_body_text2 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7659,7 +7653,7 @@
 
 }
 
-.geo_body_price2 {
+.gazification_body_price2 {
     position: absolute;
     margin-top: 95px;
     margin-left: 15px;
@@ -7676,7 +7670,7 @@
 }
 
 }
-    .geo_body_uslugi_box3 {
+    .gazification_body_uslugi_box3 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7690,7 +7684,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box3_image {
+.gazification_body_box3_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7703,7 +7697,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_3 {
+.gazification_body_uslugi_box_title_3 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7715,7 +7709,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text3 {
+.gazification_body_text3 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7725,7 +7719,7 @@
 
 }
 
-.geo_body_price3 {
+.gazification_body_price3 {
     position: absolute;
     margin-top: 95px;
     margin-left: 20px;
@@ -7737,7 +7731,7 @@
 }
 
 }
-    .geo_body_uslugi_box4 {
+    .gazification_body_uslugi_box4 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7751,7 +7745,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box4_image {
+.gazification_body_box4_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7763,7 +7757,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_4 {
+.gazification_body_uslugi_box_title_4 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7775,7 +7769,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text4 {
+.gazification_body_text4 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7785,7 +7779,7 @@
 
 }
 
-.geo_body_price4 {
+.gazification_body_price4 {
     position: absolute;
     margin-top: 95px;
     margin-left: 15px;
@@ -7798,7 +7792,7 @@
 
 }
 
-    .geo_body_uslugi_box5 {
+    .gazification_body_uslugi_box5 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7812,7 +7806,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box5_image {
+.gazification_body_box5_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7824,7 +7818,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_5 {
+.gazification_body_uslugi_box_title_5 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7836,7 +7830,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text5 {
+.gazification_body_text5 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7846,7 +7840,7 @@
 
 }
 
-.geo_body_price5 {
+.gazification_body_price5 {
     position: absolute;
     margin-top: 75px;
     margin-left: 15px;
@@ -7858,7 +7852,7 @@
 }
 
 }
-.geo_body_uslugi_box6 {
+.gazification_body_uslugi_box6 {
     width: 355px;
     height: 250px;
     background-color: white;
@@ -7872,7 +7866,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box6_image {
+.gazification_body_box6_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7884,7 +7878,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_6 {
+.gazification_body_uslugi_box_title_6 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7896,7 +7890,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text6 {
+.gazification_body_text6 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7906,7 +7900,7 @@
 
 }
 
-.geo_body_price6 {
+.gazification_body_price6 {
     position: absolute;
     margin-top: 75px;
     margin-left: 15px;
@@ -7919,7 +7913,7 @@
 
 }
 
-    .geo_body_uslugi_box7 {
+    .gazification_body_uslugi_box7 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7933,7 +7927,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box7_image {
+.gazification_body_box7_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -7945,7 +7939,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_7 {
+.gazification_body_uslugi_box_title_7 {
     margin-top: 20px;
     width: 330px;
     margin-left: 15px;
@@ -7957,7 +7951,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text7 {
+.gazification_body_text7 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -7967,7 +7961,7 @@
 
 }
 
-.geo_body_price7 {
+.gazification_body_price7 {
     position: absolute;
     margin-top: 75px;
     margin-left: 15px;
@@ -7980,7 +7974,7 @@
 
 }
 
-    .geo_body_uslugi_box8 {
+    .gazification_body_uslugi_box8 {
         width: 355px;
         height: 250px;
         background-color: white;
@@ -7994,7 +7988,7 @@
 /* Добавил анимацию */
 
 
-.geo_body_box8_image {
+.gazification_body_box8_image {
     width: 355px;
     height: 170px;
     align-items: center;
@@ -8006,7 +8000,7 @@
     /*animation: unrotate 20s linear infinite;*/
 }
 
-.geo_body_uslugi_box_title_8 {
+.gazification_body_uslugi_box_title_8 {
     margin-top: 20px;
     width: 330px;
     margin-left: 20px;
@@ -8018,7 +8012,7 @@
     line-height: 1; /* Уменьшаем расстояние между строками */
 }
 
-.geo_body_text8 {
+.gazification_body_text8 {
     font-size: 16px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
@@ -8028,7 +8022,7 @@
 
 }
 
-.geo_body_price8 {
+.gazification_body_price8 {
     position: absolute;
     margin-top: 75px;
     margin-left: 20px;
@@ -8040,41 +8034,41 @@
 }
 
 }
-    .geo_body_uslugi_box1:hover {
+    .gazification_body_uslugi_box1:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box2:hover {
+    .gazification_body_uslugi_box2:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box3:hover {
+    .gazification_body_uslugi_box3:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box4:hover {
+    .gazification_body_uslugi_box4:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box5:hover {
+    .gazification_body_uslugi_box5:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box6:hover {
+    .gazification_body_uslugi_box6:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box7:hover {
+    .gazification_body_uslugi_box7:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
-    .geo_body_uslugi_box8:hover {
+    .gazification_body_uslugi_box8:hover {
         transform: scale(1.01); /* При наведении карточка немного увеличивается */
     }
 
 
     /*   BOX ANIMATION      */
-    .geo_body_uslugi_box1:hover {
+    .gazification_body_uslugi_box1:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8083,7 +8077,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box2:hover {
+    .gazification_body_uslugi_box2:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8092,7 +8086,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box3:hover {
+    .gazification_body_uslugi_box3:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8101,7 +8095,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box4:hover {
+    .gazification_body_uslugi_box4:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8110,7 +8104,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box5:hover {
+    .gazification_body_uslugi_box5:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8119,7 +8113,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box6:hover {
+    .gazification_body_uslugi_box6:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8128,7 +8122,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box7:hover {
+    .gazification_body_uslugi_box7:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8137,7 +8131,7 @@
         transition: all 1s ease;
     }
 
-    .geo_body_uslugi_box8:hover {
+    .gazification_body_uslugi_box8:hover {
         -webkit-filter: brightness(80%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -8147,36 +8141,36 @@
     }
 
 
-    .geo_body_uslugi_box1:hover {
+    .gazification_body_uslugi_box1:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box2:hover {
+    .gazification_body_uslugi_box2:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box3:hover {
+    .gazification_body_uslugi_box3:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box4:hover {
+    .gazification_body_uslugi_box4:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box5:hover {
+    .gazification_body_uslugi_box5:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box6:hover {
+    .gazification_body_uslugi_box6:hover {
         filter: url(#ambilight);
     }
 
-    .geo_body_uslugi_box7:hover {
+    .gazification_body_uslugi_box7:hover {
         filter: url(#ambilight);
     }
 
 
-    .geo_body_uslugi_box8:hover {
+        .gazification_body_uslugi_box8:hover {
         filter: url(#ambilight);
     }
 

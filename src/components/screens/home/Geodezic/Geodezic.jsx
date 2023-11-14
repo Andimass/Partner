@@ -344,14 +344,14 @@ return (
 
 
 
-            <div className='geo_uslugi'>
-                <p className='geo_uslugi_title'>Наши услуги</p>
-                <div className={`geo_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
-                    <h2 className='geo_body_uslugi_box_title_1'>Ситуационный план</h2>
-                    <img className='geo_body_box1_image' src='/public/box1.jpg'/>
-                    <p className='geo_body_price'>от 6.000 руб.</p>
-                    <p className='geo_body_text'>Разработка ситуационного плана для подачи заявок на газификацию и энергоснабжение</p>
-                    <input className={`geo_body_uslugi_box_strela1 ${activeHandler === 1 ? 'strela-digris': ''}`} type="image" onClick={() => handleClick(1)} alt=''/>
+            <div className='geodezic_uslugi'>
+                <p className='geodezic_uslugi_title'>Наши услуги</p>
+                <div className={`geodezic_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
+                    <h2 className='geodezic_body_uslugi_box_title_1'>Ситуационный план</h2>
+                    <img className='geodezic_body_box1_image' src='/public/box1.jpg'/>
+                    <p className='geodezic_body_price'>от 6.000 руб.</p>
+                    <p className='geodezic_body_text'>Разработка ситуационного плана для подачи заявок на газификацию и энергоснабжение</p>
+                    <input className={`geodezic_body_uslugi_box_strela1 ${activeHandler === 1 ? 'strela-digris': ''}`} type="image" onClick={() => handleClick(1)} alt=''/>
                     {activeHandler === 1 && (
                     <div className='dop_1'>
 
@@ -361,12 +361,12 @@ return (
                 </div>
 
 
-               <div className={`geo_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
-                    <h2 className='geo_body_uslugi_box_title_2'>Вынос границ земельного участка в натуру</h2>
-                    <img className='geo_body_box2_image' src='/public/box2.jpg'/>
-                    <p className='geo_body_price2'>от 8.000 руб.</p>
-                    <p className='geo_body_text2'>Маркировка и определение физических границ участка на местности для его использования и оформления собственности</p>
-                    <input className={`geo_body_uslugi_box_strela2 ${activeHandler === 2 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(2)} alt=''/>
+               <div className={`geodezic_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
+                    <h2 className='geodezic_body_uslugi_box_title_2'>Вынос границ земельного участка в натуру</h2>
+                    <img className='geodezic_body_box2_image' src='/public/box2.jpg'/>
+                    <p className='geodezic_body_price2'>от 8.000 руб.</p>
+                    <p className='geodezic_body_text2'>Маркировка и определение физических границ участка на местности для его использования и оформления собственности</p>
+                    <input className={`geodezic_body_uslugi_box_strela2 ${activeHandler === 2 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(2)} alt=''/>
                     {activeHandler === 2 && (
                     <div className='dop_2'>
 
@@ -376,12 +376,12 @@ return (
                 </div>
 
 
-               <div className={`geo_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_3'>Топографическая съемка и топоплан</h2>
-                   <img className='geo_body_box3_image' src='/public/box3.png'/>
-                   <p className='geo_body_price3'>от 10.000 руб.</p>
-                    <p className='geo_body_text3'>Создание подробной картографической информации о местности для инженерных и строительных проектов</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 3 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(3)} alt=''/>
+               <div className={`geodezic_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_3'>Топографическая съемка и топоплан</h2>
+                   <img className='geodezic_body_box3_image' src='/public/box3.png'/>
+                   <p className='geodezic_body_price3'>от 10.000 руб.</p>
+                    <p className='geodezic_body_text3'>Создание подробной картографической информации о местности для инженерных и строительных проектов</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 3 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(3)} alt=''/>
                     {activeHandler === 3 && (
                     <div className='dop_3'>
 
@@ -390,12 +390,12 @@ return (
                   )}
                 </div>
 
-               <div className={`geo_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_4'>Геодезические изыскания</h2>
-                   <img className='geo_body_box4_image' src='/public/box4.jpg'/>
-                   <p className='geo_body_price4'>от 10.000 руб.</p>
-                    <p className='geo_body_text4'>Сбор точных геодезических данных и измерений для подготовки к инженерным и строительным проектам</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 5 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(5)} alt=''/>
+               <div className={`geodezic_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_4'>Геодезические изыскания</h2>
+                   <img className='geodezic_body_box4_image' src='/public/box4.jpg'/>
+                   <p className='geodezic_body_price4'>от 10.000 руб.</p>
+                    <p className='geodezic_body_text4'>Сбор точных геодезических данных и измерений для подготовки к инженерным и строительным проектам</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 5 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(5)} alt=''/>
                     {activeHandler === 5 && (
                     <div className='dop_4'>
 
@@ -404,12 +404,12 @@ return (
                   )}
                 </div>
 
-               <div className={`geo_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_5'>Камерально геодезические работы</h2>
-                   <img className='geo_body_box5_image' src='/public/geo_camer.jpg'/>
-                   <p className='geo_body_price5'>от 8.000 руб.</p>
-                    <p className='geo_body_text5'>Анализ и обработка данных с целью создания точных карт и планов для строительства и проектирования.</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 6 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(6)} alt=''/>
+               <div className={`geodezic_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_5'>Камерально геодезические работы</h2>
+                   <img className='geodezic_body_box5_image' src='/public/geo_camer.jpg'/>
+                   <p className='geodezic_body_price5'>от 8.000 руб.</p>
+                    <p className='geodezic_body_text5'>Анализ и обработка данных с целью создания точных карт и планов для строительства и проектирования.</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 6 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(6)} alt=''/>
                     {activeHandler === 6 && (
                     <div className='dop_5'>
 
@@ -418,12 +418,12 @@ return (
                   )}
                 </div>
 
-               <div className={`geo_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_6'>Координирование реперов</h2>
-                   <img className='geo_body_box6_image' src='/public/geo_rap.jpg'/>
-                   <p className='geo_body_price6'>от 12.000 руб.</p>
-                    <p className='geo_body_text6'>Определение точных географических координат и высотных отметок опорных точек, необходимых для геодезических и строительных работ</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
+               <div className={`geodezic_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_6'>Координирование реперов</h2>
+                   <img className='geodezic_body_box6_image' src='/public/geo_rap.jpg'/>
+                   <p className='geodezic_body_price6'>от 12.000 руб.</p>
+                    <p className='geodezic_body_text6'>Определение точных географических координат и высотных отметок опорных точек, необходимых для геодезических и строительных работ</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
 
@@ -432,12 +432,12 @@ return (
                   )}
                 </div>
 
-                              <div className={`geo_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_7'>Сопровождение линейных объектов</h2>
-                   <img className='geo_body_box7_image' src='/public/geo_sopr.jpg'/>
-                   <p className='geo_body_price7'>от 10.000 руб.</p>
-                    <p className='geo_body_text7'>Измерение и контрольные работы для обеспечения точности и надежности линейных инженерных систем и коммуникаций</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
+                              <div className={`geodezic_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_7'>Сопровождение линейных объектов</h2>
+                   <img className='geodezic_body_box7_image' src='/public/geo_sopr.jpg'/>
+                   <p className='geodezic_body_price7'>от 10.000 руб.</p>
+                    <p className='geodezic_body_text7'>Измерение и контрольные работы для обеспечения точности и надежности линейных инженерных систем и коммуникаций</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
 
@@ -446,12 +446,12 @@ return (
                   )}
                 </div>
 
-                              <div className={`geo_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_8'>Расчет объема грунта</h2>
-                   <img className='geo_body_box8_image' src='/public/v_grunt.jpg'/>
-                   <p className='geo_body_price8'>от 7.000 руб.</p>
-                    <p className='geo_body_text8'>Определение объема земельных масс при проведении строительных и инженерных работ</p>
-                    <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
+                              <div className={`geodezic_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
+                   <h2 className='geodezic_body_uslugi_box_title_8'>Расчет объема грунта</h2>
+                   <img className='geodezic_body_box8_image' src='/public/v_grunt.jpg'/>
+                   <p className='geodezic_body_price8'>от 7.000 руб.</p>
+                    <p className='geodezic_body_text8'>Определение объема земельных масс при проведении строительных и инженерных работ</p>
+                    <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
 

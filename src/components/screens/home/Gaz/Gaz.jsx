@@ -358,7 +358,7 @@ return (
                    <h2 className='water_body_uslugi_box_title_4'>Переустройство газопроводов из под пятна строительства</h2>
                    <img className='water_body_box4_image' src='/public/20140829_144406.jpg'/>
                    <p className='water_body_price4'>от 70.000 руб.</p>
-                    <p className='water_body_text4'>Перенос газопроводов для освобождения территории под новое строительство, с соблюдением техники безопасности.</p>
+                    <p className='water_body_text4'>Перенос газопроводов для освобождения территории под новое строительство<span>, с соблюдением техники безопасности.</span></p>
                     <input className={`water_body_uslugi_box_strela3 ${activeHandler === 5 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(5)} alt=''/>
                     {activeHandler === 5 && (
                     <div className='dop_4'>
@@ -372,7 +372,7 @@ return (
                    <h2 className='water_body_uslugi_box_title_5'>Проектирование газоснабжения котельной</h2>
                    <img className='water_body_box5_image' src='/public/{C6C52C8E-5710-EB44-B63B-93749CFF545C}.jpg'/>
                    <p className='water_body_price5'>от 150.000 руб.</p>
-                    <p className='water_body_text5'>Разработка проекта системы газоснабжения для котельных с учетом требований эффективности и безопасности эксплуатации.</p>
+                    <p className='water_body_text5'>Разработка проекта системы газоснабжения для котельных с учетом требований эффективности и безопасности<span> эксплуатации</span>.</p>
                     <input className={`water_body_uslugi_box_strela3 ${activeHandler === 6 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(6)} alt=''/>
                     {activeHandler === 6 && (
                     <div className='dop_5'>
