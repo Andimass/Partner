@@ -295,37 +295,37 @@ return (
                   <div className='geodezic_2_block_1'>
                       <img className='geodezic_2_block_1_img_1' src='/public/ish.png'/>
                       <p className='geodezic_2_block_1_text_1'> Исходные данные</p>
-                      <p className='geodezic_2_block_1_text_2'>перед началом работ получаем всю необходимую исходную документацию на объект</p>
+                      <p className='geodezic_2_block_1_text_2'>перед началом работ получаем всю <span>необходимую</span> исходную документацию на объект</p>
                       <p className='geodezic_2_block_1_text_3'>01</p>
                   </div>
                   <div className='geodezic_2_block_2'>
                        <img className='geodezic_2_block_1_img_2' src='/public/russia.png'/>
                       <p className='geodezic_2_block_1_text_1'>Полевые работы</p>
-                      <p className='geodezic_2_block_1_text_2'>комплекс геодезических и топографических исследований, проводимых непосредственно на открытой местности</p>
+                      <p className='geodezic_2_block_1_text_2'>комплекс геодезических и топографических исследований<span>, проводимых непосредственно на открытой местности</span></p>
                       <p className='geodezic_2_block_2_text_3'>02</p>
                   </div>
                   <div className='geodezic_2_block_3'>
                     <img className='geodezic_2_block_1_img_3' src='/public/exper.png'/>
                       <p className='geodezic_2_block_1_text_1'>Лабораторные работы</p>
-                      <p className='geodezic_2_block_1_text_2'>совокупность работ, проводимых с целью получения данных, носящих инженерно-геологический характер</p>
+                      <p className='geodezic_2_block_1_text_2'>совокупность работ, проводимых с целью получения данных, носящих <span>инженерно-</span>геологический характер</p>
                       <p className='geodezic_2_block_3_text_3'>03</p>
                   </div>
                   <div className='geodezic_2_block_4'>
                     <img className='geodezic_2_block_1_img_4' src='/public/sogl.png'/>
                       <p className='geodezic_2_block_1_text_1'>Камеральные работы</p>
-                      <p className='geodezic_2_block_1_text_2'>обработка полевых изыскательских материалов, для получения картографического материала</p>
+                      <p className='geodezic_2_block_1_text_2'>обработка полевых изыскательских материалов<span>, для получения картографического материала</span></p>
                       <p className='geodezic_2_block_4_text_3'>04</p>
                   </div>
                   <div className='geodezic_2_block_5'>
                     <img className='geodezic_2_block_1_img_5' src='/public/proekt.png'/>
                       <p className='geodezic_2_block_1_text_1'>Технический отчет</p>
-                      <p className='geodezic_2_block_1_text_2'>технический отчет о выполненных работах в соответствии с требованиями СП 47.13330.2012 и СП 11-105-97 </p>
+                      <p className='geodezic_2_block_1_text_2'>технический отчет о выполненных работах в соответствии с требованиями<span> СП 47.13330.2012 и СП 11-105-97</span></p>
                       <p className='geodezic_2_block_5_text_3'>05</p>
                   </div>
                   <div className='geodezic_2_block_6'>
                     <img className='geodezic_2_block_1_img_6' src='/public/shopping-list_1288607.png'/>
                       <p className='geodezic_2_block_1_text_1'>Сдача работ</p>
-                      <p className='geodezic_2_block_1_text_2'>в соответствии с графиком и с гарантией качества предоставляем результаты исследований Заказчику</p>
+                      <p className='geodezic_2_block_1_text_2'>в соответствии с графиком и с гарантией качества<span> предоставляем результаты исследований Заказчику</span></p>
                       <p className='geodezic_2_block_6_text_3'>06</p>
                   </div>
               </div>
@@ -365,7 +365,7 @@ return (
                     <h2 className='geodezic_body_uslugi_box_title_2'>Вынос границ земельного участка в натуру</h2>
                     <img className='geodezic_body_box2_image' src='/public/box2.jpg'/>
                     <p className='geodezic_body_price2'>от 8.000 руб.</p>
-                    <p className='geodezic_body_text2'>Маркировка и определение физических границ участка на местности для его использования и оформления собственности</p>
+                    <p className='geodezic_body_text2'>Маркировка<span> и определение физических</span> границ участка на местности для его использования и оформления собственности</p>
                     <input className={`geodezic_body_uslugi_box_strela2 ${activeHandler === 2 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(2)} alt=''/>
                     {activeHandler === 2 && (
                     <div className='dop_2'>
@@ -422,7 +422,7 @@ return (
                    <h2 className='geodezic_body_uslugi_box_title_6'>Координирование реперов</h2>
                    <img className='geodezic_body_box6_image' src='/public/geo_rap.jpg'/>
                    <p className='geodezic_body_price6'>от 12.000 руб.</p>
-                    <p className='geodezic_body_text6'>Определение точных географических координат и высотных отметок опорных точек, необходимых для геодезических и строительных работ</p>
+                    <p className='geodezic_body_text6'>Определение<span>точных</span> географических координат и<span> высотных отметок</span> опорных точек, необходимых для геодезических и строительных работ</p>
                     <input className={`geodezic_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -571,7 +571,7 @@ return (
 
 
             </div>
-            <div className={`geodezic_footer ${activeHandler === 1 ? 'footer-shot_1' : '' || activeHandler === 2 ? 'footer-shot_2' : '' || activeHandler === 3 ? 'footer-shot_3' : '' || activeHandler === 4 ? 'footer-shot_4' : '' || activeHandler === 5 ? 'footer-shot_5' : '' || activeHandler === 6 ? 'footer-shot_6' : '' || activeHandler === 7 ? 'footer-shot_7' : '' || activeHandler === 8 ? 'footer-shot_8' : '' || activeHandler === 9 ? 'footer-shot_9' : ''  }`}>
+            <div className={`geodezic_footer ${activeHandler === 1 ? 'g_footer-shot_1' : '' || activeHandler === 2 ? 'g_footer-shot_2' : '' || activeHandler === 3 ? 'g_footer-shot_3' : '' || activeHandler === 4 ? 'g_footer-shot_4' : '' || activeHandler === 5 ? 'g_footer-shot_5' : '' || activeHandler === 6 ? 'g_footer-shot_6' : '' || activeHandler === 7 ? 'g_footer-shot_7' : '' || activeHandler === 8 ? 'g_footer-shot_8' : '' || activeHandler === 9 ? 'g_footer-shot_9' : ''  }`}>
                 <div className='geodezic_footer_1'>
                     <img className='geodezic_footer_1_img' src='/public/logo_new.png'/>
                     <img className='geodezic_footer_2_img' src='/public/tochki.png'/>

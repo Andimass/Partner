@@ -227,7 +227,7 @@
 
     .geodezic_1_title {
         position: absolute;
-        margin-left: 20px;
+        margin-left: 15px;
         margin-top: 65px;
         color: black;
         font-size: 20px;
@@ -238,7 +238,7 @@
     .geodezic_1_text {
         position: absolute;
         margin-left: 11px;
-        margin-top: 150px;
+        margin-top: 160px;
         color: black;
         width: 370px;
         font-size: 10px;
@@ -329,7 +329,7 @@
 
     .geodezic_for_img22 {
     position: absolute;
-    height: 160px;
+    height: 170px;
     margin-left: -108px;
     margin-top: 390px;
     z-index: 4;
@@ -586,7 +586,7 @@
 
 .geodezic_2_block_1_img_3 {
     position: absolute;
-    width: 27px;
+    width: 22px;
     margin-left: 11px;
     margin-top: 9px;
 }
@@ -954,6 +954,11 @@
     font-size: 12px;
     font-family: "Cera Pro Light", sans-serif;
     margin-top: -15px;
+    width: 140px;
+}
+
+.geodezic_2_block_1_text_2 span{
+    display: none;
 }
 
 .geodezic_2_block_1_number {
@@ -982,7 +987,7 @@
     font-size: 12px;
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 137px;
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 .geodezic_2_block_3_text_3 {
@@ -991,7 +996,7 @@
     font-size: 12px;
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 137px;
-    margin-top: -15px;
+    margin-top: -32px;
 }
 
 .geodezic_2_block_4_text_3 {
@@ -1000,7 +1005,7 @@
     font-size: 12px;
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 137px;
-    margin-top: -25px;
+    margin-top: -5px;
 }
 
 .geodezic_2_block_5_text_3 {
@@ -1018,7 +1023,7 @@
     font-size: 12px;
     font-family: "Cera Pro Medium", sans-serif;
     margin-left: 137px;
-    margin-top: -25px;
+    margin-top: -10px;
 }
 
 .geodezic_2_block_2 {
@@ -1144,15 +1149,15 @@
     font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 58px;
+    margin-top: 45px;
     margin-left: 8px;
-    width: 160px;
+    width: 155px;
 
 }
 
 .geodezic_body_price {
     position: absolute;
-    margin-top: 43px;
+    margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
     font-size: 12px;
@@ -1191,7 +1196,7 @@
     margin-top: 5px;
     width: 181px;
     margin-left: 8px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1203,15 +1208,19 @@
     font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 57px;
+    margin-top: 45px;
     margin-left: 8px;
-    width: 165px;
+    width: 160px;
+    line-height: 16px;
+}
 
+.geodezic_body_text2 span{
+    display: none;
 }
 
 .geodezic_body_price2 {
     position: absolute;
-    margin-top: 43px;
+    margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
     font-size: 12px;
@@ -1253,7 +1262,7 @@
 .geodezic_body_uslugi_box_title_3 {
     margin-top: 5px;
     width: 171px;
-    margin-left: 8px;
+    margin-left: 6px;
     font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
@@ -1266,15 +1275,15 @@
     font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 60px;
+    margin-top: 47px;
     margin-left: 8px;
     width: 160px;
-
+    line-height: 15px;
 }
 
 .geodezic_body_price3 {
     position: absolute;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
     font-size: 12px;
@@ -1312,7 +1321,7 @@
 .geodezic_body_uslugi_box_title_4 {
     margin-top: 5px;
     width: 171px;
-    margin-left: 8px;
+    margin-left: 3px;
     font-size: 13px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
@@ -1325,10 +1334,10 @@
     font-size: 12px;
     color: #000000;
     font-family: "Cera Pro Regular", serif;
-    margin-top: 60px;
+    margin-top: 47px;
     margin-left: 8px;
     width: 162px;
-
+    line-height: 16px;
 }
 
 .geodezic_body_text4 span{
@@ -1337,7 +1346,7 @@
 
 .geodezic_body_price4 {
     position: absolute;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-left: 8px;
     letter-spacing: 0.5px;
     font-size: 12px;
@@ -1375,8 +1384,8 @@
 .geodezic_body_uslugi_box_title_5 {
     margin-top: 5px;
     width: 181px;
-    margin-left: 8px;
-    font-size: 13px;
+    margin-left: 4px;
+    font-size: 12px;
     font-weight: 700;
     font-family: "Cera Pro Bold", serif;
     position: absolute;
@@ -1457,6 +1466,10 @@
     line-height: 14px;
 }
 
+.geodezic_body_text6 span{
+    display: none;
+}
+
 .geodezic_body_price6 {
     position: absolute;
     margin-top: 28px;
@@ -1513,7 +1526,7 @@
     margin-top: 45px;
     margin-left: 6px;
     width: 165px;
-    line-height: 14px;
+    line-height: 16px;
 }
 
 .geodezic_body_price7 {
@@ -1572,7 +1585,7 @@
     margin-top: 45px;
     margin-left: 8px;
     width: 160px;
-    line-height: 14px;
+    line-height: 16px;
 }
 
 .geodezic_body_price8 {
@@ -1594,7 +1607,7 @@
     height: 410px;
     background-color: rgba(246, 245, 245, 0.97);
     margin-left: 130px;
-    margin-top: 1020px;
+    margin-top: 730px;
 
 
 .geodezic_pdf_title {
@@ -1730,7 +1743,7 @@
     width: 390px;
     height: 466px;
     position: absolute;
-    margin-top: 2820px;
+    margin-top: 2720px;
     background-color: #ffffff;
 
 
@@ -1780,12 +1793,12 @@
 
 }
 
-.faq_1:after {
-    margin-top: -105px;
+.faq_1_1:after {
+    margin-top: -240px;
 }
 
-.faq_1:before {
-    margin-top: 95px;
+.faq_1_1:before {
+    margin-top: 225px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -1838,8 +1851,8 @@
 
 }
 
-.faq_2:before {
-    margin-top: 140px;
+.faq_1_2:before {
+    margin-top: 110px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -1863,8 +1876,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_2_2 {
-    margin-top: 50px;
+.faq_1_2_2 {
+    margin-top: 180px;
 }
 
 .geodezic_faq_block_2_text {
@@ -1891,8 +1904,8 @@
     margin-left: -5px;
 }
 
-.faq_3:before {
-    margin-top: 80px;
+.faq_1_3:before {
+    margin-top: 95px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -1915,8 +1928,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_3_3 {
-    margin-top: 90px;
+.faq_1_3_3 {
+    margin-top: 60px;
 }
 
 .geodezic_faq_block_3_text {
@@ -1938,12 +1951,12 @@
     border: 1px #cecccc solid;
     width: 380px;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: -5px;
 }
 
-.faq_4:before {
-    margin-top: 100px;
+.faq_1_4:before {
+    margin-top: 185px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -1955,7 +1968,7 @@
 
 .geodezic_faq_block_4_title_strela1 {
     position: absolute;
-    margin-top: -33px;
+    margin-top: -25px;
     margin-left: 360px;
     width: 8px;
     height: 8px;
@@ -1967,8 +1980,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_4_4 {
-    margin-top: 30px;
+.faq_1_4_4 {
+    margin-top: 50px;
 }
 
 .geodezic_faq_block_4_text {
@@ -1981,7 +1994,7 @@
     width: 370px;
     height: 74px;
     margin-left: 10px;
-    margin-top: -25px;
+    margin-top: -40px;
     color: black;
     border-radius: 15px;
 }
@@ -1996,8 +2009,8 @@
 }
 
 
-.faq_5:before {
-    margin-top: 100px;
+.faq_1_5:before {
+    margin-top: 140px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -2021,8 +2034,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_5_5 {
-    margin-top: 50px;
+.faq_1_5_5 {
+    margin-top: 140px;
 }
 
 .geodezic_faq_block_5_text {
@@ -2059,8 +2072,8 @@
 }
 
 
-.faq_6:before {
-    margin-top: 85px;
+.faq_1_6:before {
+    margin-top: 215px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -2084,8 +2097,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_6_6 {
-    margin-top: 50px;
+.faq_1_6_6 {
+    margin-top: 90px;
 }
 
 .geodezic_faq_block_6_text {
@@ -2107,7 +2120,7 @@
     width: 370px;
     height: 74px;
     margin-left: 10px;
-    margin-top: -40px;
+    margin-top: -45px;
     color: black;
     border-radius: 15px;
 }
@@ -2117,12 +2130,12 @@
     border: 1px #cecccc solid;
     width: 380px;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: -5px;
 }
 
-.faq_7:before {
-    margin-top: 100px;
+.faq_1_7:before {
+    margin-top: 110px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -2134,7 +2147,7 @@
 
 .geodezic_faq_block_7_title_strela1 {
     position: absolute;
-    margin-top: -23px;
+    margin-top: -40px;
     margin-left: 360px;
     width: 8px;
     height: 8px;
@@ -2146,8 +2159,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_7_7 {
-    margin-top: 40px;
+.faq_1_7_7 {
+    margin-top: 170px;
 }
 
 .geodezic_faq_block_7_text {
@@ -2168,7 +2181,7 @@
     width: 370px;
     height: 74px;
     margin-left: 10px;
-    margin-top: -40px;
+    margin-top: -30px;
     color: black;
     border-radius: 15px;
 }
@@ -2182,8 +2195,8 @@
     margin-left: -5px;
 }
 
-.faq_8:before {
-    margin-top: 100px;
+.faq_1_8:before {
+    margin-top: 150px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -2207,8 +2220,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_8_8 {
-    margin-top: 55px;
+.faq_1_8_8 {
+    margin-top: 60px;
 }
 
 .geodezic_faq_block_8_text {
@@ -2241,12 +2254,12 @@
     border: 1px #cecccc solid;
     width: 380px;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: -5px;
 }
 
-.faq_9:before {
-    margin-top: 70px;
+.faq_1_9:before {
+    margin-top: 110px;
     transition: opacity 0.3s ease, margin-top 0.5s ease;
 }
 
@@ -2258,7 +2271,7 @@
 
 .geodezic_faq_block_9_title_strela1 {
     position: absolute;
-    margin-top: -23px;
+    margin-top: -40px;
     margin-left: 360px;
     width: 8px;
     height: 8px;
@@ -2270,8 +2283,8 @@
     transition: transform 0.5s ease;
 }
 
-.faq_9_9 {
-    margin-top: 35px;
+.faq_1_9_9 {
+    margin-top: 80px;
 }
 
 .geodezic_faq_block_9_text {
@@ -2295,7 +2308,7 @@
     width: 390px;
     height: 164px;
     background-color: #2c2b2b;
-    margin-top: 3315px;
+    margin-top: 3120px;
 
 
 .geodezic_footer_1 {
@@ -2448,39 +2461,39 @@
     font-family: "Cera Pro Regular", sans-serif;
 }
 
-    .footer-shot_1_1{
+    .g_footer-shot_1_1{
     margin-top: 3120px;
 }
 
-.footer-shot_2_1{
+.g_footer-shot_2_1{
     margin-top: 4200px;
 }
 
-.footer-shot_3_1{
+.g_footer-shot_3_1{
     margin-top: 4150px;
 }
 
-.footer-shot_4_1{
+.g_footer-shot_4_1{
     margin-top: 4150px;
 }
 
-.footer-shot_5_1{
+.g_footer-shot_5_1{
     margin-top: 4150px;
 }
 
-.footer-shot_6_1{
+.g_footer-shot_6_1{
     margin-top: 4150px;
 }
 
-.footer-shot_7_1{
+.g_footer-shot_7_1{
     margin-top: 4150px;
 }
 
-.footer-shot_8_1{
+.g_footer-shot_8_1{
     margin-top: 4150px;
 }
 
-.footer-shot_9_1{
+.g_footer-shot_9_1{
     margin-top: 4150px;
 }
 
@@ -9442,38 +9455,38 @@
 }
 
 
-.footer-shot_1{
+.g_footer-shot_1{
     margin-top: 4200px;
 }
 
-.footer-shot_2{
+.g_footer-shot_2{
     margin-top: 4100px;
 }
 
-.footer-shot_3{
+.g_footer-shot_3{
     margin-top: 4100px;
 }
 
-.footer-shot_4{
+.g_footer-shot_4{
     margin-top: 4150px;
 }
 
-.footer-shot_5{
+.g_footer-shot_5{
     margin-top: 4150px;
 }
 
-.footer-shot_6{
+.g_footer-shot_6{
     margin-top: 4200px;
 }
 
-.footer-shot_7{
+.g_footer-shot_7{
     margin-top: 4100px;
 }
 
-.footer-shot_8{
+.g_footer-shot_8{
     margin-top: 4100px;
 }
 
-.footer-shot_9{
+.g_footer-shot_9{
     margin-top: 4100px;
 }
