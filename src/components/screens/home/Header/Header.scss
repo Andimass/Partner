@@ -1555,36 +1555,49 @@
     margin-left: 1080px;
     margin-top: 330px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
   z-index: 50 ;
 }
 
+.header_top_circle img:hover {
+  filter: url(#ambilight) grayscale(0%);
+}
+
 .header_top_comp_2_title_1:hover + .header_top_comp_2_title_1_img{
-    opacity: 1;
+    display: block;
+}
+
+.header_top_comp_2_title_1:hover + .header_top_circle_1{
+    filter: url(#ambilight) grayscale(0%);
+}
+
+.header_top_comp_2_title_1:hover + .header_top_comp_2_title_1_img{
+    display: block;
 }
 
 .header_top_comp_2_title_1:hover{
   color: black;
+
 }
 
 .header_top_comp_2_title_6:hover + .header_top_comp_2_title_6_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_5:hover + .header_top_comp_2_title_5_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_3:hover + .header_top_comp_2_title_3_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_2:hover + .header_top_comp_2_title_2_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_6:hover{
@@ -1602,13 +1615,13 @@
     margin-left: 1080px;
     margin-top: 500px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
     z-index: 50 ;
 }
 
 .header_top_comp_2_title_2:hover .header_top_comp_2_title_2_img,
 .header_top_comp_2_title_2_img:hover {
-    opacity: 1;
+    display: block;
 }
 
 
@@ -1621,23 +1634,23 @@
     margin-left: 1080px;
     margin-top: 700px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
     z-index: 50 ;
 }
 
 .header_top_comp_2_title_3:hover .header_top_comp_2_title_3_img,
 .header_top_comp_2_title_3_img:hover {
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_4:hover .header_top_comp_2_title_4_img,
 .header_top_comp_2_title_4_img:hover {
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
 .header_top_comp_2_title_5_img:hover {
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_3:hover{
@@ -1660,12 +1673,12 @@
     margin-left: 1788px;
     margin-top: 40px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
     z-index: 10 ;
 }
 
 .header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_5_img {
@@ -1675,13 +1688,13 @@
     margin-left: 1780px;
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
     z-index: 50 ;
 }
 
 .header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
 .header_top_comp_2_title_5_img:hover {
-    opacity: 1;
+    display: block;
 }
 
 .header_top_comp_2_title_6_img {
@@ -1691,13 +1704,13 @@
     margin-left: 1780px;
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    opacity: 0;
+    display: none;
     z-index: 50 ;
 }
 
 .header_top_comp_2_title_6:hover .header_top_comp_2_title_6_img,
 .header_top_comp_2_title_6_img:hover {
-    opacity: 1;
+    display: block;
 }
 /*.header_top_comp_2_title_1:hover {*/
 /*    display: inline-block; !* Для корректного отображения фона *!*/
@@ -2546,7 +2559,7 @@ background-color: rgba(246, 245, 245);
 
 .container_container_3{
     position: absolute;
-    margin-top: 6000px;
+    margin-top: 5000px;
     background-color: white;
     width: 2500px;
     height: 800px;
@@ -2569,7 +2582,7 @@ background-color: rgba(246, 245, 245);
     width: 2500px;
     height: 1000px;
     background-color: white;
-    margin-top: 5000px;
+    margin-top: 4000px;
 }
 
 .header_our_prem{
@@ -2695,7 +2708,7 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     background-color: white;
     margin-left: 1010px;
-    border: 1px #000000 solid;
+    border-left: 1px grey solid;
 }
 
 
@@ -2717,7 +2730,7 @@ background-color: rgba(246, 245, 245);
     background-color: white;
     position: absolute;
     margin-left: 1010px;
-    border: 1px grey solid  ;
+    border-right: 1px grey solid  ;
 }
 
 
@@ -2808,7 +2821,7 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     background-color: white;
     margin-left: 1090px;
-    border: 1px #000000 solid;
+    border-left: 1px grey solid;
 }
 
 .header_our_uslugi_proekt{
@@ -2829,7 +2842,8 @@ background-color: rgba(246, 245, 245);
     background-color: white;
     position: absolute;
     margin-left: 1090px;
-    border: 1px grey solid;
+    border-right: 1px grey solid;
+  border-left: 1px grey solid;
 }
 
 .black-grey_3 {
@@ -2918,7 +2932,7 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     background-color: white;
     margin-left: 1170px;
-    border: 1px #000000 solid;
+    border-left: 1px grey solid;
 }
 
 .header_our_uslugi_proekt_gaz{
@@ -2939,7 +2953,8 @@ background-color: rgba(246, 245, 245);
     background-color: white;
     position: absolute;
     margin-left: 1170px;
-    border: 1px grey solid;
+    border-left: 1px grey solid;
+     border-right: 1px grey solid;
 }
 
 .black-grey_4 {
@@ -3014,7 +3029,7 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     background-color: white;
     margin-left: 1250px;
-    border: 1px #000000 solid;
+    border-left: 1px grey solid;
 }
 
 .header_our_uslugi_proekt_set{
@@ -3035,7 +3050,8 @@ background-color: rgba(246, 245, 245);
     background-color: white;
     position: absolute;
     margin-left: 1250px;
-    border: 1px grey solid;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
 }
 
 .dop_blue-white_1_4{
@@ -3112,7 +3128,8 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     background-color: white;
     margin-left: 1330px;
-    border: 1px #000000 solid;
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
 }
 
 .header_our_uslugi_proekt_wat{
@@ -3133,7 +3150,9 @@ background-color: rgba(246, 245, 245);
     background-color: white;
     position: absolute;
     margin-left: 1330px;
-    border: 1px grey solid;
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
+
 }
 
 .black-grey_6 {
@@ -3201,6 +3220,23 @@ background-color: rgba(246, 245, 245);
         z-index: 999;
 }
 
+.circle_img_2{
+  position: absolute;
+  margin-left: 1100px;
+  width: 200px;
+  z-index: 1001;
+  margin-top: 201px;
+}
+
+.circle_button{
+  position: absolute;
+  margin-left: 1490px;
+  margin-top: 500px;
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+}
+
 .header_circle_three_color{
     width: 300px;
     height: 300px;
@@ -3211,6 +3247,9 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     z-index: 999;
     background-color: #000000;
+  transition: transform 0.5s;
+  transform-origin: center;
+
 }
 
 
@@ -3229,7 +3268,8 @@ background-color: rgba(246, 245, 245);
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: conic-gradient(#ff0202 0% 16%, transparent 16% 100%)
+            background: conic-gradient(#ff0202 0% 16%, transparent 16% 100%);
+                transform-origin: center;
         }
 
 
@@ -3357,6 +3397,44 @@ background-color: rgba(246, 245, 245);
             transform-origin: center;
         }
 
+        .header_container_5_text{
+          position: absolute;
+          width: 500px;
+          height: 355px;
+          margin-top: 105px;
+          margin-left: 1490px;
+        }
+
+        .header_container_5_text_1{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_2{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_3{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_4{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_5{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_6{
+            color: black;
+            display: none;
+        }
+
 
         .circle-inner_5 {
             position: absolute;
@@ -3383,8 +3461,8 @@ background-color: rgba(246, 245, 245);
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: conic-gradient(#8f00f3 0% 4%, #18B472 4% 8%, #18B472 8% 12%, #18B472 12% 16%, transparent 16% 100%);
-            transform: rotate(298deg);
+            background: conic-gradient(#8f00f3 0% 16%, transparent 16% 100%);
+            transform: rotate(300deg);
             transform-origin: center;
         }
 
@@ -3743,7 +3821,7 @@ background-color: rgba(246, 245, 245);
     width: 2500px;
     height: 300px;
     background-color: #2c2b2b;
-    top: 2300px;
+    top: 1400px;
 }
 
 .communication_footer_1{

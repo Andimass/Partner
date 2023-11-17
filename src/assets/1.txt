@@ -246,7 +246,14 @@ root.render(
 
 
 
-
+// function rotateCircles() {
+//     document.querySelectorAll('.header_circle_three_color').forEach(circle => {
+//         circle.style.transform += `rotate(${+60}deg)`;
+//         if (circle.style.transform === `rotate(${60}deg)`) {
+//             circle.style.transform = `rotate(${0}deg)`
+//         }
+//     });
+// }
 
 
 

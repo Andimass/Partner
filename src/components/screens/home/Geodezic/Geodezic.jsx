@@ -2,7 +2,7 @@ import './Geodezic.css'
 import React, {useEffect, useState, useRef} from "react";
 
 const Geodezic = () =>  {
-    const [activeHandler, setActiveHandler] = useState(0);
+    const [activeHandler, setActiveHandler] = useState(1);
 
     const handleClick = (handlerId) => {
         if (activeHandler === handlerId) {
@@ -571,7 +571,7 @@ return (
 
 
             </div>
-            <div className={`geodezic_footer ${activeHandler === 1 ? 'g_footer-shot_1' : '' || activeHandler === 2 ? 'g_footer-shot_2' : '' || activeHandler === 3 ? 'g_footer-shot_3' : '' || activeHandler === 4 ? 'g_footer-shot_4' : '' || activeHandler === 5 ? 'g_footer-shot_5' : '' || activeHandler === 6 ? 'g_footer-shot_6' : '' || activeHandler === 7 ? 'g_footer-shot_7' : '' || activeHandler === 8 ? 'g_footer-shot_8' : '' || activeHandler === 9 ? 'g_footer-shot_9' : ''  }`}>
+            <div className={`geodezic_footer ${activeHandler === 0 ? 'gazification_footer' : '' || activeHandler === 1 ? 'footer-shot_1_1' : '' || activeHandler === 2 ? 'footer-shot_2_1' : '' || activeHandler === 3 ? 'footer-shot_3_1' : '' || activeHandler === 4 ? 'footer-shot_4_1' : '' || activeHandler === 5 ? 'footer-shot_5_1' : '' || activeHandler === 6 ? 'footer-shot_6_1' : '' || activeHandler === 7 ? 'footer-shot_7_1' : '' || activeHandler === 8 ? 'footer-shot_8_1' : '' || activeHandler === 9 ? 'footer-shot_9_1' : ''  }`}>
                 <div className='geodezic_footer_1'>
                     <img className='geodezic_footer_1_img' src='/public/logo_new.png'/>
                     <img className='geodezic_footer_2_img' src='/public/tochki.png'/>

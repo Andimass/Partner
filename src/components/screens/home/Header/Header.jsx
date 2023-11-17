@@ -3,6 +3,73 @@ import './Header.scss'
 import React, {useEffect, useState, useRef} from "react";
 import $ from "jquery";
 import p5 from "p5";
+
+let currentRotation = 0; // Текущий угол поворота
+function rotateCircles() {
+    currentRotation += 60; // Увеличиваем текущий угол на 60
+    // document.querySelectorAll('.circle_img_2').forEach(circle => {
+    //     circle.style.transform = `rotate(${-currentRotation}deg)`; // Применяем новый угол поворота
+    // });
+    document.querySelectorAll('.header_circle_three_color').forEach(circle => {
+        circle.style.transform = `rotate(${currentRotation}deg)`; // Применяем новый угол поворота
+        if (currentRotation === 360) {
+            currentRotation = 0
+        }
+    });
+
+    if (currentRotation === 60) {
+        document.querySelector('.header_container_5_text_1').style.display = 'block';
+        document.querySelector('.header_container_5_text_2').style.display = 'none';
+        document.querySelector('.header_container_5_text_3').style.display = 'none';
+        document.querySelector('.header_container_5_text_4').style.display = 'none';
+        document.querySelector('.header_container_5_text_5').style.display = 'none';
+        document.querySelector('.header_container_5_text_6').style.display = 'none';
+    }
+    else if (currentRotation === 120) {
+        document.querySelector('.header_container_5_text_1').style.display = 'none';
+        document.querySelector('.header_container_5_text_2').style.display = 'block';
+        document.querySelector('.header_container_5_text_3').style.display = 'none';
+        document.querySelector('.header_container_5_text_4').style.display = 'none';
+        document.querySelector('.header_container_5_text_5').style.display = 'none';
+        document.querySelector('.header_container_5_text_6').style.display = 'none';
+    }
+
+    else if (currentRotation === 180) {
+        document.querySelector('.header_container_5_text_1').style.display = 'none';
+        document.querySelector('.header_container_5_text_2').style.display = 'none';
+        document.querySelector('.header_container_5_text_3').style.display = 'block';
+        document.querySelector('.header_container_5_text_4').style.display = 'none';
+        document.querySelector('.header_container_5_text_5').style.display = 'none';
+        document.querySelector('.header_container_5_text_6').style.display = 'none';
+    }
+
+    else if (currentRotation === 240) {
+        document.querySelector('.header_container_5_text_1').style.display = 'none';
+        document.querySelector('.header_container_5_text_2').style.display = 'none';
+        document.querySelector('.header_container_5_text_3').style.display = 'none';
+        document.querySelector('.header_container_5_text_4').style.display = 'block';
+        document.querySelector('.header_container_5_text_5').style.display = 'none';
+        document.querySelector('.header_container_5_text_6').style.display = 'none';
+    }
+
+    else if (currentRotation === 300) {
+        document.querySelector('.header_container_5_text_1').style.display = 'none';
+        document.querySelector('.header_container_5_text_2').style.display = 'none';
+        document.querySelector('.header_container_5_text_3').style.display = 'none';
+        document.querySelector('.header_container_5_text_4').style.display = 'none';
+        document.querySelector('.header_container_5_text_5').style.display = 'block';
+        document.querySelector('.header_container_5_text_6').style.display = 'none';
+    }
+
+    else if (currentRotation === 360) {
+        document.querySelector('.header_container_5_text_1').style.display = 'none';
+        document.querySelector('.header_container_5_text_2').style.display = 'none';
+        document.querySelector('.header_container_5_text_3').style.display = 'none';
+        document.querySelector('.header_container_5_text_4').style.display = 'none';
+        document.querySelector('.header_container_5_text_5').style.display = 'none';
+        document.querySelector('.header_container_5_text_6').style.display = 'block';
+    }
+}
 const Header = () => {
 
     const [activeHandler, setActiveHandler] = useState(1);
@@ -164,13 +231,12 @@ const Header = () => {
       let balls = [];
       let img;
       let imageSizes = [
-          {width: 198, height: 45},
+          {width: 100, height: 25},
           {width: 164, height: 138},
-          {width: 105, height: 85},
-          {width: 181, height: 84},
-          {width: 141, height: 100},
+          {width: 115, height: 85},
+          {width: 200, height: 91},
+          {width: 190, height: 130},
           {width: 85, height: 20},
-          {width: 206, height: 72},
           {width: 117, height: 82},
           {width: 132, height: 92},
           {width: 82, height: 93},
@@ -179,14 +245,14 @@ const Header = () => {
 
       p.preload = () => {
         img = [];
-          for (let i = 0; i < 11; i++) {
+          for (let i = 0; i < 10; i++) {
             img[i] = p.loadImage('./public/part' + (i + 1) + '.png');  // предполагая, что у вас есть изображения part1.png, part2.png и т.д.
           }
       };
 
       p.setup = () => {
       p.createCanvas(2480, 500);
-      for (let i = 0; i < 11; i++) {
+      for (let i = 0; i < 10; i++) {
         balls.push(new Ball(p.random(p.width), p.random(p.height), p.random(125, 320), p, i));  // Передаем индекс вместо самого изображения
       }
 };
@@ -219,7 +285,7 @@ const Header = () => {
           }
 
           getBorderRadius() {
-              let offset = 25;
+              let offset = 26;
               return Math.max(this.imgWidth, this.imgHeight) / 2 + offset;
           }
 
@@ -233,7 +299,7 @@ const Header = () => {
               this.p.image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
 
               // Обводка
-              let offset = 45;
+              let offset = 50;
               let maxDimension = Math.max(this.imgWidth, this.imgHeight) + offset;
               this.p.stroke(0); // Цвет обводки (в этом случае черный)
               this.p.strokeWeight(1); // Толщина обводки
@@ -475,7 +541,6 @@ const Header = () => {
 
 
 
-
         return (
         <html>
         <head>
@@ -586,7 +651,7 @@ const Header = () => {
                            {/*<img className='logo_circle' src='/public/logo2.png'/>*/}
                                 <p className='header_top_2_title'>Предоставляем юридическим лицам и гражданам широкий спектр услуг</p>
                                <div><a href='/geodezic' className='header_top_comp_2_title_1'>Инженерные изыскания</a>
-                                <img className='header_top_comp_2_title_1_img' href='/geodezic' src='/public/обводка анимация.gif'/></div>
+                                <img className='header_top_comp_2_title_1_img' id="myGif" href='/geodezic' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_111'>
                                     <p className='header_top_comp_2_title_11'>Геодезические, геологические и экологические изыскания для выполнения работ по подготовке проектной документации, строительству и реконструкции объектов капитального строительства  </p>
                                 </div>
@@ -600,7 +665,7 @@ const Header = () => {
                                 <div className='header_top_comp_2_title_311'>
                                     <p className='header_top_comp_2_title_31'>Оказываем услуги по расчету потребления газа, разработке проектной и рабочей документации: котельных, пунктов редуцирования газа, сетей газопотребления и газораспределения</p>
                                 </div>
-                                <a className='header_top_comp_2_title_4' href='/project_supply'>Проектирование сетей абоненстского доступа</a>
+                                <a className='header_top_comp_2_title_4' href='/project_supply'>Проектирование сетей абонентского доступа</a>
                            <img className='header_top_comp_2_title_4_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_411'>
                                     <p className='header_top_comp_2_title_41'>Проектирование современных систем связи с использованием оптического волокна. Расчет тяжений несущих конструкций, в том числе опор воздушных линий электропередачи</p>
@@ -758,6 +823,66 @@ const Header = () => {
                     </div>
 
                 <div className='header_container_5'>
+                    <img className='circle_img_2' src='/public/logo_big.png'/>
+                    <button className={`circle_button`} onClick={(rotateCircles)}>Дальше</button>
+                    <div className='header_container_5_text'>
+                        <div className='header_container_5_text_1'>
+                            <h2>Инженерно-геодезические изыскания</h2>
+                            <p>Ситуационный план</p>
+                            <p>Вынос границ земельного участка в натуру</p>
+                            <p>Топографическая съемка и топоплан</p>
+                            <p>Геодезические изыскания</p>
+                            <p>Камерально геодезические работы</p>
+                            <p>Координирование реперов</p>
+                        </div>
+                        <div className='header_container_5_text_2'>
+                            <h2>Проектирование энергообъектов электроэнергетики</h2>
+                            <p>Проектирование газопроводов низкого давления</p>
+                            <p>Проектирование газопроводов среднего давления</p>
+                            <p>Проектирование газопроводов высокого давления</p>
+                            <p>Переустройство газопроводов из под пятна строительства</p>
+                            <p>Проектирование газоснабжения котельной</p>
+                        </div>
+                        <div className='header_container_5_text_3'>
+                          <h2>Проектирование энергообъектов электроэнергетики</h2>
+                            <p>Проектирование газопроводов низкого давления</p>
+                            <p>Проектирование газопроводов среднего давления</p>
+                            <p>Проектирование газопроводов высокого давления</p>
+                            <p>Переустройство газопроводов из под пятна строительства</p>
+                            <p>Проектирование газоснабжения котельной</p>
+                        </div>
+                        <div className='header_container_5_text_4'>
+                            <h2>Абонентский доступ</h2>
+                            <p>Проектирование газопроводов низкого давления</p>
+                            <p>Проектирование газопроводов среднего давления</p>
+                            <p>Проектирование газопроводов высокого давления</p>
+                            <p>Переустройство газопроводов из под пятна строительства</p>
+                            <p>Проектирование газоснабжения котельной</p>
+                            <p>Разработка схемы газоснабжения объекта</p>
+                        </div>
+                        <div className='header_container_5_text_5'>
+                            <h2>Проектирование водопровода и канализации</h2>
+                            <p>Проектирование газопроводов низкого давления</p>
+                            <p>Проектирование газопроводов среднего давления</p>
+                            <p>Проектирование газопроводов высокого давления</p>
+                            <p>Переустройство газопроводов из под пятна строительства</p>
+                            <p>Проектирование газоснабжения котельной</p>
+                            <p>Разработка схемы газоснабжения объекта</p>
+                        </div>
+                        <div className='header_container_5_text_6'>
+                            <h2>Кадастровые работы</h2>
+                            <p>Межевание земельного участка</p>
+                            <p>Технический план ОКС</p>
+                            <p>Акт обследования</p>
+                            <p>Формирование з/у и схема на КПТ</p>
+                            <p>Исправление кадастровых ошибок</p>
+                            <p>Межевание для выдела с/х долей</p>
+                        </div>
+
+
+
+
+                    </div>
                     <div className='header_circle_three_color'>
                         <div className="circle-container">
                             <div className="circle-outer"></div>

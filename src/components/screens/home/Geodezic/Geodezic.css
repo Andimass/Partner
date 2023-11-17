@@ -770,7 +770,7 @@
     position: absolute;
     margin-left: 35px;
     width: 11px;
-    margin-top: 458px;
+    margin-top: 465px;
     border: 1px grey solid;
     opacity: 0.6;
     transform: rotate(135deg);
@@ -790,7 +790,7 @@
     position: absolute;
     margin-left: 359px;
     width: 11px;
-    margin-top: 458px;
+    margin-top: 465px;
     border: 1px grey solid;
     opacity: 0.6;
     transform: rotate(135deg);
@@ -2300,6 +2300,7 @@
     100% {
         opacity: 1;
     }
+
 }
 }
 
@@ -2309,7 +2310,7 @@
     height: 164px;
     background-color: #2c2b2b;
     margin-top: 3120px;
-
+}
 
 .geodezic_footer_1 {
     width: 10px;
@@ -2460,44 +2461,42 @@
     margin-top: -7px;
     font-family: "Cera Pro Regular", sans-serif;
 }
-
-    .g_footer-shot_1_1{
-    margin-top: 3120px;
+.footer-shot_1_1{
+    margin-top: 3230px;
 }
 
-.g_footer-shot_2_1{
-    margin-top: 4200px;
+.footer-shot_2_1{
+    margin-top: 3200px;
 }
 
-.g_footer-shot_3_1{
-    margin-top: 4150px;
+.footer-shot_3_1{
+    margin-top: 3200px;
 }
 
-.g_footer-shot_4_1{
-    margin-top: 4150px;
+.footer-shot_4_1{
+    margin-top: 3280px;
 }
 
-.g_footer-shot_5_1{
-    margin-top: 4150px;
+.footer-shot_5_1{
+    margin-top: 3230px;
 }
 
-.g_footer-shot_6_1{
-    margin-top: 4150px;
+.footer-shot_6_1{
+    margin-top: 3320px;
 }
 
-.g_footer-shot_7_1{
-    margin-top: 4150px;
+.footer-shot_7_1{
+    margin-top: 3280px;
 }
 
-.g_footer-shot_8_1{
-    margin-top: 4150px;
+.footer-shot_8_1{
+    margin-top: 3230px;
 }
 
-.g_footer-shot_9_1{
-    margin-top: 4150px;
+.footer-shot_9_1{
+    margin-top: 3200px;
 }
 
-}
 
 
 
@@ -9455,38 +9454,38 @@
 }
 
 
-.g_footer-shot_1{
+.footer-shot_1_1{
+    margin-top: 4220px;
+}
+
+.footer-shot_2_1{
     margin-top: 4200px;
 }
 
-.g_footer-shot_2{
-    margin-top: 4100px;
-}
-
-.g_footer-shot_3{
-    margin-top: 4100px;
-}
-
-.g_footer-shot_4{
+.footer-shot_3_1{
     margin-top: 4150px;
 }
 
-.g_footer-shot_5{
+.footer-shot_4_1{
     margin-top: 4150px;
 }
 
-.g_footer-shot_6{
-    margin-top: 4200px;
+.footer-shot_5_1{
+    margin-top: 4150px;
 }
 
-.g_footer-shot_7{
-    margin-top: 4100px;
+.footer-shot_6_1{
+    margin-top: 4150px;
 }
 
-.g_footer-shot_8{
-    margin-top: 4100px;
+.footer-shot_7_1{
+    margin-top: 4150px;
 }
 
-.g_footer-shot_9{
-    margin-top: 4100px;
+.footer-shot_8_1{
+    margin-top: 4150px;
+}
+
+.footer-shot_9_1{
+    margin-top: 4150px;
 }

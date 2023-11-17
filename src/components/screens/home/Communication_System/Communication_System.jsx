@@ -229,8 +229,8 @@ return (
                     </div>
                 </div>
                 <div className='communication_1'>
-                    <h2 className='communication_1_title'>Газораспределения и газопотребления</h2>
-                    <p className='communication_1_text'>Благодаря многолетнему опыту в области газификации объектов самого различного назначения, наша компания успешно справляется с заказами повышенного уровня сложности</p>
+                    <h2 className='communication_1_title'>Проектирование энергообъектов электроэнергетики</h2>
+                    <p className='communication_1_text'>Наши специалисты в области проектирования энергообъектов электроэнергетики обеспечивают высокоточное планирование и разработку проектов с применением передовых технологий и наработанным многолетним опытом. Мы осуществляем комплексный подход к созданию технических проектов и рабочих чертежей объектов энергетики любой степени сложности.</p>
                     <img className='communication_1_img' src='/public/Group 113.png'/>
                     <img className='communication_fon_img' src='/public/fon_tochki.png' />
                     <img className='mini_fon' src='/public/mini_fon.png'/>
@@ -238,7 +238,7 @@ return (
 
             <div className='communication_2'>
                 <h2 className='communication_2_title_1'>Поэтапный подход к решению поставленной задачи</h2>
-                <p className='communication_2_title_text'>Проектирование и согласование систем газоснабжения и газораспределения выполняются специалистами имеющей разрешительные документы и допуски на данный вид деятельности</p>
+                <p className='communication_2_title_text'>Проектирование и согласование проектов энергообъектов электроэнергетики выполняются специалистами имеющей разрешительные документы и допуски на данный вид деятельности</p>
               <div className='communication_2_block'>
                   <p className='communication_2_block_img_1'/>
                   <p className='communication_2_block_img_2' />
@@ -312,7 +312,7 @@ return (
             <div className='geo_uslugi'>
                 <p className='geo_uslugi_title'>Наши услуги</p>
                 <div className={`geo_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
-                    <h2 className='geo_body_uslugi_box_title_1'>Проектирование газопроводов низкого давления</h2>
+                    <h2 className='geo_body_uslugi_box_title_1'>Проектирование воздушных линий электропередач - 10 кВ</h2>
                     <img className='geo_body_box1_image' src='/public/energy-supply-system%20(2).jpg'/>
                     <p className='geo_body_price'>от 25.000 руб.</p>
                     <p className='geo_body_text'>Проектирование газопроводов низкого давления для частных и промышленных зданий.</p>
@@ -327,7 +327,7 @@ return (
 
 
                <div className={`geo_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
-                    <h2 className='geo_body_uslugi_box_title_2'>Проектирование газопроводов среднего давления</h2>
+                    <h2 className='geo_body_uslugi_box_title_2'>Проектирование воздушных линий электропередач - 0.4 кВ</h2>
                     <img className='geo_body_box2_image' src='/public/down-up-view-modern-operational-plant-with-grey-pipes-ladders-heavy-industry-machinery-metalworking-workshop-concept%20(2)%20(1).jpg'/>
                     <p className='geo_body_price2'>от 50.000 руб.</p>
                     <p className='geo_body_text2'>Проектирование газопроводов среднего давления для частных и промышленных зданий.</p>
@@ -342,7 +342,7 @@ return (
 
 
                <div className={`geo_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_3'>Проектирование газопроводов высокого давления</h2>
+                   <h2 className='geo_body_uslugi_box_title_3'>Проектирование кабельных линий электропередач - 10 кВ</h2>
                    <img className='geo_body_box3_image' src='/public/3dae0a228aa643696f43f2d1be81ebb1.jpg'/>
                    <p className='geo_body_price3'>от 75.000 руб.</p>
                     <p className='geo_body_text3'>Проектирование газопроводов высокого давления для частных и промышленных зданий.</p>
@@ -356,7 +356,7 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_4'>Переустройство газопроводов из под пятна строительства</h2>
+                   <h2 className='geo_body_uslugi_box_title_4'>Проектирование кабельных линий электропередач - 0.4 кВ</h2>
                    <img className='geo_body_box4_image' src='/public/20140829_144406.jpg'/>
                    <p className='geo_body_price4'>от 70.000 руб.</p>
                     <p className='geo_body_text4'>Перенос газопроводов для освобождения территории под новое строительство, с соблюдением техники безопасности.</p>
@@ -370,7 +370,7 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_5'>Проектирование газоснабжения котельной</h2>
+                   <h2 className='geo_body_uslugi_box_title_5'>Проектирование трансформаторных пунктов - 10/0.4 кВ</h2>
                    <img className='geo_body_box5_image' src='/public/{C6C52C8E-5710-EB44-B63B-93749CFF545C}.jpg'/>
                    <p className='geo_body_price5'>от 150.000 руб.</p>
                     <p className='geo_body_text5'>Разработка проекта системы газоснабжения для котельных с учетом требований эффективности и безопасности эксплуатации.</p>
@@ -384,7 +384,7 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_6'>Разработка схемы газоснабжения объекта</h2>
+                   <h2 className='geo_body_uslugi_box_title_6'>Проектирование РТП, КРУН, БКРТП - 10/0.4 кВ</h2>
                    <img className='geo_body_box6_image' src='/public/abb934acbabd3e1bf6813ad3c28fbef0.jpeg'/>
                    <p className='geo_body_price6'>от 100.000 руб.</p>
                     <p className='geo_body_text6'>Инженерное проектирование схемы газоснабжения для объектов с обеспечением надежности и соответствия стандартам безопасности.</p>
@@ -398,7 +398,7 @@ return (
                 </div>
 
                               <div className={`geo_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_7'>Газификация частного дома</h2>
+                   <h2 className='geo_body_uslugi_box_title_7'>Электрификация частного дома</h2>
                    <img className='geo_body_box7_image' src='/public/1633742605_40-pro-da.jpg'/>
                    <p className='geo_body_price7'>от 12.000 руб.</p>
                     <p className='geo_body_text7'>Комплексное проектирование систем газификации для частного дома, включая подбор оборудования и разработку технической документации.</p>
@@ -412,7 +412,7 @@ return (
                 </div>
 
                               <div className={`geo_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_8'>Проектирование ГРШП, ГРС, ШРП </h2>
+                   <h2 className='geo_body_uslugi_box_title_8'>Расчет РЗА </h2>
                    <img className='geo_body_box8_image' src='/public/20190910_120240.jpg'/>
                    <p className='geo_body_price8'>от 100.000 руб.</p>
                     <p className='geo_body_text8'>Профессиональное проектирование газорегуляторных шкафов, пунктов и станций для обеспечения надежной работы газовых систем.</p>
