@@ -6967,7 +6967,7 @@
     .communication_for_block_ur_block p {
         display: flex;
         color: white;
-        width: 532px;
+        width: 720px;
         margin-bottom: -15px; /* Расстояние между параграфами */
         font-size: 18px;
         font-family: "Cera Pro Regular", sans-serif;
@@ -7010,7 +7010,7 @@
 
     .communication_1_title {
         position: absolute;
-        margin-left: 530px;
+        margin-left: 450px;
         margin-top: 230px;
         color: black;
         font-size: 48px;
@@ -7020,7 +7020,7 @@
 
     .communication_1_text {
         position: absolute;
-        margin-left: 530px;
+        margin-left: 450px;
         margin-top: 300px;
         color: black;
         width: 900px;
@@ -7031,7 +7031,7 @@
 
     .communication_1_img {
         width: 700px;
-        margin-left: 1400px;
+        margin-left: 1490px;
         margin-top: 130px;
         position: absolute;
         z-index: 0;

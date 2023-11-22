@@ -206,13 +206,13 @@ return (
                         <div className='communication_for_block_org'>
                             <h2 className='communication_for_block_org_title'>Услуги для организации</h2>
                             <div className='communication_for_block_org_block'>
-                                <p className='communication_for_block_org_text_1'>Проектирование газораспределительных пунктов</p>
-                                <p className='communication_for_block_org_text_2'>Проектирование наружных газопроводов</p>
-                                <p className='communication_for_block_org_text_3'>Проектирование котельной</p>
-                                <p className='communication_for_block_org_text_4'>Проектирование газоснабжения котельной</p>
-                                <p className='communication_for_block_org_text_5'>Проект газоснабжения промышленных предприятий</p>
-                                <p className='communication_for_block_org_text_6'>Вынос газопроводов из под пятна строительства</p>
-                                <p className='communication_for_block_org_text_7'>Разработка схемы газоснабжения объекта</p>
+                                <p className='communication_for_block_org_text_1'>Проектирование воздушных линий электропередач - 10 кВ</p>
+                                <p className='communication_for_block_org_text_2'>Проектирование воздушных линий электропередач - 0.4 кВ</p>
+                                <p className='communication_for_block_org_text_3'>Проектирование кабельных линий электропередач - 10 кВ</p>
+                                <p className='communication_for_block_org_text_4'>Проектирование кабельных линий электропередач - 0.4 кВ</p>
+                                <p className='communication_for_block_org_text_5'>Проектирование трансформаторных подстанций - 10 кВ</p>
+                                <p className='communication_for_block_org_text_6'>Проектирование трансформаторных подстанций - 0.4 кВ</p>
+                                <p className='communication_for_block_org_text_7'>Расчет релейной защиты и автоматики</p>
                                 <p className='communication_for_block_org_text_8'>Инженерные изыскания</p>
                             </div>
                         </div>
@@ -220,10 +220,10 @@ return (
                         <div className='communication_for_block_ur'>
                             <h2 className='communication_for_block_ur_title'>Услуги для частных лиц</h2>
                             <div className='communication_for_block_ur_block'>
-                                <p className='communication_for_block_ur_text_1'>Газификация частного дома</p>
-                                <p className='communication_for_block_ur_text_2'>Проект газоснабжения квартиры или переноса газопровода</p>
-                                <p className='communication_for_block_ur_text_3'>Демонтаж газового оборудования</p>
-                                <p className='communication_for_block_ur_text_4'>Топографическая съёмка для ТУ</p>
+                                <p className='communication_for_block_ur_text_1'>Проектирование распредилительной трансформаторной подстанции (РТП)</p>
+                                <p className='communication_for_block_ur_text_2'>Проектирование комплктного распределительного устройства наружнего (КРУН)</p>
+                                <p className='communication_for_block_ur_text_3'>Проектирование блочной комплектной РТП</p>
+                                <p className='communication_for_block_ur_text_4'>Электрификация частного дома</p>
                             </div>
                         </div>
                     </div>
@@ -313,9 +313,9 @@ return (
                 <p className='geo_uslugi_title'>Наши услуги</p>
                 <div className={`geo_body_uslugi_box1 ${activeHandler === 1 ? 'blue-background' : ''}`}>
                     <h2 className='geo_body_uslugi_box_title_1'>Проектирование воздушных линий электропередач - 10 кВ</h2>
-                    <img className='geo_body_box1_image' src='/public/energy-supply-system%20(2).jpg'/>
+                    <img className='geo_body_box1_image' src='/public/elec1.jpg'/>
                     <p className='geo_body_price'>от 25.000 руб.</p>
-                    <p className='geo_body_text'>Проектирование газопроводов низкого давления для частных и промышленных зданий.</p>
+                    <p className='geo_body_text'>Разработка и создание проектов воздушных линий электропередач напряжением 10 кВ с учетом технических норм и безопасности</p>
                     <input className={`geo_body_uslugi_box_strela1 ${activeHandler === 1 ? 'strela-digris': ''}`} type="image" onClick={() => handleClick(1)} alt=''/>
                     {activeHandler === 1 && (
                     <div className='dop_1'>
@@ -328,9 +328,9 @@ return (
 
                <div className={`geo_body_uslugi_box2 ${activeHandler === 2 ? 'blue-background' : '' }`}>
                     <h2 className='geo_body_uslugi_box_title_2'>Проектирование воздушных линий электропередач - 0.4 кВ</h2>
-                    <img className='geo_body_box2_image' src='/public/down-up-view-modern-operational-plant-with-grey-pipes-ladders-heavy-industry-machinery-metalworking-workshop-concept%20(2)%20(1).jpg'/>
+                    <img className='geo_body_box2_image' src='/public/elec2.jpg'/>
                     <p className='geo_body_price2'>от 50.000 руб.</p>
-                    <p className='geo_body_text2'>Проектирование газопроводов среднего давления для частных и промышленных зданий.</p>
+                    <p className='geo_body_text2'>Разработка и создание проектов воздушных линий электропередач напряжением 0.4 кВ с учетом технических норм и безопасности</p>
                     <input className={`geo_body_uslugi_box_strela2 ${activeHandler === 2 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(2)} alt=''/>
                     {activeHandler === 2 && (
                     <div className='dop_2'>
@@ -343,9 +343,9 @@ return (
 
                <div className={`geo_body_uslugi_box3 ${activeHandler === 3 ? 'blue-background' : ''}`}>
                    <h2 className='geo_body_uslugi_box_title_3'>Проектирование кабельных линий электропередач - 10 кВ</h2>
-                   <img className='geo_body_box3_image' src='/public/3dae0a228aa643696f43f2d1be81ebb1.jpg'/>
+                   <img className='geo_body_box3_image' src='/public/elec3.jpg'/>
                    <p className='geo_body_price3'>от 75.000 руб.</p>
-                    <p className='geo_body_text3'>Проектирование газопроводов высокого давления для частных и промышленных зданий.</p>
+                    <p className='geo_body_text3'>Разработка проектов кабельных линий электропередач 10 кВ, обеспечивающих надежность и соответствие техническим требованиям.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 3 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(3)} alt=''/>
                     {activeHandler === 3 && (
                     <div className='dop_3'>
@@ -357,9 +357,9 @@ return (
 
                <div className={`geo_body_uslugi_box4 ${activeHandler === 5 ? 'blue-background' : ''}`}>
                    <h2 className='geo_body_uslugi_box_title_4'>Проектирование кабельных линий электропередач - 0.4 кВ</h2>
-                   <img className='geo_body_box4_image' src='/public/20140829_144406.jpg'/>
+                   <img className='geo_body_box4_image' src='/public/elec4.jpg'/>
                    <p className='geo_body_price4'>от 70.000 руб.</p>
-                    <p className='geo_body_text4'>Перенос газопроводов для освобождения территории под новое строительство, с соблюдением техники безопасности.</p>
+                    <p className='geo_body_text4'>Разработка проектов кабельных линий электропередач 0.4 кВ, обеспечивающих надежность и соответствие техническим требованиям.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 5 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(5)} alt=''/>
                     {activeHandler === 5 && (
                     <div className='dop_4'>
@@ -370,10 +370,10 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box5 ${activeHandler === 6 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_5'>Проектирование трансформаторных пунктов - 10/0.4 кВ</h2>
-                   <img className='geo_body_box5_image' src='/public/{C6C52C8E-5710-EB44-B63B-93749CFF545C}.jpg'/>
+                   <h2 className='geo_body_uslugi_box_title_5'>Проектирование ТП - 10/0.4 кВ</h2>
+                   <img className='geo_body_box5_image' src='/public/elec5.jpg'/>
                    <p className='geo_body_price5'>от 150.000 руб.</p>
-                    <p className='geo_body_text5'>Разработка проекта системы газоснабжения для котельных с учетом требований эффективности и безопасности эксплуатации.</p>
+                    <p className='geo_body_text5'>Проектирование трансформаторных подстанций 10/0.4 кВ, включая расчеты, планирование и соответствие нормативам безопасности.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 6 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(6)} alt=''/>
                     {activeHandler === 6 && (
                     <div className='dop_5'>
@@ -384,10 +384,10 @@ return (
                 </div>
 
                <div className={`geo_body_uslugi_box6 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_6'>Проектирование РТП, КРУН, БКРТП - 10/0.4 кВ</h2>
-                   <img className='geo_body_box6_image' src='/public/abb934acbabd3e1bf6813ad3c28fbef0.jpeg'/>
+                       <h2 className='geo_body_uslugi_box_title_6'>Проектирование РТП, КРУН, БКРТП - 10/0.4 кВ</h2>
+                   <img className='geo_body_box6_image' src='/public/elec7.jpg'/>
                    <p className='geo_body_price6'>от 100.000 руб.</p>
-                    <p className='geo_body_text6'>Инженерное проектирование схемы газоснабжения для объектов с обеспечением надежности и соответствия стандартам безопасности.</p>
+                    <p className='geo_body_text6'>Создание проектов распределительных трансформаторных подстанций, комплектных распределительных устройств и блочных КРТП 10/0.4 кВ с соблюдением всех стандартов.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -399,9 +399,9 @@ return (
 
                               <div className={`geo_body_uslugi_box7 ${activeHandler === 7 ? 'blue-background' : ''}`}>
                    <h2 className='geo_body_uslugi_box_title_7'>Электрификация частного дома</h2>
-                   <img className='geo_body_box7_image' src='/public/1633742605_40-pro-da.jpg'/>
+                   <img className='geo_body_box7_image' src='/public/elec6.jpg'/>
                    <p className='geo_body_price7'>от 12.000 руб.</p>
-                    <p className='geo_body_text7'>Комплексное проектирование систем газификации для частного дома, включая подбор оборудования и разработку технической документации.</p>
+                    <p className='geo_body_text7'>Комплексное проектирование систем электрификации для частного дома, включая подбор оборудования и разработку технической документации.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -412,10 +412,10 @@ return (
                 </div>
 
                               <div className={`geo_body_uslugi_box8 ${activeHandler === 7 ? 'blue-background' : ''}`}>
-                   <h2 className='geo_body_uslugi_box_title_8'>Расчет РЗА </h2>
-                   <img className='geo_body_box8_image' src='/public/20190910_120240.jpg'/>
+                   <h2 className='geo_body_uslugi_box_title_8'>Расчет релейной защиты и автоматики</h2>
+                   <img className='geo_body_box8_image' src='/public/elec8.jpeg'/>
                    <p className='geo_body_price8'>от 100.000 руб.</p>
-                    <p className='geo_body_text8'>Профессиональное проектирование газорегуляторных шкафов, пунктов и станций для обеспечения надежной работы газовых систем.</p>
+                    <p className='geo_body_text8'>Предоставление услуг по расчету систем релейной защиты и автоматики, обеспечивая эффективность и надежность электрооборудования.</p>
                     <input className={`geo_body_uslugi_box_strela3 ${activeHandler === 7 ? 'strela-digris' : ''}`} type="image" onClick={() => handleClick(7)} alt=''/>
                     {activeHandler === 7 && (
                     <div className='dop_6'>
@@ -449,11 +449,11 @@ return (
                 <h2 className='communication_faq_title'>Часто задаваемые вопросы</h2>
                 <div className='communication_faq_block'>
                     <div className={`communication_faq_block_1 ${activeHandler === 1 ? 'faq_1' : ''}`} onClick={() => handleClick(1)}>
-                        <p className='communication_faq_block_1_title'>Для каких целей нужен проект газификации ?</p>
+                        <p className='communication_faq_block_1_title'>Для каких целей нужен проект электрификации ?</p>
                         <input className={`communication_faq_block_1_title_strela1 ${activeHandler === 1 ? 'strela-digris': ''}`} type="image" src='/public/close_7903969.png' onClick={() => handleClick(1)} alt=''/>
                         {activeHandler === 1 && (
                         <div className='faq_1'>
-                            <p className='communication_faq_block_1_text'>Проектирование газификации - обязательное условие для подключения новых абонентов, ремонта и реконструкции существующих объектов. Включает газовые сети и отдельные участки, технические приборы, газовое оборудование.</p>
+                            <p className='communication_faq_block_1_text'>Проектирование электрификации является ключевым условием для подключения новых потребителей, а также для ремонта и модернизации существующих электросетей. Это включает в себя проектирование электрических сетей, техническое оборудование и электрические устройства.</p>
                             </div>
                           )}
                     </div>
@@ -505,7 +505,7 @@ return (
                           )}
                     </div>
                     <div className={`communication_faq_block_7 ${activeHandler === 7 ? 'faq_7' : ''} ${activeHandler === 6 ? 'faq_7_7' : ''}`} onClick={() => handleClick(7)}>
-                        <p className='communication_faq_block_2_title'>От чего зависит цена проектирования газоснабжения   ?</p>
+                        <p className='communication_faq_block_2_title'>От чего зависит цена проектирования электрификации   ?</p>
                         <input className={`communication_faq_block_7_title_strela1 ${activeHandler === 7 ? 'strela-digris_7': ''}`} type="image" src='/public/close_7903969.png' onClick={() => handleClick(7)} alt=''/>
                         {activeHandler === 7 && (
                         <div className='faq_7'>
@@ -514,7 +514,7 @@ return (
                           )}
                     </div>
                     <div className={`communication_faq_block_8 ${activeHandler === 8 ? 'faq_8' : ''} ${activeHandler === 7 ? 'faq_8_8' : ''}`} onClick={() => handleClick(8)}>
-                        <p className='communication_faq_block_2_title'>Каков порядок оплаты по Договору газификации объектов   ?</p>
+                        <p className='communication_faq_block_2_title'>Каков порядок оплаты по Договору электрификации объектов   ?</p>
                         <input className={`communication_faq_block_8_title_strela1 ${activeHandler === 8 ? 'strela-digris_8': ''}`} type="image" src='/public/close_7903969.png' onClick={() => handleClick(8)} alt=''/>
                         {activeHandler === 8 && (
                         <div className='faq_8'>
@@ -528,7 +528,7 @@ return (
                         <input className={`communication_faq_block_9_title_strela1 ${activeHandler === 9 ? 'strela-digris_9': ''}`} type="image" src='/public/close_7903969.png' onClick={() => handleClick(9)} alt=''/>
                         {activeHandler === 9 && (
                         <div className='faq_9'>
-                            <p className='communication_faq_block_9_text'>Да, мы оказываем авторский надзор за всеми работами по нашему проекту газопровода.</p>
+                            <p className='communication_faq_block_9_text'>Да, мы оказываем авторский надзор за всеми работами по нашему проекту электрификации</p>
                             </div>
                           )}
                     </div>

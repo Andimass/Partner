@@ -4,7 +4,10 @@ import React, {useEffect, useState, useRef} from "react";
 import $ from "jquery";
 import p5 from "p5";
 
-let currentRotation = 0; // Текущий угол поворота
+const Header = () => {
+
+
+    let currentRotation = 60; // Текущий угол поворота
 function rotateCircles() {
     currentRotation += 60; // Увеличиваем текущий угол на 60
     // document.querySelectorAll('.circle_img_2').forEach(circle => {
@@ -12,12 +15,12 @@ function rotateCircles() {
     // });
     document.querySelectorAll('.header_circle_three_color').forEach(circle => {
         circle.style.transform = `rotate(${currentRotation}deg)`; // Применяем новый угол поворота
-        if (currentRotation === 360) {
+        if (currentRotation > 361) {
             currentRotation = 0
         }
     });
 
-    if (currentRotation === 60) {
+    if (currentRotation >= 0 && currentRotation <= 60) {
         document.querySelector('.header_container_5_text_1').style.display = 'block';
         document.querySelector('.header_container_5_text_2').style.display = 'none';
         document.querySelector('.header_container_5_text_3').style.display = 'none';
@@ -70,7 +73,6 @@ function rotateCircles() {
         document.querySelector('.header_container_5_text_6').style.display = 'block';
     }
 }
-const Header = () => {
 
     const [activeHandler, setActiveHandler] = useState(1);
 
@@ -233,10 +235,10 @@ const Header = () => {
       let imageSizes = [
           {width: 100, height: 25},
           {width: 164, height: 138},
-          {width: 115, height: 85},
+          {width: 135, height: 85},
           {width: 200, height: 91},
-          {width: 190, height: 130},
-          {width: 85, height: 20},
+          {width: 190, height: 150},
+          {width: 100, height: 20},
           {width: 117, height: 82},
           {width: 132, height: 92},
           {width: 82, height: 93},
@@ -251,7 +253,7 @@ const Header = () => {
       };
 
       p.setup = () => {
-      p.createCanvas(2480, 500);
+      p.createCanvas(2480, 600);
       for (let i = 0; i < 10; i++) {
         balls.push(new Ball(p.random(p.width), p.random(p.height), p.random(125, 320), p, i));  // Передаем индекс вместо самого изображения
       }
@@ -285,7 +287,7 @@ const Header = () => {
           }
 
           getBorderRadius() {
-              let offset = 26;
+              let offset = 39;
               return Math.max(this.imgWidth, this.imgHeight) / 2 + offset;
           }
 
@@ -299,7 +301,7 @@ const Header = () => {
               this.p.image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
 
               // Обводка
-              let offset = 50;
+              let offset = 75;
               let maxDimension = Math.max(this.imgWidth, this.imgHeight) + offset;
               this.p.stroke(0); // Цвет обводки (в этом случае черный)
               this.p.strokeWeight(1); // Толщина обводки
@@ -475,7 +477,6 @@ const Header = () => {
 });
 
 
-
       window.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
 
@@ -520,9 +521,9 @@ const Header = () => {
     // }
 });
 
-          const numberOfImages = 11;
+          const numberOfImages = 12;
              const radius = 360; // radius of the circle in pixels
-          const images = ['/public/vec1.png', '/public/vec2.png', '/public/vec3.png', '/public/vec4.png', '/public/vec5.png', '/public/vec6.png', '/public/vec7.png', '/public/vec8.png', '/public/vec9.png', '/public/vec10.png', '/public/vec11.png'];
+          const images = ['/public/vec1.png', '/public/vec2.png', '/public/vec3.png', '/public/vec4.png', '/public/vec5.png', '/public/vec6.png', '/public/vec7.png', '/public/vec8.png', '/public/vec9.png', '/public/vec10.png', '/public/vec11.png', '/public/vec12.png'];
 
         const calculatePositionAndRotation = (index) => {
             const angle = (360 / numberOfImages) * index - 90;
@@ -538,6 +539,327 @@ const Header = () => {
                 }
             };
         }
+            const gifImageRef = useRef(null);
+
+            useEffect(() => {
+                const resetGif = () => {
+                    const currentSrc = gifImageRef.current.src;
+                    gifImageRef.current.src = ''; // Сброс src
+                    gifImageRef.current.src = currentSrc; // Повторная установка src для перезагрузки GIF
+                };
+
+                const hoverAreas = [];
+
+        for (let i = 1; i <= 6; i++) {
+            const hoverArea = document.querySelector(`.header_top_comp_2_title_${i}`);
+            if (hoverArea) {
+                hoverArea.addEventListener('mouseenter', resetGif);
+                hoverAreas.push(hoverArea); // Сохраняем для последующего удаления обработчика
+            }
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            hoverAreas.forEach(hoverArea => {
+                hoverArea.removeEventListener('mouseenter', resetGif);
+            });
+        };
+    }, []);
+
+        useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_5');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_8');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_5');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_8');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_1');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
+
+
+        useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_11');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_7');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_11');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_7');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_2');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
+
+        useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_10');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_6');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_10');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_6');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_3');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
+
+                useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_11');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_4');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_11');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_4');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_4');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
+
+        useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_12');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_6');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_1');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_12');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_6');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_5');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
+
+        useEffect(() => {
+        // Функция для изменения стиля
+        const applyStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_8');
+            if (circle_2) {
+                circle_2.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+            const circle_3 = document.querySelector('.header_top_circle_9');
+            if (circle_3) {
+                circle_3.style.filter = 'url(#ambilight) grayscale(0%)';
+            }
+        };
+
+        // Функция для сброса стиля
+        const resetStyle = () => {
+            const circle = document.querySelector('.header_top_circle_2');
+            if (circle) {
+                circle.style.filter = '';
+            }
+            const circle_2 = document.querySelector('.header_top_circle_8');
+            if (circle_2) {
+                circle_2.style.filter = '';
+}            const circle_3 = document.querySelector('.header_top_circle_9');
+            if (circle_3) {
+                circle_3.style.filter = '';
+            }
+
+        };
+
+        // Получаем элемент для наведения
+        const titleElement = document.querySelector('.header_top_comp_2_title_6');
+        if (titleElement) {
+            titleElement.addEventListener('mouseenter', applyStyle);
+            titleElement.addEventListener('mouseleave', resetStyle);
+        }
+
+        // Очистка при размонтировании компонента
+        return () => {
+            if (titleElement) {
+                titleElement.removeEventListener('mouseenter', applyStyle);
+                titleElement.removeEventListener('mouseleave', resetStyle);
+            }
+        };
+    }, []);
 
 
 
@@ -552,7 +874,7 @@ const Header = () => {
 
             <meta name="yandex-verification" content="ee98594a3963c95e" />
             </head>
-            <body>
+            <body className="custom-zoom-page">
             <div className='Header'>
 <svg width="0" height="0">
     <filter
@@ -635,7 +957,10 @@ const Header = () => {
                         <div className='header_top'>
                             <img className='header_phone' src='/public/fone_1.png'/>
                             <img className='circle_img' src='/public/logo_big.png'/>
-                             <div className='header_top_circle'>
+                        </div>
+                    </div>
+                       <div className='header_top_2'>
+                           <div className='header_top_circle'>
                               {images.map((src, index) => {
                                 const { positionStyle, imageStyle } = calculatePositionAndRotation(index);
                                 return (
@@ -645,38 +970,35 @@ const Header = () => {
                                 );
                               })}
                             </div>
-                        </div>
-                    </div>
-                       <div className='header_top_2'>
                            {/*<img className='logo_circle' src='/public/logo2.png'/>*/}
                                 <p className='header_top_2_title'>Предоставляем юридическим лицам и гражданам широкий спектр услуг</p>
-                               <div><a href='/geodezic' className='header_top_comp_2_title_1'>Инженерные изыскания</a>
-                                <img className='header_top_comp_2_title_1_img' id="myGif" href='/geodezic' src='/public/обводка анимация.gif'/></div>
+                               <a href='/geodezic' className='header_top_comp_2_title_1'>Инженерные изыскания</a>
+                                <img ref={gifImageRef} className='header_top_comp_2_title_1_img' id="myGif" href='/geodezic' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_111'>
                                     <p className='header_top_comp_2_title_11'>Геодезические, геологические и экологические изыскания для выполнения работ по подготовке проектной документации, строительству и реконструкции объектов капитального строительства  </p>
                                 </div>
-                                <div><a className='header_top_comp_2_title_2' href='/communication_system'>Проектирование энергообъектов электроэнергетики</a>
-                                    <img className='header_top_comp_2_title_2_img' href='/geodezic' src='/public/обводка анимация.gif'/></div>
+                                <a className='header_top_comp_2_title_2' href='/communication_system'>Проектирование энергообъектов электроэнергетики</a>
+                                    <img ref={gifImageRef} className='header_top_comp_2_title_2_img' href='/geodezic' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_211'>
                                     <p className='header_top_comp_2_title_21'>Разработка проектных решений по кабельным и воздушным линиям электропередачи, трансформаторным подстанциям, генераторам и иным видам оборудования классом напряжения 0,4-35 кВ</p>
                                 </div>
                                 <div><a className='header_top_comp_2_title_3' href='/gazification'>Проектирование газораспределения и газопотребления</a>
-                                <img className='header_top_comp_2_title_3_img' href='/gazification' src='/public/обводка анимация.gif'/></div>
+                                <img ref={gifImageRef} className='header_top_comp_2_title_3_img' href='/gazification' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_311'>
                                     <p className='header_top_comp_2_title_31'>Оказываем услуги по расчету потребления газа, разработке проектной и рабочей документации: котельных, пунктов редуцирования газа, сетей газопотребления и газораспределения</p>
                                 </div>
                                 <a className='header_top_comp_2_title_4' href='/project_supply'>Проектирование сетей абонентского доступа</a>
-                           <img className='header_top_comp_2_title_4_img' src='/public/обводка анимация.gif'/>
+                           <img ref={gifImageRef} className='header_top_comp_2_title_4_img' src='/public/обводка анимация.gif'/>
                                 <div className='header_top_comp_2_title_411'>
                                     <p className='header_top_comp_2_title_41'>Проектирование современных систем связи с использованием оптического волокна. Расчет тяжений несущих конструкций, в том числе опор воздушных линий электропередачи</p>
                                 </div>
                                 <div><a className='header_top_comp_2_title_5' href='/gaz'>Проектирование водопровода и канализации</a>
-                                    <img className='header_top_comp_2_title_5_img' src='/public/обводка анимация.gif'/></div>
+                                    <img ref={gifImageRef} className='header_top_comp_2_title_5_img' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_511'>
                                     <p className='header_top_comp_2_title_51'>Комплексное проектирование и расчет наружних инженерных канализационных и водопроводных систем любой сложности. Центральное и индивидуальное водоснабжение и водоотведение.</p>
                                 </div>
                                 <div><a className='header_top_comp_2_title_6' href='/cadastral_works'>Кадастровые работы</a>
-                           <img className='header_top_comp_2_title_6_img' src='/public/обводка анимация.gif'/></div>
+                           <img ref={gifImageRef} className='header_top_comp_2_title_6_img' src='/public/обводка анимация.gif'/></div>
                                 <div className='header_top_comp_2_title_611'>
                                     <p className='header_top_comp_2_title_61'>Подготовка документов содержаших полный перечень сведений, используемых для оформления на кадастровый учет недвижимости в специальных государственных органах</p>
                                 </div>
@@ -720,15 +1042,42 @@ const Header = () => {
 
                     <div className='header_container_2'>
                         <div className='header_container_2_2'>
+                            <img className='header_container_2_2_auto' src='/public/car_5713611.png'/>
                         <h2 className='header_container_2_title'>Как мы работаем</h2>
+                            <div className='header_container_2_etap_1_1'>
                         <img className='header_container_2_etap_1_img' src='/public/feedback_9805563.png'/>
                         <p className='header_container_2_etap_1'>Ваше обращение</p>
+                                </div>
+                            <div className='header_container_2_etap_2_1'>
                          <img className='header_container_2_etap_2_img' src='/public/workflow_9805572.png'/>
                         <p className='header_container_2_etap_2'>Заключение договора</p>
-                         <img className='header_container_2_etap_3_img' src='/public/software_9805593.png'/>
-                        <p className='header_container_2_etap_3'>Выполнение работы</p>
-                        <img className='header_container_2_etap_4_img' src='/public/product_9805570.png'/>
-                        <p className='header_container_2_etap_4'>Передача результата</p>
+                                </div>
+                            <div className='header_container_2_etap_3_1'>
+                                <p className='header_container_2_etap_3_img_border'></p>
+                         <img className='header_container_2_etap_3_img' src='/public/range_10396504.png'/>
+                        <p className='header_container_2_etap_3'>Выезд представителя</p>
+                            </div>
+                            <div className='header_container_2_etap_4_1'>
+                                <p className='header_container_2_etap_4_img_border'></p>
+                        <img className='header_container_2_etap_4_img' src='/public/mapping_2738969.png'/>
+                                <div className='header_container_2_etap_4_img_1'></div>
+                        <p className='header_container_2_etap_4'>Выезд геодезиста</p>
+                        </div>
+                            <div className='header_container_2_etap_5_1'>
+                                <p className='header_container_2_etap_5_img_border'></p>
+                        <img className='header_container_2_etap_5_img' src='/public/planning-strategy_8293767.png'/>
+                        <p className='header_container_2_etap_5'>Проектирование</p>
+                        <p className='header_container_2_etap_5_1'></p>
+                            </div>
+                            <div className='header_container_2_etap_6_1'>
+                                <p className='header_container_2_etap_6_img_border'></p>
+                        <img className='header_container_2_etap_6_img' src='/public/checklist_8790330.png'/>
+                        <p className='header_container_2_etap_6'>Согласование</p>
+                            </div>
+                            <div className='header_container_2_etap_7_1'>
+                        <img className='header_container_2_etap_7_img' src='/public/product_9805570.png'/>
+                        <p className='header_container_2_etap_7'>Передача результата</p>
+                            </div>
                         </div>
 
                     </div>
@@ -836,7 +1185,7 @@ const Header = () => {
                             <p>Координирование реперов</p>
                         </div>
                         <div className='header_container_5_text_2'>
-                            <h2>Проектирование энергообъектов электроэнергетики</h2>
+                            <h2>Газораспределения и газопотребления</h2>
                             <p>Проектирование газопроводов низкого давления</p>
                             <p>Проектирование газопроводов среднего давления</p>
                             <p>Проектирование газопроводов высокого давления</p>
@@ -845,11 +1194,11 @@ const Header = () => {
                         </div>
                         <div className='header_container_5_text_3'>
                           <h2>Проектирование энергообъектов электроэнергетики</h2>
-                            <p>Проектирование газопроводов низкого давления</p>
-                            <p>Проектирование газопроводов среднего давления</p>
-                            <p>Проектирование газопроводов высокого давления</p>
-                            <p>Переустройство газопроводов из под пятна строительства</p>
-                            <p>Проектирование газоснабжения котельной</p>
+                            <p>Проектирование воздушных линий электропередач - 0.4/10 кВ</p>
+                            <p>Проектирование кабельных линий электропередач - 0.4/10 кВ</p>
+                            <p>Проектирование трансформаторных подстанций - 10/0.4 кВ</p>
+                            <p>Проектирование РТП, КРУН, БКРТП - 10/0.4 кВ</p>
+                            <p>Электрификация частного дома</p>
                         </div>
                         <div className='header_container_5_text_4'>
                             <h2>Абонентский доступ</h2>

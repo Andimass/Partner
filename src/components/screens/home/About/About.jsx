@@ -1,5 +1,5 @@
 import './About.css'
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect } from "react";
 
 
 const About = () =>  {
@@ -83,6 +83,545 @@ window.addEventListener('scroll', function() {
     }
 };
 
+          window.addEventListener('scroll', function() {
+    // Получите текущую позицию прокрутки
+    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Определите уровень прокрутки, на котором вы хотите изменить цвет. Например, 300px.
+    if (scrollPosition > 0 && scrollPosition < 899) {
+        document.querySelector('.header_black_square').style.backgroundColor = 'white';  // Новый цвет для header_black_square
+        document.querySelector('.header_black_square2').style.backgroundColor = 'white'; // Новый цвет для header_black_square2
+    }
+    if (scrollPosition > 899 && scrollPosition < 1150) {
+        document.querySelector('.header_black_square').style.backgroundColor = '#8DB2FB';  // Оригинальный цвет для header_black_square
+        document.querySelector('.header_black_square2').style.backgroundColor = '#8DB2FB'; // Оригинальный цвет для header_black_square2
+    }
+    if (scrollPosition > 1150 && scrollPosition < 1850) {
+        document.querySelector('.header_black_square').style.backgroundColor = 'rgba(246, 245, 245)';  // Оригинальный цвет для header_black_square
+        document.querySelector('.header_black_square2').style.backgroundColor = 'rgba(246, 245, 245)'; // Оригинальный цвет для header_black_square2
+    }
+        if (scrollPosition > 1850 && scrollPosition < 3150) {
+        document.querySelector('.header_black_square').style.backgroundColor = 'white';  // Оригинальный цвет для header_black_square
+        document.querySelector('.header_black_square2').style.backgroundColor = 'white'; // Оригинальный цвет для header_black_square2
+    }
+
+        if (scrollPosition > 3150) {
+        document.querySelector('.header_black_square').style.backgroundColor = 'rgba(246, 245, 245)';  // Оригинальный цвет для header_black_square
+        document.querySelector('.header_black_square2').style.backgroundColor = 'rgba(246, 245, 245)'; // Оригинальный цвет для header_black_square2
+    }
+});
+
+
+useEffect(() => {
+        const element = document.querySelector('.about_container_4_text_1_img_1');
+        if (element) {
+            element.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_1_img_2');
+                const img3 = document.querySelector('.about_container_4_text_1_img_3');
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img2) {
+                    img2.style.marginTop = '400px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '700px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1000px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_1_img_2');
+                const img3 = document.querySelector('.about_container_4_text_1_img_3');
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_2 = document.querySelector('.about_container_4_text_1_img_2');
+        if (element_2) {
+            element_2.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_1_img_3');
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img3) {
+                    img3.style.marginTop = '750px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_2.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_1_img_3');
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_3 = document.querySelector('.about_container_4_text_1_img_3');
+        if (element_3) {
+            element_3.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_3.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_1_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+
+
+        const element_4 = document.querySelector('.about_container_4_text_2_img_1');
+        if (element_4) {
+            element_4.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_2_img_2');
+                const img3 = document.querySelector('.about_container_4_text_2_img_3');
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img2) {
+                    img2.style.marginTop = '420px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '720px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1020px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_4.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_2_img_2');
+                const img3 = document.querySelector('.about_container_4_text_2_img_3');
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_5 = document.querySelector('.about_container_4_text_2_img_2');
+        if (element_5) {
+            element_5.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_2_img_3');
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img3) {
+                    img3.style.marginTop = '770px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1070px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_5.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_2_img_3');
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_6 = document.querySelector('.about_container_4_text_2_img_3');
+        if (element_6) {
+            element_6.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1070px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_6.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_2_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+
+
+                const element_7 = document.querySelector('.about_container_4_text_3_img_1');
+        if (element_7) {
+            element_7.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_3_img_2');
+                const img3 = document.querySelector('.about_container_4_text_3_img_3');
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img2) {
+                    img2.style.marginTop = '400px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '700px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1000px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_7.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_3_img_2');
+                const img3 = document.querySelector('.about_container_4_text_3_img_3');
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_8 = document.querySelector('.about_container_4_text_3_img_2');
+        if (element_8) {
+            element_8.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_3_img_3');
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img3) {
+                    img3.style.marginTop = '750px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_8.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_3_img_3');
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_9 = document.querySelector('.about_container_4_text_3_img_3');
+        if (element_9) {
+            element_9.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_9.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_3_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+
+
+        const element_10 = document.querySelector('.about_container_4_text_4_img_1');
+        if (element_10) {
+            element_10.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_4_img_2');
+                const img3 = document.querySelector('.about_container_4_text_4_img_3');
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img2) {
+                    img2.style.marginTop = '400px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '700px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1000px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_10.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_4_img_2');
+                const img3 = document.querySelector('.about_container_4_text_4_img_3');
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_11 = document.querySelector('.about_container_4_text_4_img_2');
+        if (element_11) {
+            element_11.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_4_img_3');
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img3) {
+                    img3.style.marginTop = '750px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_11.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_4_img_3');
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_12 = document.querySelector('.about_container_4_text_4_img_3');
+        if (element_12) {
+            element_12.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_12.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_4_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+
+
+        const element_13 = document.querySelector('.about_container_4_text_5_img_1');
+        if (element_13) {
+            element_13.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_5_img_2');
+                const img3 = document.querySelector('.about_container_4_text_5_img_3');
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img2) {
+                    img2.style.marginTop = '400px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '700px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1000px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_13.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_5_img_2');
+                const img3 = document.querySelector('.about_container_4_text_5_img_3');
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_14 = document.querySelector('.about_container_4_text_5_img_2');
+        if (element_14) {
+            element_14.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_5_img_3');
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img3) {
+                    img3.style.marginTop = '750px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_14.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_5_img_3');
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_15 = document.querySelector('.about_container_4_text_5_img_3');
+        if (element_15) {
+            element_15.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_15.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_5_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+
+
+        const element_16 = document.querySelector('.about_container_4_text_6_img_1');
+        if (element_16) {
+            element_16.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img2 = document.querySelector('.about_container_4_text_6_img_2');
+                const img3 = document.querySelector('.about_container_4_text_6_img_3');
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img2) {
+                    img2.style.marginTop = '400px';
+                    img2.style.zIndex = '1';
+                }
+                if (img3) {
+                    img3.style.marginTop = '700px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1000px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_16.addEventListener('mouseout', function() {
+                const img2 = document.querySelector('.about_container_4_text_6_img_2');
+                const img3 = document.querySelector('.about_container_4_text_6_img_3');
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img2) {
+                    img2.style.marginTop = '';
+                    img2.style.zIndex = '';
+                }
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_17 = document.querySelector('.about_container_4_text_6_img_2');
+        if (element_17) {
+            element_17.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img3 = document.querySelector('.about_container_4_text_6_img_3');
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img3) {
+                    img3.style.marginTop = '750px';
+                }
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_17.addEventListener('mouseout', function() {
+                const img3 = document.querySelector('.about_container_4_text_6_img_3');
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img3) {
+                    img3.style.marginTop = '';
+                }
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+
+        const element_18 = document.querySelector('.about_container_4_text_6_img_3');
+        if (element_18) {
+            element_18.addEventListener('mouseover', function() {
+                // Применить эффекты при наведении
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img4) {
+                    img4.style.marginTop = '1050px';
+                }
+            });
+
+            // Опционально: Сброс стилей при уходе курсора
+            element_18.addEventListener('mouseout', function() {
+                const img4 = document.querySelector('.about_container_4_text_6_img_4');
+                if (img4) {
+                    img4.style.marginTop = '';
+                }
+            });
+        }
+    }, []);
+
 
     return(
         <html>
@@ -93,7 +632,7 @@ window.addEventListener('scroll', function() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
         </head>
-        <body>
+        <body className='custom-zoom-page_about'>
         <div className='About'>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className={`supply_header ${activeHandler === 4 ? 'bgc_opacity' : ''}`}>
@@ -237,16 +776,55 @@ window.addEventListener('scroll', function() {
             <img className='about_container_3_shema' src='/public/СХЕМА НА САЙТ.png'/>
             </div>
             <div className='about_container_4' id="target-section">
+                <img className='about_container_4_line_1'/>
+                <img className='about_container_4_line_2'/>
+                <img className='about_container_4_line_3'/>
+                <img className='about_container_4_line_4'/>
+                <img className='about_container_4_line_5'/>
+                <img className='about_container_4_line_6'/>
+                <div className='about_container_4_cifr'>
                 <p className='about_container_4_text_1' id='about_1'>Цифровые навыки</p>
+                <img className='about_container_4_text_1_img_1' src='/public/IMG_4253_12_11zon (1).jpg'/>
+                <img className='about_container_4_text_1_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
+                <img className='about_container_4_text_1_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
+                <img className='about_container_4_text_1_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                    </div>
+                <div className='about_container_4_mat'>
                 <p className='about_container_4_text_2' id='about_2'>Материальное обеспечение</p>
                 <img className='about_container_4_text_2_img_1' src='/public/IMG_4063-2_1_11zon (1).jpg'/>
                 <img className='about_container_4_text_2_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
-                <img className='about_container_4_text_2_img_3' src='/public/IMG_4253_12_11zon (1).jpg'/>
+                <img className='about_container_4_text_2_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
                 <img className='about_container_4_text_2_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                </div>
+                <div className='about_container_4_pers'>
                 <p className='about_container_4_text_3' id='about_3'>Работа с персоналом</p>
+                <img className='about_container_4_text_3_img_1' src='/public/IMG_4231_5_11zon.jpg'/>
+                <img className='about_container_4_text_3_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
+                <img className='about_container_4_text_3_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
+                <img className='about_container_4_text_3_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+
+                </div>
+                <div className='about_container_4_otv'>
                 <p className='about_container_4_text_4' id='about_4'>Ответственность</p>
+                <img className='about_container_4_text_4_img_1' src='/public/IMG_4148-2_3_11zon%20(1).jpg'/>
+                <img className='about_container_4_text_4_img_2' src='/public/IMG_4254_13_11zon.jpg'/>
+                <img className='about_container_4_text_4_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
+                <img className='about_container_4_text_4_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                </div>
+                <div className='about_container_4_log'>
                 <p className='about_container_4_text_5' id='about_5'>Логистика</p>
+                <img className='about_container_4_text_5_img_1' src='/public/IMG_4063-2_1_11zon (1).jpg'/>
+                <img className='about_container_4_text_5_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
+                <img className='about_container_4_text_5_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
+                <img className='about_container_4_text_5_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                </div>
+                <div className='about_container_4_pro'>
                 <p className='about_container_4_text_6' id='about_6'>Проектирование</p>
+                <img className='about_container_4_text_6_img_1' src='/public/IMG_4063-2_1_11zon (1).jpg'/>
+                <img className='about_container_4_text_6_img_2' src='/public/IMG_4097-2_5_11zon (1).jpg'/>
+                <img className='about_container_4_text_6_img_3' src='/public/IMG_4103 (1) (1) (1).png'/>
+                <img className='about_container_4_text_6_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
+                </div>
             </div>
 
 

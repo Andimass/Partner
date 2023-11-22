@@ -987,9 +987,35 @@
 }
 }
 
+@media (min-width: 1290px) and (max-width: 1370px) {
+    .custom-zoom-page {
+        zoom: 51.9%;
+    }
+}
 
+@media (min-width: 1371px) and (max-width: 1440px) {
+    .custom-zoom-page {
+        zoom: 54.9%;
+    }
+}
 
+@media (min-width: 1520px) and (max-width: 1600px) {
+    .custom-zoom-page {
+        zoom: 61.4%;
+    }
+}
 
+@media (min-width: 1600px) and (max-width: 1680px) {
+    .custom-zoom-page {
+        zoom: 64.4%;
+    }
+}
+
+@media (min-width: 1840px) and (max-width: 1920px) {
+    .custom-zoom-page {
+        zoom: 74.2%;
+    }
+}
 
 
 
@@ -1029,7 +1055,7 @@
     width: 120px;
     height: 15px;
     margin-left: 87px;
-    margin-top: 13px;
+    margin-top: 10px;
     position: fixed;
     z-index: 1999;
 }
@@ -1453,6 +1479,7 @@
   margin-top: 250px;
   margin-left: -1775px;
   width: 218px;
+  transform-origin: center ;
 }
 
 .header_top_circle {
@@ -1460,24 +1487,22 @@
   width: 500px;
   height: 500px;
   animation: rotateCircle 60s infinite linear;
-  margin-left: -1750px; /* Adjusted for the specific needs of your layout */
-  margin-top: 200px; /* Adjusted for the specific needs of your layout */
-  transform-origin: 250px 250px; /* Center of the circle */
+  margin-left: 400px; /* Adjusted for the specific needs of your layout */
+  margin-top: 440px; /* Adjusted for the specific needs of your layout */
+     transform-origin: center;
 }
 
-.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11 {
+.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11, .wrapper_div_12 {
   position: absolute;
-  top: 250px;
-  left: 250px;
-   transform-origin: 250px 250px;
+  top: 220px;
+  left: 220px;
   /* Your transform will be inline-styled in React */
 }
 
-.header_top_circle_1, .header_top_circle_2, .header_top_circle_3, .header_top_circle_4, .header_top_circle_5, .header_top_circle_6, .header_top_circle_7, .header_top_circle_8, .header_top_circle_9, .header_top_circle_10, .header_top_circle_11 {
+.header_top_circle_1, .header_top_circle_2, .header_top_circle_3, .header_top_circle_4, .header_top_circle_5, .header_top_circle_6, .header_top_circle_7, .header_top_circle_8, .header_top_circle_9, .header_top_circle_10, .header_top_circle_11, .header_top_circle_12 {
   width: 25%;
   transform: translate(-50%, -50%) rotate(var(--rotate)); /* Correct syntax */
   animation: unrotateCircle 60s infinite linear;
-  transform-origin: center center;
   filter: grayscale(100%);
 }
 
@@ -1485,8 +1510,9 @@
   width: 15%;
 }
 
+
 .header_top_circle_7{
-  width: 18%;
+  width: 25%;
 }
 .header_top_circle_10 {
   width: 18%;
@@ -1512,7 +1538,7 @@
 }
 
 
-.header_top_circle img:hover {
+.header_top_circle img:hover{
   filter: url(#ambilight) grayscale(0%);
 }
 
@@ -1555,8 +1581,8 @@
     margin-left: 1080px;
     margin-top: 330px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
   z-index: 50 ;
+  opacity: 0;
 }
 
 .header_top_circle img:hover {
@@ -1564,8 +1590,9 @@
 }
 
 .header_top_comp_2_title_1:hover + .header_top_comp_2_title_1_img{
-    display: block;
+   opacity: 1;
 }
+
 
 .header_top_comp_2_title_1:hover + .header_top_circle_1{
     filter: url(#ambilight) grayscale(0%);
@@ -1577,27 +1604,26 @@
 
 .header_top_comp_2_title_1:hover{
   color: black;
-
 }
 
 .header_top_comp_2_title_6:hover + .header_top_comp_2_title_6_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_5:hover + .header_top_comp_2_title_5_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_3:hover + .header_top_comp_2_title_3_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_2:hover + .header_top_comp_2_title_2_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_6:hover{
@@ -1615,14 +1641,10 @@
     margin-left: 1080px;
     margin-top: 500px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
+   opacity: 0;
     z-index: 50 ;
 }
 
-.header_top_comp_2_title_2:hover .header_top_comp_2_title_2_img,
-.header_top_comp_2_title_2_img:hover {
-    display: block;
-}
 
 
 
@@ -1634,23 +1656,8 @@
     margin-left: 1080px;
     margin-top: 700px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
+   opacity: 0;
     z-index: 50 ;
-}
-
-.header_top_comp_2_title_3:hover .header_top_comp_2_title_3_img,
-.header_top_comp_2_title_3_img:hover {
-    display: block;
-}
-
-.header_top_comp_2_title_4:hover .header_top_comp_2_title_4_img,
-.header_top_comp_2_title_4_img:hover {
-    display: block;
-}
-
-.header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
-.header_top_comp_2_title_5_img:hover {
-    display: block;
 }
 
 .header_top_comp_2_title_3:hover{
@@ -1673,12 +1680,12 @@
     margin-left: 1788px;
     margin-top: 40px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
+   opacity: 0;
     z-index: 10 ;
 }
 
 .header_top_comp_2_title_4:hover + .header_top_comp_2_title_4_img{
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_5_img {
@@ -1688,13 +1695,13 @@
     margin-left: 1780px;
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
+   opacity: 0;
     z-index: 50 ;
 }
 
 .header_top_comp_2_title_5:hover .header_top_comp_2_title_5_img,
 .header_top_comp_2_title_5_img:hover {
-    display: block;
+   opacity: 1;
 }
 
 .header_top_comp_2_title_6_img {
@@ -1704,7 +1711,7 @@
     margin-left: 1780px;
     margin-top: 230px;
     animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-    display: none;
+   opacity: 0;
     z-index: 50 ;
 }
 
@@ -2395,7 +2402,7 @@ background-color: rgba(246, 245, 245);
     width: 2500px;
     height: 500px;
     margin-top: 2440px;
-    background-color: #948f8f;
+    background-color: rgba(246, 245, 245, 0.97);
     z-index: 7777;
 }
 
@@ -2413,6 +2420,110 @@ background-color: rgba(246, 245, 245);
     font-family: "Cera Pro Bold", sans-serif;
 }
 
+.header_container_2_2_auto{
+  position: absolute;
+  width: 50px;
+  margin-left: 720px;
+  margin-top: 140px;
+  animation: car_an infinite 25s;
+  z-index: 1;
+}
+
+@keyframes car_an {
+  0% {
+    margin-left: 720px;
+  }
+
+  10% {
+    opacity: 1;
+    margin-left: 980px;
+  }
+
+  20% {
+    opacity: 1;
+    margin-left: 1110px;
+  }
+
+  30% {
+    opacity: 1;
+    margin-left: 1370px;
+  }
+
+  40% {
+    opacity: 1;
+    margin-left: 1500px;
+  }
+
+  50% {
+    opacity: 1;
+    margin-top: 140px;
+    margin-left: 1780px;
+    transform: scaleX(1);
+    rotate: 0deg;
+  }
+
+  51% {
+    opacity: 0;
+    margin-top: 140px;
+    margin-left: 1820px;
+    rotate: 20deg;
+  }
+
+  59% {
+    opacity: 0;
+    margin-top: 330px;
+    margin-left: 1820px;
+  }
+
+
+  60% {
+    rotate: 0deg;
+    opacity: 1;
+    margin-top: 340px;
+    margin-left: 1760px;
+    transform: scaleX(-1);
+  }
+
+  70% {
+    margin-top: 340px;
+    margin-left: 1500px;
+    transform: scaleX(-1);
+  }
+
+  75% {
+    margin-top: 340px;
+    margin-left: 1370px;
+    transform: scaleX(-1);
+  }
+
+  80% {
+    margin-top: 340px;
+    margin-left: 1370px;
+    transform: scaleX(-1);
+  }
+
+  90% {
+    margin-top: 340px;
+    margin-left: 1110px;
+    transform: scaleX(-1);
+  }
+
+  95% {
+    margin-top: 340px;
+    margin-left: 980px;
+    transform: scaleX(-1);
+  }
+
+  100% {
+    margin-top: 340px;
+    margin-left: 720px;
+    transform: scaleX(-1);
+  }
+
+
+}
+
+
 .header_container_2_etap_1_img{
     position: absolute;
     width: 50px;
@@ -2427,11 +2538,12 @@ background-color: rgba(246, 245, 245);
 .header_container_2_etap_1:after{
     content: '';
     border: 1px black solid;
-    width: 320px;
     position: absolute;
     margin-top: -43px;
     margin-left: -56px;
+      width: 320px;
 }
+
 
 .header_container_2_etap_1{
     color: black;
@@ -2459,15 +2571,17 @@ background-color: rgba(246, 245, 245);
         padding: 10px 10px 10px 10px;
     border: 1px black solid;
     border-radius: 100%;
+  background-color: rgba(246, 245, 245, 0.97);
+  z-index: 999;
 }
 
 .header_container_2_etap_2:after{
     content: '';
     border: 1px black solid;
-    width: 320px;
     position: absolute;
     margin-top: -43px;
     margin-left: -76px;
+    width: 320px;
 }
 
 
@@ -2489,16 +2603,29 @@ background-color: rgba(246, 245, 245);
     margin-left: 75px;
 }
 
-.header_container_2_etap_3_img{
+.header_container_2_etap_3_img {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 45px; /* Ширина контейнера */
+    height: 45px; /* Высота контейнера */
+    margin-left: 1440px;
+    margin-top: 153px;
+    z-index: 999;
+}
+
+.header_container_2_etap_3_img_border{
+      position: absolute;
+    width: 50px; /* Ширина контейнера */
+    height: 50px; /* Высота контейнера */
     margin-left: 1425px;
     margin-top: 140px;
-        padding: 10px 10px 10px 10px;
+    padding: 10px; /* Упрощенное свойство для установки одинаковых отступов со всех сторон */
     border: 1px black solid;
-    border-radius: 100%;
+    border-radius: 50%; /* Скругление границы контейнера */
+    z-index: 999;
+    background-color: rgba(246, 245, 245, 0.97);
 }
+
+/* Стили для изображения внутри контейнера */
 
 .header_container_2_etap_3{
     color: black;
@@ -2520,39 +2647,213 @@ background-color: rgba(246, 245, 245);
 .header_container_2_etap_3:after{
     content: '';
     border: 1px black solid;
-    width: 341px;
     position: absolute;
     margin-top: -43px;
-    margin-left: -70px;
+    margin-left: -78px;
+  width: 300px;
 }
 
 .header_container_2_etap_4_img{
     position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 1869px;
+    margin-top: 254px;
+    z-index: 999;
+}
+
+.header_container_2_etap_4_img_border{
+    position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: 1840px;
-    margin-top: 140px;
+    margin-left: 1855px;
+    margin-top: 242px;
         padding: 10px 10px 10px 10px;
     border: 1px black solid;
     border-radius: 100%;
+    z-index: 999;
+    background-color: rgba(246, 245, 245, 1);
 }
+
+.header_container_2_etap_4_img_1{
+    content: '';
+    position: absolute;
+    margin-top: -67.7px;
+    margin-left: 1594px;
+    border: 1.4px solid black;
+    border-radius: 50%; /* Создаем круглую форму */
+    width: 200px; /* Ширина должна быть равна высоте для полного круга */
+    height: 200px; /* Высота вашей дуги */
+    border-color: transparent transparent black black; /* Показываем только две стороны границы */
+    transform: rotate(-135deg); /* Поворачиваем дугу на нужный угол */
+    transform-origin: 100% 100%; /* Меняем точку вращения на нижний правый угол */
+}
+
+
 
 .header_container_2_etap_4{
     color: black;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 262px;
     font-size: 21px;
-    margin-left: 1775px;
+    margin-left: 1935px;
 }
 
 .header_container_2_etap_4:before{
     color: black;
     content: 'Этап 4';
     position: absolute;
+    margin-top: 0px;
+    font-size: 21px;
+    margin-left: -155px;
+    width: 73px;
+  height: 20px;
+  text-align: center;
+  z-index: 999;
+}
+
+
+.header_container_2_etap_5_img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 1435px;
+    margin-top: 349px;
+    z-index: 999;
+}
+
+.header_container_2_etap_5_img_border{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 1425px;
+    margin-top: 340px;
+        padding: 10px 10px 10px 10px;
+    border: 1px black solid;
+    border-radius: 100%;
+    z-index: 999;
+    background-color: rgba(246, 245, 245, 0.97);
+}
+
+.header_container_2_etap_5{
+    color: black;
+    position: absolute;
+    margin-top: 420px;
+    font-size: 21px;
+    margin-left: 1390px;
+}
+
+.header_container_2_etap_5:before{
+    color: black;
+    content: 'Этап 5';
+    position: absolute;
+    margin-top: -125px;
+    font-size: 21px;
+    margin-left: 42px;
+}
+
+.header_container_2_etap_5:after {
+    content: '';
+    border-top: 1.5px black solid; /* Изменено для установки только верхней границы */
+    position: absolute;
+    top: -42px; /* Отрегулируйте это значение для нужного вертикального положения */
+    right: -244px; /* Стартовая позиция справа */
+    width: 300px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+}
+
+
+
+.header_container_2_etap_6_img{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 1045px;
+    margin-top: 354px;
+    z-index: 999;
+}
+
+.header_container_2_etap_6_img_border{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 1032px;
+    margin-top: 340px;
+        padding: 10px 10px 10px 10px;
+    border: 1px black solid;
+    border-radius: 100%;
+    z-index: 999;
+    background-color: rgba(246, 245, 245, 0.97);
+}
+
+.header_container_2_etap_6:after{
+    content: '';
+    border-top: 1.5px black solid; /* Изменено для установки только верхней границы */
+    position: absolute;
+    top: -43px; /* Отрегулируйте это значение для нужного вертикального положения */
+    right: -290px; /* Стартовая позиция справа */
+    width: 320px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+}
+
+
+.header_container_2_etap_6{
+    color: black;
+    position: absolute;
+    margin-top: 420px;
+    font-size: 21px;
+    margin-left: 1000px;
+
+}
+
+.header_container_2_etap_6:before{
+    color: black;
+    content: 'Этап 6';
+    position: absolute;
+    margin-top: -125px;
+    font-size: 21px;
+    margin-left: 40px;
+    width: 75px;
+}
+
+.header_container_2_etap_7_img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 640px;
+    margin-top: 340px;
+        padding: 10px 10px 10px 10px;
+    border: 1px black solid;
+    border-radius: 100%;
+    z-index: 999;
+    background-color: rgba(246, 245, 245, 0.97);
+}
+
+
+.header_container_2_etap_7:after{
+    content: '';
+    border-top: 1.5px black solid; /* Изменено для установки только верхней границы */
+    position: absolute;
+    top: -43px; /* Отрегулируйте это значение для нужного вертикального положения */
+    right: -249px; /* Стартовая позиция справа */
+    width: 320px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+}
+
+.header_container_2_etap_7{
+    color: black;
+    position: absolute;
+    margin-top: 420px;
+    font-size: 21px;
+    margin-left: 580px;
+}
+
+.header_container_2_etap_7:before{
+    color: black;
+    content: 'Этап 7';
+    position: absolute;
     margin-top: -125px;
     font-size: 21px;
     margin-left: 70px;
 }
+
 
 
 

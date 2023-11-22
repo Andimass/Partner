@@ -2,7 +2,7 @@ import './Project_Supply.css'
 import React, {useEffect, useState, useRef} from "react";
 
 const Project_Supply = () =>  {
-    const [activeHandler, setActiveHandler] = useState(1);
+    const [activeHandler, setActiveHandler] = useState(0);
 
     const handleClick = (handlerId) => {
         if (activeHandler === handlerId) {
