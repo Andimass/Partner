@@ -10,12 +10,10 @@
   height: auto;
   top: 1px;
 
-
   .header_header {
     width: 390px;
     position: absolute;
     background-color: white;
-    height: auto;
   }
 
   .header_logo {
@@ -44,6 +42,13 @@
     width: 380px;
 }
 
+
+  .header_phone{
+    margin-left: 1px;
+    width: 10px;
+    height: 1250px;
+    visibility: hidden;
+}
 
          .header_animation_square{
             position: fixed;
@@ -360,11 +365,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 4px;
     position: absolute;
-    margin-left: -900px;
+    margin-left: 10px;
     margin-top: 360px;
-     width: 380px;
+     width: 80px;
   visibility: hidden;
 }
 
@@ -399,6 +404,73 @@
 
 }
 
+  .header_top_comp_2_title_1_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+.header_top_comp_2_title_2_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+.header_top_comp_2_title_3_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+.header_top_comp_2_title_4_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+.header_top_comp_2_title_5_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+.header_top_comp_2_title_6_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
+  z-index: 50 ;
+  opacity: 0;
+    visibility: hidden;
+}
+
 @keyframes rotateCircle {
   from {
     transform: rotate(0deg);
@@ -419,8 +491,8 @@
 
 .header_top_circle {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 50px;
+  height: 50px;
   animation: rotateCircle 60s infinite linear;
   margin-left: -1750px; /* Adjusted for the specific needs of your layout */
   margin-top: 200px; /* Adjusted for the specific needs of your layout */
@@ -460,7 +532,7 @@
 
 .header_container_1{
     width: 390px;
-    height: 590px;
+    height: 550px;
     margin-top: 950px;
     position: absolute;
     background-color: rgba(246, 245, 245, 0.97);
@@ -620,7 +692,7 @@
   .header_container_1_man_2{
     width: 40px;
     height: 40px;
-    margin-left: 1450px;
+    margin-left: 1px;
     margin-top: 200px;
         position: absolute;
   visibility: hidden;
@@ -629,7 +701,7 @@
 .header_container_1_man_3{
     width: 40px;
     height: 40px;
-    margin-left: 1425px;
+    margin-left: 1px;
     margin-top: 150px;
         position: absolute;
   visibility: hidden;
@@ -638,7 +710,7 @@
 .header_container_1_man_4{
     width: 40px;
     height: 40px;
-    margin-left: 1500px;
+    margin-left: 1px;
     margin-top: 200px;
         position: absolute;
   visibility: hidden;
@@ -647,7 +719,7 @@
 .header_container_1_man_5{
     width: 40px;
     height: 40px;
-    margin-left: 1475px;
+    margin-left: 1px;
     margin-top: 150px;
         position: absolute;
   visibility: hidden;
@@ -656,7 +728,7 @@
 .header_container_1_man_6{
     width: 40px;
     height: 40px;
-    margin-left: 1450px;
+    margin-left: 1px;
     margin-top: 100px;
         position: absolute;
     visibility: hidden;
@@ -666,17 +738,24 @@
         position: absolute;
             width: 40px;
     height: 40px;
-    margin-left: 1070px;
+    margin-left: 1px;
     margin-top: 200px;
     visibility: hidden;
 
+}
+.header_container_1_strela_1{
+  width: 50px;
+  margin-left: 190px;
+  position: absolute;
+  margin-top: 200px;
+  z-index: 1;
 }
 
 .header_container_1_list_3{
         position: absolute;
             width: 40px;
     height: 40px;
-    margin-left: 1130px;
+    margin-left: 1px;
     margin-top: 200px;
     visibility: hidden;
 
@@ -686,7 +765,7 @@
         position: absolute;
         width: 40px;
     height: 40px;
-    margin-left: 1010px;
+    margin-left: 1px;
     margin-top: 140px;
   visibility: hidden;
 }
@@ -695,7 +774,7 @@
         position: absolute;
             width: 40px;
     height: 40px;
-    margin-left: 1070px;
+    margin-left: 1px;
     margin-top: 140px;
     visibility: hidden;
 }
@@ -704,7 +783,7 @@
         position: absolute;
             width: 40px;
     height: 40px;
-    margin-left: 1130px;
+    margin-left: 1px;
     margin-top: 140px;
     visibility: hidden;
 }
@@ -713,7 +792,7 @@
         position: absolute;
             width: 40px;
     height: 40px;
-    margin-left: 1010px;
+    margin-left: 1px;
     margin-top: 80px;
   visibility: hidden;
 }
@@ -722,7 +801,7 @@
         position: absolute;
                 width: 40px;
     height: 40px;
-    margin-left: 1070px;
+    margin-left: 1px;
     margin-top: 80px;
   visibility: hidden;
 }
@@ -731,7 +810,7 @@
         position: absolute;
                 width: 40px;
     height: 40px;
-    margin-left: 1130px;
+    margin-left: 1px;
     margin-top: 80px;
     visibility: hidden;
 
@@ -739,16 +818,24 @@
 .header_container_1_comp_3{
     width: 75px;
     height: 75px;
-    margin-left: 1760px;
+    margin-left: 1px;
     margin-top: 100px;
     position: absolute;
     visibility: hidden;
 }
 
+  .header_container_1_num_dop{
+  position: absolute;
+      font-size: 20px;
+    color: #18b472;
+    margin-top: 1px;
+    margin-left: 1px;
+    visibility: hidden;
+}
+
 .header_container_1_comp_4{
     width: 25px;
-    height: 25px;
-    margin-left: 1773px;
+    margin-left: 1px;
     margin-top: 118px;
     position: absolute;
     visibility: hidden;
@@ -757,7 +844,7 @@
 .header_container_1_comp_5{
     width: 75px;
     height: 75px;
-    margin-left: 1880px;
+    margin-left: 1px;
     margin-top: 180px;
     position: absolute;
     visibility: hidden;
@@ -766,7 +853,7 @@
 .header_container_1_comp_6{
     width: 25px;
     height: 25px;
-    margin-left: 1893px;
+    margin-left: 1px;
     margin-top: 199px;
     position: absolute;
     visibility: hidden;
@@ -775,7 +862,7 @@
 .header_container_1_comp_7{
     width: 75px;
     height: 75px;
-    margin-left: 1880px;
+    margin-left: 1px;
     margin-top: 100px;
     position: absolute;
     visibility: hidden;
@@ -784,196 +871,1848 @@
 .header_container_1_comp_8{
     width: 25px;
     height: 25px;
-    margin-left: 1893px;
+    margin-left: 1px;
     margin-top: 118px;
     position: absolute;
+  visibility: hidden;
+}
+  
+  .visibl{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+      margin-left: 6px;
+  margin-top: 1px;
+  z-index: 2;
+background-color: rgba(246, 245, 245);
+    visibility: hidden;
+}
+
+
+
+  .header_container_2 {
+    position: absolute;
+    width: 390px;
+    height: 770px;
+    margin-top: 1490px;
+    background-color: rgba(246, 245, 245);
+    z-index: 9999;
+
+
+    .header_container_2_2 {
+      margin-top: 10px;
+      position: absolute;
+
+    }
+
+    .header_container_2_title {
+      color: black;
+      position: absolute;
+      text-align: center;
+      margin-left: 120px;
+      margin-top: 30px;
+      font-size: 18px;
+      font-family: "Cera Pro Bold", sans-serif;
+      width: 170px;
+    }
+
+    .header_container_2_etap_1_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 80px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+    }
+
+    .header_container_2_etap_1:after {
+      content: '';
+      border: 1px black solid;
+      width: 0px;
+      height: 38px;
+      position: absolute;
+      margin-top: 24px;
+      margin-left: -130px;
+    }
+
+    .header_container_2_etap_1 {
+      color: black;
+      position: absolute;
+      margin-top: 95px;
+      font-size: 16px;
+      margin-left: 235px;
+    }
+
+    .header_container_2_etap_1:before {
+      color: black;
+      content: 'Этап 1';
+      position: absolute;
+      margin-top: 1px;
+      font-size: 16px;
+      margin-left: -140px;
+      width: 80px;
+    }
+
+    .header_container_2_etap_2_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 180px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+    }
+
+    .header_container_2_etap_2:after {
+      content: '';
+      border: 1px black solid;
+      width: 0px;
+      height: 38px;
+      position: absolute;
+      margin-top: 17px;
+      margin-left: -114px;
+    }
+
+
+    .header_container_2_etap_2 {
+      color: black;
+      position: absolute;
+      margin-top: 200px;
+      font-size: 16px;
+      margin-left: 235px;
+
+    }
+
+    .header_container_2_etap_2:before {
+      color: black;
+      content: 'Этап 2';
+      position: absolute;
+      margin-top: 1px;
+      font-size: 16px;
+      margin-left: -140px;
+      width: 80px;
+    }
+
+    .header_container_2_etap_3_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 280px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+    }
+
+    .header_container_2_etap_3 {
+      color: black;
+      position: absolute;
+      margin-top: 295px;
+      font-size: 16px;
+      margin-left: 235px;
+    }
+
+    .header_container_2_etap_3:before {
+      color: black;
+      content: 'Этап 3';
+      position: absolute;
+      margin-top: 1px;
+      font-size: 16px;
+      margin-left: -140px;
+      width: 80px;
+    }
+
+    .header_container_2_etap_3:after {
+      content: '';
+      border: 1px black solid;
+      width: 0px;
+      height: 38px;
+      position: absolute;
+      margin-top: 23px;
+      margin-left: -152px;
+    }
+
+    .header_container_2_etap_3_img_border {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 382px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+      z-index: 999;
+      background-color: rgba(246, 245, 245, 1);
+      visibility: hidden;
+    }
+
+    .header_container_2_etap_4_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 172px;
+      margin-top: 390px;
+      z-index: 999;
+    }
+
+    .header_container_2_etap_4_img_border {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 382px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+      z-index: 999;
+      background-color: rgba(246, 245, 245, 1);
+    }
+
+    .header_container_2_etap_4_img_1 {
+      content: '';
+      position: absolute;
+      margin-top: -67.7px;
+      margin-left: 94px;
+      border: 1.4px solid black;
+      border-radius: 50%; /* Создаем круглую форму */
+      width: 200px; /* Ширина должна быть равна высоте для полного круга */
+      height: 200px; /* Высота вашей дуги */
+      border-color: transparent transparent black black; /* Показываем только две стороны границы */
+      transform: rotate(-135deg); /* Поворачиваем дугу на нужный угол */
+      transform-origin: 100% 100%; /* Меняем точку вращения на нижний правый угол */
+      visibility: hidden;
+    }
+
+
+    .header_container_2_etap_4 {
+      color: black;
+      position: absolute;
+      margin-top: 395px;
+      font-size: 16px;
+      margin-left: 235px;
+    }
+
+    .header_container_2_etap_4:after {
+      content: '';
+      position: absolute;
+      margin-top: 230px;
+      margin-left: -125px;
+      border: 1px black solid;
+      height: 38px;
+      width: 0px;
+    }
+
+    .header_container_2_etap_4:before {
+      color: black;
+      content: 'Этап 4';
+      position: absolute;
+      margin-top: 0px;
+      font-size: 16px;
+      margin-left: -155px;
+      width: 73px;
+      height: 20px;
+      text-align: center;
+      z-index: 999;
+    }
+
+
+    .header_container_2_etap_5_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 172px;
+      margin-top: 479px;
+      z-index: 999;
+    }
+
+    .header_container_2_etap_5_img_border {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 162px;
+      margin-top: 470px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+      z-index: 999;
+      background-color: rgba(246, 245, 245, 0.97);
+    }
+
+    .header_container_2_etap_5 {
+      color: black;
+      position: absolute;
+      margin-top: 490px;
+      font-size: 16px;
+      margin-left: 235px;
+    }
+
+    .header_container_2_etap_5:before {
+      color: black;
+      content: 'Этап 5';
+      position: absolute;
+      margin-top: 0px;
+      font-size: 16px;
+      margin-left: -140px;
+    }
+
+    .header_container_2_etap_5:after {
+      content: '';
+      border: 1px black solid; /* Изменено для установки только верхней границы */
+      position: absolute;
+      margin-top: -19px; /* Отрегулируйте это значение для нужного вертикального положения */
+      left: -45px; /* Стартовая позиция справа */
+      height: 38px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+      width: 0px;
+    }
+
+
+    .header_container_2_etap_6_img {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      margin-left: 173px;
+      margin-top: 586px;
+      z-index: 999;
+    }
+
+    .header_container_2_etap_6_img_border {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 572px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+      z-index: 999;
+      background-color: rgba(246, 245, 245, 0.97);
+    }
+
+    .header_container_2_etap_6:after {
+      content: '';
+      border: 1px black solid; /* Изменено для установки только верхней границы */
+      position: absolute;
+      top: -57px; /* Отрегулируйте это значение для нужного вертикального положения */
+      left: -45px; /* Стартовая позиция справа */
+      width: 0px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+      height: 38px;
+    }
+
+    .header_container_2_2_auto {
+      position: absolute;
+      width: 50px;
+      margin-left: -120px;
+      margin-top: 140px;
+      z-index: 1;
+      visibility: hidden;
+      opacity: 0;
+      animation: none;
+    }
+
+
+    .header_container_2_etap_6 {
+      color: black;
+      position: absolute;
+      margin-top: 590px;
+      font-size: 16px;
+      margin-left: 235px;
+
+    }
+
+    .header_container_2_etap_6:before {
+      color: black;
+      content: 'Этап 6';
+      position: absolute;
+      margin-top: 0px;
+      font-size: 16px;
+      margin-left: -140px;
+      width: 75px;
+    }
+
+    .header_container_2_etap_7_img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 160px;
+      margin-top: 670px;
+      padding: 10px 10px 10px 10px;
+      border: 1px black solid;
+      border-radius: 100%;
+      z-index: 999;
+      background-color: rgba(246, 245, 245, 0.97);
+    }
+
+
+    .header_container_2_etap_7:after {
+      content: '';
+      border: 1px black solid; /* Изменено для установки только верхней границы */
+      position: absolute;
+      top: -43px; /* Отрегулируйте это значение для нужного вертикального положения */
+      left: -349px; /* Стартовая позиция справа */
+      height: 38px; /* Начальная ширина должна быть 0, чтобы линия появлялась справа налево */
+      width: 0px;
+    }
+
+    .header_container_2_etap_7 {
+      color: black;
+      position: absolute;
+      margin-top: 675px;
+      font-size: 16px;
+      margin-left: 235px;
+    }
+
+    .header_container_2_etap_7:before {
+      color: black;
+      content: 'Этап 7';
+      position: absolute;
+      margin-top: 10px;
+      font-size: 16px;
+      margin-left: -140px;
+    }
+  }
+.header_container_5{
+    position: absolute;
+    width: 390px;
+    height: 400px;
+    background-color: white;
+    margin-top: 2200px;
+        z-index: 999;
+}
+
+.circle_img_2{
+  position: absolute;
+  margin-left: 100px;
+  width: 200px;
+  z-index: 1001;
+  margin-top: 380px;
+    zoom: 40%;
+}
+
+.circle_button{
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 700px;
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  zoom: 40%;
+  padding: 10px 40px 10px 40px;
+  font-size: 28px;
+}
+
+.header_circle_three_color{
+    width: 300px;
+    height: 300px;
+    border: 50px #ffffff solid;
+    border-radius: 100%;
+    margin-left: 0px;
+    margin-top: 260px;
+    position: absolute;
+    z-index: 999;
+    background-color: #000000;
+  transition: transform 0.5s;
+  transform-origin: center;
+  zoom: 40%;
+}
+
+.header_container_5_text{
+  position: absolute;
+  width: 550px;
+  height: 355px;
+  margin-top: 205px;
+  margin-left: 420px;
+  zoom: 40%;
+  font-size: 27px;
+}
+
+        .circle-container {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -33px;
+        }
+
+        .circle-outer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#ff0202 0% 16%, transparent 16% 100%);
+                transform-origin: center;
+        }
+
+
+        .circle-inner {
+            position: absolute;
+            top: 25px;  /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: white;  /* This should match the background color of your page or container */
+        }
+
+.circle-container_2 {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -360px;
+        }
+
+        .circle-outer_2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#fc8d02 0% 16%, transparent 16% 100%);
+            transform: rotate(60deg);
+            transform-origin: center;
+        }
+
+
+        .circle-inner_2 {
+            position: absolute;
+            top: 25px;  /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: #000000;  /* This should match the background color of your page or container */
+        }
+
+.circle-container_3 {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -360px;
+        }
+
+        .circle-outer_3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#ebfd00 0% 16%, transparent 16% 100%);
+            transform: rotate(120deg);
+            transform-origin: center;
+        }
+
+
+        .circle-inner_3 {
+            position: absolute;
+            top: 25px; /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: white; /* This should match the background color of your page or container */
+        }
+
+
+.circle-container_4 {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -360px;
+        }
+
+        .circle-outer_4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#18b472 0% 16%, transparent 16% 100%);
+            transform: rotate(180deg);
+            transform-origin: center;
+        }
+
+
+        .circle-inner_4 {
+            position: absolute;
+            top: 25px;  /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: #ffffff;  /* This should match the background color of your page or container */
+        }
+
+.circle-container_5 {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -360px;
+        }
+
+        .circle-outer_5{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#0039ff 0% 16%, transparent 16% 100%);
+            transform: rotate(240deg);
+            transform-origin: center;
+        }
+
+        .header_container_5_text_1{
+            color: black;
+            display: block;
+        }
+
+        .header_container_5_text_2{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_3{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_4{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_5{
+            color: black;
+            display: none;
+        }
+
+        .header_container_5_text_6{
+            color: black;
+            display: none;
+        }
+
+
+        .circle-inner_5 {
+            position: absolute;
+            top: 25px;  /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: #ffffff;  /* This should match the background color of your page or container */
+        }
+
+.circle-container_6 {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            margin-left: -33px;
+            margin-top: -360px;
+        }
+
+        .circle-outer_6{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#8f00f3 0% 16%, transparent 16% 100%);
+            transform: rotate(300deg);
+            transform-origin: center;
+        }
+
+
+        .circle-inner_6 {
+            position: absolute;
+            top: 25px;  /* Adjust this value to change the thickness of the border */
+            left: 25px;
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border-radius: 50%;
+            background-color: #ffffff;  /* This should match the background color of your page or container */
+        }
+
+.header_circle_color_2{
+
+}
+
+.header_circle_color_3{
+
+}
+
+.header_container_6{
+    position: absolute;
+    width: 390px;
+    height: 620px;
+    background-color: white;
+    margin-top: 2580px;
+}
+
+.header_container_6_title{
+    font-size: 18px;
+    font-family: "Cera Pro Bold", sans-serif;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 1px;
+    color: black;
+}
+
+.header_container_6_block{
+    position: absolute;
+}
+
+.header_container_6_block_1{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: 90px;
+    margin-left: 25px;
+  zoom: 40%;
+
+}
+
+.header_container_6_block_1_fon{
+    width: 440px;
+    height: 285px;
+    background-color: rgba(142, 193, 171, 0.32); ;
+
+}
+
+.header_container_6_block_1_img_1{
+    width: 340px;
+    height: 200px;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.header_container_6_block_1_fon:hover .header_container_6_block_1_img_1{
+    transform: scale(1.178);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+
+
+.header_container_6_block_1_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_1_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+.header_container_6_block_2{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: -440px;
+    margin-left: 510px;
+    position: absolute;
+    zoom: 40%;
+}
+
+.header_container_6_block_2_fon{
+    width: 440px;
+    height: 285px;
+    background-color: #DAE4EB;
+
+}
+
+.header_container_6_block_2_img_1{
+    width: 360px;
+    height: 240px;
+    margin-top: 24px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.header_container_6_block_2_fon:hover .header_container_6_block_2_img_1{
+    transform: scale(1.178);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+
+.header_container_6_block_2_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_2_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+.header_container_6_block_3{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 25px;
+    position: absolute;
+  zoom: 40%;
+}
+
+.header_container_6_block_3_fon{
+    width: 440px;
+    height: 285px;
+    background-color: #F8F1DE;
+     position: relative;
+
+}
+
+
+.header_container_6_block_3_img_1{
+    width: 360px;
+    height: 240px;
+    margin-top: 24px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.header_container_6_block_3_fon:hover .header_container_6_block_3_img_1{
+    transform: scale(1.178);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+
+.header_container_6_block_3_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_3_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+
+.header_container_6_block_4{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 510px;
+    zoom: 40%;
+}
+
+.header_container_6_block_4_fon{
+    width: 440px;
+    height: 285px;
+    background-color: #EBDADA;
+
+}
+
+.header_container_6_block_4_img_1{
+    width: 360px;
+    height: 240px;
+    margin-top: 24px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.header_container_6_block_4_fon:hover .header_container_6_block_4_img_1{
+    transform: scale(1.178);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+.header_container_6_block_5_fon:hover .header_container_6_block_5_img_1{
+    transform: scale(1.26);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+.header_container_6_block_6_fon:hover .header_container_6_block_6_img_1{
+    transform: scale(1.23);
+    transition: transform 0.3s ease;  /* Плавный переход */
+}
+
+
+.header_container_6_block_4_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_4_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+.header_container_6_block_5{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 25px;
+    position: absolute;
+  zoom: 40%;
+}
+
+.header_container_6_block_5_fon{
+    width: 440px;
+    height: 285px;
+    background-color: #E4DAEB;
+
+}
+
+.header_container_6_block_5_img_1{
+    width: 340px;
+    height: 200px;
+    margin-top: 45px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.header_container_6_block_5_img_2{
+    width: 340px;
+    height: 200px;
+    margin-top: -240px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+
+.header_container_6_block_5_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_5_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+.header_container_6_block_6{
+    width: 440px;
+    height: 440px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 510px;
+    position: absolute;
+  zoom: 40%;
+}
+
+.header_container_6_block_6_fon{
+    width: 440px;
+    height: 285px;
+    background-color: #F4E8DA;
+
+}
+
+.header_container_6_block_6_img_1{
+    width: 340px;
+    height: 200px;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.header_container_6_block_6_img_2{
+    width: 340px;
+    height: 200px;
+    margin-top: -240px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+
+.header_container_6_block_6_text_1{
+    color: black;
+    font-size: 30px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-left: -2px;
+    margin-top: 18px;
+}
+
+.header_container_6_block_6_text_2{
+    color: black;
+    font-size: 27px;
+    font-family: "Cera Pro Light", sans-serif;
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+
+.header_container_4{
+    position: absolute;
+    width: 390px;
+    height: 100px;
+    background-color: white;
+    margin-top: 3350px;
+}
+
+.header_our_prem{
+    font-size: 18px;
+    font-family: "Cera Pro Bold", sans-serif;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -140px;
+    color: black;
+}
+
+.header_our_uslugi_obol{
+    width: 1410px;
+    height: 720px;
+    border: 1px grey solid;
+    margin-left: -315px;
+    margin-top: 140px;
+    z-index: 999;
+    zoom: 50%;
+  rotate: 90deg;
+}
+
+.header_our_uslugi_1{
+    width: 80px;
+    height: 720px;
+    border-right: 1px grey solid;
+    margin-left: 10px;
+    position: absolute;
+    background-color: white;
+}
+
+.black-grey_1 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    position: absolute;
+    margin-left: 0px;
+}
+
+.header_our_uslugi{
+    color: black;
+}
+
+
+
+
+.header_our_uslugi_geo{
+    color: #282c34;
+    margin-top: 505px;
+    position: absolute;
+    margin-left: 300px;
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999;
+  rotate: 270deg;
+
+}
+
+.header_our_uslugi_geo_3{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_geo_2{
+    color: black;
+    margin-top: 530px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_1_button{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 500px;
+}
+
+
+.dop_1_title{
+
+}
+
+.dop_1_geo_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 445px;
+    height: 550px;
+    margin-left: 500px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: white;
+    text-align: justify;
+    position: absolute;
+    rotate: 270deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_our_uslugi_2{
+    width: 80px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    margin-left: 1010px;
+    border-left: 1px grey solid;
+}
+
+
+.header_our_uslugi_cadastr{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_blue-white{
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1010px;
+    border-right: 1px grey solid  ;
+}
+
+
+.black-grey_2 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72,134,44, 0.4), rgba(66,128,59, 0.4), rgba(52,113,98, 0.4), rgb(12, 106, 227, 0.4), rgba(0,55,251, 0.6));
+
+    position: absolute;
+    margin-left: 90px;
+}
+
+.dop_blue-white_1_1{
+    margin-left: 90px;
+}
+
+.header_our_uslugi_cadastr_2{
+    color: black;
+    margin-top: 530px;
+    position: absolute;
+    margin-left: 435px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_cadastr_3{
+    color: black;
+    margin-top: 530px;
+    position: absolute;
+    margin-left: 950px;
+    transform-origin: left bottom;
+    font-size: 30px;
+    font-family: "Cera Pro Bold", sans-serif;
+    z-index: 999;
+    width: 422px;
+    line-height: 30px;
+    rotate: 270deg;
+
+}
+
+.header_our_uslugi_cadastr_img{
+    position: absolute;
+    width: 500px;
+    height: 330px;
+    margin-left: 420px;
+    margin-top: 70px;
+    z-index: 999;
+      rotate: 270deg;
+}
+
+.dop_2_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 440px;
+    height: 420px;
+    margin-left: 680px;
+    font-size: 16px;
+    margin-top: -30px;
+    position: absolute;
+    text-align: justify;
+    z-index: 999;
+  rotate: 270deg;
+  zoom: 140%;
+}
+
+.dop_2_button{
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 500px;
   visibility: hidden;
 }
 
 
 
-  .header_container_2{
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_our_uslugi_3{
+    width: 80px;
+    height: 720px;
     position: absolute;
-    width: 390px;
-    height: 470px;
-    margin-top: 1540px;
-    background-color: #948f8f;
-    z-index: 7777;
+    background-color: white;
+    margin-left: 1090px;
+    border-left: 1px grey solid;
 }
 
-.header_container_2_2{
-    margin-top: -10px;
-}
-
-.header_container_2_title{
+.header_our_uslugi_proekt{
     color: black;
+    margin-top: 650px;
     position: absolute;
-    text-align: center;
-    margin-left: 120px;
-    margin-top: 30px;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_blue-white_2{
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1090px;
+    border-right: 1px grey solid;
+  border-left: 1px grey solid;
+}
+
+.black-grey_3 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 170px;
+}
+
+.dop_blue-white_1_2{
+    margin-left: 170px;
+}
+
+
+.header_our_uslugi_proekt_2{
+    color: black;
+    margin-top: 530px;
+    position: absolute;
+    margin-left: 810px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_proekt_3{
+    color: black;
+    margin-top: 528px;
+    position: absolute;
+    margin-left: 1310px;
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999;
+    rotate: 270deg;
+}
+
+.dop_3_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 450px;
+    margin-left: 820px;
+    font-size: 16px;
+    margin-top: 40px;
+    position: absolute;
+    text-align: justify;
+      rotate: 270deg;
+    zoom: 144%;
+}
+
+.dop_3_button{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 500px;
+  visibility: hidden;
+}
+
+.dop_4_button{
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 475px;
+  visibility: hidden;
+}
+
+.dop_5_button{
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 475px;
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_our_uslugi_4{
+    width: 80px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    margin-left: 1170px;
+    border-left: 1px grey solid;
+}
+
+.header_our_uslugi_proekt_gaz{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+        font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_blue-white_3{
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1170px;
+    border-left: 1px grey solid;
+     border-right: 1px grey solid;
+}
+
+.black-grey_4 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 250px;
+}
+
+.dop_blue-white_1_3{
+    margin-left: 250px;
+}
+
+.header_our_uslugi_proekt_gaz_2{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_proekt_gaz_3{
+    color: black;
+    margin-top: 640px;
+    position: absolute;
+    margin-left: 510px;
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999;
+      rotate: 270deg;
+}
+
+.dop_4_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 450px;
+    margin-left: 300px;
+    font-size: 16px;
+    margin-top: 110px;
+    position: absolute;
+        text-align: justify;
+      rotate: 270deg;
+  zoom: 140%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_our_uslugi_5{
+    width: 80px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    margin-left: 1250px;
+    border-left: 1px grey solid;
+}
+
+.header_our_uslugi_proekt_set{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+        font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_blue-white_4{
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1250px;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
+}
+
+.dop_blue-white_1_4{
+  margin-left: 330px;
+}
+
+.black-grey_5 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 330px;
+}
+
+.header_our_uslugi_proekt_set_2{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_proekt_set_3{
+    color: black;
+    margin-top: 645px;
+    position: absolute;
+    margin-left: 540px;
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999;
+        rotate: 270deg;
+}
+
+.dop_5_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 450px;
+    margin-left: 300px;
+    font-size: 16px;
+    margin-top: 110px;
+    position: absolute;
+        rotate: 270deg;
+  zoom: 144%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_our_uslugi_6{
+    width: 80px;
+    height: 720px;
+    margin-top: 0px;
+    position: absolute;
+    background-color: white;
+    margin-left: 1330px;
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
+}
+
+.header_our_uslugi_proekt_wat{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+        font-family: "Cera Pro Medium", sans-serif;
+}
+
+.dop_blue-white_5{
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1330px;
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
+
+}
+
+.black-grey_6 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 410px;
+}
+
+
+.header_our_uslugi_proekt_wat_2{
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+}
+
+.header_our_uslugi_proekt_wat_3{
+    color: black;
+    margin-top: 645px;
+    position: absolute;
+    margin-left: 500px;
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 999;
+        rotate: 270deg;
+}
+
+
+.dop_6_1{
+    color: black;
+    font-family: "Cera Pro Regular", sans-serif;
+    width: 450px;
+    margin-left: 290px;
+    font-size: 16px;
+    margin-top: 100px;
+    position: absolute;
+    text-align: justify;
+        rotate: 270deg;
+  zoom: 143%;
+}
+
+
+.container_container_3 {
+  position: absolute;
+  margin-top: 1px;
+  background-color: grey;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+  .container_container_3 canvas {
+    position: absolute;
+    margin-top: 1px;
+    background-color: grey;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+  }
+
+  .header_our_partner {
+    position: absolute;
+    color: black;
     font-size: 18px;
-    font-family: "Cera Pro Bold", sans-serif;
+    margin-left: 100px;
+    margin-top: -55px;
+    z-index: 999;
+  }
+
+.header_footer {
+  position: absolute;
+  width: 390px;
+  height: 170px;
+  background-color: #2c2b2b;
+  top: 4000px;
 }
 
-.header_container_2_etap_1_img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
+  .communication_footer_1 {
+    width: 10px;
+}
+
+.communication_footer_1_img {
+    width: 80px;
+    height: 15px;
     margin-left: 160px;
-    margin-top: 80px;
-        padding: 10px 10px 10px 10px;
-    border: 1px black solid;
-    border-radius: 100%;
+    margin-top: 14px;
+    position: absolute;
 }
 
-.header_container_2_etap_1:after{
+.communication_footer_2_img {
+    margin-left: 5px;
+    margin-top: 22px;
+    position: absolute;
+    width: 385px;
+}
+
+.communication_footer_1_text {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 23px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+}
+
+.communication_footer_1_text:after {
+    position: absolute;
+    border: 1px grey solid;
+    width: 1px;
     content: '';
-    border: 1px black solid;
-    width: 0px;
-  height: 38px;
-    position: absolute;
-    margin-top: 46px;
-    margin-left: -172px;
+    margin-top: 49px;
+    margin-left: -348px;
 }
 
-.header_container_2_etap_1{
-    color: black;
+
+.communication_footer_2 {
     position: absolute;
-    margin-top: 95px;
-    font-size: 16px;
-    margin-left: 235px;
+    margin-left: 10px;
+    margin-top: 71px;
+    width: 170px;
 }
 
-.header_container_2_etap_1:before{
-    color: black;
-    content: 'Этап 1';
-    position: absolute;
-    margin-top: 1px;
-    font-size: 16px;
-    margin-left: -140px;
-  width: 80px;
+.communication_footer_2_text_1 {
+    font-size: 8px;
+    color: white;
+
 }
 
-.header_container_2_etap_2_img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-left: 160px;
-    margin-top: 180px;
-        padding: 10px 10px 10px 10px;
-    border: 1px black solid;
-    border-radius: 100%;
+
+/*.communication_footer_2_text_1:after{*/
+/*	border-bottom: dotted 5px white;*/
+/*    width: 1000px;*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    !*height: 1px;*!*/
+/*    margin-top: -80px;*/
+/*    margin-left: -500px;*/
+/*}*/
+
+
+.communication_footer_2_text_2 {
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    color: white;
+    opacity: 0.5;
+    width: 80px;
 }
 
-.header_container_2_etap_2:after{
+.communication_footer_2_text_3 {
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-top: -7px;
+    opacity: 0.5;
+    width: 100px;
+}
+
+
+.communication_footer_4 {
+    width: 200px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 71px;
+    visibility: hidden;
+}
+
+.communication_footer_5 {
+    width: 100px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 71px;
+}
+
+.communication_footer_5:before {
+    position: absolute;
+    border: 1px grey solid;
+    width: 380px;
     content: '';
-    border: 1px black solid;
-    width: 0px;
-  height: 38px;
+    margin-top: -7px;
+    margin-left: -125px;
+}
+
+.communication_footer_6 {
+    width: 120px;
     position: absolute;
-    margin-top: 17px;
-    margin-left: -114px;
+    margin-left: 220px;
+    margin-top: 71px;
 }
 
 
-.header_container_2_etap_2{
-    color: black;
-    position: absolute;
-    margin-top: 200px;
-    font-size: 16px;
-    margin-left: 235px;
-
+.communication_footer_2_text_5 {
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    color: white;
+    margin-left: 2px;
 }
 
-.header_container_2_etap_2:before{
-    color: black;
-    content: 'Этап 2';
+.communication_footer_2_text_4 {
+    font-size: 10px;
+    font-family: "Cera Pro Regular", sans-serif;
+    margin-top: 21px;
     position: absolute;
-    margin-top: 1px;
-    font-size: 16px;
-    margin-left: -140px;
-  width: 80px;
+    margin-left: -65px;
+    color: white;
+    opacity: 0.5;
 }
 
-.header_container_2_etap_3_img{
+.communication_footer_7 {
+    width: 70px;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-left: 160px;
-    margin-top: 280px;
-        padding: 10px 10px 10px 10px;
-    border: 1px black solid;
-    border-radius: 100%;
+    margin-left: 320px;
+    margin-top: 71px;
 }
 
-.header_container_2_etap_3{
-    color: black;
-    position: absolute;
-    margin-top: 295px;
-    font-size: 16px;
-    margin-left: 235px;
+.communication_footer_2_text_11 {
+    opacity: 0.5;
+    font-size: 8px;
+    font-family: "Cera Pro Regular", sans-serif;
 }
 
-.header_container_2_etap_3:before{
-    color: black;
-    content: 'Этап 3';
-    position: absolute;
-    margin-top: 1px;
-    font-size: 16px;
-    margin-left: -140px;
-  width: 80px;
+.communication_footer_2_text_21 {
+    opacity: 0.5;
+    font-size: 8px;
+    margin-top: -7px;
+    font-family: "Cera Pro Regular", sans-serif;
 }
-
-.header_container_2_etap_3:after{
-    content: '';
-    border: 1px black solid;
-    width: 0px;
-  height: 38px;
-    position: absolute;
-    margin-top: 46px;
-    margin-left: -195px;
-}
-
-.header_container_2_etap_4_img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-left: 160px;
-    margin-top: 380px;
-        padding: 10px 10px 10px 10px;
-    border: 1px black solid;
-    border-radius: 100%;
-}
-
-.header_container_2_etap_4{
-    color: black;
-    position: absolute;
-    margin-top: 395px;
-    font-size: 16px;
-    margin-left: 235px;
-}
-
-.header_container_2_etap_4:before{
-    color: black;
-    content: 'Этап 4';
-    position: absolute;
-    margin-top: 1px;
-    font-size: 16px;
-    margin-left: -140px;
-  width: 80px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1005,7 +2744,7 @@
     }
 }
 
-@media (min-width: 1600px) and (max-width: 1680px) {
+@media (min-width: 1600px) and (max-width: 1700px) {
     .custom-zoom-page {
         zoom: 64.4%;
     }
@@ -1014,6 +2753,12 @@
 @media (min-width: 1840px) and (max-width: 1920px) {
     .custom-zoom-page {
         zoom: 74.2%;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2250px) {
+    .custom-zoom-page {
+        zoom: 88.1%;
     }
 }
 
@@ -2353,7 +4098,27 @@ background-color: rgba(246, 245, 245);
     color: #18b472;
     margin-top: 295px;
     margin-left: 1000px;
+}
 
+.header_container_1_num_dop{
+  position: absolute;
+      font-size: 20px;
+    color: #18b472;
+    margin-top: 290px;
+    margin-left: 1110px;
+  animation: dop_num 1s infinite;
+}
+
+@keyframes dop_num{
+  0%{
+      transform: translateY(0%);
+      opacity: 1;
+  }
+
+   100%{
+      transform: translateY(-50%);
+      opacity: 0;
+  }
 }
 
 .header_container_1_proekt{
@@ -2930,9 +4695,10 @@ background-color: rgba(246, 245, 245);
 
 .header_our_uslugi_geo{
     color: #282c34;
-    margin-top:     -50px;
+    top: 80px;
     position: absolute;
-    margin-left: 500px;
+    margin-left: 410px;
+  left: 100px;
     transform-origin: left bottom;
     white-space: nowrap;
     font-size: 30px;
@@ -2968,6 +4734,7 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     margin-left: 500px;
     margin-top: 500px;
+  visibility: hidden;
 }
 
 
@@ -2978,14 +4745,14 @@ background-color: rgba(246, 245, 245);
 .dop_1_geo_1{
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
-    width: 445px;
-    height: 550px;
-    margin-left: 500px;
+    width: 440px;
+    height: 420px;
+    margin-left: 510px;
     font-size: 16px;
-    margin-top: 10px;
-    background-color: white;
-    text-align: justify;
+    margin-top: 60px;
     position: absolute;
+    text-align: justify;
+    z-index: 999;
 }
 
 
@@ -3550,7 +5317,6 @@ background-color: rgba(246, 245, 245);
     background-color: #000000;
   transition: transform 0.5s;
   transform-origin: center;
-
 }
 
 
@@ -4122,7 +5888,7 @@ background-color: rgba(246, 245, 245);
     width: 2500px;
     height: 300px;
     background-color: #2c2b2b;
-    top: 1400px;
+    top: 5600px;
 }
 
 .communication_footer_1{

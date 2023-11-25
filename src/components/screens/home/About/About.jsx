@@ -683,7 +683,7 @@ useEffect(() => {
                 <p className='about_title_2'>О компании</p>
                 <p className='about_title_text'>Профессиональная команда выполняющая комплексные проектных, изыскательных, кадастровых и инженерных услуг</p>
                 <div className="collage">
-                        <img className='about_title_img_1' src="/public/коллаж (2).png" alt="Геодезия 1"/>
+                        <img className='about_title_img_1' src="/public/image.png" alt="Геодезия 1"/>
                     </div>
             </div>
                 <div className='about_for'>

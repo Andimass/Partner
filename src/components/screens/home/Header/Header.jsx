@@ -4,10 +4,7 @@ import React, {useEffect, useState, useRef} from "react";
 import $ from "jquery";
 import p5 from "p5";
 
-const Header = () => {
-
-
-    let currentRotation = 60; // Текущий угол поворота
+let currentRotation = 0; // Текущий угол поворота
 function rotateCircles() {
     currentRotation += 60; // Увеличиваем текущий угол на 60
     // document.querySelectorAll('.circle_img_2').forEach(circle => {
@@ -15,12 +12,12 @@ function rotateCircles() {
     // });
     document.querySelectorAll('.header_circle_three_color').forEach(circle => {
         circle.style.transform = `rotate(${currentRotation}deg)`; // Применяем новый угол поворота
-        if (currentRotation > 361) {
+        if (currentRotation === 360) {
             currentRotation = 0
         }
     });
 
-    if (currentRotation >= 0 && currentRotation <= 60) {
+    if (currentRotation === 60) {
         document.querySelector('.header_container_5_text_1').style.display = 'block';
         document.querySelector('.header_container_5_text_2').style.display = 'none';
         document.querySelector('.header_container_5_text_3').style.display = 'none';
@@ -73,6 +70,10 @@ function rotateCircles() {
         document.querySelector('.header_container_5_text_6').style.display = 'block';
     }
 }
+
+
+const Header = () => {
+
 
     const [activeHandler, setActiveHandler] = useState(1);
 
@@ -252,11 +253,17 @@ function rotateCircles() {
           }
       };
 
-      p.setup = () => {
-      p.createCanvas(2480, 600);
-      for (let i = 0; i < 10; i++) {
-        balls.push(new Ball(p.random(p.width), p.random(p.height), p.random(125, 320), p, i));  // Передаем индекс вместо самого изображения
-      }
+p.setup = () => {
+  if (window.innerWidth < 400) {
+    p.createCanvas(1, 1); // Создание холста размером 1x1 пиксель для маленьких экранов
+  } else {
+    p.createCanvas(2480, 600); // Стандартный размер для больших экранов
+  }
+
+  // После создания холста, инициализируйте остальные элементы
+  for (let i = 0; i < 10; i++) {
+    balls.push(new Ball(p.random(p.width), p.random(p.height), p.random(125, 320), p, i));
+  }
 };
 
         p.draw = () => {
@@ -862,6 +869,16 @@ function rotateCircles() {
     }, []);
 
 
+    const [number, setNumber] = useState(12683); // Начальное значение
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setNumber(prevNumber => prevNumber + 1); // Увеличиваем число на 1 каждую секунду
+        }, 1000); // Устанавливаем интервал в 1000 мс (1 секунда)
+
+        return () => clearInterval(interval); // Очищаем интервал при размонтировании компонента
+    }, []);
+
 
         return (
         <html>
@@ -1007,7 +1024,8 @@ function rotateCircles() {
                         <p className='header_container_1_title'>Мы предлагаем комплексное решение задач от начальных замеров и разработки проектной документации до поддержки на всех этапах реализации проекта и последующей эксплуатации объектов.</p>
                         <p className='header_container_1_year'>8 лет</p>
                         <p className='header_container_1_prod'>Продуктивной работы</p>
-                        <p className='header_container_1_num'>12683</p>
+                        <p className='header_container_1_num'>{number}</p>
+                        <p className='header_container_1_num_dop'>+1</p>
                         <p className='header_container_1_proekt'>Разработанных проектов</p>
                         <p className='header_container_1_bolee'>Более 50</p>
                         <p className='header_container_1_spec'>Cпециалистов</p>
@@ -1313,7 +1331,7 @@ function rotateCircles() {
 
 
                 </div>
-                <div className={`header_footer ${activeHandler === 1 ? 'footer-shot_1' : '' || activeHandler === 2 ? 'footer-shot_2' : '' || activeHandler === 3 ? 'footer-shot_3' : '' || activeHandler === 4 ? 'footer-shot_4' : '' || activeHandler === 5 ? 'footer-shot_5' : '' || activeHandler === 6 ? 'footer-shot_6' : '' || activeHandler === 7 ? 'footer-shot_7' : '' || activeHandler === 8 ? 'footer-shot_8' : '' || activeHandler === 9 ? 'footer-shot_9' : ''  }`}>
+                <div className='header_footer'>
                 <div className='communication_footer_1'>
                     <img className='communication_footer_1_img' src='/public/logo_new.png'/>
                     <img className='communication_footer_2_img' src='/public/tochki.png'/>
