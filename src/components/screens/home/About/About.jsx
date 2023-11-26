@@ -737,8 +737,8 @@ useEffect(() => {
                   <div className='about_2_block_1'>
                       <img className='about_2_block_1_img_1'/>
                       <p className='about_2_block_1_text_1'>Профессионализм</p>
-                      <p className='gazification_2_block_1_text_2'>Имеем все необходимые государственные лицензии и сертификаты </p>
-                      <p className='gazification_2_block_1_text_3'>01</p>
+                      <p className='about_2_block_1_text_2'>Имеем все необходимые государственные лицензии и сертификаты </p>
+                      <p className='about_2_block_1_text_3'>01</p>
                   </div>
                   <div className='about_2_block_2'>
                        <img className='about_2_block_1_img_1'/>
@@ -761,7 +761,7 @@ useEffect(() => {
                   <div className='about_2_block_5'>
                     <img className='about_2_block_1_img_1'/>
                       <p className='about_2_block_1_text_1'>Опыт</p>
-                      <p className='about_2_block_1_text_2'>Закрыли более 5000 различных объектов инженерных изысканий объемом от 0,1 га до 2000 га</p>
+                      <p className='about_2_block_1_text_2'>Закрыли более 5000 различных объектов инженерных<span className='izis'> изысканий</span> <span> объемом от 0,1га до 2000га</span></p>
                       <p className='about_2_block_5_text_3'>05</p>
                   </div>
                   <div className='about_2_block_6'>
@@ -826,7 +826,38 @@ useEffect(() => {
                 <img className='about_container_4_text_6_img_4' src='/public/IMG_4111-2_7_11zon (1).jpg'/>
                 </div>
             </div>
+            <div className='about_footer'>
+                <div className='communication_footer_1'>
+                    <img className='communication_footer_1_img' src='/public/logo_new.png'/>
+                    <img className='communication_footer_2_img' src='/public/tochki.png'/>
+                </div>
+                <div className='communication_footer_2'>
+                    <p className='communication_footer_2_text_1'>АДРЕС ОФИСА</p>
+                    <p className='communication_footer_2_text_2'>г.Крснодар ул.Заполярная 37 к4</p>
+                    <p className='communication_footer_2_text_3'>г.Крснодар ул.Красных Партизан 1/4 к9</p>
+                </div>
+                <div className='communication_footer_4'>
+                    <p className='communication_footer_2_text_1'>ГРАФИК РАБОТЫ</p>
+                    <p className='communication_footer_2_text_2'>пн-пт с 9:00 до 18:00,</p>
+                    <p className='communication_footer_2_text_3'>сб-вс - выходной</p>
+                </div>
+                <div className='communication_footer_5'>
+                    <p className='communication_footer_2_text_1'>ТЕЛЕФОН</p>
+                    <p className='communication_footer_2_text_2'>+7 (918) 331-25-57</p>
+                    <p className='communication_footer_2_text_3'>+7 (993) 310-00-01</p>
+                </div>
+                <div className='communication_footer_6'>
+                    <p className='communication_footer_2_text_1'>E-MAIL</p>
+                    <p className='communication_footer_2_text_2'>info@partner-tech.ru</p>
+                    <p className='communication_footer_2_text_3'>mail@partner-krd.ru</p>
+                </div>
+                <div className='communication_footer_7'>
+                    <p className='communication_footer_2_text_1'>ИФОРМАЦИЯ</p>
+                    <p className='communication_footer_2_text_11'>Контакты</p>
+                    <p className='communication_footer_2_text_21'>О компании</p>
+                </div>
 
+                </div>
 
 
 

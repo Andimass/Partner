@@ -3,8 +3,15 @@
 
 @media (min-width: 300px) and (max-width: 400px) {
 
+  .custom-zoom-page{
+    max-width: 400px;
+    max-height: 4200px;
+    overflow-x: hidden;
+    overflow-y: hidden ;
+
 .Header {
   width: 390px;
+  max-width: 400px;
   position: absolute;
   background-color: white;
   height: auto;
@@ -20,7 +27,7 @@
     width: 52px;
     margin-left: 20px;
     margin-top: -7px;
-    position: fixed;
+    position: absolute;
     z-index: 1999;
   }
 
@@ -31,337 +38,427 @@
     margin-top: 9px;
     position: fixed;
     z-index: 1999;
-        visibility: hidden;
+    visibility: hidden;
   }
 
-  .header_menu{
+  .header_menu {
     color: black;
     position: absolute;
     margin-left: 10px;
     visibility: hidden;
     width: 380px;
-}
+  }
+
+    .header_menu p{
+    color: black;
+    position: absolute;
+    margin-left: 10px;
+    visibility: hidden;
+    width: 38px;
+  }
 
 
-  .header_phone{
+  .header_phone {
     margin-left: 1px;
     width: 10px;
     height: 1250px;
     visibility: hidden;
-}
+  }
 
-         .header_animation_square{
-            position: fixed;
+  .header_animation_square {
+    position: fixed;
     width: 55px; /* Та же ширина, что и у .menu_supply */
     height: 55px; /* Та же высота, что и у .menu_supply */
-    margin-left: 340px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */ /* Тот же отступ сверху, что и у .menu_supply */
+    margin-left: 340px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
+    /* Тот же отступ сверху, что и у .menu_supply */
     display: block; /* Больше, чем у .menu_supply */
-           z-index: 1999;
-           margin-top: -20px;
-    }
+    z-index: 1999;
+    margin-top: -20px;
+  }
 
 
   .header_menu_supply {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: 1px;
-        margin-top: 15px;
-        z-index: 1999;
-    }
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
+    margin-left: 1px;
+    margin-top: 15px;
+    z-index: 1999;
+  }
 
   .header_black_square {
-      position: fixed;
-      width: 55px; /* Та же ширина, что и у .menu_supply */
-      height: 55px; /* Та же высота, что и у .menu_supply */
-      margin-left: 55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
-      margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
-      z-index: 2000; /* Больше, чем у .menu_supply */
-      background-color: rgba(255, 255, 255); /* Черный цвет фона */
-      overflow-x: hidden;
+    position: fixed;
+    width: 55px; /* Та же ширина, что и у .menu_supply */
+    height: 55px; /* Та же высота, что и у .menu_supply */
+    margin-left: -55px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
+    margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
+    z-index: 2000; /* Больше, чем у .menu_supply */
+    background-color: rgba(255, 255, 255); /* Черный цвет фона */
+    overflow-x: hidden;
+    opacity: 0;
   }
 
-          .header_black_square2 {
-      position: fixed;
-      width: 55px; /* Та же ширина, что и у .menu_supply */
-      height: 55px; /* Та же высота, что и у .menu_supply */
-      margin-left: -6 5px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
-      margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
-      z-index: 2000; /* Больше, чем у .menu_supply */
-      background-color: rgba(255, 255, 255); /* Черный цвет фона */
-
+  .header_black_square2 {
+    position: fixed;
+    width: 55px; /* Та же ширина, что и у .menu_supply */
+    height: 55px; /* Та же высота, что и у .menu_supply */
+    margin-left: -6 5px; /* Смещение влево на значение ширины .menu_supply плюс его отступ слева, чтобы разместить квадрат справа от .menu_supply */
+    margin-top: 1px; /* Тот же отступ сверху, что и у .menu_supply */
+    z-index: 2000; /* Больше, чем у .menu_supply */
+    background-color: rgba(255, 255, 255); /* Черный цвет фона */
+      opacity: 0;
   }
 
-.header_menu_supply2 {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: 1px;
-        margin-top: 20px;
-        z-index: 1999;
-    }
-
-            .header_menu_supply3 {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: 1px;
-        margin-top: 30px;
-        z-index: 1999;
-    }
-
-            .header_menu_supply4 {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: -55px;
-        margin-top: 15px;
-        z-index: 1999;
-        opacity: 0;
-    }
-
-            .header_menu_supply5 {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: -55px;
-        margin-top: 20px;
-        z-index: 1999;
-                  opacity: 0;
-    }
-
-            .header_menu_supply6 {
-        position: fixed;
-        max-width: 30px; /* Установите желаемую ширину для логотипа */
-        max-height: 60px;
-        margin-left: -55px;
-        margin-top: 30px;
-        z-index: 1999;
-                        opacity: 0;
-    }
-
-
-.header_top_2 {
-  position: absolute;
-  color: black;
-  margin-left: -35px;
-  margin-top: -10px;
-  width: 380px;
-
-
-  .header_top_2_title {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 80px;
-    font-family: "Cera Pro bold", sans-serif;
-    width: 250px;
-    font-size: 14px;
-    text-align: center;
-    z-index: 999;
+  .header_menu_supply2 {
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
+    margin-left: 1px;
+    margin-top: 16px;
+    z-index: 1999;
   }
 
-  .header_top_comp_2_title_1 {
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 200px;
-    width: 170px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
-    z-index: 999;
-    color: black;
+  .header_menu_supply3 {
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
+    margin-left: 1px;
+    margin-top: 20px;
+    z-index: 1999;
   }
 
-.header_top_comp_2_title_1:after{
-    position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 100px;
-    margin-left: -165px;
-}
-
-.header_top_comp_2_title_111 {
-    margin-top: 10px;
-    margin-left: 10px;
-
-}
-
-
-.header_top_comp_2_title_11{
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 220px;
-    width: 280px;
-    font-size: 10px;
-}
-
-.header_top_comp_2_title_2{
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 310px;
-    width: 300px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
-}
-
-.header_top_comp_2_title_2:after{
-    position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 100px;
-    margin-left: -130px;
-}
-
-.header_top_comp_2_title_211 {
-    margin-top: 10px;
-    margin-left: 20px;
-
-}
-
-.header_top_comp_2_title_21{
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 360px;
-    width: 270px;
-    font-size: 10px;
-}
-
-.header_top_comp_2_title_3{
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 450px;
-    width: 270px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
-  .header_top_comp_2_title_3:after{
-    position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 90px;
-    margin-left: -120px;
-}
-
-.header_top_comp_2_title_311 {
-    margin-top: 280px;
-    margin-left: 20px;
-
-}
-
-.header_top_comp_2_title_31{
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 230px;
-    width: 320px;
-    font-size: 10px;
-}
-
-
-.header_top_comp_2_title_4 {
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 305px;
-    width: 270px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
-}
-
-.header_top_comp_2_title_4:after{
-    position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 100px;
+  .header_menu_supply4 {
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
     margin-left: -55px;
+    margin-top: 15px;
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header_menu_supply5 {
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
+    margin-left: -55px;
+    margin-top: 20px;
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header_menu_supply6 {
+    position: fixed;
+    max-width: 30px; /* Установите желаемую ширину для логотипа */
+    max-height: 60px;
+    margin-left: -55px;
+    margin-top: 30px;
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header_menu_supply_activate{
+    width: 390px;
+    height: 1185px;
+    background-color: black;
+    margin-top: -41px;
+    position: fixed;
+    z-index: 111111;
 }
 
-.header_top_comp_2_title_411 {
-    margin-top: 10px;
-    margin-left: 5px;
-
-}
-
-.header_top_comp_2_title_41{
+.header_menu_supply_activate_close{
+    margin-left: 170px;
     position: absolute;
-    margin-left: 45px;
-    margin-top: 355px;
-    width: 270px;
-    font-size: 10px;
+    z-index: 1112;
+    margin-top: 900px;
+    width: 55px;
+    height: 55px;
 }
 
-
-.header_top_comp_2_title_5{
+.header_menu_opacity_bgc{
+    width: 800px;
+    height: 1330px;
+    background-color: black;
+    margin-top: -50px;
+    margin-left: 1480px;
     position: absolute;
-    margin-left: 50px;
-    margin-top: 440px;
-    width: 200px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
+    z-index: 1111;
+  opacity: 0.2;
 }
 
-.header_top_comp_2_title_5:after{
+.scaled-iframe-container {
+    transform: scale(0.59);
+    transform-origin: 0 0;
+    width: 1px; /* Удвоение размера контейнера для компенсации масштабирования */
+    height: 200%;
+    overflow: auto; /* Скрытие частей сайта, выходящих за пределы контейнера */
+}
+
+.scaled-iframe-container iframe {
+    width: 72%;
+    height: 65%;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+
+
+.header_menu_menu{
     position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 100px;
-    margin-left: -195px;
+    width: 500px;
+    height: 800px;
+    margin-left: 130px;
+    margin-top: -2150px;
+    z-index: 9999;
 }
 
-.header_top_comp_2_title_511 {
-    margin-top: 500px;
-    margin-left: -25px;
+.header_menu_menu a{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    margin-top: 35px;
+    font-family: "Cera Pro Regular", sans-serif;
+}
+
+.header_menu_menu a:hover{
+    color: #18b472;
 
 }
 
-.header_top_comp_2_title_51{
+.header_menu_menu a:nth-child(6){
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+.header_menu_menu a:nth-child(7){
+    font-size: 18px;
+}
+
+
+  .header_top_2 {
     position: absolute;
-    margin-left: 75px;
-    margin-top: 270px;
-    width: 270px;
-    font-size: 10px;
-}
+    color: black;
+    margin-left: -35px;
+    margin-top: -10px;
+    width: 380px;
 
 
-.header_top_comp_2_title_6{
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 360px;
-    width: 200px;
-    font-size: 14px;
-    font-family: "Cera Pro Medium", sans-serif;
-}
+    .header_top_2_title {
+      position: absolute;
+      margin-left: 100px;
+      margin-top: 80px;
+      font-family: "Cera Pro bold", sans-serif;
+      width: 250px;
+      font-size: 14px;
+      text-align: center;
+      z-index: 999;
+    }
 
-  .header_top_comp_2_title_6:after{
-    position: absolute;
-    content: '';
-    border: 1px black solid;
-    width: 270px;
-    margin-top: 85px;
-    margin-left: -145px;
-}
+    .header_top_comp_2_title_1 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 200px;
+      width: 170px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+      z-index: 999;
+      color: black;
+    }
 
-.header_top_comp_2_title_611 {
-    margin-top: 10px;
-    margin-left: -25px;
+    .header_top_comp_2_title_1:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 100px;
+      margin-left: -165px;
+    }
 
-}
+    .header_top_comp_2_title_111 {
+      margin-top: 10px;
+      margin-left: 10px;
+
+    }
 
 
-.header_top_comp_2_title_61{
-    position: absolute;
-    margin-left: 75px;
-    margin-top: 385px;
-    width: 350px;
-    font-size: 10px;
-}
-}
-.header_top {
+    .header_top_comp_2_title_11 {
+      position: absolute;
+      margin-left: 40px;
+      margin-top: 220px;
+      width: 280px;
+      font-size: 10px;
+    }
+
+    .header_top_comp_2_title_2 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 310px;
+      width: 300px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+    }
+
+    .header_top_comp_2_title_2:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 100px;
+      margin-left: -130px;
+    }
+
+    .header_top_comp_2_title_211 {
+      margin-top: 10px;
+      margin-left: 20px;
+
+    }
+
+    .header_top_comp_2_title_21 {
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 360px;
+      width: 270px;
+      font-size: 10px;
+    }
+
+    .header_top_comp_2_title_3 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 450px;
+      width: 270px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+      color: black;
+      text-decoration: none;
+    }
+
+    .header_top_comp_2_title_3:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 90px;
+      margin-left: -120px;
+    }
+
+    .header_top_comp_2_title_311 {
+      margin-top: 280px;
+      margin-left: 20px;
+
+    }
+
+    .header_top_comp_2_title_31 {
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 230px;
+      width: 320px;
+      font-size: 10px;
+    }
+
+
+    .header_top_comp_2_title_4 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 305px;
+      width: 270px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+    }
+
+    .header_top_comp_2_title_4:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 100px;
+      margin-left: -55px;
+    }
+
+    .header_top_comp_2_title_411 {
+      margin-top: 10px;
+      margin-left: 5px;
+
+    }
+
+    .header_top_comp_2_title_41 {
+      position: absolute;
+      margin-left: 45px;
+      margin-top: 355px;
+      width: 270px;
+      font-size: 10px;
+    }
+
+
+    .header_top_comp_2_title_5 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 440px;
+      width: 200px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+    }
+
+    .header_top_comp_2_title_5:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 100px;
+      margin-left: -195px;
+    }
+
+    .header_top_comp_2_title_511 {
+      margin-top: 500px;
+      margin-left: -25px;
+
+    }
+
+    .header_top_comp_2_title_51 {
+      position: absolute;
+      margin-left: 75px;
+      margin-top: 270px;
+      width: 270px;
+      font-size: 10px;
+    }
+
+
+    .header_top_comp_2_title_6 {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 360px;
+      width: 200px;
+      font-size: 14px;
+      font-family: "Cera Pro Medium", sans-serif;
+    }
+
+    .header_top_comp_2_title_6:after {
+      position: absolute;
+      content: '';
+      border: 1px black solid;
+      width: 270px;
+      margin-top: 85px;
+      margin-left: -145px;
+    }
+
+    .header_top_comp_2_title_611 {
+      margin-top: 10px;
+      margin-left: -25px;
+
+    }
+
+
+    .header_top_comp_2_title_61 {
+      position: absolute;
+      margin-left: 75px;
+      margin-top: 385px;
+      width: 350px;
+      font-size: 10px;
+    }
+  }
+
+  .header_top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,40 +466,40 @@
     position: absolute;
     margin-left: 10px;
     margin-top: 360px;
-     width: 80px;
-  visibility: hidden;
-}
+    width: 80px;
+    visibility: hidden;
+  }
 
 
-.header_top_comp_title_1{
+  .header_top_comp_title_1 {
     position: absolute;
 
-}
+  }
 
-.header_top_comp_title_2{
+  .header_top_comp_title_2 {
     position: absolute;
 
-}
+  }
 
-.header_top_comp_title_3{
+  .header_top_comp_title_3 {
     position: absolute;
 
-}
+  }
 
-.header_top_comp_title_4{
+  .header_top_comp_title_4 {
     position: absolute;
 
-}
+  }
 
-.header_top_comp_title_5{
+  .header_top_comp_title_5 {
     position: absolute;
 
-}
+  }
 
-.header_top_comp_title_6{
+  .header_top_comp_title_6 {
     position: absolute;
 
-}
+  }
 
   .header_top_comp_2_title_1_img {
     position: absolute;
@@ -410,484 +507,493 @@
     height: 1px;
     margin-left: 10px;
     margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
     visibility: hidden;
-}
-.header_top_comp_2_title_2_img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
-    visibility: hidden;
-}
-.header_top_comp_2_title_3_img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
-    visibility: hidden;
-}
-.header_top_comp_2_title_4_img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
-    visibility: hidden;
-}
-.header_top_comp_2_title_5_img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
-    visibility: hidden;
-}
-.header_top_comp_2_title_6_img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    margin-top: 330px;
-    animation: opacity 0.1s ;  /* Плавный переход между состояниями видимости */
-  z-index: 50 ;
-  opacity: 0;
-    visibility: hidden;
-}
-
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .header_top_comp_2_title_2_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
   }
-}
 
-@keyframes unrotateCircle {
-  from {
-    transform: rotate(360deg);
+  .header_top_comp_2_title_3_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
   }
-  to {
-    transform: rotate(0deg);
+
+  .header_top_comp_2_title_4_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
   }
-}
 
-.header_top_circle {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  animation: rotateCircle 60s infinite linear;
-  margin-left: -1750px; /* Adjusted for the specific needs of your layout */
-  margin-top: 200px; /* Adjusted for the specific needs of your layout */
-  transform-origin: 250px 250px; /* Center of the circle */
-  visibility: hidden;
-}
+  .header_top_comp_2_title_5_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+  }
 
-.wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-   transform-origin: 250px 250px;
-  visibility: hidden;
-  /* Your transform will be inline-styled in React */
-}
+  .header_top_comp_2_title_6_img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 330px;
+    animation: opacity 0.1s; /* Плавный переход между состояниями видимости */
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+  }
 
-.header_top_circle_1, .header_top_circle_2, .header_top_circle_3, .header_top_circle_4, .header_top_circle_5, .header_top_circle_6, .header_top_circle_7, .header_top_circle_8, .header_top_circle_9, .header_top_circle_10, .header_top_circle_11 {
-  width: 25%;
-  transform: translate(-50%, -50%) rotate(var(--rotate)); /* Correct syntax */
-  animation: unrotateCircle 60s infinite linear;
-  transform-origin: center center;
-  filter: grayscale(100%);
-  visibility: hidden;
-}
+  @keyframes rotateCircle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
-.logo_circle{
-  margin-top: 650px;
-  position: absolute;
-  margin-left: 650px;
-  visibility: hidden;
-}
+  @keyframes unrotateCircle {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .header_top_circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: rotateCircle 60s infinite linear;
+    margin-left: -1750px; /* Adjusted for the specific needs of your layout */
+    margin-top: 200px; /* Adjusted for the specific needs of your layout */
+    transform-origin: 250px 250px; /* Center of the circle */
+    visibility: hidden;
+  }
+
+  .wrapper_div_1, .wrapper_div_2, .wrapper_div_3, .wrapper_div_4, .wrapper_div_5, .wrapper_div_6, .wrapper_div_7, .wrapper_div_8, .wrapper_div_9, .wrapper_div_10, .wrapper_div_11 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 250px 250px;
+    visibility: hidden;
+    /* Your transform will be inline-styled in React */
+  }
+
+  .header_top_circle_1, .header_top_circle_2, .header_top_circle_3, .header_top_circle_4, .header_top_circle_5, .header_top_circle_6, .header_top_circle_7, .header_top_circle_8, .header_top_circle_9, .header_top_circle_10, .header_top_circle_11 {
+    width: 25%;
+    transform: translate(-50%, -50%) rotate(var(--rotate)); /* Correct syntax */
+    animation: unrotateCircle 60s infinite linear;
+    transform-origin: center center;
+    filter: grayscale(100%);
+    visibility: hidden;
+  }
+
+  .logo_circle {
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 650px;
+    visibility: hidden;
+  }
 
 
-.header_top_circle img:hover {
-  filter: url(#ambilight) grayscale(0%);
-}
+  .header_top_circle img:hover {
+    filter: url(#ambilight) grayscale(0%);
+  }
 
-.header_container_1{
+  .header_container_1 {
     width: 390px;
     height: 550px;
     margin-top: 950px;
     position: absolute;
     background-color: rgba(246, 245, 245, 0.97);
     z-index: 1;
-}
+  }
 
-.header_container_1_title {
+  .header_container_1_title {
     color: black;
     width: 350px;
     font-size: 16px;
     margin-left: 10px;
     font-weight: 700;
-    font-family: "Cera Pro Regular",sans-serif;
+    font-family: "Cera Pro Regular", sans-serif;
     margin-top: 40px;
     text-align: center;
-}
+  }
 
 
-  .header_container_1_title:after{
+  .header_container_1_title:after {
     content: '';
     border: 1.3px black solid;
     width: 375px;
     position: absolute;
     margin-top: 410px;
     margin-left: -325px;
-}
+  }
 
 
-.header_container_1_man_1{
+  .header_container_1_man_1 {
     width: 44px;
     height: 45px;
     margin-left: 170px;
     margin-top: 20px;
     position: absolute;
     opacity: 1;
-}
+  }
 
-.header_container_1_year{
+  .header_container_1_year {
     position: absolute;
     font-size: 16px;
     color: #18b472;
     margin-top: 20px;
     margin-left: 111px;
-}
+  }
 
-.header_container_1_prod{
-        color: black;
+  .header_container_1_prod {
+    color: black;
     margin-top: 40px;
     position: absolute;
     font-size: 13px;
     margin-left: 13px;
 
-}
+  }
 
-    .header_container_1_prod:after{
+  .header_container_1_prod:after {
     content: '';
     border: 1.3px black solid;
     width: 375px;
     position: absolute;
     margin-top: 35px;
     margin-left: -140px;
-}
+  }
 
-.header_container_1_num{
+  .header_container_1_num {
     position: absolute;
     font-size: 16px;
     color: #18b472;
     margin-top: 100px;
     margin-left: 200px;
 
-}
+  }
 
-.header_container_1_proekt{
-            color: black;
+  .header_container_1_proekt {
+    color: black;
     margin-top: 125px;
     position: absolute;
     font-size: 14px;
     margin-left: 200px;
-}
+  }
 
-      .header_container_1_proekt:after{
+  .header_container_1_proekt:after {
     content: '';
     border: 1.3px black solid;
     width: 375px;
     position: absolute;
     margin-top: 45px;
     margin-left: -355px;
-}
+  }
 
-.header_container_1_bolee{
+  .header_container_1_bolee {
     position: absolute;
     font-size: 16px;
     color: #18b472;
     margin-top: 200px;
     margin-left: 80px;
 
-}
+  }
 
-.header_container_1_spec{
-            color: black;
+  .header_container_1_spec {
+    color: black;
     margin-top: 220px;
     position: absolute;
     font-size: 14px;
     margin-left: 54px;
-}
+  }
 
-        .header_container_1_spec:after{
+  .header_container_1_spec:after {
     content: '';
     border: 1.3px black solid;
     width: 375px;
     position: absolute;
     margin-top: 50px;
     margin-left: -140px;
-}
+  }
 
-.header_container_1_sobs{
+  .header_container_1_sobs {
     position: absolute;
     font-size: 16px;
     color: #18b472;
     margin-top: 300px;
     margin-left: 200px;
-}
+  }
 
-.header_container_1_it{
-            color: black;
+  .header_container_1_it {
+    color: black;
     margin-top: 320px;
     position: absolute;
     font-size: 14px;
     margin-left: 200px;
-}
+  }
 
-.header_container_1_list_1{
+  .header_container_1_list_1 {
     position: absolute;
-        width: 40px;
+    width: 40px;
     height: 40px;
     margin-left: 125px;
     margin-top: 110px;
-  opacity: 1;
-}
-.header_container_1_comp_1{
+    opacity: 1;
+  }
+
+  .header_container_1_comp_1 {
     width: 50px;
     height: 55px;
     margin-left: 120px;
     margin-top: 295px;
     position: absolute;
-  opacity: 1;
-}
-.header_container_1_comp_2{
+    opacity: 1;
+  }
+
+  .header_container_1_comp_2 {
     width: 17px;
     height: 17px;
     margin-left: 128px;
     margin-top: 310px;
     position: absolute;
-  opacity: 1;
-}
+    opacity: 1;
+  }
 
-  .header_container_1_man_2{
+  .header_container_1_man_2 {
     width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 200px;
-        position: absolute;
-  visibility: hidden;
-}
+    position: absolute;
+    visibility: hidden;
+  }
 
-.header_container_1_man_3{
+  .header_container_1_man_3 {
     width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 150px;
-        position: absolute;
-  visibility: hidden;
-}
+    position: absolute;
+    visibility: hidden;
+  }
 
-.header_container_1_man_4{
+  .header_container_1_man_4 {
     width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 200px;
-        position: absolute;
-  visibility: hidden;
-}
+    position: absolute;
+    visibility: hidden;
+  }
 
-.header_container_1_man_5{
+  .header_container_1_man_5 {
     width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 150px;
-        position: absolute;
-  visibility: hidden;
-}
+    position: absolute;
+    visibility: hidden;
+  }
 
-.header_container_1_man_6{
+  .header_container_1_man_6 {
     width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 100px;
-        position: absolute;
+    position: absolute;
     visibility: hidden;
 
-}
-.header_container_1_list_2{
-        position: absolute;
-            width: 40px;
+  }
+
+  .header_container_1_list_2 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 200px;
     visibility: hidden;
 
-}
-.header_container_1_strela_1{
-  width: 50px;
-  margin-left: 190px;
-  position: absolute;
-  margin-top: 200px;
-  z-index: 1;
-}
+  }
 
-.header_container_1_list_3{
-        position: absolute;
-            width: 40px;
+  .header_container_1_strela_1 {
+    width: 50px;
+    margin-left: 190px;
+    position: absolute;
+    margin-top: 200px;
+    z-index: 1;
+  }
+
+  .header_container_1_list_3 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 200px;
     visibility: hidden;
 
-}
+  }
 
-.header_container_1_list_4{
-        position: absolute;
-        width: 40px;
-    height: 40px;
-    margin-left: 1px;
-    margin-top: 140px;
-  visibility: hidden;
-}
-
-.header_container_1_list_5{
-        position: absolute;
-            width: 40px;
+  .header_container_1_list_4 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 140px;
     visibility: hidden;
-}
+  }
 
-.header_container_1_list_6{
-        position: absolute;
-            width: 40px;
+  .header_container_1_list_5 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 140px;
     visibility: hidden;
-}
+  }
 
-.header_container_1_list_7{
-        position: absolute;
-            width: 40px;
+  .header_container_1_list_6 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 1px;
+    margin-top: 140px;
+    visibility: hidden;
+  }
+
+  .header_container_1_list_7 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 80px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
-.header_container_1_list_8{
-        position: absolute;
-                width: 40px;
+  .header_container_1_list_8 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 80px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
-.header_container_1_list_9{
-        position: absolute;
-                width: 40px;
+  .header_container_1_list_9 {
+    position: absolute;
+    width: 40px;
     height: 40px;
     margin-left: 1px;
     margin-top: 80px;
     visibility: hidden;
 
-}
-.header_container_1_comp_3{
+  }
+
+  .header_container_1_comp_3 {
     width: 75px;
     height: 75px;
     margin-left: 1px;
     margin-top: 100px;
     position: absolute;
     visibility: hidden;
-}
+  }
 
-  .header_container_1_num_dop{
-  position: absolute;
-      font-size: 20px;
+  .header_container_1_num_dop {
+    position: absolute;
+    font-size: 20px;
     color: #18b472;
     margin-top: 1px;
     margin-left: 1px;
     visibility: hidden;
-}
+  }
 
-.header_container_1_comp_4{
+  .header_container_1_comp_4 {
     width: 25px;
     margin-left: 1px;
     margin-top: 118px;
     position: absolute;
     visibility: hidden;
-}
+  }
 
-.header_container_1_comp_5{
+  .header_container_1_comp_5 {
     width: 75px;
     height: 75px;
     margin-left: 1px;
     margin-top: 180px;
     position: absolute;
     visibility: hidden;
-}
+  }
 
-.header_container_1_comp_6{
+  .header_container_1_comp_6 {
     width: 25px;
     height: 25px;
     margin-left: 1px;
     margin-top: 199px;
     position: absolute;
     visibility: hidden;
-}
+  }
 
-.header_container_1_comp_7{
+  .header_container_1_comp_7 {
     width: 75px;
     height: 75px;
     margin-left: 1px;
     margin-top: 100px;
     position: absolute;
     visibility: hidden;
-}
+  }
 
-.header_container_1_comp_8{
+  .header_container_1_comp_8 {
     width: 25px;
     height: 25px;
     margin-left: 1px;
     margin-top: 118px;
     position: absolute;
-  visibility: hidden;
-}
-  
-  .visibl{
-  width: 1px;
-  height: 1px;
-  position: absolute;
-      margin-left: 6px;
-  margin-top: 1px;
-  z-index: 2;
-background-color: rgba(246, 245, 245);
     visibility: hidden;
-}
+  }
 
+  .visibl {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    margin-left: 6px;
+    margin-top: 1px;
+    z-index: 2;
+    background-color: rgba(246, 245, 245);
+    visibility: hidden;
+  }
 
 
   .header_container_2 {
@@ -1075,7 +1181,7 @@ background-color: rgba(246, 245, 245);
       content: '';
       position: absolute;
       margin-top: -67.7px;
-      margin-left: 94px;
+      margin-left: -94px;
       border: 1.4px solid black;
       border-radius: 50%; /* Создаем круглую форму */
       width: 200px; /* Ширина должна быть равна высоте для полного круга */
@@ -1273,37 +1379,38 @@ background-color: rgba(246, 245, 245);
       margin-left: -140px;
     }
   }
-.header_container_5{
+
+  .header_container_5 {
     position: absolute;
     width: 390px;
     height: 400px;
     background-color: white;
     margin-top: 2200px;
-        z-index: 999;
-}
+    z-index: 999;
+  }
 
-.circle_img_2{
-  position: absolute;
-  margin-left: 100px;
-  width: 200px;
-  z-index: 1001;
-  margin-top: 380px;
+  .circle_img_2 {
+    position: absolute;
+    margin-left: 100px;
+    width: 200px;
+    z-index: 1001;
+    margin-top: 380px;
     zoom: 40%;
-}
+  }
 
-.circle_button{
-  position: absolute;
-  margin-left: 110px;
-  margin-top: 700px;
-  background-color: white;
-  color: black;
-  border: 1px black solid;
-  zoom: 40%;
-  padding: 10px 40px 10px 40px;
-  font-size: 28px;
-}
+  .circle_button {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 700px;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    zoom: 40%;
+    padding: 10px 40px 10px 40px;
+    font-size: 28px;
+  }
 
-.header_circle_three_color{
+  .header_circle_three_color {
     width: 300px;
     height: 300px;
     border: 50px #ffffff solid;
@@ -1313,316 +1420,315 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     z-index: 999;
     background-color: #000000;
-  transition: transform 0.5s;
-  transform-origin: center;
-  zoom: 40%;
-}
+    transition: transform 0.5s;
+    transform-origin: center;
+    zoom: 40%;
+  }
 
-.header_container_5_text{
-  position: absolute;
-  width: 550px;
-  height: 355px;
-  margin-top: 205px;
-  margin-left: 420px;
-  zoom: 40%;
-  font-size: 27px;
-}
+  .header_container_5_text {
+    position: absolute;
+    width: 550px;
+    height: 355px;
+    margin-top: 205px;
+    margin-left: 420px;
+    zoom: 40%;
+    font-size: 27px;
+  }
 
-        .circle-container {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -33px;
-        }
+  .circle-container {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -33px;
+  }
 
-        .circle-outer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#ff0202 0% 16%, transparent 16% 100%);
-                transform-origin: center;
-        }
-
-
-        .circle-inner {
-            position: absolute;
-            top: 25px;  /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: white;  /* This should match the background color of your page or container */
-        }
-
-.circle-container_2 {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -360px;
-        }
-
-        .circle-outer_2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#fc8d02 0% 16%, transparent 16% 100%);
-            transform: rotate(60deg);
-            transform-origin: center;
-        }
+  .circle-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#ff0202 0% 16%, transparent 16% 100%);
+    transform-origin: center;
+  }
 
 
-        .circle-inner_2 {
-            position: absolute;
-            top: 25px;  /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: #000000;  /* This should match the background color of your page or container */
-        }
+  .circle-inner {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: white; /* This should match the background color of your page or container */
+  }
 
-.circle-container_3 {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -360px;
-        }
+  .circle-container_2 {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -360px;
+  }
 
-        .circle-outer_3 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#ebfd00 0% 16%, transparent 16% 100%);
-            transform: rotate(120deg);
-            transform-origin: center;
-        }
-
-
-        .circle-inner_3 {
-            position: absolute;
-            top: 25px; /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: white; /* This should match the background color of your page or container */
-        }
+  .circle-outer_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#fc8d02 0% 16%, transparent 16% 100%);
+    transform: rotate(60deg);
+    transform-origin: center;
+  }
 
 
-.circle-container_4 {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -360px;
-        }
+  .circle-inner_2 {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: #000000; /* This should match the background color of your page or container */
+  }
 
-        .circle-outer_4 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#18b472 0% 16%, transparent 16% 100%);
-            transform: rotate(180deg);
-            transform-origin: center;
-        }
+  .circle-container_3 {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -360px;
+  }
 
-
-        .circle-inner_4 {
-            position: absolute;
-            top: 25px;  /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: #ffffff;  /* This should match the background color of your page or container */
-        }
-
-.circle-container_5 {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -360px;
-        }
-
-        .circle-outer_5{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#0039ff 0% 16%, transparent 16% 100%);
-            transform: rotate(240deg);
-            transform-origin: center;
-        }
-
-        .header_container_5_text_1{
-            color: black;
-            display: block;
-        }
-
-        .header_container_5_text_2{
-            color: black;
-            display: none;
-        }
-
-        .header_container_5_text_3{
-            color: black;
-            display: none;
-        }
-
-        .header_container_5_text_4{
-            color: black;
-            display: none;
-        }
-
-        .header_container_5_text_5{
-            color: black;
-            display: none;
-        }
-
-        .header_container_5_text_6{
-            color: black;
-            display: none;
-        }
+  .circle-outer_3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#ebfd00 0% 16%, transparent 16% 100%);
+    transform: rotate(120deg);
+    transform-origin: center;
+  }
 
 
-        .circle-inner_5 {
-            position: absolute;
-            top: 25px;  /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: #ffffff;  /* This should match the background color of your page or container */
-        }
-
-.circle-container_6 {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            margin-left: -33px;
-            margin-top: -360px;
-        }
-
-        .circle-outer_6{
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(#8f00f3 0% 16%, transparent 16% 100%);
-            transform: rotate(300deg);
-            transform-origin: center;
-        }
+  .circle-inner_3 {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: white; /* This should match the background color of your page or container */
+  }
 
 
-        .circle-inner_6 {
-            position: absolute;
-            top: 25px;  /* Adjust this value to change the thickness of the border */
-            left: 25px;
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
-            border-radius: 50%;
-            background-color: #ffffff;  /* This should match the background color of your page or container */
-        }
+  .circle-container_4 {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -360px;
+  }
 
-.header_circle_color_2{
+  .circle-outer_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#18b472 0% 16%, transparent 16% 100%);
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
 
-}
 
-.header_circle_color_3{
+  .circle-inner_4 {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: #ffffff; /* This should match the background color of your page or container */
+  }
 
-}
+  .circle-container_5 {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -360px;
+  }
 
-.header_container_6{
+  .circle-outer_5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#0039ff 0% 16%, transparent 16% 100%);
+    transform: rotate(240deg);
+    transform-origin: center;
+  }
+
+  .header_container_5_text_1 {
+    color: black;
+    display: block;
+  }
+
+  .header_container_5_text_2 {
+    color: black;
+    display: none;
+  }
+
+  .header_container_5_text_3 {
+    color: black;
+    display: none;
+  }
+
+  .header_container_5_text_4 {
+    color: black;
+    display: none;
+  }
+
+  .header_container_5_text_5 {
+    color: black;
+    display: none;
+  }
+
+  .header_container_5_text_6 {
+    color: black;
+    display: none;
+  }
+
+
+  .circle-inner_5 {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: #ffffff; /* This should match the background color of your page or container */
+  }
+
+  .circle-container_6 {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-left: -33px;
+    margin-top: -360px;
+  }
+
+  .circle-outer_6 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#8f00f3 0% 16%, transparent 16% 100%);
+    transform: rotate(300deg);
+    transform-origin: center;
+  }
+
+
+  .circle-inner_6 {
+    position: absolute;
+    top: 25px; /* Adjust this value to change the thickness of the border */
+    left: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    background-color: #ffffff; /* This should match the background color of your page or container */
+  }
+
+  .header_circle_color_2 {
+
+  }
+
+  .header_circle_color_3 {
+
+  }
+
+  .header_container_6 {
     position: absolute;
     width: 390px;
     height: 620px;
     background-color: white;
     margin-top: 2580px;
-}
+  }
 
-.header_container_6_title{
+  .header_container_6_title {
     font-size: 18px;
     font-family: "Cera Pro Bold", sans-serif;
     position: absolute;
     margin-left: 130px;
     margin-top: 1px;
     color: black;
-}
+  }
 
-.header_container_6_block{
+  .header_container_6_block {
     position: absolute;
-}
+  }
 
-.header_container_6_block_1{
+  .header_container_6_block_1 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
     margin-top: 90px;
     margin-left: 25px;
-  zoom: 40%;
+    zoom: 40%;
 
-}
+  }
 
-.header_container_6_block_1_fon{
+  .header_container_6_block_1_fon {
     width: 440px;
     height: 285px;
-    background-color: rgba(142, 193, 171, 0.32); ;
+    background-color: rgba(142, 193, 171, 0.32);;
 
-}
+  }
 
-.header_container_6_block_1_img_1{
+  .header_container_6_block_1_img_1 {
     width: 340px;
     height: 200px;
     margin-top: 40px;
     position: absolute;
     margin-left: 30px;
-}
+  }
 
-.header_container_6_block_1_fon:hover .header_container_6_block_1_img_1{
+  .header_container_6_block_1_fon:hover .header_container_6_block_1_img_1 {
     transform: scale(1.178);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
 
-
-.header_container_6_block_1_text_1{
+  .header_container_6_block_1_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_1_text_2{
+  .header_container_6_block_1_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-.header_container_6_block_2{
+  .header_container_6_block_2 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
@@ -1630,274 +1736,273 @@ background-color: rgba(246, 245, 245);
     margin-left: 510px;
     position: absolute;
     zoom: 40%;
-}
+  }
 
-.header_container_6_block_2_fon{
+  .header_container_6_block_2_fon {
     width: 440px;
     height: 285px;
     background-color: #DAE4EB;
 
-}
+  }
 
-.header_container_6_block_2_img_1{
+  .header_container_6_block_2_img_1 {
     width: 360px;
     height: 240px;
     margin-top: 24px;
     position: absolute;
     margin-left: 40px;
-}
+  }
 
-.header_container_6_block_2_fon:hover .header_container_6_block_2_img_1{
+  .header_container_6_block_2_fon:hover .header_container_6_block_2_img_1 {
     transform: scale(1.178);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
 
-.header_container_6_block_2_text_1{
+  .header_container_6_block_2_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_2_text_2{
+  .header_container_6_block_2_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-.header_container_6_block_3{
+  .header_container_6_block_3 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
     margin-top: 50px;
     margin-left: 25px;
     position: absolute;
-  zoom: 40%;
-}
+    zoom: 40%;
+  }
 
-.header_container_6_block_3_fon{
+  .header_container_6_block_3_fon {
     width: 440px;
     height: 285px;
     background-color: #F8F1DE;
-     position: relative;
+    position: relative;
 
-}
+  }
 
 
-.header_container_6_block_3_img_1{
+  .header_container_6_block_3_img_1 {
     width: 360px;
     height: 240px;
     margin-top: 24px;
     position: absolute;
     margin-left: 40px;
-}
+  }
 
-.header_container_6_block_3_fon:hover .header_container_6_block_3_img_1{
+  .header_container_6_block_3_fon:hover .header_container_6_block_3_img_1 {
     transform: scale(1.178);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
 
-.header_container_6_block_3_text_1{
+  .header_container_6_block_3_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_3_text_2{
+  .header_container_6_block_3_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-
-.header_container_6_block_4{
+  .header_container_6_block_4 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
     margin-top: 50px;
     margin-left: 510px;
     zoom: 40%;
-}
+  }
 
-.header_container_6_block_4_fon{
+  .header_container_6_block_4_fon {
     width: 440px;
     height: 285px;
     background-color: #EBDADA;
 
-}
+  }
 
-.header_container_6_block_4_img_1{
+  .header_container_6_block_4_img_1 {
     width: 360px;
     height: 240px;
     margin-top: 24px;
     position: absolute;
     margin-left: 40px;
-}
+  }
 
-.header_container_6_block_4_fon:hover .header_container_6_block_4_img_1{
+  .header_container_6_block_4_fon:hover .header_container_6_block_4_img_1 {
     transform: scale(1.178);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
-.header_container_6_block_5_fon:hover .header_container_6_block_5_img_1{
+  .header_container_6_block_5_fon:hover .header_container_6_block_5_img_1 {
     transform: scale(1.26);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
-.header_container_6_block_6_fon:hover .header_container_6_block_6_img_1{
+  .header_container_6_block_6_fon:hover .header_container_6_block_6_img_1 {
     transform: scale(1.23);
-    transition: transform 0.3s ease;  /* Плавный переход */
-}
+    transition: transform 0.3s ease; /* Плавный переход */
+  }
 
 
-.header_container_6_block_4_text_1{
+  .header_container_6_block_4_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_4_text_2{
+  .header_container_6_block_4_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-.header_container_6_block_5{
+  .header_container_6_block_5 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
     margin-top: 50px;
     margin-left: 25px;
     position: absolute;
-  zoom: 40%;
-}
+    zoom: 40%;
+  }
 
-.header_container_6_block_5_fon{
+  .header_container_6_block_5_fon {
     width: 440px;
     height: 285px;
     background-color: #E4DAEB;
 
-}
+  }
 
-.header_container_6_block_5_img_1{
+  .header_container_6_block_5_img_1 {
     width: 340px;
     height: 200px;
     margin-top: 45px;
     position: absolute;
     margin-left: 50px;
-}
+  }
 
-.header_container_6_block_5_img_2{
+  .header_container_6_block_5_img_2 {
     width: 340px;
     height: 200px;
     margin-top: -240px;
     position: absolute;
     margin-left: 50px;
-}
+  }
 
 
-.header_container_6_block_5_text_1{
+  .header_container_6_block_5_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_5_text_2{
+  .header_container_6_block_5_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-.header_container_6_block_6{
+  .header_container_6_block_6 {
     width: 440px;
     height: 440px;
     background-color: #ffffff;
     margin-top: 50px;
     margin-left: 510px;
     position: absolute;
-  zoom: 40%;
-}
+    zoom: 40%;
+  }
 
-.header_container_6_block_6_fon{
+  .header_container_6_block_6_fon {
     width: 440px;
     height: 285px;
     background-color: #F4E8DA;
 
-}
+  }
 
-.header_container_6_block_6_img_1{
+  .header_container_6_block_6_img_1 {
     width: 340px;
     height: 200px;
     margin-top: 40px;
     position: absolute;
     margin-left: 50px;
-}
+  }
 
-.header_container_6_block_6_img_2{
+  .header_container_6_block_6_img_2 {
     width: 340px;
     height: 200px;
     margin-top: -240px;
     position: absolute;
     margin-left: 50px;
-}
+  }
 
 
-.header_container_6_block_6_text_1{
+  .header_container_6_block_6_text_1 {
     color: black;
     font-size: 30px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-left: -2px;
     margin-top: 18px;
-}
+  }
 
-.header_container_6_block_6_text_2{
+  .header_container_6_block_6_text_2 {
     color: black;
     font-size: 27px;
     font-family: "Cera Pro Light", sans-serif;
     margin-left: -2px;
     margin-top: -25px;
-}
+  }
 
 
-.header_container_4{
+  .header_container_4 {
     position: absolute;
     width: 390px;
     height: 100px;
     background-color: white;
     margin-top: 3350px;
-}
+  }
 
-.header_our_prem{
+  .header_our_prem {
     font-size: 18px;
     font-family: "Cera Pro Bold", sans-serif;
     position: absolute;
     margin-left: 110px;
     margin-top: -140px;
     color: black;
-}
+  }
 
-.header_our_uslugi_obol{
+  .header_our_uslugi_obol {
     width: 1410px;
     height: 720px;
     border: 1px grey solid;
@@ -1905,34 +2010,34 @@ background-color: rgba(246, 245, 245);
     margin-top: 140px;
     z-index: 999;
     zoom: 50%;
-  rotate: 90deg;
-}
+    rotate: 90deg;
+    overflow-x: hidden;
+        overflow-y: hidden;
+  }
 
-.header_our_uslugi_1{
+  .header_our_uslugi_1 {
     width: 80px;
     height: 720px;
     border-right: 1px grey solid;
     margin-left: 10px;
     position: absolute;
     background-color: white;
-}
+  }
 
-.black-grey_1 {
+  .black-grey_1 {
     width: 80px;
     height: 720px;
     background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
     position: absolute;
     margin-left: 0px;
-}
+  }
 
-.header_our_uslugi{
+  .header_our_uslugi {
     color: black;
-}
+  }
 
 
-
-
-.header_our_uslugi_geo{
+  .header_our_uslugi_geo {
     color: #282c34;
     margin-top: 505px;
     position: absolute;
@@ -1942,11 +2047,11 @@ background-color: rgba(246, 245, 245);
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
-  rotate: 270deg;
+    rotate: 270deg;
 
-}
+  }
 
-.header_our_uslugi_geo_3{
+  .header_our_uslugi_geo_3 {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -1956,9 +2061,9 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_geo_2{
+  .header_our_uslugi_geo_2 {
     color: black;
     margin-top: 530px;
     position: absolute;
@@ -1968,20 +2073,20 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.dop_1_button{
+  .dop_1_button {
     position: absolute;
     margin-left: 500px;
     margin-top: 500px;
-}
+  }
 
 
-.dop_1_title{
+  .dop_1_title {
 
-}
+  }
 
-.dop_1_geo_1{
+  .dop_1_geo_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 445px;
@@ -1993,34 +2098,20 @@ background-color: rgba(246, 245, 245);
     text-align: justify;
     position: absolute;
     rotate: 270deg;
-}
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_our_uslugi_2{
+  .header_our_uslugi_2 {
     width: 80px;
     height: 720px;
     position: absolute;
     background-color: white;
     margin-left: 1010px;
     border-left: 1px grey solid;
-}
+  }
 
 
-.header_our_uslugi_cadastr{
+  .header_our_uslugi_cadastr {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -2030,32 +2121,32 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.dop_blue-white{
+  .dop_blue-white {
     width: 80px;
     height: 720px;
     background-color: white;
     position: absolute;
     margin-left: 1010px;
-    border-right: 1px grey solid  ;
-}
+    border-right: 1px grey solid;
+  }
 
 
-.black-grey_2 {
+  .black-grey_2 {
     width: 80px;
     height: 720px;
-    background: linear-gradient(rgba(72,134,44, 0.4), rgba(66,128,59, 0.4), rgba(52,113,98, 0.4), rgb(12, 106, 227, 0.4), rgba(0,55,251, 0.6));
+    background: linear-gradient(rgba(72, 134, 44, 0.4), rgba(66, 128, 59, 0.4), rgba(52, 113, 98, 0.4), rgb(12, 106, 227, 0.4), rgba(0, 55, 251, 0.6));
 
     position: absolute;
     margin-left: 90px;
-}
+  }
 
-.dop_blue-white_1_1{
+  .dop_blue-white_1_1 {
     margin-left: 90px;
-}
+  }
 
-.header_our_uslugi_cadastr_2{
+  .header_our_uslugi_cadastr_2 {
     color: black;
     margin-top: 530px;
     position: absolute;
@@ -2065,9 +2156,9 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_cadastr_3{
+  .header_our_uslugi_cadastr_3 {
     color: black;
     margin-top: 530px;
     position: absolute;
@@ -2080,19 +2171,19 @@ background-color: rgba(246, 245, 245);
     line-height: 30px;
     rotate: 270deg;
 
-}
+  }
 
-.header_our_uslugi_cadastr_img{
+  .header_our_uslugi_cadastr_img {
     position: absolute;
     width: 500px;
     height: 330px;
     margin-left: 420px;
     margin-top: 70px;
     z-index: 999;
-      rotate: 270deg;
-}
+    rotate: 270deg;
+  }
 
-.dop_2_1{
+  .dop_2_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 440px;
@@ -2103,42 +2194,28 @@ background-color: rgba(246, 245, 245);
     position: absolute;
     text-align: justify;
     z-index: 999;
-  rotate: 270deg;
-  zoom: 140%;
-}
+    rotate: 270deg;
+    zoom: 140%;
+  }
 
-.dop_2_button{
+  .dop_2_button {
     position: absolute;
     margin-left: 950px;
     margin-top: 500px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_our_uslugi_3{
+  .header_our_uslugi_3 {
     width: 80px;
     height: 720px;
     position: absolute;
     background-color: white;
     margin-left: 1090px;
     border-left: 1px grey solid;
-}
+  }
 
-.header_our_uslugi_proekt{
+  .header_our_uslugi_proekt {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -2148,31 +2225,31 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.dop_blue-white_2{
+  .dop_blue-white_2 {
     width: 80px;
     height: 720px;
     background-color: white;
     position: absolute;
     margin-left: 1090px;
     border-right: 1px grey solid;
-  border-left: 1px grey solid;
-}
+    border-left: 1px grey solid;
+  }
 
-.black-grey_3 {
+  .black-grey_3 {
     width: 80px;
     height: 720px;
     background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
     margin-left: 170px;
-}
+  }
 
-.dop_blue-white_1_2{
+  .dop_blue-white_1_2 {
     margin-left: 170px;
-}
+  }
 
 
-.header_our_uslugi_proekt_2{
+  .header_our_uslugi_proekt_2 {
     color: black;
     margin-top: 530px;
     position: absolute;
@@ -2182,9 +2259,9 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_proekt_3{
+  .header_our_uslugi_proekt_3 {
     color: black;
     margin-top: 528px;
     position: absolute;
@@ -2195,9 +2272,9 @@ background-color: rgba(246, 245, 245);
     font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
     rotate: 270deg;
-}
+  }
 
-.dop_3_1{
+  .dop_3_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 450px;
@@ -2206,89 +2283,42 @@ background-color: rgba(246, 245, 245);
     margin-top: 40px;
     position: absolute;
     text-align: justify;
-      rotate: 270deg;
+    rotate: 270deg;
     zoom: 144%;
-}
+  }
 
-.dop_3_button{
+  .dop_3_button {
     position: absolute;
     margin-left: 1250px;
     margin-top: 500px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
-.dop_4_button{
+  .dop_4_button {
     position: absolute;
     margin-left: 460px;
     margin-top: 475px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
-.dop_5_button{
+  .dop_5_button {
     position: absolute;
     margin-left: 470px;
     margin-top: 475px;
-  visibility: hidden;
-}
+    visibility: hidden;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_our_uslugi_4{
+  .header_our_uslugi_4 {
     width: 80px;
     height: 720px;
     position: absolute;
     background-color: white;
     margin-left: 1170px;
     border-left: 1px grey solid;
-}
+  }
 
-.header_our_uslugi_proekt_gaz{
-    color: black;
-    margin-top: 650px;
-    position: absolute;
-    margin-left: 60px;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    font-size: 30px;
-        font-family: "Cera Pro Medium", sans-serif;
-}
-
-.dop_blue-white_3{
-    width: 80px;
-    height: 720px;
-    background-color: white;
-    position: absolute;
-    margin-left: 1170px;
-    border-left: 1px grey solid;
-     border-right: 1px grey solid;
-}
-
-.black-grey_4 {
-    width: 80px;
-    height: 720px;
-    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
-    margin-left: 250px;
-}
-
-.dop_blue-white_1_3{
-    margin-left: 250px;
-}
-
-.header_our_uslugi_proekt_gaz_2{
+  .header_our_uslugi_proekt_gaz {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -2298,9 +2328,42 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_proekt_gaz_3{
+  .dop_blue-white_3 {
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1170px;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
+  }
+
+  .black-grey_4 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 250px;
+  }
+
+  .dop_blue-white_1_3 {
+    margin-left: 250px;
+  }
+
+  .header_our_uslugi_proekt_gaz_2 {
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+  }
+
+  .header_our_uslugi_proekt_gaz_3 {
     color: black;
     margin-top: 640px;
     position: absolute;
@@ -2310,10 +2373,10 @@ background-color: rgba(246, 245, 245);
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
-      rotate: 270deg;
-}
+    rotate: 270deg;
+  }
 
-.dop_4_1{
+  .dop_4_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 450px;
@@ -2321,74 +2384,22 @@ background-color: rgba(246, 245, 245);
     font-size: 16px;
     margin-top: 110px;
     position: absolute;
-        text-align: justify;
-      rotate: 270deg;
-  zoom: 140%;
-}
+    text-align: justify;
+    rotate: 270deg;
+    zoom: 140%;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_our_uslugi_5{
+  .header_our_uslugi_5 {
     width: 80px;
     height: 720px;
     position: absolute;
     background-color: white;
     margin-left: 1250px;
     border-left: 1px grey solid;
-}
+  }
 
-.header_our_uslugi_proekt_set{
-    color: black;
-    margin-top: 650px;
-    position: absolute;
-    margin-left: 60px;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    font-size: 30px;
-        font-family: "Cera Pro Medium", sans-serif;
-}
-
-.dop_blue-white_4{
-    width: 80px;
-    height: 720px;
-    background-color: white;
-    position: absolute;
-    margin-left: 1250px;
-    border-left: 1px grey solid;
-    border-right: 1px grey solid;
-}
-
-.dop_blue-white_1_4{
-  margin-left: 330px;
-}
-
-.black-grey_5 {
-    width: 80px;
-    height: 720px;
-    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
-    margin-left: 330px;
-}
-
-.header_our_uslugi_proekt_set_2{
+  .header_our_uslugi_proekt_set {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -2398,9 +2409,42 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_proekt_set_3{
+  .dop_blue-white_4 {
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1250px;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
+  }
+
+  .dop_blue-white_1_4 {
+    margin-left: 330px;
+  }
+
+  .black-grey_5 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 330px;
+  }
+
+  .header_our_uslugi_proekt_set_2 {
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+  }
+
+  .header_our_uslugi_proekt_set_3 {
     color: black;
     margin-top: 645px;
     position: absolute;
@@ -2410,10 +2454,10 @@ background-color: rgba(246, 245, 245);
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
-        rotate: 270deg;
-}
+    rotate: 270deg;
+  }
 
-.dop_5_1{
+  .dop_5_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 450px;
@@ -2421,33 +2465,12 @@ background-color: rgba(246, 245, 245);
     font-size: 16px;
     margin-top: 110px;
     position: absolute;
-        rotate: 270deg;
-  zoom: 144%;
-}
+    rotate: 270deg;
+    zoom: 144%;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_our_uslugi_6{
+  .header_our_uslugi_6 {
     width: 80px;
     height: 720px;
     margin-top: 0px;
@@ -2456,40 +2479,9 @@ background-color: rgba(246, 245, 245);
     margin-left: 1330px;
     border-right: 1px grey solid;
     border-left: 1px grey solid;
-}
+  }
 
-.header_our_uslugi_proekt_wat{
-    color: black;
-    margin-top: 650px;
-    position: absolute;
-    margin-left: 60px;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    font-size: 30px;
-        font-family: "Cera Pro Medium", sans-serif;
-}
-
-.dop_blue-white_5{
-    width: 80px;
-    height: 720px;
-    background-color: white;
-    position: absolute;
-    margin-left: 1330px;
-    border-right: 1px grey solid;
-    border-left: 1px grey solid;
-
-}
-
-.black-grey_6 {
-    width: 80px;
-    height: 720px;
-    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
-    margin-left: 410px;
-}
-
-
-.header_our_uslugi_proekt_wat_2{
+  .header_our_uslugi_proekt_wat {
     color: black;
     margin-top: 650px;
     position: absolute;
@@ -2499,9 +2491,40 @@ background-color: rgba(246, 245, 245);
     white-space: nowrap;
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
-}
+  }
 
-.header_our_uslugi_proekt_wat_3{
+  .dop_blue-white_5 {
+    width: 80px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1330px;
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
+
+  }
+
+  .black-grey_6 {
+    width: 80px;
+    height: 720px;
+    background: linear-gradient(rgba(72, 134, 255, 0.6), rgba(58, 118, 254, 0.6), rgba(22, 79, 252, 0.6), rgba(0, 55, 251, 0.6));
+    margin-left: 410px;
+  }
+
+
+  .header_our_uslugi_proekt_wat_2 {
+    color: black;
+    margin-top: 650px;
+    position: absolute;
+    margin-left: 60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Cera Pro Medium", sans-serif;
+  }
+
+  .header_our_uslugi_proekt_wat_3 {
     color: black;
     margin-top: 645px;
     position: absolute;
@@ -2511,11 +2534,11 @@ background-color: rgba(246, 245, 245);
     font-size: 30px;
     font-family: "Cera Pro Medium", sans-serif;
     z-index: 999;
-        rotate: 270deg;
-}
+    rotate: 270deg;
+  }
 
 
-.dop_6_1{
+  .dop_6_1 {
     color: black;
     font-family: "Cera Pro Regular", sans-serif;
     width: 450px;
@@ -2524,19 +2547,20 @@ background-color: rgba(246, 245, 245);
     margin-top: 100px;
     position: absolute;
     text-align: justify;
-        rotate: 270deg;
-  zoom: 143%;
-}
+    rotate: 270deg;
+    zoom: 143%;
+  }
 
 
-.container_container_3 {
-  position: absolute;
-  margin-top: 1px;
-  background-color: grey;
-  width: 1px;
-  height: 1px;
-  visibility: hidden;
-}
+  .container_container_3 {
+    position: absolute;
+    margin-top: 1px;
+    background-color: grey;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+  }
 
   .container_container_3 canvas {
     position: absolute;
@@ -2556,34 +2580,34 @@ background-color: rgba(246, 245, 245);
     z-index: 999;
   }
 
-.header_footer {
-  position: absolute;
-  width: 390px;
-  height: 170px;
-  background-color: #2c2b2b;
-  top: 4000px;
-}
+  .header_footer {
+    position: absolute;
+    width: 390px;
+    height: 170px;
+    background-color: #2c2b2b;
+    top: 4000px;
+  }
 
   .communication_footer_1 {
     width: 10px;
-}
+  }
 
-.communication_footer_1_img {
+  .communication_footer_1_img {
     width: 80px;
     height: 15px;
     margin-left: 160px;
     margin-top: 14px;
     position: absolute;
-}
+  }
 
-.communication_footer_2_img {
+  .communication_footer_2_img {
     margin-left: 5px;
     margin-top: 22px;
     position: absolute;
     width: 385px;
-}
+  }
 
-.communication_footer_1_text {
+  .communication_footer_1_text {
     width: 100px;
     margin-left: 10px;
     margin-top: 23px;
@@ -2591,100 +2615,100 @@ background-color: rgba(246, 245, 245);
     font-size: 10px;
     color: white;
     position: absolute;
-}
+  }
 
-.communication_footer_1_text:after {
+  .communication_footer_1_text:after {
     position: absolute;
     border: 1px grey solid;
     width: 1px;
     content: '';
     margin-top: 49px;
     margin-left: -348px;
-}
+  }
 
 
-.communication_footer_2 {
+  .communication_footer_2 {
     position: absolute;
     margin-left: 10px;
     margin-top: 71px;
     width: 170px;
-}
+  }
 
-.communication_footer_2_text_1 {
+  .communication_footer_2_text_1 {
     font-size: 8px;
     color: white;
 
-}
+  }
 
 
-/*.communication_footer_2_text_1:after{*/
-/*	border-bottom: dotted 5px white;*/
-/*    width: 1000px;*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    !*height: 1px;*!*/
-/*    margin-top: -80px;*/
-/*    margin-left: -500px;*/
-/*}*/
+  /*.communication_footer_2_text_1:after{*/
+  /*	border-bottom: dotted 5px white;*/
+  /*    width: 1000px;*/
+  /*    position: absolute;*/
+  /*    content: '';*/
+  /*    !*height: 1px;*!*/
+  /*    margin-top: -80px;*/
+  /*    margin-left: -500px;*/
+  /*}*/
 
 
-.communication_footer_2_text_2 {
+  .communication_footer_2_text_2 {
     font-size: 8px;
     font-family: "Cera Pro Regular", sans-serif;
     color: white;
     opacity: 0.5;
     width: 80px;
-}
+  }
 
-.communication_footer_2_text_3 {
+  .communication_footer_2_text_3 {
     font-size: 8px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-top: -7px;
     opacity: 0.5;
     width: 100px;
-}
+  }
 
 
-.communication_footer_4 {
+  .communication_footer_4 {
     width: 200px;
     position: absolute;
     margin-left: 100px;
     margin-top: 71px;
     visibility: hidden;
-}
+  }
 
-.communication_footer_5 {
+  .communication_footer_5 {
     width: 100px;
     position: absolute;
     margin-left: 130px;
     margin-top: 71px;
-}
+  }
 
-.communication_footer_5:before {
+  .communication_footer_5:before {
     position: absolute;
     border: 1px grey solid;
     width: 380px;
     content: '';
     margin-top: -7px;
     margin-left: -125px;
-}
+  }
 
-.communication_footer_6 {
+  .communication_footer_6 {
     width: 120px;
     position: absolute;
     margin-left: 220px;
     margin-top: 71px;
-}
+  }
 
 
-.communication_footer_2_text_5 {
+  .communication_footer_2_text_5 {
     font-size: 10px;
     font-family: "Cera Pro Regular", sans-serif;
     color: white;
     margin-left: 2px;
-}
+  }
 
-.communication_footer_2_text_4 {
+  .communication_footer_2_text_4 {
     font-size: 10px;
     font-family: "Cera Pro Regular", sans-serif;
     margin-top: 21px;
@@ -2692,28 +2716,28 @@ background-color: rgba(246, 245, 245);
     margin-left: -65px;
     color: white;
     opacity: 0.5;
-}
+  }
 
-.communication_footer_7 {
+  .communication_footer_7 {
     width: 70px;
     position: absolute;
     margin-left: 320px;
     margin-top: 71px;
-}
+  }
 
-.communication_footer_2_text_11 {
+  .communication_footer_2_text_11 {
     opacity: 0.5;
     font-size: 8px;
     font-family: "Cera Pro Regular", sans-serif;
-}
+  }
 
-.communication_footer_2_text_21 {
+  .communication_footer_2_text_21 {
     opacity: 0.5;
     font-size: 8px;
     margin-top: -7px;
     font-family: "Cera Pro Regular", sans-serif;
+  }
 }
-
 
 
 

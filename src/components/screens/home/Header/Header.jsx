@@ -254,9 +254,10 @@ const Header = () => {
       };
 
 p.setup = () => {
-  if (window.innerWidth < 400) {
+  if (document.querySelector('.Header').style.Width === 390) {
     p.createCanvas(1, 1); // Создание холста размером 1x1 пиксель для маленьких экранов
-  } else {
+  }
+  else {
     p.createCanvas(2480, 600); // Стандартный размер для больших экранов
   }
 
