@@ -4754,6 +4754,15 @@ background-color: rgba(246, 245, 245);
     font-family: "Cera Pro Medium", sans-serif;
 }
 
+ .header_our_uslugi_geo_img{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    margin-left: 500px;
+    margin-top: 70px;
+    z-index: 999;
+  }
+
 .dop_1_button{
     position: absolute;
     margin-left: 500px;
@@ -5498,12 +5507,14 @@ background-color: rgba(246, 245, 245);
 
         .header_container_5_text_1{
             color: black;
-            display: none;
+            display: block;
         }
 
         .header_container_5_text_2{
             color: black;
             display: none;
+            margin-left: -1000px;
+          margin-top: 10px;
         }
 
         .header_container_5_text_3{
@@ -5514,6 +5525,8 @@ background-color: rgba(246, 245, 245);
         .header_container_5_text_4{
             color: black;
             display: none;
+              margin-left: -1000px;
+          margin-top: 10px;
         }
 
         .header_container_5_text_5{
@@ -5524,6 +5537,8 @@ background-color: rgba(246, 245, 245);
         .header_container_5_text_6{
             color: black;
             display: none;
+            margin-left: -930px;
+          margin-top: 30px;
         }
 
 
@@ -6148,3 +6163,11 @@ background-color: rgba(246, 245, 245);
 /*.our_project_img_1:hover {*/
 /*    filter: url(#ambilight);*/
 /*}*/
+
+
+@media (min-width: 2520px) and (max-width: 2600px) {
+    .custom-zoom-page{
+      zoom: 102.5%;
+    }
+
+}

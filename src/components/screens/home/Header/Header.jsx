@@ -12,9 +12,6 @@ function rotateCircles() {
     // });
     document.querySelectorAll('.header_circle_three_color').forEach(circle => {
         circle.style.transform = `rotate(${currentRotation}deg)`; // Применяем новый угол поворота
-        if (currentRotation === 360) {
-            currentRotation = 0
-        }
     });
 
     if (currentRotation === 60) {
@@ -68,6 +65,9 @@ function rotateCircles() {
         document.querySelector('.header_container_5_text_4').style.display = 'none';
         document.querySelector('.header_container_5_text_5').style.display = 'none';
         document.querySelector('.header_container_5_text_6').style.display = 'block';
+        if (currentRotation === 360) {
+            currentRotation = 0
+        }
     }
 }
 
@@ -109,6 +109,7 @@ const Header = () => {
                     default:
                         break;
                 }
+
             }
             const UslugiBlock = () => {
                 const [isHovered, setIsHovered] = useState(false);
@@ -129,6 +130,14 @@ const Header = () => {
             setActiveHandler(handlerId);
         }
     };
+
+    useEffect(() => {
+    if (activeHandler === null) {
+        // Откройте первый обработчик по умолчанию
+        setIsShown(true);
+        setActiveHandler(1);
+    }
+}, [activeHandler]);
 
     const [isShown, setIsShown] = useState(false);
     const [isShown_2, setIsShown_2] = useState(false);
@@ -235,8 +244,8 @@ const Header = () => {
       let img;
       let imageSizes = [
           {width: 100, height: 25},
-          {width: 164, height: 138},
-          {width: 135, height: 85},
+          {width: 100, height: 55},
+          {width: 75, height: 75},
           {width: 200, height: 91},
           {width: 190, height: 150},
           {width: 100, height: 20},
@@ -309,7 +318,7 @@ p.setup = () => {
               this.p.image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
 
               // Обводка
-              let offset = 75;
+              let offset = 73;
               let maxDimension = Math.max(this.imgWidth, this.imgHeight) + offset;
               this.p.stroke(0); // Цвет обводки (в этом случае черный)
               this.p.strokeWeight(1); // Толщина обводки
@@ -339,7 +348,7 @@ p.setup = () => {
 
           handleMouseInteraction() {
               let d = this.p.dist(this.x, this.y, this.p.mouseX, this.p.mouseY);
-              let minDist = this.diameter / 2 + 50;  // 50 - это радиус "отталкивания" от курсора
+              let minDist = this.getBorderRadius() + 15;  // 50 - это радиус "отталкивания" от курсора
               if (d < minDist) {
                   let angle = this.p.atan2(this.y - this.p.mouseY, this.x - this.p.mouseX);
                   let overlap = minDist - d;
@@ -1122,6 +1131,7 @@ p.setup = () => {
                         <div className='dop_1'>
                             <p className='header_our_uslugi_geo_2'>Цифровые навыки</p>
                             <p className='header_our_uslugi_geo'>Цифровые навыки</p>
+                            <img className='header_our_uslugi_geo_img' src='/public/IMG_4233_6_11zon%20(1).jpg'/>
                             <p className='dop_1_geo_1'>Наша компания уделяет особое внимание рабочему месту сотрудника. Непосредственно, как скальпель для хирурга и кисть для художника, сотрудники выполняют проектную работу на современном цифровом рабочем месте. <br/> Мощные компьютеры и 4K мониторы позволяют видеть более объемным проект и снизить утомляемость персонала. Применение собственных разработок в части программного обеспечения для расчетов, построения трасс и профилей положительно сказываются на качестве проектной документации.<br/> Цифровая система критериев на базе искусственного интеллекта координирует распределение объектов между персоналом и сигнализирует об отклонениях в сроках реализации. В совокупности данные мероприятия позволяют значительно сэкономить время производства без потери качества.</p>
                             {/*<a className='dop_1_href' href='/geo'>Больше услуг</a>*/}
                             <a className='dop_1_button' href='/about#about_1'>Подробнее</a>
@@ -1174,12 +1184,12 @@ p.setup = () => {
                           )}
                         </div>
                         <div className={`header_our_uslugi_6 ${activeHandler === 6 ? 'black-grey_6' : ''} ${activeHandler === 1  || activeHandler === 2 || activeHandler === 3 || activeHandler === 4 || activeHandler === 5 ? 'dop_blue-white_5' : ''}`} onClick={() => handleClick(6)}>
-                                <p className='header_our_uslugi_proekt_wat'>Проектирование</p>
+                                <p className='header_our_uslugi_proekt_wat'>Опыт</p>
                         {activeHandler === 6 && (
                         <div className='dop_6'>
-                            <p className='header_our_uslugi_proekt_wat_2'>Проектирование</p>
-                            <p className='header_our_uslugi_proekt_wat_3'>Проектирование</p>
-                            <p className='dop_6_1'>Работа в условиях пандемии COVID-19 наглядно показала положительные и негативные стороны удаленной работы. ООО «Партнер» постарался найти компромисс и использовать лучшее. Тема Краснодарских пробок - одна из самых популярных для обсуждения. Открытие небольших офисов в разных частях города позволило уменьшить время персонала, бесцельно расходуемого на дорогу до работы. А подбор специалистов отрасли инженерных изысканий с разных районов Краснодарского края и Республики Адыгея сократить время на производство. Многие сотрудники так и работают удаленно, ведь главное качественный результат.о</p>
+                            <p className='header_our_uslugi_proekt_wat_2'>Опыт</p>
+                            <p className='header_our_uslugi_proekt_wat_3'>Опыт</p>
+                            <p className='dop_6_1'>Опыт компании зависит не только от количества выполненных работ и даты регистрации Общества. Кадры решают все! Навык работы с исполнительной документацией, предыдущая работа в встроительно-монтажной компании и другие факторы, позволяющие в полной мере понимать технологический процесс строительства объекта по разработанной проектной документации, один из основополагающих факторов трудоустройства в коллектив ООО "Партнер". Персонал обладает опытом работы не только "по учебникам" а практическим навыкам, что позволяет разрабатывать нестандартные решения и адаптироваться под местные условия Заказчика.</p>
                             </div>
                           )}
                         </div>
